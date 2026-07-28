@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>給付金・補助金診断 | スキルアップ・副業を考えているあなたへ</title>
+<meta name="description" content="雇用形態や目的を答えるだけで、スキルアップ・副業に使える給付金・補助金をかんたん診断。">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app" class="app">
+
+  <header class="app-header">
+    <p class="app-header__eyebrow">かんたん1分診断</p>
+    <h1 class="app-header__title">あなたが使える<br class="sp-only">給付金・補助金診断</h1>
+    <p class="app-header__lead">スキルアップ・副業を考えているあなたに合いそうな公的支援制度を、5つの質問でチェックします。</p>
+  </header>
+
+  <main id="main" class="main">
+
+    <!-- intro screen -->
+    <section id="screen-intro" class="screen" data-screen="intro">
+      <div class="card card--intro">
+        <ul class="intro-points">
+          <li>質問はたった5問（30秒程度）</li>
+          <li>会社員・パート・フリーランス、どの立場でも診断可能</li>
+          <li>結果はその場で表示、個人情報の入力は不要</li>
+        </ul>
+        <button type="button" class="btn btn--primary btn--large" id="btn-start">診断をはじめる</button>
+        <p class="intro-disclaimer">※ 表示される制度情報は診断時点の一般的な情報です。最新の条件・金額は必ず公式サイトでご確認ください。</p>
+      </div>
+    </section>
+
+    <!-- quiz screen -->
+    <section id="screen-quiz" class="screen" data-screen="quiz" hidden>
+      <div class="progress" aria-hidden="true">
+        <div class="progress__bar" id="progress-bar"></div>
+      </div>
+      <p class="progress__label" id="progress-label">質問 1 / 6</p>
+
+      <div class="card card--quiz" id="quiz-card">
+        <!-- quiz.js が質問ごとに描画する -->
+      </div>
+
+      <div class="quiz-nav">
+        <button type="button" class="btn btn--ghost" id="btn-back" hidden>戻る</button>
+        <button type="button" class="btn btn--ghost btn--skip" id="btn-skip" hidden>この質問をスキップ</button>
+      </div>
+    </section>
+
+    <!-- result screen -->
+    <section id="screen-result" class="screen" data-screen="result" hidden>
+      <div class="result-summary" id="result-summary"></div>
+      <div class="result-list" id="result-list"></div>
+      <div id="ad-slot-result-bottom" class="ad-slot" aria-hidden="true"></div>
+
+      <div class="card card--lead" id="lead-card">
+        <h2 class="card__title">診断結果をあとで見返したい方へ</h2>
+        <p>メールアドレスを登録すると、今回の診断結果と新しい支援制度の情報をお届けします。（準備中）</p>
+        <form id="lead-form" class="lead-form">
+          <input type="email" class="lead-form__input" placeholder="メールアドレス" disabled>
+          <button type="submit" class="btn btn--primary" disabled>登録する（準備中）</button>
+        </form>
+      </div>
+
+      <button type="button" class="btn btn--ghost" id="btn-restart">もう一度診断する</button>
+    </section>
+
+  </main>
+
+  <footer class="app-footer">
+    <p>本サイトは公的制度の情報提供を目的としており、申請の代行・保証を行うものではありません。制度の詳細・最新情報は各制度の公式サイト・所管窓口をご確認ください。</p>
+  </footer>
+
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/match.js"></script>
+<script src="js/render.js"></script>
+<script src="js/quiz.js"></script>
+</body>
+</html>
