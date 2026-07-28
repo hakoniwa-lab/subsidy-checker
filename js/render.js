@@ -35,7 +35,7 @@ function buildOfferLinks(subsidy) {
 }
 
 function buildResultCard(subsidy) {
-  const badges = [`<span class="badge">${escapeHtml(subsidy.category)}</span>`, `<span class="badge">マッチ度 ${starRating(subsidy.score)}</span>`];
+  const badges = [`<span class="badge">${escapeHtml(subsidy.category)}</span>`, `<span class="badge badge--accent">マッチ度 ${starRating(subsidy.score)}</span>`];
   if (subsidy.needsReview) {
     badges.push(`<span class="badge badge--warn">条件を要確認</span>`);
   }

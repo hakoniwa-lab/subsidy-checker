@@ -1,40 +1,40 @@
 :root {
-  --color-bg: #f7f8fb;
-  --color-surface: #ffffff;
-  --color-border: #e3e6ec;
-  --color-text: #1e2430;
-  --color-text-muted: #5c6472;
-  --color-primary: #2a5bd7;
-  --color-primary-hover: #1f47ad;
-  --color-primary-contrast: #ffffff;
-  --color-accent: #0f9d6c;
-  --color-badge-bg: #eaf0ff;
-  --color-badge-text: #2a5bd7;
-  --color-warn-bg: #fff6e5;
-  --color-warn-text: #8a5b00;
-  --radius-sm: 8px;
-  --radius-md: 14px;
-  --radius-lg: 20px;
-  --shadow-card: 0 2px 10px rgba(20, 24, 33, 0.06);
+  --color-bg: #efe6ce;
+  --color-surface: #f8f2e3;
+  --color-border: #dbcba0;
+  --color-text: #2b2620;
+  --color-text-muted: #6e6248;
+  --color-primary: #a8631f;
+  --color-primary-hover: #8b5119;
+  --color-primary-contrast: #fbf3e2;
+  --color-accent: #55704a;
+  --color-badge-bg: #e4d6ae;
+  --color-badge-text: #6e4a1e;
+  --color-warn-bg: #efd3c0;
+  --color-warn-text: #8a4322;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --shadow-card: 0 2px 8px rgba(43, 38, 32, 0.12);
   --max-width: 640px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #14161c;
-    --color-surface: #1d2027;
-    --color-border: #2c303a;
-    --color-text: #eef0f4;
-    --color-text-muted: #a3aab8;
-    --color-primary: #6f93ea;
-    --color-primary-hover: #8aa8ef;
-    --color-primary-contrast: #10131a;
-    --color-accent: #4fd1a3;
-    --color-badge-bg: #232a3d;
-    --color-badge-text: #9db4f2;
-    --color-warn-bg: #332a12;
-    --color-warn-text: #e9c47a;
-    --shadow-card: 0 2px 14px rgba(0, 0, 0, 0.4);
+    --color-bg: #211f1a;
+    --color-surface: #2c2a22;
+    --color-border: #423e30;
+    --color-text: #f1e9d8;
+    --color-text-muted: #b3a585;
+    --color-primary: #e3a23b;
+    --color-primary-hover: #edb259;
+    --color-primary-contrast: #241c0d;
+    --color-accent: #8fae7d;
+    --color-badge-bg: #3a3626;
+    --color-badge-text: #e3a23b;
+    --color-warn-bg: #3d2a1d;
+    --color-warn-text: #e0a876;
+    --shadow-card: 0 2px 14px rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -281,6 +281,11 @@ html, body {
   border-radius: 999px;
   background: var(--color-badge-bg);
   color: var(--color-badge-text);
+}
+
+.badge--accent {
+  background: var(--color-primary);
+  color: var(--color-primary-contrast);
 }
 
 .badge--warn {
