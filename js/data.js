@@ -9,18 +9,35 @@ const SUBSIDIES = [
     "benefit_max_yen": 100000,
     "conditions_text": "雇用保険の被保険者期間が通算3年以上(初回は1年以上)。離職後1年以内の者も対象。受講開始前3年以内に本給付金を受給していないこと。",
     "tags": {
-      "employment_status": ["employee", "part_time", "unemployed_recent"],
-      "purpose": ["skill_up", "career_change"],
-      "region": ["nationwide"],
-      "gender": ["any"],
-      "age_range": [null, null],
+      "employment_status": [
+        "employee",
+        "part_time",
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "skill_up",
+        "career_change"
+      ],
+      "region": [
+        "nationwide"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": true
     },
     "apply_url": "https://www.hellowork.mhlw.go.jp/insurance/insurance_education.html",
     "apply_method": "ハローワークで受給資格を確認し、講座修了日の翌日から1ヶ月以内に必要書類を添えてハローワークへ申請する。",
     "source_checked_at": "2026-07-28",
     "priority": 1,
-    "related_offers": ["specified-general-education-training-benefit", "specialized-practical-education-training-benefit"]
+    "related_offers": [
+      "specified-general-education-training-benefit",
+      "specialized-practical-education-training-benefit"
+    ]
   },
   {
     "id": "specified-general-education-training-benefit",
@@ -32,18 +49,35 @@ const SUBSIDIES = [
     "benefit_max_yen": 250000,
     "conditions_text": "雇用保険の被保険者期間が通算3年以上(初回は1年以上)。介護職員初任者研修や税理士・社労士講座等の指定講座が対象。",
     "tags": {
-      "employment_status": ["employee", "part_time", "unemployed_recent"],
-      "purpose": ["skill_up", "career_change"],
-      "region": ["nationwide"],
-      "gender": ["any"],
-      "age_range": [null, null],
+      "employment_status": [
+        "employee",
+        "part_time",
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "skill_up",
+        "career_change"
+      ],
+      "region": [
+        "nationwide"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": true
     },
     "apply_url": "https://www.hellowork.mhlw.go.jp/insurance/insurance_education.html",
     "apply_method": "ハローワークで受給資格を確認し、講座修了日の翌日から1ヶ月以内に必要書類を添えてハローワークへ申請する。",
     "source_checked_at": "2026-07-28",
     "priority": 1,
-    "related_offers": ["general-education-training-benefit", "specialized-practical-education-training-benefit"]
+    "related_offers": [
+      "general-education-training-benefit",
+      "specialized-practical-education-training-benefit"
+    ]
   },
   {
     "id": "specialized-practical-education-training-benefit",
@@ -55,18 +89,35 @@ const SUBSIDIES = [
     "benefit_max_yen": 1920000,
     "conditions_text": "雇用保険の被保険者期間が通算3年以上(初回は2年以上)。看護師・介護福祉士・美容師等の専門職養成課程等が対象。",
     "tags": {
-      "employment_status": ["employee", "part_time", "unemployed_recent"],
-      "purpose": ["skill_up", "career_change"],
-      "region": ["nationwide"],
-      "gender": ["any"],
-      "age_range": [null, null],
+      "employment_status": [
+        "employee",
+        "part_time",
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "skill_up",
+        "career_change"
+      ],
+      "region": [
+        "nationwide"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": true
     },
     "apply_url": "https://www.hellowork.mhlw.go.jp/insurance/insurance_education.html",
     "apply_method": "受講開始前にハローワークで受給資格確認とジョブ・カード作成等のキャリアコンサルティングを受けたうえで申請する。",
     "source_checked_at": "2026-07-28",
     "priority": 1,
-    "related_offers": ["general-education-training-benefit", "specified-general-education-training-benefit"]
+    "related_offers": [
+      "general-education-training-benefit",
+      "specified-general-education-training-benefit"
+    ]
   },
   {
     "id": "job-seeker-support-training-benefit",
@@ -78,11 +129,24 @@ const SUBSIDIES = [
     "benefit_max_yen": 100000,
     "conditions_text": "本人月収8万円以下・世帯月収30万円以下・世帯金融資産300万円以下等の収入要件を満たし、訓練に8割以上出席すること。",
     "tags": {
-      "employment_status": ["self_employed", "unemployed_recent"],
-      "purpose": ["skill_up", "career_change"],
-      "region": ["nationwide"],
-      "gender": ["any"],
-      "age_range": [null, null],
+      "employment_status": [
+        "self_employed",
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "skill_up",
+        "career_change"
+      ],
+      "region": [
+        "nationwide"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": false
     },
     "apply_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyushokusha_shien/index.html",
@@ -101,18 +165,33 @@ const SUBSIDIES = [
     "benefit_max_yen": 2500000,
     "conditions_text": "創業後1年以内(または創業予定)の小規模事業者で、特定創業支援等事業の支援を過去1年以内に受けていること等が条件。副業の場合は開業届を提出し事業所得として営んでいることが必要(雑所得扱いの副業収入は対象外)。",
     "tags": {
-      "employment_status": ["self_employed"],
-      "purpose": ["startup", "side_job"],
-      "region": ["nationwide"],
-      "gender": ["any"],
-      "age_range": [null, null],
+      "employment_status": [
+        "self_employed"
+      ],
+      "purpose": [
+        "startup",
+        "side_job"
+      ],
+      "region": [
+        "nationwide"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": false
     },
     "apply_url": "https://www.chusho.meti.go.jp/keiei/chiiki/jizokuka_sougyou/index.html",
     "apply_method": "商工会・商工会議所で事業支援計画書の発行を受けたうえで、電子申請システムJグランツ(要GビズIDプライム)から応募する。",
     "source_checked_at": "2026-07-28",
     "priority": 1,
-    "related_offers": ["tokyo-startup-subsidy", "local-startup-support-subsidy"]
+    "related_offers": [
+      "tokyo-startup-subsidy",
+      "local-startup-support-subsidy"
+    ]
   },
   {
     "id": "tokyo-dx-reskilling-subsidy",
@@ -124,11 +203,23 @@ const SUBSIDIES = [
     "benefit_max_yen": 1000000,
     "conditions_text": "都内に事業所を持つ中小企業等(個人事業主が営む事業所含む)が対象。ただし受講できるのは雇用する従業員のみで、個人事業主本人・法人代表者は受講対象外(事業主体としての申請は可能)。",
     "tags": {
-      "employment_status": ["employee"],
-      "purpose": ["skill_up", "side_job"],
-      "region": ["tokyo"],
-      "gender": ["any"],
-      "age_range": [null, null],
+      "employment_status": [
+        "employee"
+      ],
+      "purpose": [
+        "skill_up",
+        "side_job"
+      ],
+      "region": [
+        "tokyo"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": false
     },
     "apply_url": "https://www.koyokankyo.shigotozaidan.or.jp/jigyo/skillup/skill-R8dx-risk.html",
@@ -147,18 +238,34 @@ const SUBSIDIES = [
     "benefit_max_yen": 200000,
     "conditions_text": "大阪府内在住者で、雇用保険に加入したことがない・加入期間1年未満・離職後1年超等、国の教育訓練給付金の対象とならない方が対象(対象講座を1人1回・1講座まで利用可)。2026年4月1日以降開講、2027年2月28日までに修了する講座が対象。",
     "tags": {
-      "employment_status": ["part_time", "self_employed", "unemployed_recent"],
-      "purpose": ["skill_up", "career_change"],
-      "region": ["osaka"],
-      "gender": ["any"],
-      "age_range": [null, null],
+      "employment_status": [
+        "part_time",
+        "self_employed",
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "skill_up",
+        "career_change"
+      ],
+      "region": [
+        "osaka"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": false
     },
     "apply_url": "https://www.pref.osaka.lg.jp/o110100/koyotaisaku/skillup2/index.html",
     "apply_method": "対象講座を受講・修了後、必要書類をそろえて大阪府スキルアップ支援金事務局へ申請する。",
     "source_checked_at": "2026-07-28",
     "priority": 2,
-    "related_offers": ["osaka-reskilling-support-power-up"]
+    "related_offers": [
+      "osaka-reskilling-support-power-up"
+    ]
   },
   {
     "id": "fukuoka-digital-women-project",
@@ -170,11 +277,26 @@ const SUBSIDIES = [
     "benefit_max_yen": null,
     "conditions_text": "福岡県内在住のひとり親家庭等の子育て中の女性が主な対象。ママと女性の就業支援センターへの利用登録が必要。",
     "tags": {
-      "employment_status": ["unemployed_recent", "part_time", "self_employed"],
-      "purpose": ["skill_up", "side_job", "career_change"],
-      "region": ["fukuoka"],
-      "gender": ["female"],
-      "age_range": [null, null],
+      "employment_status": [
+        "unemployed_recent",
+        "part_time",
+        "self_employed"
+      ],
+      "purpose": [
+        "skill_up",
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "fukuoka"
+      ],
+      "gender": [
+        "female"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": false
     },
     "apply_url": "https://digital-women.maia.co.jp/fukuoka/",
@@ -193,18 +315,34 @@ const SUBSIDIES = [
     "benefit_max_yen": 1000000,
     "conditions_text": "東京23区在住または通勤していた人が対象地域へ移住し、マッチングサイト掲載の中小企業等への就業や起業をすること等が条件。",
     "tags": {
-      "employment_status": ["employee", "self_employed", "unemployed_recent"],
-      "purpose": ["career_change", "startup"],
-      "region": ["nationwide"],
-      "gender": ["any"],
-      "age_range": [null, null],
+      "employment_status": [
+        "employee",
+        "self_employed",
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "career_change",
+        "startup"
+      ],
+      "region": [
+        "nationwide"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": false
     },
     "apply_url": "https://www.chisou.go.jp/sousei/ijyu_shienkin.html",
     "apply_method": "移住先の都道府県・市区町村の相談窓口へ問い合わせ、移住後に必要書類を添えて自治体へ申請する。",
     "source_checked_at": "2026-07-28",
     "priority": 2,
-    "related_offers": ["local-startup-support-subsidy"]
+    "related_offers": [
+      "local-startup-support-subsidy"
+    ]
   },
   {
     "id": "local-startup-support-subsidy",
@@ -216,18 +354,35 @@ const SUBSIDIES = [
     "benefit_max_yen": 2000000,
     "conditions_text": "都道府県が策定する地域課題解決型の社会的事業分野で法人設立・個人事業開業をすること。実施都道府県により対象要件が異なる。",
     "tags": {
-      "employment_status": ["self_employed", "employee", "unemployed_recent"],
-      "purpose": ["startup", "side_job"],
-      "region": ["nationwide"],
-      "gender": ["any"],
-      "age_range": [null, null],
+      "employment_status": [
+        "self_employed",
+        "employee",
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "startup",
+        "side_job"
+      ],
+      "region": [
+        "nationwide"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": false
     },
     "apply_url": "https://www.chisou.go.jp/sousei/shienkin_index.html",
     "apply_method": "事業を実施する都道府県の窓口で事業計画の審査を受け、採択後に法人設立・開業して交付申請を行う。",
     "source_checked_at": "2026-07-28",
     "priority": 2,
-    "related_offers": ["uij-turn-relocation-support", "small-business-sustainability-subsidy-startup"]
+    "related_offers": [
+      "uij-turn-relocation-support",
+      "small-business-sustainability-subsidy-startup"
+    ]
   },
   {
     "id": "single-parent-education-training-benefit",
@@ -239,18 +394,34 @@ const SUBSIDIES = [
     "benefit_max_yen": 1600000,
     "conditions_text": "児童扶養手当受給者またはこれと同等の所得水準にあるひとり親家庭の父母で、対象教育訓練の必要性が認められること。",
     "tags": {
-      "employment_status": ["unemployed_recent", "part_time", "self_employed"],
-      "purpose": ["skill_up", "career_change"],
-      "region": ["nationwide"],
-      "gender": ["any"],
-      "age_range": [null, null],
+      "employment_status": [
+        "unemployed_recent",
+        "part_time",
+        "self_employed"
+      ],
+      "purpose": [
+        "skill_up",
+        "career_change"
+      ],
+      "region": [
+        "nationwide"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": false
     },
     "apply_url": "https://www.cfa.go.jp/policies/hitori-oya/syokugyou-kunren",
     "apply_method": "居住する市区町村(福祉事務所等)へ事前相談し、講座受講前に対象講座の指定確認を受けたうえで修了後に申請する。",
     "source_checked_at": "2026-07-28",
     "priority": 2,
-    "related_offers": ["single-parent-vocational-training-promotion-benefit"]
+    "related_offers": [
+      "single-parent-vocational-training-promotion-benefit"
+    ]
   },
   {
     "id": "single-parent-vocational-training-promotion-benefit",
@@ -262,18 +433,33 @@ const SUBSIDIES = [
     "benefit_max_yen": 100000,
     "conditions_text": "児童扶養手当受給水準の所得のひとり親家庭の父母で、6ヶ月以上の養成機関修業により対象資格取得が見込まれること。",
     "tags": {
-      "employment_status": ["unemployed_recent", "part_time"],
-      "purpose": ["career_change", "skill_up"],
-      "region": ["nationwide"],
-      "gender": ["any"],
-      "age_range": [null, null],
+      "employment_status": [
+        "unemployed_recent",
+        "part_time"
+      ],
+      "purpose": [
+        "career_change",
+        "skill_up"
+      ],
+      "region": [
+        "nationwide"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": false
     },
     "apply_url": "https://www.cfa.go.jp/policies/hitori-oya/syokugyou-kunren",
     "apply_method": "居住する市区町村の窓口へ事前相談し、養成機関入学前に対象資格・機関の確認を受けたうえで申請する。",
     "source_checked_at": "2026-07-28",
     "priority": 2,
-    "related_offers": ["single-parent-education-training-benefit"]
+    "related_offers": [
+      "single-parent-education-training-benefit"
+    ]
   },
   {
     "id": "tokyo-women-reemployment-support-program",
@@ -285,11 +471,24 @@ const SUBSIDIES = [
     "benefit_max_yen": null,
     "conditions_text": "東京都内在住・在勤で再就職を目指す女性(ブランクのある方等)が対象。年齢や雇用形態を問わず利用可能。",
     "tags": {
-      "employment_status": ["unemployed_recent", "part_time"],
-      "purpose": ["career_change", "skill_up"],
-      "region": ["tokyo"],
-      "gender": ["female"],
-      "age_range": [null, null],
+      "employment_status": [
+        "unemployed_recent",
+        "part_time"
+      ],
+      "purpose": [
+        "career_change",
+        "skill_up"
+      ],
+      "region": [
+        "tokyo"
+      ],
+      "gender": [
+        "female"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": false
     },
     "apply_url": "https://www.tokyoshigoto.jp/facility/1f/women/",
@@ -308,18 +507,33 @@ const SUBSIDIES = [
     "benefit_max_yen": 4000000,
     "conditions_text": "都内で創業予定または創業後5年未満で、TOKYO創業ステーションのプランコンサルティング等の指定創業支援事業を利用済みであること。",
     "tags": {
-      "employment_status": ["self_employed", "employee"],
-      "purpose": ["startup", "side_job"],
-      "region": ["tokyo"],
-      "gender": ["any"],
-      "age_range": [null, null],
+      "employment_status": [
+        "self_employed",
+        "employee"
+      ],
+      "purpose": [
+        "startup",
+        "side_job"
+      ],
+      "region": [
+        "tokyo"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": false
     },
     "apply_url": "https://www.tokyo-sogyo-net.metro.tokyo.lg.jp/finance/sogyo_josei.html",
     "apply_method": "TOKYO創業ステーション等の指定支援事業を利用後、募集期間中に東京都中小企業振興公社へ交付申請書を提出する。",
     "source_checked_at": "2026-07-28",
     "priority": 2,
-    "related_offers": ["small-business-sustainability-subsidy-startup"]
+    "related_offers": [
+      "small-business-sustainability-subsidy-startup"
+    ]
   },
   {
     "id": "tokyo-women-startup-vc-support",
@@ -331,18 +545,34 @@ const SUBSIDIES = [
     "benefit_max_yen": null,
     "conditions_text": "都内で起業を目指す・起業して間もない女性起業家が対象。事業計画の内容により支援メニューが異なる。",
     "tags": {
-      "employment_status": ["self_employed", "employee", "unemployed_recent"],
-      "purpose": ["startup", "side_job"],
-      "region": ["tokyo"],
-      "gender": ["female"],
-      "age_range": [null, null],
+      "employment_status": [
+        "self_employed",
+        "employee",
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "startup",
+        "side_job"
+      ],
+      "region": [
+        "tokyo"
+      ],
+      "gender": [
+        "female"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": false
     },
     "apply_url": "https://women-startup-vc.metro.tokyo.lg.jp/",
     "apply_method": "公式サイトで事業内容を確認し、申込フォームまたは相談窓口経由でエントリーする。",
     "source_checked_at": "2026-07-28",
     "priority": 3,
-    "related_offers": ["tokyo-startup-subsidy"]
+    "related_offers": [
+      "tokyo-startup-subsidy"
+    ]
   },
   {
     "id": "osaka-reskilling-support-power-up",
@@ -354,18 +584,35 @@ const SUBSIDIES = [
     "benefit_max_yen": null,
     "conditions_text": "インターネット環境とZoomが利用できる求職者・在職中の労働者が対象。OSAKAしごとフィールドへの登録が必要な場合がある。",
     "tags": {
-      "employment_status": ["employee", "part_time", "unemployed_recent", "self_employed"],
-      "purpose": ["skill_up", "career_change"],
-      "region": ["osaka"],
-      "gender": ["any"],
-      "age_range": [null, null],
+      "employment_status": [
+        "employee",
+        "part_time",
+        "unemployed_recent",
+        "self_employed"
+      ],
+      "purpose": [
+        "skill_up",
+        "career_change"
+      ],
+      "region": [
+        "osaka"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": false
     },
     "apply_url": "https://reskilling.shigotofield.jp/",
     "apply_method": "公式サイトの予約フォームからオンライン相談・セミナーを予約するか、対面相談デスクへ予約なしで来場する。",
     "source_checked_at": "2026-07-28",
     "priority": 3,
-    "related_offers": ["osaka-skillup-support-fund"]
+    "related_offers": [
+      "osaka-skillup-support-fund"
+    ]
   },
   {
     "id": "fukuoka-professional-jinzai-matching",
@@ -377,11 +624,24 @@ const SUBSIDIES = [
     "benefit_max_yen": null,
     "conditions_text": "副業・兼業で福岡県内企業を支援したい人材、および人材活用を検討する福岡県内中小企業が対象。",
     "tags": {
-      "employment_status": ["employee", "self_employed"],
-      "purpose": ["side_job", "career_change"],
-      "region": ["fukuoka"],
-      "gender": ["any"],
-      "age_range": [null, null],
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "fukuoka"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": false
     },
     "apply_url": "https://www.projinzai-fukuoka.jp/",
@@ -401,10 +661,21 @@ const SUBSIDIES = [
     "conditions_text": "特定の年齢・雇用形態要件はなく、デジタルスキルを学びたい女性であれば誰でも講座を検索・受講可能。",
     "tags": {
       "employment_status": [],
-      "purpose": ["skill_up", "side_job", "career_change"],
-      "region": ["nationwide"],
-      "gender": ["female"],
-      "age_range": [null, null],
+      "purpose": [
+        "skill_up",
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "nationwide"
+      ],
+      "gender": [
+        "female"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": false
     },
     "apply_url": "https://manabi-dx.ipa.go.jp/",
@@ -423,11 +694,22 @@ const SUBSIDIES = [
     "benefit_max_yen": null,
     "conditions_text": "神奈川県内に本社・事業所を持つ中小企業等(みなし大企業除く)が対象。書類選考制で例年5〜6月頃募集、採用は約150社程度。",
     "tags": {
-      "employment_status": ["employee"],
-      "purpose": ["skill_up"],
-      "region": ["kanagawa"],
-      "gender": ["any"],
-      "age_range": [null, null],
+      "employment_status": [
+        "employee"
+      ],
+      "purpose": [
+        "skill_up"
+      ],
+      "region": [
+        "kanagawa"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": false
     },
     "apply_url": "https://www.pref.kanagawa.jp/osirase/0606/dx-reskilling/index.html",
@@ -446,11 +728,24 @@ const SUBSIDIES = [
     "benefit_max_yen": null,
     "conditions_text": "これから働きたい・再就職や転職を考えている女性が対象。月〜木曜はキャリア相談、第1・3金曜は女性職員、第4金曜は女性弁護士による労働相談も実施。",
     "tags": {
-      "employment_status": ["unemployed_recent", "part_time"],
-      "purpose": ["career_change", "skill_up"],
-      "region": ["kanagawa"],
-      "gender": ["female"],
-      "age_range": [null, null],
+      "employment_status": [
+        "unemployed_recent",
+        "part_time"
+      ],
+      "purpose": [
+        "career_change",
+        "skill_up"
+      ],
+      "region": [
+        "kanagawa"
+      ],
+      "gender": [
+        "female"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": false
     },
     "apply_url": "https://www.pref.kanagawa.jp/docs/z4r/josei/career.html",
@@ -469,18 +764,32 @@ const SUBSIDIES = [
     "benefit_max_yen": 2000000,
     "conditions_text": "県内で開業登記する個人事業主・法人代表者で、デジタル技術活用による新市場開拓や地域課題解決を目指す事業計画を持つこと。",
     "tags": {
-      "employment_status": ["self_employed"],
-      "purpose": ["startup"],
-      "region": ["aichi"],
-      "gender": ["any"],
-      "age_range": [null, null],
+      "employment_status": [
+        "self_employed"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "aichi"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": false
     },
     "apply_url": "https://www.pref.aichi.jp/press-release/startup-hojokin2025.html",
     "apply_method": "電子申請システムで交付申請書・事業計画書等の必要書類を提出し、審査を経て採択される。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": ["tokyo-startup-subsidy", "small-business-sustainability-subsidy-startup"]
+    "related_offers": [
+      "tokyo-startup-subsidy",
+      "small-business-sustainability-subsidy-startup"
+    ]
   },
   {
     "id": "aichi-women-reemployment-support",
@@ -492,11 +801,24 @@ const SUBSIDIES = [
     "benefit_max_yen": null,
     "conditions_text": "出産・育児等で離職し再び働きたい女性、継続就労に不安を感じる女性が対象。窓口・電話・オンラインで相談可能、託児利用も可(要事前予約)。",
     "tags": {
-      "employment_status": ["unemployed_recent", "part_time"],
-      "purpose": ["career_change", "skill_up"],
-      "region": ["aichi"],
-      "gender": ["female"],
-      "age_range": [null, null],
+      "employment_status": [
+        "unemployed_recent",
+        "part_time"
+      ],
+      "purpose": [
+        "career_change",
+        "skill_up"
+      ],
+      "region": [
+        "aichi"
+      ],
+      "gender": [
+        "female"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": false
     },
     "apply_url": "https://famifure.pref.aichi.jp/womens-support/",
@@ -515,11 +837,26 @@ const SUBSIDIES = [
     "benefit_max_yen": null,
     "conditions_text": "埼玉県内在住または県内就業希望の女性が対象。毎月開講され各月1,000名程度募集している。",
     "tags": {
-      "employment_status": ["unemployed_recent", "part_time", "employee"],
-      "purpose": ["skill_up", "side_job", "career_change"],
-      "region": ["saitama"],
-      "gender": ["female"],
-      "age_range": [null, null],
+      "employment_status": [
+        "unemployed_recent",
+        "part_time",
+        "employee"
+      ],
+      "purpose": [
+        "skill_up",
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "saitama"
+      ],
+      "gender": [
+        "female"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": false
     },
     "apply_url": "https://www.pref.saitama.lg.jp/a0816/library-info/2025080101.html",
@@ -538,11 +875,24 @@ const SUBSIDIES = [
     "benefit_max_yen": 1000000,
     "conditions_text": "社会課題解決型の事業での創業を目指す個人・団体が対象(支援対象は例年10者程度)。詳細な居住地・業種要件は要問合せ。",
     "tags": {
-      "employment_status": ["self_employed", "employee", "unemployed_recent"],
-      "purpose": ["startup"],
-      "region": ["saitama"],
-      "gender": ["any"],
-      "age_range": [null, null],
+      "employment_status": [
+        "self_employed",
+        "employee",
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "saitama"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": false
     },
     "apply_url": "https://www.pref.saitama.lg.jp/a0803/sspj/syakaikadai_kanendo.html",
@@ -561,11 +911,23 @@ const SUBSIDIES = [
     "benefit_max_yen": 1000000,
     "conditions_text": "千葉県内で創業予定または創業5年未満で、市町村の特定創業支援事業修了証明書取得者または県内公的インキュベーション施設入居者のいずれかに該当すること。",
     "tags": {
-      "employment_status": ["self_employed", "employee"],
-      "purpose": ["startup"],
-      "region": ["chiba"],
-      "gender": ["any"],
-      "age_range": [null, null],
+      "employment_status": [
+        "self_employed",
+        "employee"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "chiba"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": false
     },
     "apply_url": "https://www.ccjc-net.or.jp/contents_detail.php?frmId=3636",
@@ -584,11 +946,25 @@ const SUBSIDIES = [
     "benefit_max_yen": null,
     "conditions_text": "求職者、在職中で転職を考えている人が対象。平日9-17時に加え第1・3・5土曜、火・木の夜間(17-20時)も利用可(要予約)。",
     "tags": {
-      "employment_status": ["unemployed_recent", "part_time", "employee"],
-      "purpose": ["career_change", "skill_up"],
-      "region": ["chiba"],
-      "gender": ["any"],
-      "age_range": [null, null],
+      "employment_status": [
+        "unemployed_recent",
+        "part_time",
+        "employee"
+      ],
+      "purpose": [
+        "career_change",
+        "skill_up"
+      ],
+      "region": [
+        "chiba"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": false
     },
     "apply_url": "https://www.pref.chiba.lg.jp/koyou/chuukonen/jobsupport.html",
@@ -607,11 +983,23 @@ const SUBSIDIES = [
     "benefit_max_yen": 1000000,
     "conditions_text": "道内で事務所を設置して創業する個人・中小企業者が対象。対象経費は原材料費・広告宣伝費・出展料等(公募ごとに募集要項が変わるため要確認)。",
     "tags": {
-      "employment_status": ["self_employed", "employee"],
-      "purpose": ["startup"],
-      "region": ["hokkaido"],
-      "gender": ["any"],
-      "age_range": [null, null],
+      "employment_status": [
+        "self_employed",
+        "employee"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "hokkaido"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": false
     },
     "apply_url": "https://www.hsc.or.jp/consul/foundation/",
@@ -630,18 +1018,33 @@ const SUBSIDIES = [
     "benefit_max_yen": null,
     "conditions_text": "副業・兼業で道内企業を支援したい人材、および人材活用を検討する道内中小企業が対象。",
     "tags": {
-      "employment_status": ["employee", "self_employed"],
-      "purpose": ["side_job", "career_change"],
-      "region": ["hokkaido"],
-      "gender": ["any"],
-      "age_range": [null, null],
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "hokkaido"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": false
     },
     "apply_url": "https://pro-jinzai-hokkaido.jp/",
     "apply_method": "電話等でセンターに相談を申し込み、副業・兼業案件のマッチングを受ける。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": ["fukuoka-professional-jinzai-matching"]
+    "related_offers": [
+      "fukuoka-professional-jinzai-matching"
+    ]
   },
   {
     "id": "hyogo-startup-support-subsidy",
@@ -653,11 +1056,23 @@ const SUBSIDIES = [
     "benefit_max_yen": 2000000,
     "conditions_text": "兵庫県内在住または居住予定で、県内で起業・第二創業を行う(予定を含む)こと。同センターの過去受給者は対象外。",
     "tags": {
-      "employment_status": ["self_employed", "employee"],
-      "purpose": ["startup"],
-      "region": ["hyogo"],
-      "gender": ["any"],
-      "age_range": [null, null],
+      "employment_status": [
+        "self_employed",
+        "employee"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "hyogo"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": false
     },
     "apply_url": "https://web.hyogo-iic.ne.jp/shinjigyo/kigyoka",
@@ -676,11 +1091,26 @@ const SUBSIDIES = [
     "benefit_max_yen": null,
     "conditions_text": "再就職・起業・在宅ワーク等を考えたい女性が対象。原則毎月第1〜第4木曜日に対面・オンライン・電話で相談できる。",
     "tags": {
-      "employment_status": ["unemployed_recent", "part_time", "self_employed"],
-      "purpose": ["career_change", "startup", "skill_up"],
-      "region": ["hyogo"],
-      "gender": ["female"],
-      "age_range": [null, null],
+      "employment_status": [
+        "unemployed_recent",
+        "part_time",
+        "self_employed"
+      ],
+      "purpose": [
+        "career_change",
+        "startup",
+        "skill_up"
+      ],
+      "region": [
+        "hyogo"
+      ],
+      "gender": [
+        "female"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": false
     },
     "apply_url": "https://hyogo-even.jp/joseishugyou",
@@ -699,11 +1129,23 @@ const SUBSIDIES = [
     "benefit_max_yen": 2500000,
     "conditions_text": "宮城県内に本社・本店を置き、募集開始から6ヶ月以内に創業予定、または開始前1年以内に創業した事業者等が対象。女性起業家・事業承継型創業は加点措置がある。",
     "tags": {
-      "employment_status": ["self_employed", "employee"],
-      "purpose": ["startup"],
-      "region": ["miyagi"],
-      "gender": ["any"],
-      "age_range": [null, null],
+      "employment_status": [
+        "self_employed",
+        "employee"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "miyagi"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": false
     },
     "apply_url": "https://www.joho-miyagi.or.jp/business-menu/startup",
@@ -722,17 +1164,3323 @@ const SUBSIDIES = [
     "benefit_max_yen": null,
     "conditions_text": "家庭の事情等により現在無職の女性が対象。平日火〜金曜に対面・オンラインで利用可能、参加中の一時保育支援制度もある。",
     "tags": {
-      "employment_status": ["unemployed_recent"],
-      "purpose": ["career_change", "skill_up"],
-      "region": ["miyagi"],
-      "gender": ["female"],
-      "age_range": [null, null],
+      "employment_status": [
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "career_change",
+        "skill_up"
+      ],
+      "region": [
+        "miyagi"
+      ],
+      "gender": [
+        "female"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
       "requires_employment_insurance": false
     },
     "apply_url": "https://www.pref.miyagi.jp/soshiki/koyou/josei_career.html",
     "apply_method": "平日火〜金10:00〜18:00に対面またはオンラインで予約し、1回90〜120分程度のカウンセリングを受ける。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "aomori-startup-subsidy",
+    "name": "あおもり起業支援事業費補助金",
+    "category": "創業・開業支援",
+    "organization": "公益財団法人21あおもり産業総合支援センター(青森県委託事業)",
+    "summary": "青森県内で移住者・若者・女性がデジタル技術で地域課題を解決する起業や、事業承継・第二創業を行う際の経費を補助する制度。創業予定者も対象。",
+    "benefit_text": "補助対象経費の1/2以内、上限200万円",
+    "benefit_max_yen": 2000000,
+    "conditions_text": "青森県へ移住(予定含む)した方、県内在住の若者・女性、デジタル技術活用で地域課題解決を目指す起業者、事業承継・第二創業実施者が対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "startup",
+        "career_change"
+      ],
+      "region": [
+        "aomori"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.21aomori.or.jp/topics/35989",
+    "apply_method": "所定の申請書類・事業計画書等を21あおもり産業総合支援センターへ郵送または持参で提出し、審査を受ける。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "aomori-professional-jinzai-matching",
+    "name": "青森県プロフェッショナル人材戦略拠点(副業・兼業人材マッチング支援)",
+    "category": "副業・兼業人材マッチング支援",
+    "organization": "青森県プロフェッショナル人材戦略拠点(一般社団法人青森県工業会/青森県委託事業)",
+    "summary": "県内中堅・中小企業の経営革新のため、管理職・専門スキルを持つプロフェッショナル人材の採用や副業・兼業人材としての活用をコーディネートする相談拠点。",
+    "benefit_text": "相談・マッチング支援は無料",
+    "benefit_max_yen": null,
+    "conditions_text": "県内企業で副業・兼業として働きたい専門スキルを持つ人材、および人材を求める県内中堅・中小企業が対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "aomori"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://aopro.jp/",
+    "apply_method": "電話またはメールで拠点に相談を申し込み、民間人材ビジネス事業者と連携したマッチングを受ける。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "iwate-startup-subsidy",
+    "name": "岩手県地方創生起業支援金",
+    "category": "創業・開業支援",
+    "organization": "岩手県商工労働観光部経営支援課(執行団体:岩手県中小企業団体中央会)",
+    "summary": "地域課題解決に資するサービスをデジタル技術を活用して提供する起業や、Society5.0関連分野での事業承継・第二創業を行う個人・法人に支援金を交付し、伴走支援も行う。",
+    "benefit_text": "補助対象経費の1/2以内、上限200万円",
+    "benefit_max_yen": 2000000,
+    "conditions_text": "支給対象事業期間完了日までに個人事業の開業届出または法人設立を行う、岩手県内に居住する創業予定者・創業者が対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "startup",
+        "career_change"
+      ],
+      "region": [
+        "iwate"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.startup-iwate.pref.iwate.jp/support_list/1670/",
+    "apply_method": "執行団体(岩手県中小企業団体中央会)のサイトから公募要領・申請様式をダウンロードし、必要書類を添えて提出する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "iwate-professional-jinzai-matching",
+    "name": "岩手県プロフェッショナル人材戦略拠点(副業・兼業人材マッチング支援)",
+    "category": "副業・兼業人材マッチング支援",
+    "organization": "岩手県プロフェッショナル人材戦略拠点(公益財団法人いわて産業振興センター)",
+    "summary": "県内中小企業の経営改善・新事業展開を支援するため、実務経験豊富なプロフェッショナル人材や、リモートワーク中心の副業・兼業人材とのマッチングを行う相談拠点。",
+    "benefit_text": "相談・マッチング支援は無料(成約時に人材紹介会社への手数料が発生する場合あり)",
+    "benefit_max_yen": null,
+    "conditions_text": "副業・兼業として岩手県内企業の業務に携わりたい実務経験のある人材、および人材を求める県内中小企業が対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "iwate"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.joho-iwate.or.jp/prof",
+    "apply_method": "電話・メール、またはWebの「副業・兼業人材調査票」から拠点に問い合わせ、マッチング支援を受ける。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "akita-digital-academy",
+    "name": "あきたデジタルアカデミー",
+    "category": "自治体リスキリング支援",
+    "organization": "秋田県(秋田県デジタル人材育成プログラム推進事業)",
+    "summary": "デジタル人材として秋田県内での就職を目指す人向けの無料研修プログラム。ITスキル・AIスキルの基礎習得から就職・転職活動のトレーニング、就業支援まで一貫サポートする。",
+    "benefit_text": "受講・研修・就業支援はすべて無料",
+    "benefit_max_yen": null,
+    "conditions_text": "秋田県内での就職を希望する大学生・専門学校生・求職者・在職者・移住希望者等。居住地不問でU・I・Jターン希望の県外在住者も対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "unemployed_recent",
+        "student"
+      ],
+      "purpose": [
+        "skill_up",
+        "career_change"
+      ],
+      "region": [
+        "akita"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://akita-digital-academy.jp/",
+    "apply_method": "公式サイトから受講申込を行い、希望職種・スキルレベルに応じた学習パスでeラーニング等を受講する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "akita-startup-subsidy-youth",
+    "name": "秋田県起業支援事業費補助金(若者起業家応援枠)",
+    "category": "創業・開業支援",
+    "organization": "秋田県産業労働部新産業創造課",
+    "summary": "秋田県内で新たに起業する40歳未満の若者を対象に、起業に必要な経費の一部を補助する制度。Aターン(県外からのU・Iターン)・移住者は上限額が優遇される。",
+    "benefit_text": "補助対象経費の1/2以内、上限100万円(Aターン・移住者は上限150万円)",
+    "benefit_max_yen": 1500000,
+    "conditions_text": "応募日時点で40歳未満(学生含む)、秋田県内で新たに起業する者または起業後12か月以内の者で、主たる事業所を県内に置くこと。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "akita"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        39
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.pref.akita.lg.jp/pages/archive/88411",
+    "apply_method": "最寄りの商工会または商工会議所に相談のうえ、申請書類一式を提出する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "akita-professional-jinzai-matching",
+    "name": "秋田県プロフェッショナル人材戦略拠点(副業・兼業人材マッチング支援)",
+    "category": "副業・兼業人材マッチング支援",
+    "organization": "秋田県プロフェッショナル人材戦略拠点(公益財団法人あきた企業活性化センター)",
+    "summary": "経営課題解決や成長戦略に取り組む県内企業に対し、プロフェッショナル人材の獲得や副業・兼業による外部人材の活用を支援する拠点。人材紹介手数料の一部助成もあり。",
+    "benefit_text": "相談・マッチング支援は無料(人材紹介手数料の一部助成制度あり)",
+    "benefit_max_yen": null,
+    "conditions_text": "副業・兼業で秋田県内企業の業務委託を受けたい専門人材、および人材を求める県内企業が対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "akita"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.akita-projin.com/second-job",
+    "apply_method": "電話・メールで拠点に相談し、マネージャーによるマッチング支援を受ける。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "yamagata-startup-subsidy",
+    "name": "やまがたチャレンジ創業応援事業費補助金",
+    "category": "創業・開業支援",
+    "organization": "山形県(執行:山形県内商工会議所・商工会等ネットワーク)",
+    "summary": "県内7地域の商工支援ネットワークが連携し、創業予定者・創業者の経費を助成する制度。女性・若者創業型やUIターン型など要件に応じて加算があり最大140万円。",
+    "benefit_text": "一般型は補助対象経費の1/2以内・上限50万円。女性・若者創業型等の要件加算で最大140万円",
+    "benefit_max_yen": 1400000,
+    "conditions_text": "山形県内で新たに創業する者、または創業して間もない者。女性・35歳以下・55歳以上・UIターン等の要件により補助上限が加算される。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "startup",
+        "career_change"
+      ],
+      "region": [
+        "yamagata"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.yamagata-cci.or.jp/sogyo-ouen/",
+    "apply_method": "募集要領を確認のうえ、事業計画書等の必要書類を最寄りの商工会議所・商工会経由で提出する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "yamagata-professional-jinzai-matching",
+    "name": "山形県プロフェッショナル人材戦略拠点(副業・兼業人材マッチング支援)",
+    "category": "副業・兼業人材マッチング支援",
+    "organization": "山形県プロフェッショナル人材戦略拠点(公益財団法人山形県企業振興公社等)",
+    "summary": "山形県内中小企業のプロフェッショナル人材受け入れをコーディネートする拠点。移住型・通常枠・新規利用枠に分かれ、副業・兼業人材の活用支援にも力を入れている。",
+    "benefit_text": "相談・マッチング支援は無料(企業向け受入経費補助あり)",
+    "benefit_max_yen": null,
+    "conditions_text": "副業・兼業で山形県内企業の業務に携わりたい人材、および人材を求める県内中小企業が対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "yamagata"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://pro-yamagata.com/",
+    "apply_method": "電話または問い合わせフォームで拠点に相談し、マッチング支援を受ける。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "yamagata-women-career-restart",
+    "name": "やまがたで働きたい 女性のキャリア・リスタート応援サイト",
+    "category": "女性支援",
+    "organization": "山形県産業労働部(委託:キャリアバンク株式会社)",
+    "summary": "山形県内で再就職・転職を目指す20代~50代女性向けに、キャリアカウンセリング、セミナー、インターンシップ、企業交流会等を無料で提供する県委託事業。",
+    "benefit_text": "相談・カウンセリング・セミナー・インターンシップはすべて無料",
+    "benefit_max_yen": null,
+    "conditions_text": "山形県内で就職・再就職を希望するおおむね20歳~50歳未満の女性が対象。",
+    "tags": {
+      "employment_status": [
+        "unemployed_recent",
+        "part_time"
+      ],
+      "purpose": [
+        "career_change",
+        "skill_up"
+      ],
+      "region": [
+        "yamagata"
+      ],
+      "gender": [
+        "female"
+      ],
+      "age_range": [
+        20,
+        49
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://yamagata-woman.biz/",
+    "apply_method": "公式サイトまたは電話(023-673-0515)から相談・セミナー参加を申し込む。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "fukushima-startup-subsidy",
+    "name": "福島県地域課題解決型起業支援事業補助金",
+    "category": "創業・開業支援",
+    "organization": "公益財団法人福島県産業振興センター(福島県委託事業)",
+    "summary": "福島県内で地域課題解決に取り組む社会的起業家・第二創業者を対象に、創業経費の一部を補助する制度。県内居住者に加え、期限までの移住予定者も対象。",
+    "benefit_text": "補助対象経費の1/2以内、上限200万円",
+    "benefit_max_yen": 2000000,
+    "conditions_text": "福島県内に居住または期限までに移住予定で、原則として事業経営の経験がなく、指定期間内に個人開業または法人設立を行う予定の者が対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "startup",
+        "career_change"
+      ],
+      "region": [
+        "fukushima"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.fukushima-iju.jp/support/detail_379.html",
+    "apply_method": "事業計画書・住民票・県税納税証明書等を添えて福島県産業振興センターへ郵送または持参で提出する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "fukushima-professional-jinzai-matching",
+    "name": "福島県副業人材等マッチングサイト",
+    "category": "副業・兼業人材マッチング支援",
+    "organization": "福島県商工労働部経営金融課/福島県プロフェッショナル人材戦略拠点",
+    "summary": "県内事業者が抱える経営課題を、都市部の専門スキルを持つ副業・兼業人材が解決するためのマッチングサイト。事業者と人材が直接応募し合える仕組みを提供。",
+    "benefit_text": "サイト登録・マッチングは無料",
+    "benefit_max_yen": null,
+    "conditions_text": "福島県内企業の課題解決に副業で貢献したい専門スキルを持つ人材、および人材を求める県内事業者が対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "fukushima"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://pro-fukushima.com/",
+    "apply_method": "マッチングサイトに登録し、事業者からの募集案件に直接応募する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "fukushima-women-reemployment-support",
+    "name": "女性の就職支援(ふるさと福島就職情報センター)",
+    "category": "女性支援",
+    "organization": "福島県雇用労政課(ふるさと福島就職情報センター)",
+    "summary": "出産・育児・介護等で離職していた女性や転職希望の女性向けに、専任の女性キャリアカウンセラーによる就職相談・職業紹介・再就職支援セミナーを無料で提供する。",
+    "benefit_text": "就職相談・職業紹介・セミナーはすべて無料",
+    "benefit_max_yen": null,
+    "conditions_text": "出産・育児・介護等で離職していた期間がある、または転職を希望し再び働きたいと考えている女性が対象。",
+    "tags": {
+      "employment_status": [
+        "unemployed_recent",
+        "part_time"
+      ],
+      "purpose": [
+        "career_change",
+        "skill_up"
+      ],
+      "region": [
+        "fukushima"
+      ],
+      "gender": [
+        "female"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.pref.fukushima.lg.jp/sec/32011c/josei-saishushoku.html",
+    "apply_method": "ふるさと福島就職情報センター福島窓口(コラッセふくしま2階)へ電話または来所で相談を申し込む。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "ibaraki-chiiki-kadai-kigyo-shien",
+    "name": "茨城県地域課題解決型起業支援事業",
+    "category": "創業・開業支援",
+    "organization": "茨城県産業戦略部(実施:株式会社ひたちなかテクノセンター)",
+    "summary": "地域課題を解決する社会的事業分野での新規起業や、高付加価値産業分野での事業承継・第二創業を行う個人・法人に経費の一部を補助する制度。",
+    "benefit_text": "補助対象経費の1/2以内、上限200万円",
+    "benefit_max_yen": 2000000,
+    "conditions_text": "令和8年4月1日以降に県内で地域課題解決型の社会的事業を新たに起業(法人登記・個人事業開業届)する方、または高付加価値産業分野で事業承継・第二創業する方が対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed",
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "ibaraki"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.pref.ibaraki.jp/shokorodo/sangi/chiikikadai.html",
+    "apply_method": "公募期間中に株式会社ひたちなかテクノセンターのサイトから募集要領・応募様式をダウンロードし申請書類を提出する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "ibaraki-josei-wakamono-shogaisha-sogyo-yushi",
+    "name": "女性・若者・障害者創業支援融資",
+    "category": "創業・開業支援",
+    "organization": "茨城県産業戦略部産業政策課",
+    "summary": "県内で創業する女性・35歳未満の若者・障害者を対象に、設備資金や運転資金を低利で融資する制度(既存の創業支援融資と合算で上限3,500万円)。",
+    "benefit_text": "融資上限3,500万円(既存創業支援融資との合算)",
+    "benefit_max_yen": 35000000,
+    "conditions_text": "県内に住所を有する女性、35歳未満の若者、または障害者手帳所持者で、事業開始から5年以内、または開始予定が1〜2か月以内の方が対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed",
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "ibaraki"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.pref.ibaraki.jp/shokorodo/sansei/kinyu/shosei/yushi/jyosei.html",
+    "apply_method": "商工会・商工会議所または茨城県中小企業団体中央会へ認定申請し、保証協会・金融機関の審査を経て融資実行となる。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "ibaraki-reskilling-digital-literacy-course",
+    "name": "茨城県認定リスキリング教育プログラム デジタルリテラシー実践講座",
+    "category": "自治体リスキリング支援",
+    "organization": "茨城県産業戦略部産業人材育成課",
+    "summary": "在職者や個人事業主向けに、経営幹部・業務改善担当・事務担当など役割別にデジタルスキルを学べる県認定講座。宣言企業社員は受講料半額。",
+    "benefit_text": "受講料11,000円〜16,500円(いばらきリスキリング推進宣言企業社員は半額)",
+    "benefit_max_yen": null,
+    "conditions_text": "県内在職者・個人事業主が対象。コースにより経営幹部向け・業務改善担当向け・事務担当向けなどに分かれる。求職者限定ではない。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "skill_up"
+      ],
+      "region": [
+        "ibaraki"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.pref.ibaraki.jp/soshiki/shokorodo/sanjin/jissen.html",
+    "apply_method": "いばらきリスキリングポータルサイトの参加申込フォーム(Googleフォーム)から申し込む。各コース開始日の1週間前が締切。",
+    "source_checked_at": "2026-07-29",
+    "priority": 4,
+    "related_offers": []
+  },
+  {
+    "id": "tochigi-chiiki-kadai-sogyo-hojokin",
+    "name": "地域課題解決型創業支援補助金",
+    "category": "創業・開業支援",
+    "organization": "公益財団法人栃木県産業振興センター",
+    "summary": "地域課題の解決に資する事業で新たに創業する方を対象に、創業に必要な経費の一部を補助する制度。",
+    "benefit_text": "補助対象経費の1/2以内、上限200万円",
+    "benefit_max_yen": 2000000,
+    "conditions_text": "栃木県内で地域課題解決に資する事業を新たに創業する方が対象。募集期間内に開業予定の会社員等も申請可能。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed",
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "tochigi"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.tochigi-iin.or.jp/home/2/5/1.html",
+    "apply_method": "公募期間中に募集要項・様式をダウンロードし、栃木県産業振興センターへ申請書類を提出する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "tochigi-josei-katsuyaku-project2026",
+    "name": "とちぎ女性活躍推進プロジェクト2026(おしごと相談ルーム等)",
+    "category": "女性支援",
+    "organization": "栃木県人権男女共同参画課(運営:パルティとちぎ男女共同参画センター)",
+    "summary": "しばらく働いていない女性の再就職や資格取得の悩みに、女性キャリアカウンセラーが無料で個別相談・研修を行う支援プロジェクト。",
+    "benefit_text": "相談・研修は無料",
+    "benefit_max_yen": null,
+    "conditions_text": "再就職やキャリアに不安を持つ栃木県内の女性が対象。毎月第2・第4水曜にパルティで個別相談を実施している。",
+    "tags": {
+      "employment_status": [],
+      "purpose": [
+        "career_change",
+        "skill_up"
+      ],
+      "region": [
+        "tochigi"
+      ],
+      "gender": [
+        "female"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.parti.jp/soudan/03.html",
+    "apply_method": "パルティとちぎ男女共同参画センターへ電話または来所で直接相談を申し込む。",
+    "source_checked_at": "2026-07-29",
+    "priority": 4,
+    "related_offers": []
+  },
+  {
+    "id": "tochigi-digital-women-workshare",
+    "name": "栃木県女性デジタルワークシェアリングモデル事業(とちぎでじたるわ〜く女子プロジェクト)",
+    "category": "IT・デジタル人材育成",
+    "organization": "栃木県(受託:株式会社MAIA)",
+    "summary": "多様な働き方を希望する女性向けに、デジタルスキルを学び在宅ワーク等につなげる有料のオンライン講座を提供する事業。",
+    "benefit_text": "受講料33,000円(税込)",
+    "benefit_max_yen": null,
+    "conditions_text": "栃木県内在住18歳以上の女性で、就労意欲がありWindowsパソコン・Wi-Fi環境・Gmailアドレスを持つ方が対象。",
+    "tags": {
+      "employment_status": [],
+      "purpose": [
+        "skill_up",
+        "side_job"
+      ],
+      "region": [
+        "tochigi"
+      ],
+      "gender": [
+        "female"
+      ],
+      "age_range": [
+        18,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://digital-women.maia.co.jp/tochigi/",
+    "apply_method": "公式サイトの説明会に参加またはアーカイブ動画視聴後、申込フォームから登録・受講料決済を行う。",
+    "source_checked_at": "2026-07-29",
+    "priority": 4,
+    "related_offers": []
+  },
+  {
+    "id": "gunma-maitsuru-project",
+    "name": "MAITSURUプロジェクト(IT人材育成×女性就労支援)",
+    "category": "女性支援",
+    "organization": "群馬県産業経済部労働政策課人材活躍支援室",
+    "summary": "育児・介護等で離職した女性や非正規から正規雇用を目指す女性向けに、デジタルツール研修とキャリア支援を無料で提供し就労・キャリアアップにつなげる事業。",
+    "benefit_text": "受講無料",
+    "benefit_max_yen": null,
+    "conditions_text": "群馬県内在住で、育児・介護等により離職し再就職を目指す女性、または非正規雇用から正規雇用への転換を目指す女性が対象。",
+    "tags": {
+      "employment_status": [
+        "unemployed_recent",
+        "part_time"
+      ],
+      "purpose": [
+        "skill_up",
+        "career_change"
+      ],
+      "region": [
+        "gunma"
+      ],
+      "gender": [
+        "female"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.pref.gunma.jp/site/maitsuru/",
+    "apply_method": "群馬県公式サイトまたは特設サイトで受講生募集案内を確認し、応募フォームから申し込む。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "gunma-cross-start-hojokin",
+    "name": "ぐんまクロススタート補助金(起業支援金)",
+    "category": "創業・開業支援",
+    "organization": "公益財団法人群馬県産業支援機構",
+    "summary": "群馬県内で個人事業を開業または法人を設立し代表者となる方に、起業に要する経費の一部を補助する制度。",
+    "benefit_text": "補助対象経費の1/2、上限200万円",
+    "benefit_max_yen": 2000000,
+    "conditions_text": "令和8年4月1日〜令和9年1月31日に群馬県内で個人事業の開業届出または法人設立を行い代表者となる方が対象。応募時点では会社員等でも申請可能。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed",
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "gunma"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.g-inf.or.jp/html/startup_002.html",
+    "apply_method": "公募期間中に群馬県産業支援機構のサイトから公募要項・様式をダウンロードし申請書類を提出する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "niigata-digital-jinzai-reskilling",
+    "name": "新潟県デジタル人材リスキリング支援事業",
+    "category": "IT・デジタル人材育成",
+    "organization": "新潟県産業労働部雇用能力開発課",
+    "summary": "非正規労働者や求職者を主対象に、ITスキルアップ・デジタル技術基礎を低価格で学べるオンライン講座を提供する事業。",
+    "benefit_text": "受講料2,900円",
+    "benefit_max_yen": null,
+    "conditions_text": "主に非正規雇用で働く方や求職者が対象。ITスキルアップコースとデジタル技術基礎コースの2コースを開設している。",
+    "tags": {
+      "employment_status": [
+        "part_time",
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "skill_up",
+        "career_change"
+      ],
+      "region": [
+        "niigata"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.niigata-digital-jinzai-reskilling.com/",
+    "apply_method": "公式サイトまたはITスキルアップコース専用ページ(school.moripower.jp/itskill/)から申し込む。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "niigata-kigyo-challenge-ouen",
+    "name": "起業チャレンジ応援事業",
+    "category": "創業・開業支援",
+    "organization": "公益財団法人にいがた産業創造機構(NICO)",
+    "summary": "新潟県内で新たに起業する方を対象に、創業に必要な経費の一部を助成する制度。会社員等は交付決定後2か月以内の退職が条件。",
+    "benefit_text": "補助対象経費の1/2以内、下限50万円〜上限200万円",
+    "benefit_max_yen": 2000000,
+    "conditions_text": "商工会・商工会議所等の確認書を取得した上で新潟県内で新たに起業する方が対象。申請時に会社等に所属する場合は交付決定後2か月以内に退職することが必要。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "niigata"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.nico.or.jp/sien/hojokin/81879/",
+    "apply_method": "商工会・商工会議所または金融機関に相談し確認書を取得後、申請書類一式をNICOへ郵送または持参で提出する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "yamanashi-chiiki-kadai-kigyo-shienkin",
+    "name": "やまなし地域課題解決型起業支援金",
+    "category": "創業・開業支援",
+    "organization": "山梨県産業政策部スタートアップ・経営支援課",
+    "summary": "地域課題解決を目的とした新規起業や、高付加価値産業分野での事業承継・第二創業を行う方に経費の一部を補助する制度。",
+    "benefit_text": "補助対象経費の1/2以内、上限200万円",
+    "benefit_max_yen": 2000000,
+    "conditions_text": "令和8年4月1日〜事業完了日までに山梨県内で新規起業(個人事業開業または法人設立)、または事業承継・第二創業する方。現在未居住でも事業完了までに県内居住予定なら対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed",
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "yamanashi"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.pref.yamanashi.jp/startup/sogyo/r8kigyousiennkinnbosyuu.html",
+    "apply_method": "募集期間内にエントリーし、書類審査・オンラインプレゼン審査・個別面談を経て採択される。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "yamanashi-chiiki-kasseika-koyo-sozo-project2",
+    "name": "やまなし地域活性化雇用創造プロジェクト(第2期)",
+    "category": "自治体リスキリング支援",
+    "organization": "山梨県産業政策部産業政策課",
+    "summary": "求職者向けに製造業・情報通信業・医療福祉業等の良質な雇用へつなげる無料の職業訓練・キャリアアップ講座を提供する事業。",
+    "benefit_text": "受講無料(キャリアアップ・ユニバーシティ講座等)",
+    "benefit_max_yen": null,
+    "conditions_text": "新卒学生や就職氷河期世代を含む一般求職者が対象。所定内給与21万4,900円以上等の良質な雇用への就職を目指す方向け。",
+    "tags": {
+      "employment_status": [
+        "unemployed_recent",
+        "student"
+      ],
+      "purpose": [
+        "skill_up",
+        "career_change"
+      ],
+      "region": [
+        "yamanashi"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.pref.yamanashi.jp/shouko-kik/chipuro2.html",
+    "apply_method": "キャリアアップ・ユニバーシティサイト(yamanashi-cuu.jp)の講座申込ページから申し込む。",
+    "source_checked_at": "2026-07-29",
+    "priority": 4,
+    "related_offers": []
+  },
+  {
+    "id": "yamanashi-professional-jinzai-fukugyo-kengyo",
+    "name": "山梨県プロフェッショナル人材戦略拠点 副業・兼業人材マッチング支援",
+    "category": "副業・兼業人材マッチング支援",
+    "organization": "公益財団法人やまなし産業支援機構",
+    "summary": "都市部等の専門人材が副業・兼業で山梨県内中小企業の経営課題解決や新事業立ち上げに関われるよう、無料でマッチング支援を行う事業。",
+    "benefit_text": "マッチング支援は無料(直接の金銭給付なし)",
+    "benefit_max_yen": null,
+    "conditions_text": "副業・兼業で地方の中小企業に関わりたい専門人材が対象。県内企業とのマッチングを希望する個人が拠点や登録紹介事業者を通じて利用できる。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "side_job"
+      ],
+      "region": [
+        "yamanashi"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.yiso.or.jp/service/professional/",
+    "apply_method": "プロフェッショナル人材戦略拠点や登録人材紹介事業者を通じて、副業・兼業案件の紹介・マッチングを受ける。",
+    "source_checked_at": "2026-07-29",
+    "priority": 5,
+    "related_offers": []
+  },
+  {
+    "id": "nagano-digichalle-shinshu",
+    "name": "デジチャレ信州",
+    "category": "女性支援",
+    "organization": "長野県産業労働部産業人材育成課",
+    "summary": "就職・起業を希望する女性向けに、Webデザインや再就職支援、ITステップアップ等を学べる6か月間の職業訓練を無料で提供する事業。",
+    "benefit_text": "受講無料",
+    "benefit_max_yen": null,
+    "conditions_text": "長野県内在住(移住予定者含む)の18歳以上で、訓練修了後に就職・起業を希望する女性。6か月間の訓練を受講できる方が対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "unemployed_recent",
+        "part_time"
+      ],
+      "purpose": [
+        "skill_up",
+        "career_change",
+        "startup"
+      ],
+      "region": [
+        "nagano"
+      ],
+      "gender": [
+        "female"
+      ],
+      "age_range": [
+        18,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.pref.nagano.lg.jp/jinzai/digichalleshinsyu.html",
+    "apply_method": "オンライン申込フォームから応募し、選考を経て受講が決定する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "nagano-social-business-sogyo-shienkin",
+    "name": "長野県ソーシャル・ビジネス創業支援金",
+    "category": "創業・開業支援",
+    "organization": "公益財団法人長野県産業振興機構",
+    "summary": "地域課題をデジタル技術活用によりビジネスで解決するソーシャル・イノベーションの創業を対象に、経費の一部を補助する制度。",
+    "benefit_text": "補助対象経費の1/2以下、上限200万円",
+    "benefit_max_yen": 2000000,
+    "conditions_text": "令和8年4月7日〜令和9年1月31日に個人事業の開業届提出、法人設立、または事業承継・第二創業を行い代表者となる方。県内居住(予定含む)が必須。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed",
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "nagano"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.nice-o.or.jp/info/info-71628/",
+    "apply_method": "郵送またはメールでPDF形式の申請書類一式を長野県産業振興機構に提出する(期日厳守)。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "tottori-startup-try-subsidy",
+    "name": "鳥取県起業創業トライ補助金",
+    "category": "創業・開業支援",
+    "organization": "鳥取県商工労働部産業未来創造課産業支援担当",
+    "summary": "新規事業のアイデアや技術を活かし、支援機関の伴走支援を受けながら事業に取り組む創業者・企業の経費の一部を補助する鳥取県独自の制度。",
+    "benefit_text": "補助率1/2、上限300万円",
+    "benefit_max_yen": 3000000,
+    "conditions_text": "申請日から12か月以内に県内で創業予定、または創業後12か月未満の個人・団体が対象。支援機関の継続的な伴走支援を受けることが必須条件。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed",
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "tottori"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.pref.tottori.lg.jp/277668.htm",
+    "apply_method": "産業未来創造課から様式をダウンロードし、必要書類を持参または郵送で提出後、書面審査とプレゼン審査を経て採択。",
+    "source_checked_at": "2026-07-29",
+    "priority": 2,
+    "related_offers": []
+  },
+  {
+    "id": "tottori-digital-jinzai-program",
+    "name": "鳥取県デジタル人材育成プログラム",
+    "category": "自治体リスキリング支援",
+    "organization": "鳥取県商工労働部雇用人材局産業人材課",
+    "summary": "離職者・求職者向けにプログラミングやWebデザイン等を学べる約5か月間の無料オンライン学習カリキュラムを提供し、参画企業とのマッチングも支援する制度。",
+    "benefit_text": "受講料無料(自己都合の途中離脱時は費用請求の可能性あり)",
+    "benefit_max_yen": null,
+    "conditions_text": "離職者・求職者が対象(学生は対象外)。県外在住者も参加可能だが、就職決定後に県内へ移住・定住する意思が必要。",
+    "tags": {
+      "employment_status": [
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "skill_up",
+        "career_change"
+      ],
+      "region": [
+        "tottori"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.digital-tottori.com/",
+    "apply_method": "オンライン説明会に参加後、専用サイトから本申込みを行う。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "shimane-region-issue-startup-subsidy",
+    "name": "地域課題解決型しまね起業支援事業費補助金",
+    "category": "創業・開業支援",
+    "organization": "島根県商工労働部中小企業課",
+    "summary": "中山間地域・離島の生活機能確保やまちづくり、子育て、高齢者福祉など地域課題解決に資する社会的事業での起業・事業承継・第二創業を支援する補助金。",
+    "benefit_text": "補助率1/2以内、上限200万円",
+    "benefit_max_yen": 2000000,
+    "conditions_text": "公募開始日以降に個人事業の開業届出または法人設立を行い代表者となる者が対象。現職の会社員でもこれから起業する予定であれば対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed",
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "shimane"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.pref.shimane.lg.jp/industry/syoko/sangyo/kigyo/kigyo_sien/wakuwaushimane.html",
+    "apply_method": "起業予定地の市町村窓口で地域課題適合性を確認後、商工会・商工会議所へ申請書類一式を提出。",
+    "source_checked_at": "2026-07-29",
+    "priority": 2,
+    "related_offers": []
+  },
+  {
+    "id": "shimane-kaigo-fukushishi-shugaku-shikin",
+    "name": "介護福祉士等修学資金貸付事業",
+    "category": "介護・福祉資格取得支援",
+    "organization": "社会福祉法人島根県社会福祉協議会生活支援部福祉資金係",
+    "summary": "介護福祉士・社会福祉士の資格取得を目指す養成施設の学生に修学資金等を貸し付け、卒業後に県内施設で一定期間従事すれば返還を全額免除する制度。",
+    "benefit_text": "修学資金月額5万円(生活保護世帯は入学準備金20万円・就職準備金20万円等も加算)、国家試験受験対策費用は年度あたり最大4万円",
+    "benefit_max_yen": null,
+    "conditions_text": "県内の介護福祉士等養成施設に在学し、県内住民登録または県内施設での修学を行い、卒業後に県内社会福祉施設等での勤務意思がある学生が対象。卒業後1年以内に登録し県内施設で一定期間(通常5年、過疎地域等は3年)従事すれば返還全額免除。",
+    "tags": {
+      "employment_status": [
+        "student"
+      ],
+      "purpose": [
+        "skill_up",
+        "career_change"
+      ],
+      "region": [
+        "shimane"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www1.pref.shimane.lg.jp/medical/fukushi/kourei/kaigozinnzaikakuho/shakaikaigo/syuugaku.html",
+    "apply_method": "島根県社会福祉協議会の募集要項を確認し、申請書類を提出して審査後に貸付決定。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "okayama-region-issue-startup-subsidy",
+    "name": "岡山県地域課題解決型起業支援金",
+    "category": "創業・開業支援",
+    "organization": "岡山県産業労働部経営支援課(事務局:公益財団法人岡山県産業振興財団)",
+    "summary": "地域課題の解決を目的とした岡山県内での起業・事業承継・第二創業に要する経費を補助し、伴走支援も行う制度。",
+    "benefit_text": "補助率1/2以内、上限200万円",
+    "benefit_max_yen": 2000000,
+    "conditions_text": "指定期間内に岡山県内で起業する者、事業承継または第二創業する者が対象。県内居住または事業完了日までに県内へ移住予定であることが必要。現職の会社員でもこれから起業する予定であれば対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed",
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "okayama"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.pref.okayama.jp/page/969485.html",
+    "apply_method": "公募要項を確認し申請書類を提出、審査(書面・プレゼン等)を経て採択後に伴走支援を受けながら事業を実施。",
+    "source_checked_at": "2026-07-29",
+    "priority": 2,
+    "related_offers": []
+  },
+  {
+    "id": "okayama-digital-joshi-project",
+    "name": "岡山県地域デジタル女子人材育成・就業事業(愛称:岡山でじたる女子プロジェクト)",
+    "category": "女性支援",
+    "organization": "岡山県総合政策局政策推進課",
+    "summary": "就業を希望する女性向けに、企業ニーズの高いデジタルスキルをオンライン学習と伴走支援で身につけられる無料リスキリングプログラム。",
+    "benefit_text": "受講料無料",
+    "benefit_max_yen": null,
+    "conditions_text": "岡山県在住の18歳以上の女性で、学習用のPC・Wi-Fi環境がありMicrosoft Officeを利用できる者が対象。オンライン説明会参加(アーカイブ視聴可)が申込の必須条件。",
+    "tags": {
+      "employment_status": [],
+      "purpose": [
+        "skill_up",
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "okayama"
+      ],
+      "gender": [
+        "female"
+      ],
+      "age_range": [
+        18,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://digital-women.maia.co.jp/okayama/",
+    "apply_method": "オンライン説明会に参加(またはアーカイブ視聴)後、特設サイトから受講申込を行う(定員あり)。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "hiroshima-chusankan-startup-subsidy",
+    "name": "広島県中山間地域課題解決型起業支援事業(起業支援金)",
+    "category": "創業・開業支援",
+    "organization": "広島県(事務局:株式会社エル・ティー・エス)",
+    "summary": "広島県の中山間地域において、デジタル技術を活用して地域課題解決に取り組む起業・事業承継・第二創業を支援する補助金。",
+    "benefit_text": "補助率1/2以内、上限200万円",
+    "benefit_max_yen": 2000000,
+    "conditions_text": "公募開始日以降、事業完了日までに個人事業の開業または法人設立を行い代表者となることが条件。現職の会社員でもこれから起業する予定であれば対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed",
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "hiroshima"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://hiroshima-kigyoshien.com/",
+    "apply_method": "必要書類を準備しメールまたは郵送で提出、資格審査・書面審査を経て採択後に交付決定、事業完了後に実績報告して精算払いを受ける。",
+    "source_checked_at": "2026-07-29",
+    "priority": 2,
+    "related_offers": []
+  },
+  {
+    "id": "hiroshima-professional-jinzai-kyoten",
+    "name": "広島県プロフェッショナル人材戦略拠点(副業・兼業人材マッチング支援)",
+    "category": "自治体リスキリング支援",
+    "organization": "広島県産業人材課",
+    "summary": "都市部等のプロフェッショナル人材による副業・兼業を通じて県内中小企業の経営課題解決を後押しするマッチング拠点。個人は登録人材紹介会社経由で案件に登録できる。",
+    "benefit_text": "相談・マッチング支援は無料(金銭的な補助は企業向けのみ)",
+    "benefit_max_yen": null,
+    "conditions_text": "副業・兼業で地方企業を支援したい会社員や専門人材が対象。個人への直接給付はなく、登録人材紹介会社を通じたマッチングにより副業案件が紹介される。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "hiroshima"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.pref.hiroshima.lg.jp/site/pro-kyoten/fukugyou-kengyou.html",
+    "apply_method": "拠点サイトに掲載された登録人材紹介会社を通じて登録し、企業とのマッチングを受ける。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "yamaguchi-startup-subsidy",
+    "name": "やまぐち創業補助金",
+    "category": "創業・開業支援",
+    "organization": "公益財団法人やまぐち産業振興財団",
+    "summary": "山口県の総合計画に関連する社会的事業の創業を支援し、地域課題解決型の地方創生を実現するための補助金。",
+    "benefit_text": "補助率1/2、上限200万円",
+    "benefit_max_yen": 2000000,
+    "conditions_text": "山口県内で新たな創業での事業展開を目指す者が対象。他の創業補助金と同様、これから開業予定の会社員も含まれると考えられるが、詳細は公募要領での個別確認が必要。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed",
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "yamaguchi"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://yipf.or.jp/subsidy/%E4%BB%A4%E5%92%8C%EF%BC%98%E5%B9%B4%E5%BA%A6%E3%82%84%E3%81%BE%E3%81%90%E3%81%A1%E5%89%B5%E6%A5%AD%E8%A3%9C%E5%8A%A9%E9%87%91%E3%81%AE%E5%85%AC%E5%8B%9F%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/",
+    "apply_method": "公募要領を確認し、補助事業計画書等の応募書類をWord形式で作成して提出、審査を経て採択される。",
+    "source_checked_at": "2026-07-29",
+    "priority": 2,
+    "related_offers": []
+  },
+  {
+    "id": "yamaguchi-professional-jinzai-kyoten",
+    "name": "山口県プロフェッショナル人材戦略拠点(副業・兼業人材マッチング支援)",
+    "category": "自治体リスキリング支援",
+    "organization": "山口県プロフェッショナル人材戦略拠点",
+    "summary": "都市部等のプロフェッショナル人材と山口県内中小企業とのマッチングを行い、常勤採用や副業・兼業での経営課題解決を支援する拠点。",
+    "benefit_text": "相談・マッチング支援は無料(金銭的な補助は企業向けのみ)",
+    "benefit_max_yen": null,
+    "conditions_text": "副業・兼業で県内企業を支援したい会社員や専門人材が対象。個人への直接給付はなく、民間人材ビジネス事業者を介したマッチングにより副業案件が紹介される。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "yamaguchi"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://yg-pro.jp/jigyogaiyo/",
+    "apply_method": "拠点に電話またはフォームで相談・登録し、民間人材ビジネス事業者経由で企業とのマッチングを受ける。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "tokushima-startup-promotion-subsidy",
+    "name": "とくしま創業促進費補助金",
+    "category": "創業・開業支援",
+    "organization": "公益財団法人とくしま産業振興機構",
+    "summary": "デジタル技術を活用した地域課題解決につながる徳島県内での創業や、事業承継・第二創業を支援する補助金。",
+    "benefit_text": "補助率1/2以内、スタートアップ枠上限200万円・一般枠上限100万円(通常は上限50万円)",
+    "benefit_max_yen": 2000000,
+    "conditions_text": "交付決定日以降、補助事業期間完了日までに個人事業の開業届出または法人設立を行い代表者となる者が対象。県内居住または事業完了日までの県内移住予定が必須。現職の会社員でもこれから開業する予定であれば対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed",
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "tokushima"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.our-think.or.jp/328532/",
+    "apply_method": "事前相談を予約したうえで、交付申請書・事業計画書等を持参・郵送・メール等で提出し審査を受ける。",
+    "source_checked_at": "2026-07-29",
+    "priority": 2,
+    "related_offers": []
+  },
+  {
+    "id": "tokushima-professional-jinzai-kyoten",
+    "name": "徳島県プロフェッショナル人材戦略拠点(副業・兼業人材マッチング支援)",
+    "category": "自治体リスキリング支援",
+    "organization": "徳島県経済産業部産業成長推進課(拠点運営:公益財団法人とくしま産業振興機構)",
+    "summary": "都市部等の専門人材と徳島県内中小企業をマッチングし、副業・兼業形態での経営課題解決を促進する拠点。",
+    "benefit_text": "相談・マッチング支援は無料(金銭的な補助は企業向けのみ)",
+    "benefit_max_yen": null,
+    "conditions_text": "副業・兼業で県内企業を支援したい会社員や専門人材が対象。個人への直接給付はなく、拠点の支援を受けた人材紹介事業者を通じて副業・兼業がマッチングされる。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "tokushima"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.our-think.or.jp/292986-2/",
+    "apply_method": "拠点に相談し、連携する人材紹介事業者を通じて登録・企業とのマッチングを受ける。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "kagawa-startup-support-subsidy",
+    "name": "起業等スタートアップ支援補助金(地域課題解決型)",
+    "category": "創業・開業支援",
+    "organization": "公益財団法人かがわ産業支援財団",
+    "summary": "デジタル技術を活用して地域課題解決に取り組む香川県内での起業・事業承継・第二創業の経費を補助し、伴走支援も行う制度。",
+    "benefit_text": "補助率1/2、上限200万円",
+    "benefit_max_yen": 2000000,
+    "conditions_text": "指定期間内に個人開業または会社設立を香川県内で行いその代表者となる者が対象(事業承継・第二創業も含む)。現職の会社員でもこれから起業する予定であれば対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed",
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "kagawa"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.kagawa-isf.jp/support/fund/startup/",
+    "apply_method": "伴走支援員に事前相談し、複数回の指導を受けたうえで申請書類を郵送または持参で提出。",
+    "source_checked_at": "2026-07-29",
+    "priority": 2,
+    "related_offers": [
+      "kagawa-tokyo-iju-shien-kin"
+    ]
+  },
+  {
+    "id": "kagawa-tokyo-iju-shien-kin",
+    "name": "東京圏移住支援事業補助金(香川県)",
+    "category": "移住支援",
+    "organization": "香川県政策部地域活力推進課",
+    "summary": "東京23区在住者等が香川県内に移住し、起業やプロフェッショナル人材事業の活用による就業など県指定の要件を満たした場合に支給する移住+就業(起業)セット型の支援金。",
+    "benefit_text": "2人以上世帯100万円・単身世帯60万円(市町により増減あり)、18歳未満の子1人につき最大100万円の子育て加算あり",
+    "benefit_max_yen": 1000000,
+    "conditions_text": "転入直前の10年間で通算5年以上・直前1年以上東京23区に在住していた者が対象。移住後、香川県の起業等スタートアップ支援補助金の交付決定を受けた場合やプロフェッショナル人材事業の活用による就業など、県指定の就業要件のいずれかを満たす必要がある。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed",
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "startup",
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "kagawa"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.pref.kagawa.lg.jp/chiiki/iju/izyusienkin.html",
+    "apply_method": "転入後(原則1年以内)に移住先の市町移住・定住担当窓口へ申請書と必要書類を提出する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": [
+      "kagawa-startup-support-subsidy"
+    ]
+  },
+  {
+    "id": "ehime-cup-business-plan",
+    "name": "EHIME CUP(愛媛No.1ビジネスプラン決定戦)",
+    "category": "創業・開業支援",
+    "organization": "愛媛県(運営:株式会社ローカル大学)",
+    "summary": "県内外から新規事業アイデアを募る愛媛県最大級のビジネスプランコンテスト。優勝者には愛媛県内での創業・事業化を条件に賞金が授与される。",
+    "benefit_text": "優勝賞金 最大300万円",
+    "benefit_max_yen": 3000000,
+    "conditions_text": "創業前の会社員や起業を志す個人、事業承継者など幅広い挑戦者が対象で、県内在住要件はない。優勝者は愛媛県内での創業・事業化が条件となる。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed",
+        "unemployed_recent",
+        "student"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "ehime"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://ehime-cup.com/",
+    "apply_method": "特設サイトでキープエントリー登録後、メールで届く本エントリーフォームから応募する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "ehime-professional-jinzai-kyoten",
+    "name": "愛媛県プロフェッショナル人材戦略拠点(副業・兼業人材マッチング支援)",
+    "category": "自治体リスキリング支援",
+    "organization": "公益財団法人えひめ産業振興財団",
+    "summary": "戦略マネージャーが県内企業の経営課題をヒアリングし、都市部の副業・兼業/転職人材と民間人材会社経由でマッチングする拠点。",
+    "benefit_text": "相談・マッチング支援は無料(金銭的な補助は企業向けのみ)",
+    "benefit_max_yen": null,
+    "conditions_text": "副業・兼業で県内企業を支援したい会社員や専門人材が対象。個人への直接給付はなく、民間人材会社を通じたマッチングにより案件が紹介される。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "ehime"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://ehime-projinzai.jp/",
+    "apply_method": "拠点または連携する民間人材会社に問い合わせ、企業とのマッチングを受ける。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "kochi-region-issue-startup-subsidy",
+    "name": "高知県地域課題解決起業支援事業費補助金",
+    "category": "創業・開業支援",
+    "organization": "高知県産業振興推進部産業イノベーション課",
+    "summary": "地域活性化やまちづくり、子育て支援など社会的課題の解決につながる高知県内での起業を促進する補助金。",
+    "benefit_text": "補助率1/2以内、通常枠上限200万円(下限60万円)・中山間地域枠上限100万円(下限30万円)",
+    "benefit_max_yen": 2000000,
+    "conditions_text": "こうち起業・創業支援プラットフォーム会員で、県指定の起業支援プログラムを修了し、県内居住(または事業完了日までに居住予定)で交付決定日から定められた期限までに起業する者が対象。現職の会社員でも要件を満たせば対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed",
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "kochi"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.pref.kochi.lg.jp/doc/2026022400299/",
+    "apply_method": "高知県電子申請サービスから申請書をダウンロードして作成し、アップロードして提出する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 2,
+    "related_offers": []
+  },
+  {
+    "id": "kochi-professional-jinzai-kyoten",
+    "name": "高知県プロフェッショナル人材戦略拠点(副業・兼業人材マッチング支援)",
+    "category": "自治体リスキリング支援",
+    "organization": "公益財団法人高知県産業振興センター",
+    "summary": "内閣府事業として、都市部の専門人材と高知県内企業をマッチングし、副業・兼業での経営課題解決を支援する拠点。",
+    "benefit_text": "相談・マッチング支援は無料(金銭的な補助は企業向けのみ)",
+    "benefit_max_yen": null,
+    "conditions_text": "副業・兼業で県内企業を支援したい会社員や専門人材が対象。個人への直接給付はなく、民間人材会社を通じたマッチングにより副業・兼業案件が紹介される。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "kochi"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.pref.kochi.lg.jp/projinzai/",
+    "apply_method": "拠点または連携する民間人材会社に問い合わせ、企業とのマッチングを受ける。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "saga-kigyou-shien-kin",
+    "name": "佐賀県地域活性化等起業支援事業費補助金(佐賀起業支援金)",
+    "category": "創業・開業支援",
+    "organization": "公益財団法人佐賀県産業振興機構(さが産業ミライ創造ベース RYO-FU BASE)",
+    "summary": "デジタル技術を活用し地域課題解決に資する社会的事業分野で、佐賀県内で個人事業開業・法人設立や事業承継・第二創業を行う人に経費の一部を補助する制度。",
+    "benefit_text": "補助率1/2、上限200万円",
+    "benefit_max_yen": 2000000,
+    "conditions_text": "佐賀県内に居住または移住予定で、デジタル技術を活用し社会的事業分野で個人事業開業・法人設立、またはSociety5.0関連業種で事業承継・第二創業を行う予定の人が対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "saga"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://sagashienkin.com/",
+    "apply_method": "公式サイトの応募フォーム・郵送・持参で佐賀起業支援金事務局へ提出し、書類審査・プレゼン審査を経て採択。",
+    "source_checked_at": "2026-07-29",
+    "priority": 2,
+    "related_offers": []
+  },
+  {
+    "id": "saga-professional-jinzai-matching",
+    "name": "さがプロフェッショナル人材戦略拠点",
+    "category": "自治体リスキリング支援",
+    "organization": "さがプロフェッショナル人材戦略拠点(内閣府プロフェッショナル人材事業・佐賀県)",
+    "summary": "都市部のプロフェッショナル人材と佐賀県内中小企業を橋渡しし、正社員採用に限らず副業・兼業人材の活用相談にも無料で対応する相談窓口。",
+    "benefit_text": "相談無料(現金給付なし)",
+    "benefit_max_yen": null,
+    "conditions_text": "佐賀県内企業への就業・副業・兼業に関心がある個人、および専門人材の活用を検討する企業が対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "saga"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.saga-projinzai.com/",
+    "apply_method": "電話またはメールで事前予約のうえ、毎週木曜9時~17時の相談窓口(佐賀市白山)を利用する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "nagasaki-startup-support-subsidy",
+    "name": "長崎県創業支援事業補助金",
+    "category": "創業・開業支援",
+    "organization": "長崎県(地域づくり推進課)",
+    "summary": "地域課題解決に資する社会的事業分野でデジタル技術を活用し、長崎県内で個人事業の開業・法人設立を予定する人に対し創業経費の一部を補助する制度。",
+    "benefit_text": "補助率1/2以内、上限200万円",
+    "benefit_max_yen": 2000000,
+    "conditions_text": "交付決定日から事業完了日までに個人事業の開業届出または法人設立を行う予定で、長崎県内に居住または移住予定の人が対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "nagasaki"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.pref.nagasaki.jp/doc/page-391611.html",
+    "apply_method": "長崎県中小企業診断士協会を通じた間接補助方式。公式ページから公募要領・応募様式を確認し提出する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 2,
+    "related_offers": []
+  },
+  {
+    "id": "nagasaki-kokkyo-rito-startup-subsidy",
+    "name": "長崎県国境離島創業・事業拡大等支援事業(雇用機会拡充事業)",
+    "category": "移住支援",
+    "organization": "長崎県(地域づくり推進課)",
+    "summary": "対馬市・壱岐市・五島市など特定有人国境離島地域に居住して起業・事業拡大・地域外創業を行う人に、経費の3/4を最長5年間補助する離島振興セット型の創業支援制度。",
+    "benefit_text": "補助率3/4。創業は上限450万円(年600万円)、事業拡大は上限1200万円(年1600万円)、最長5年間",
+    "benefit_max_yen": 4500000,
+    "conditions_text": "対馬市・壱岐市・五島市・新上五島町・小値賀町等の国境離島地域に居住して起業する人、離島の事業所で事業拡大する人、または地域外創業者が対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "nagasaki"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.pref.nagasaki.jp/bunrui/kurashi-kankyo/chiikidukuri/rito-hanto-kaso/kokkyoritou/koyoukikaikakujyu/",
+    "apply_method": "対象市町ごとに公募要領を公表。各市町ホームページから応募書類を確認し申請する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 2,
+    "related_offers": []
+  },
+  {
+    "id": "nagasaki-professional-jinzai-matching",
+    "name": "長崎県プロフェッショナル人材戦略拠点",
+    "category": "自治体リスキリング支援",
+    "organization": "公益財団法人長崎県産業振興財団",
+    "summary": "都市部の専門人材と県内企業をつなぎ、常勤雇用だけでなく副業・兼業形態でのマッチングも無料で支援する相談窓口。",
+    "benefit_text": "相談無料(現金給付なし)",
+    "benefit_max_yen": null,
+    "conditions_text": "長崎県内企業への就業・副業・兼業に関心がある個人、および専門人材の活用を検討する企業が対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "nagasaki"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.projinzai-nagasaki.jp/",
+    "apply_method": "電話またはメールで問い合わせ、平日9時~17時の相談窓口を利用する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "kumamoto-community-issue-startup-subsidy",
+    "name": "熊本県地域課題解決型起業支援補助金",
+    "category": "創業・開業支援",
+    "organization": "公益財団法人くまもと産業支援財団",
+    "summary": "地域課題解決に資する社会的事業分野でデジタル技術を活用し、熊本県内で新たに起業する人に対し創業経費の一部を補助する制度。",
+    "benefit_text": "補助率1/2以内、上限200万円",
+    "benefit_max_yen": 2000000,
+    "conditions_text": "公募期間内に個人事業の開業届出または法人設立を行い代表者となる予定の人が対象。既に開業している人は対象外。",
+    "tags": {
+      "employment_status": [
+        "employee"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "kumamoto"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.kmj-backup.or.jp/news/1443/",
+    "apply_method": "交付要望書・事業計画書等をくまもと産業支援財団 起業化支援室へ郵送または持参で提出する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 2,
+    "related_offers": []
+  },
+  {
+    "id": "kumamoto-professional-jinzai-matching",
+    "name": "熊本県プロフェッショナル人材戦略拠点(プロベース)",
+    "category": "自治体リスキリング支援",
+    "organization": "熊本県産業振興部門",
+    "summary": "都市部の専門人材と県内企業を結び、正社員採用に限らず副業・兼業形態でのプロ人材マッチングも無料で支援する拠点。",
+    "benefit_text": "相談無料(現金給付なし)",
+    "benefit_max_yen": null,
+    "conditions_text": "熊本県内企業への就業・副業・兼業に関心がある個人、および専門人材の活用を検討する企業が対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "kumamoto"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://096prob.com/",
+    "apply_method": "電話またはメールでSAKURA MACHI Kumamoto内の相談窓口に問い合わせる。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "oita-community-issue-startup-subsidy",
+    "name": "大分県地域課題解決型起業支援事業",
+    "category": "創業・開業支援",
+    "organization": "公益財団法人大分県産業創造機構(おおいたスタートアップセンター)",
+    "summary": "地域課題解決に資する社会的事業分野でデジタル技術を活用し、大分県内で起業・事業承継・第二創業を行う人に経費の一部を補助する制度。",
+    "benefit_text": "補助率1/2、上限200万円",
+    "benefit_max_yen": 2000000,
+    "conditions_text": "社会的事業分野でのデジタル技術活用起業、Society5.0関連業種での事業承継、第二創業のいずれかに該当する人が対象。応募前の事前相談が必須。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "oita"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://startup.oita.jp/boshu/",
+    "apply_method": "事前相談後、公式サイトの公募要領に従い応募書類を作成し提出する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 2,
+    "related_offers": []
+  },
+  {
+    "id": "oita-women-matchwork-support",
+    "name": "大分県女性の多様な働き方支援事業(Match work)",
+    "category": "女性支援",
+    "organization": "大分県",
+    "summary": "就職・転職を希望する女性を対象に、合同企業説明会や就職相談、職場見学、適性診断などを無料で提供する再就職支援プログラム。",
+    "benefit_text": "参加無料(現金給付なし)、託児サービスあり",
+    "benefit_max_yen": null,
+    "conditions_text": "大分県内で就職・転職を希望する女性が対象。子育てや介護で離職し再就職を目指す人も含まれる。",
+    "tags": {
+      "employment_status": [
+        "unemployed_recent",
+        "part_time"
+      ],
+      "purpose": [
+        "career_change"
+      ],
+      "region": [
+        "oita"
+      ],
+      "gender": [
+        "female"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://mama-no-mama.jp/matchwork/",
+    "apply_method": "Google Formsから事前予約(予約なしでも当日参加可)。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "miyazaki-women-youth-startup-challenge-subsidy",
+    "name": "女性・若者応援!起業チャレンジ支援事業費補助金",
+    "category": "創業・開業支援",
+    "organization": "公益財団法人宮崎県産業振興機構",
+    "summary": "女性または35歳未満の若者等の新規起業・事業承継・第二創業を後押しするビジネスプランコンテスト等を通じ、経費の一部を補助する制度。",
+    "benefit_text": "補助率1/2以内。ビジネスプランコンテスト事業は上限300万円、地域魅力度アップ事業は上限100万円",
+    "benefit_max_yen": 3000000,
+    "conditions_text": "女性または35歳未満の若者(地域魅力度アップ事業は性別・年齢不問)で、宮崎県内在住または移住予定の新規起業者・事業承継者・第二創業者が対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "miyazaki"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.pref.miyazaki.lg.jp/shokoseisaku/shigoto/chushokigyo/20250422114116.html",
+    "apply_method": "宮崎県よろず支援拠点コーディネーターによる事前ブラッシュアップを経て、宮崎県産業振興機構へ応募書類を提出する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 2,
+    "related_offers": []
+  },
+  {
+    "id": "kagoshima-community-issue-startup-subsidy",
+    "name": "かごしま地域課題解決型起業支援事業",
+    "category": "創業・開業支援",
+    "organization": "鹿児島県",
+    "summary": "地域課題解決に資する社会的事業分野でデジタル技術を活用し、鹿児島県内で新たに起業・第二創業を行う人に経費の一部を補助する制度。",
+    "benefit_text": "補助額は申請額から減額される場合あり(採択件数は例年10件程度)",
+    "benefit_max_yen": null,
+    "conditions_text": "所定期間内に個人事業の開業届出または法人設立を行い代表者となる予定の人が対象。事業承継・第二創業も対象。",
+    "tags": {
+      "employment_status": [
+        "employee"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "kagoshima"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://kigyousien2026.pref.kagoshima.jp/",
+    "apply_method": "電子メールまたは郵送で交付要望書・事業計画書等を提出する(募集は年度ごとに実施)。",
+    "source_checked_at": "2026-07-29",
+    "priority": 2,
+    "related_offers": []
+  },
+  {
+    "id": "kagoshima-professional-jinzai-matching",
+    "name": "鹿児島県プロフェッショナル人材戦略拠点",
+    "category": "自治体リスキリング支援",
+    "organization": "内閣府・鹿児島県",
+    "summary": "県内中小企業の経営課題解決のため、常勤雇用に限らず高度副業・兼業形態でのプロフェッショナル人材マッチングを無料で支援する拠点。",
+    "benefit_text": "相談無料(現金給付なし)",
+    "benefit_max_yen": null,
+    "conditions_text": "鹿児島県内企業への就業・副業・兼業に関心がある個人、および専門人材の活用を検討する企業が対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "kagoshima"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.kagopro.jp/",
+    "apply_method": "電話またはメールフォームから無料相談を申し込む。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "okinawa-startup-support-subsidy",
+    "name": "沖縄県スタートアップ起業支援金",
+    "category": "創業・開業支援",
+    "organization": "沖縄県商工労働部産業政策課",
+    "summary": "デジタル技術を活用した社会課題解決型ビジネスで沖縄県内において起業する人に対し、人件費・事業費等の経費の一部を補助する制度。",
+    "benefit_text": "人件費補助率1/2以内、上限200万円",
+    "benefit_max_yen": 2000000,
+    "conditions_text": "株式会社または合同会社の設立を予定し、沖縄県内に居住(予定含む)してデジタル技術活用型の社会課題解決ビジネスを行う人が対象。既に個人事業を開業し同一事業を法人化する場合は対象外。",
+    "tags": {
+      "employment_status": [
+        "employee"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "okinawa"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.pref.okinawa.lg.jp/shigoto/keizai/1009879/1010143/1021963.html",
+    "apply_method": "専用応募ページから公募期間内(例年数回実施)に必要書類を提出する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 2,
+    "related_offers": []
+  },
+  {
+    "id": "okinawa-professional-jinzai-champloo",
+    "name": "沖縄県プロフェッショナル人材マッチング支援事業(人材チャンプルー)",
+    "category": "自治体リスキリング支援",
+    "organization": "公益財団法人沖縄県産業振興公社",
+    "summary": "県内中小企業の経営課題解決のため、転職・出向・副業等多様な形態でのプロフェッショナル人材マッチングを支援し、人材紹介手数料等の一部も企業向けに補助する事業。",
+    "benefit_text": "人材紹介手数料・渡航費の1/2を企業向けに補助(個人の相談・マッチングは無料)",
+    "benefit_max_yen": null,
+    "conditions_text": "沖縄県内企業への就業・副業・兼業に関心がある個人、および専門人材の活用を検討する企業が対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "okinawa"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "http://www.pro-jinzai.com/",
+    "apply_method": "電話または公式サイトの問い合わせフォームから無料相談を申し込む。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "toyama-startup-migration-grant",
+    "name": "起業なら富山！創業・移住支援事業(起業支援金)",
+    "category": "創業・開業支援",
+    "organization": "公益財団法人富山県新世紀産業機構(TONIO)",
+    "summary": "富山県内在住者または移住予定者が県指定の創業プログラム修了等の要件を満たし開業・法人設立する際、経費の一部を補助する起業支援金。移住者は加算あり。",
+    "benefit_text": "県内在住者は上限80万円(中山間地域100万円)、移住者は上限180万円(中山間地域200万円)、補助率1/2以内",
+    "benefit_max_yen": 1800000,
+    "conditions_text": "富山県内居住者または移住予定者で、県指定の創業プログラム修了・ビジネスコンテスト通過等いずれかの要件を満たし、期間内に開業届出または法人設立を行うこと。",
+    "tags": {
+      "employment_status": [
+        "employee"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "toyama"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.tonio.or.jp/search/r8kigyotoyama/",
+    "apply_method": "富山県新世紀産業機構(TONIO)のウェブサイトで募集要項を確認し、必要書類を郵送で提出する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "toyama-professional-jinzai-matching",
+    "name": "富山県プロフェッショナル人材戦略拠点(富山県人材活躍推進センター)",
+    "category": "副業・兼業人材マッチング支援",
+    "organization": "富山県人材活躍推進センター(富山県委託事業)",
+    "summary": "県内中小企業の経営課題解決のため、都市部等のプロ人材による副業・兼業を含む人材活用を無料でコーディネートする富山県の相談拠点。",
+    "benefit_text": "相談・マッチング支援は無料",
+    "benefit_max_yen": null,
+    "conditions_text": "副業・兼業で県内企業を支援したい専門スキルを持つ人材、および人材活用を検討する県内中小企業が対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "toyama"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://job-suishin.jp/",
+    "apply_method": "公式サイトの問い合わせフォームまたは電話で相談を申し込む。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "ishikawa-startup-migration-grant",
+    "name": "石川県移住・起業支援金制度",
+    "category": "創業・開業支援",
+    "organization": "公益財団法人石川県産業創出支援機構(ISICO)",
+    "summary": "東京圏から石川県へ移住する者が個人事業の開業または法人設立を行う際、経費の一部を補助する制度。移住支援金と合わせ最大300万円。",
+    "benefit_text": "起業支援金最大200万円(移住支援金と合わせ最大300万円)、補助率1/2以内",
+    "benefit_max_yen": 2000000,
+    "conditions_text": "移住前に東京23区に一定期間在住・通勤していた者が石川県へ移住し、期間内に個人事業の開業届出または法人設立を行い代表者となること。",
+    "tags": {
+      "employment_status": [
+        "employee"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "ishikawa"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.pref.ishikawa.lg.jp/kinyuu/keieishien/kigyoushienkin.html",
+    "apply_method": "石川県産業創出支援機構(ISICO)へ募集期間内に必要書類を提出する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "ishikawa-professional-jinzai-matching",
+    "name": "石川県プロフェッショナル人材戦略拠点",
+    "category": "副業・兼業人材マッチング支援",
+    "organization": "いしかわ就職・定住総合サポートセンター(ILAC)内 石川県プロフェッショナル人材戦略拠点",
+    "summary": "県内企業の経営革新のため、高度人材の採用や副業・兼業によるプロ人材活用を無料でコーディネートする石川県の相談拠点。",
+    "benefit_text": "相談・マッチング支援は無料",
+    "benefit_max_yen": null,
+    "conditions_text": "副業・兼業で県内企業を支援したい専門人材、および人材活用を検討する県内企業が対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "ishikawa"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.pro-jinzai.go.jp/kyoten/ishikawa/index.html",
+    "apply_method": "電話またはセンター窓口で相談を申し込む。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "fukui-startup-grant",
+    "name": "福井型スタートアップ創出支援事業補助金(スタートアップ創出枠)",
+    "category": "創業・開業支援",
+    "organization": "福井県産業労働部経営改革課",
+    "summary": "特徴あるビジネスモデルで福井県内において起業する者を対象に、事業費の一部を補助するスタートアップ支援制度。",
+    "benefit_text": "県内起業者・UIターン者は補助率2/3以内(上限100万円)、学生は補助率10/10(上限100万円)",
+    "benefit_max_yen": 1000000,
+    "conditions_text": "福井県内で特徴あるビジネスモデルにより起業する者(県内起業者・UIターン者・学生)で、5年目売上高が初年度の1.5倍以上見込めること等が必要。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "student"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "fukui"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.pref.fukui.lg.jp/doc/sinsan/sougyou.html",
+    "apply_method": "所定様式をダウンロードし、必要書類とともにメール(keieikaikaku@pref.fukui.lg.jp)で申請する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "fukui-professional-jinzai-matching",
+    "name": "ふくいプロフェッショナル人材総合戦略拠点",
+    "category": "副業・兼業人材マッチング支援",
+    "organization": "福井県(内閣府プロフェッショナル人材事業)",
+    "summary": "県内企業の経営革新のため、都市部人材の副業・兼業導入や採用支援を無料でコーディネートする福井県の相談拠点。",
+    "benefit_text": "相談・マッチング支援は無料",
+    "benefit_max_yen": null,
+    "conditions_text": "副業・兼業で県内企業を支援したい専門人材、および人材活用を検討する福井県内企業が対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "fukui"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://fukui-pro.pref.fukui.lg.jp",
+    "apply_method": "公式サイトから問い合わせ、または電話で相談を申し込む。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "fukui-women-career-support",
+    "name": "ふくい女性活躍支援センター",
+    "category": "女性支援",
+    "organization": "公益財団法人ふくい女性財団",
+    "summary": "再就職やキャリアアップ、育児休業からの復帰など女性の就労に関する相談・職業紹介をワンストップで行う福井県の支援センター。",
+    "benefit_text": "相談・利用は無料",
+    "benefit_max_yen": null,
+    "conditions_text": "再就職やキャリアアップを目指す、または子育て後の復職を考える福井県内の女性が対象。",
+    "tags": {
+      "employment_status": [],
+      "purpose": [
+        "skill_up",
+        "career_change"
+      ],
+      "region": [
+        "fukui"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.f-jhosei.or.jp/ladygo/ladygo",
+    "apply_method": "センターへ電話またはメールで相談を申し込む。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "gifu-startup-grant",
+    "name": "岐阜県スタートアップ等創業支援補助金",
+    "category": "創業・開業支援",
+    "organization": "公益財団法人岐阜県産業経済振興センター",
+    "summary": "新技術等を用いて地域課題の解決に資する事業を行う岐阜県内の新規創業者・第二創業者を支援する補助金。",
+    "benefit_text": "補助率1/2以内(女性・障がい者は2/3以内)、上限200万円",
+    "benefit_max_yen": 2000000,
+    "conditions_text": "新技術等を用いて地域の課題解決に資する事業を行う岐阜県内の新規創業者または第二創業者が対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "gifu"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.pref.gifu.lg.jp/site/pressrelease/429949.html",
+    "apply_method": "岐阜県産業経済振興センターのサイトから申請書をダウンロードし、持参または郵送で提出する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "gifu-professional-jinzai-matching",
+    "name": "岐阜県プロフェッショナル人材戦略拠点",
+    "category": "副業・兼業人材マッチング支援",
+    "organization": "公益財団法人岐阜県産業経済振興センター(岐阜県委託事業)",
+    "summary": "県内中小企業への巡回訪問や相談を通じ、副業・兼業を含むプロフェッショナル人材の採用・活用を無料で支援する岐阜県の拠点。",
+    "benefit_text": "相談は無料",
+    "benefit_max_yen": null,
+    "conditions_text": "副業・兼業で県内企業を支援したい専門人材、および人材活用を検討する県内中小企業が対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "gifu"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.gpc-gifu.or.jp/pro_jinzai/about.html",
+    "apply_method": "電話または公式サイトから相談を申し込む。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "gifu-women-career-support",
+    "name": "ぎふジョ！男女共同参画・女性の活躍支援センター",
+    "category": "女性支援",
+    "organization": "岐阜県子ども・女性部男女共同参画推進課",
+    "summary": "仕事と子育て・介護の両立やキャリアアップに悩む女性に伴走型のキャリアカウンセリングや講座を無料提供する岐阜県のセンター。",
+    "benefit_text": "キャリアカウンセリング・講座受講は無料",
+    "benefit_max_yen": null,
+    "conditions_text": "仕事と子育て・介護の両立に悩む、またはキャリアアップ・就労を目指す岐阜県内の女性が対象。",
+    "tags": {
+      "employment_status": [],
+      "purpose": [
+        "skill_up",
+        "career_change"
+      ],
+      "region": [
+        "gifu"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://gifujo.pref.gifu.lg.jp/support_center/",
+    "apply_method": "センターへ電話で相談予約するか、公式サイトから講座に申し込む。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "shizuoka-regional-startup-grant",
+    "name": "静岡県地域創生起業支援事業(創業者向け補助金)",
+    "category": "創業・開業支援",
+    "organization": "公益財団法人静岡県産業振興財団",
+    "summary": "交付決定後に開業・法人設立を行う者や、Society5.0関連分野で事業承継・第二創業を行う者を支援する静岡県の起業支援金。",
+    "benefit_text": "補助率1/2、上限200万円",
+    "benefit_max_yen": 2000000,
+    "conditions_text": "交付決定後に個人事業の開業届出または法人設立を行い代表者となる者、またはSociety5.0関連分野で事業承継・第二創業を行う者が対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "shizuoka"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.ric-shizuoka.or.jp/sougyou/shienkin/",
+    "apply_method": "静岡県産業振興財団へ問い合わせのうえ、募集期間内に申請書類を提出する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "shizuoka-professional-jinzai-matching",
+    "name": "静岡県プロフェッショナル人材戦略拠点(Shiz・Pro)",
+    "category": "副業・兼業人材マッチング支援",
+    "organization": "静岡県商工会議所連合会(静岡県委託事業)",
+    "summary": "常用雇用に加え副業・兼業によるプロ人材の活用を無料でコーディネートし、マッチング支援を受けた場合は県の補助金も利用できる静岡県の拠点。",
+    "benefit_text": "相談・マッチング支援は無料",
+    "benefit_max_yen": null,
+    "conditions_text": "副業・兼業で県内企業を支援したい専門人材、および人材活用を検討する静岡県内企業が対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "shizuoka"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://pro-shizuoka.com/about/",
+    "apply_method": "公式サイトまたは電話で相談を申し込む。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "shizuoka-digital-jinzai-course",
+    "name": "令和8年度デジタル化人材育成講座",
+    "category": "デジタル人材育成",
+    "organization": "静岡県中小企業団体中央会",
+    "summary": "生成AI活用などデジタルスキルを学べる、静岡県内の中小企業で働く社会人向けの低額講座。",
+    "benefit_text": "受講料3,000円(1名あたり、低額)",
+    "benefit_max_yen": null,
+    "conditions_text": "静岡県内の中小企業で働き、デジタルスキル(生成AI活用等)を学びたい社会人が対象。",
+    "tags": {
+      "employment_status": [
+        "employee"
+      ],
+      "purpose": [
+        "skill_up"
+      ],
+      "region": [
+        "shizuoka"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.siz-sba.or.jp/s/seminar/detail.html?CN=39342",
+    "apply_method": "ウェブサイトの申込みフォームから事前振込みのうえ申し込む。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "mie-startup-grant",
+    "name": "三重県起業支援金",
+    "category": "創業・開業支援",
+    "organization": "三重県雇用経済部産業イノベーション推進課",
+    "summary": "県外から三重県に移住した者が開業・法人設立、またはSociety5.0関連分野で事業承継・第二創業を行う際に経費の一部を補助する制度。",
+    "benefit_text": "補助率1/2以内、上限200万円",
+    "benefit_max_yen": 2000000,
+    "conditions_text": "転入前1年以上県外に居住し三重県へ移住した者で、期間内に開業届出または法人設立等を行い代表者となること。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "mie"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.pref.mie.lg.jp/TOPICS/m0360800096.htm",
+    "apply_method": "事務局(株式会社百五総合研究所)へ郵送またはメールで申請書類を提出する(持ち込み不可)。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "mie-professional-jinzai-matching",
+    "name": "三重県プロフェッショナル人材戦略拠点",
+    "category": "副業・兼業人材マッチング支援",
+    "organization": "公益財団法人三重県産業支援センター(Miesc)",
+    "summary": "プロフェッショナル人材の地方還流を促進し、副業・兼業を含む人材活用による県内企業の経営革新を無料で支援する三重県の拠点。",
+    "benefit_text": "相談は無料",
+    "benefit_max_yen": null,
+    "conditions_text": "副業・兼業で県内企業を支援したい専門人材、および人材活用を検討する三重県内企業が対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "mie"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.miesc.or.jp/projinzai/",
+    "apply_method": "電話または公式サイトから相談を申し込む。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "mie-women-career-support",
+    "name": "三重県女性の就職支援事業(地域活性化雇用創造プロジェクト)",
+    "category": "女性支援",
+    "organization": "公益財団法人三重県産業支援センター",
+    "summary": "再就職・キャリアアップを目指す女性向けに、800講座以上のeラーニングや個別相談を無料で提供する三重県の就労支援事業。",
+    "benefit_text": "相談・eラーニング受講は無料",
+    "benefit_max_yen": null,
+    "conditions_text": "再就職やキャリアアップ、家庭との両立に不安を持つ三重県内の女性が対象。",
+    "tags": {
+      "employment_status": [],
+      "purpose": [
+        "skill_up",
+        "career_change"
+      ],
+      "region": [
+        "mie"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.shigotosagashi.pref.mie.lg.jp/for-women/",
+    "apply_method": "公式サイトから相談予約・講座申込みを行う。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "shiga-local-venture-shien",
+    "name": "滋賀県ローカルベンチャー創出支援金",
+    "category": "創業・開業支援",
+    "organization": "滋賀県(実施:公益財団法人滋賀県産業支援プラザ)",
+    "summary": "デジタル技術を活用し地域課題解決や地域活性化に取り組む起業・第二創業・事業承継を行う者に対し、経費の1/2以内・上限200万円を補助する制度。",
+    "benefit_text": "補助率1/2以内・上限200万円",
+    "benefit_max_yen": 2000000,
+    "conditions_text": "滋賀県内で新たに起業する者(予定を含む)、第二創業を行う者、事業承継を行う者で、デジタル技術を活用し地域課題解決等に取り組む事業計画があること。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "startup",
+        "skill_up"
+      ],
+      "region": [
+        "shiga"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.shigaplaza.or.jp/service/sivs/",
+    "apply_method": "公式サイトから募集要項・様式をダウンロードし、事業計画書等を作成して期限までに提出する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "shiga-professional-jinzai-matching",
+    "name": "滋賀県プロフェッショナル人材活用補助金(副業・兼業人材マッチング支援)",
+    "category": "副業・兼業人材マッチング支援",
+    "organization": "滋賀県(実施:公益財団法人滋賀県産業支援プラザ 滋賀県プロフェッショナル人材戦略拠点)",
+    "summary": "県内中小企業がプロフェッショナル人材や副業・兼業人材を活用する際の成約手数料・移動費等を補助し、個人向けのマッチング相談も無料で行う制度。",
+    "benefit_text": "個人の相談・マッチング支援は無料(企業向け補助は成約手数料等の1/3〜4/5、上限概ね50万円)",
+    "benefit_max_yen": null,
+    "conditions_text": "滋賀県内企業で副業・兼業として専門スキルを活かして働きたい人材、および人材活用を検討する県内中小企業が対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "shiga"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.shigaplaza.or.jp/service/projin/",
+    "apply_method": "電話(077-511-1419)またはウェブから拠点に相談を申し込み、民間人材ビジネス事業者と連携したマッチングを受ける。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "kyoto-kigyo-shien-hojokin",
+    "name": "京都府起業支援事業費補助金",
+    "category": "創業・開業支援",
+    "organization": "京都府(産業労働観光部産業振興課)",
+    "summary": "地域課題解決に資する社会的事業での新規起業や、付加価値の高い分野での事業承継・第二創業を行う者に対し、経費の1/2以内・上限200万円を補助する制度。",
+    "benefit_text": "補助率1/2、上限200万円",
+    "benefit_max_yen": 2000000,
+    "conditions_text": "京都府内に居住(予定含む)し、募集期間内に個人事業開業届または法人設立を行う新規起業者、または事業承継・第二創業を行う者が対象。",
+    "tags": {
+      "employment_status": [
+        "employee"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "kyoto"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.pref.kyoto.jp/sangyo-sinko/startup/kigyoshienhojokin/index.html",
+    "apply_method": "起業予定地の中小企業応援隊で無料コンサルティングを受けて計画書類を作成し、募集期間内に提出する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "kyoto-professional-jinzai-matching",
+    "name": "京都府プロフェッショナル人材戦略拠点(副業・兼業人材マッチング支援)",
+    "category": "副業・兼業人材マッチング支援",
+    "organization": "京都府(公益財団法人京都産業21内 京都中小企業事業継続・創生支援センター)",
+    "summary": "京都府内の中小企業・スタートアップがプロフェッショナル人材や副業・兼業人材を業務委託等で活用する際の紹介手数料・報酬等を補助し、個人の相談は無料で受け付ける制度。",
+    "benefit_text": "個人の相談は無料(企業向け補助は経費の最大8/10、上限30〜50万円)",
+    "benefit_max_yen": null,
+    "conditions_text": "京都府内企業で副業・兼業として専門スキルを活かして働きたい人材、および人材活用を検討する中小企業・スタートアップが対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "kyoto"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.jigyo-keizoku.jp/prof/",
+    "apply_method": "電話(075-315-8897)またはメールフォームから拠点に相談を申し込む。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "kyoto-mothers-job-cafe",
+    "name": "マザーズジョブカフェ(京都ジョブパーク)",
+    "category": "女性支援",
+    "organization": "京都府(京都ジョブパーク)",
+    "summary": "学生を除くすべての女性を対象に、担当制のキャリアカウンセリングや職業紹介、保育付きセミナー、子ども一時預かり等を無料で提供する再就職支援施設。",
+    "benefit_text": "相談・セミナー参加・保育サービスは無料",
+    "benefit_max_yen": null,
+    "conditions_text": "京都府内で就業を希望する学生を除くすべての女性が対象。子育て中の方は保育室・キッズコーナーを無料で利用可能。",
+    "tags": {
+      "employment_status": [],
+      "purpose": [
+        "career_change",
+        "skill_up"
+      ],
+      "region": [
+        "kyoto"
+      ],
+      "gender": [
+        "female"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.pref.kyoto.jp/mothersjobcafe/",
+    "apply_method": "予約不要で施設を訪問し、登録・カウンセリングを受ける(初回は案内含め約1時間)。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "nara-kigyoka-shien-jigyo",
+    "name": "奈良県起業家支援事業",
+    "category": "創業・開業支援",
+    "organization": "奈良県",
+    "summary": "地域課題解決等に取り組む起業・事業承継・第二創業に対し経費の1/2以内・上限200万円を補助し、東京23区からの移住者向け特別枠やシニア枠(最大2者)も設けた制度。",
+    "benefit_text": "補助率1/2以内、上限200万円(移住者は市町村の移住支援金と併用可能な場合あり)",
+    "benefit_max_yen": 2000000,
+    "conditions_text": "奈良県内に居住(予定含む)する個人事業主または法人代表者(予定含む)で、住民税を滞納していない中小企業者等が対象。",
+    "tags": {
+      "employment_status": [
+        "employee"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "nara"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.pref.nara.lg.jp/kigyokashien/index.html",
+    "apply_method": "公式サイトのエントリーフォームに入力し、必要書類をメールで提出して応募完了となる。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "nara-professional-jinzai-matching",
+    "name": "奈良県プロフェッショナル人材戦略拠点(奈良しごとiセンター)",
+    "category": "副業・兼業人材マッチング支援",
+    "organization": "奈良県(奈良県プロフェッショナル人材戦略拠点)",
+    "summary": "県内中小企業が経営課題解決のためプロフェッショナル人材を確保する際の紹介手数料を県が補助し、フルタイム雇用に加え副業・兼業での人材活用にも対応する拠点。",
+    "benefit_text": "個人の相談は無料(企業向けに紹介手数料等を補助、予算上限あり)",
+    "benefit_max_yen": null,
+    "conditions_text": "奈良県内企業で副業・兼業として専門スキルを活かして働きたい人材、および人材活用を検討する県内中小企業が対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "nara"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.pref.nara.lg.jp/n107/42323.html",
+    "apply_method": "電話(0742-27-3171〜3172)で拠点(奈良しごとiセンター)に相談を申し込む。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "nara-womens-center-saishushoku-sodan",
+    "name": "奈良県女性センター 女性の再就職準備相談",
+    "category": "女性支援",
+    "organization": "奈良県(奈良県女性センター)",
+    "summary": "就労を希望する女性を対象に、求職準備から本格的な就職活動・起業まで無料でキャリア相談を行う奈良県女性センターの支援事業。県内5地域のサテライト相談も実施。",
+    "benefit_text": "相談・セミナー等は無料",
+    "benefit_max_yen": null,
+    "conditions_text": "奈良県内で就労・再就職・起業を希望する女性が対象。電話または予約制の対面相談で利用できる。",
+    "tags": {
+      "employment_status": [],
+      "purpose": [
+        "career_change",
+        "startup",
+        "skill_up"
+      ],
+      "region": [
+        "nara"
+      ],
+      "gender": [
+        "female"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.pref.nara.lg.jp/n002/55444.html",
+    "apply_method": "電話(0742-24-1150)で予約するか、サテライト相談窓口へ問い合わせる。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "wakayama-chiiki-kadai-kaiketsu-kigyo-hojokin",
+    "name": "わかやま地域課題解決型起業支援補助金",
+    "category": "創業・開業支援",
+    "organization": "和歌山県(公益財団法人わかやま産業振興財団)",
+    "summary": "デジタル技術を活用して地域課題解決を目的とした起業や、Society5.0関連分野での事業承継・第二創業を行う者に対し、経費の1/2以内・上限200万円を補助する制度。",
+    "benefit_text": "補助率1/2以内、上限200万円",
+    "benefit_max_yen": 2000000,
+    "conditions_text": "和歌山県の地域再生計画に定める分野でデジタル技術を活用し、地域課題解決を目的とした起業(予定を含む)、または事業承継・第二創業を行う者が対象。",
+    "tags": {
+      "employment_status": [
+        "employee"
+      ],
+      "purpose": [
+        "startup"
+      ],
+      "region": [
+        "wakayama"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.pref.wakayama.lg.jp/prefg/061000/d00201895.html",
+    "apply_method": "わかやま産業振興財団の募集案内から申請書類をダウンロードし、募集期間内(例年4〜5月頃)に提出する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "wakayama-professional-jinzai-matching",
+    "name": "和歌山県プロフェッショナル人材戦略拠点(副業・兼業人材マッチング支援)",
+    "category": "副業・兼業人材マッチング支援",
+    "organization": "和歌山県(公益財団法人わかやま産業振興財団内)",
+    "summary": "県内中小企業と、都市部の大企業に勤務し自身の知見・スキルを活かしたいプロフェッショナル人材とのマッチングを支援し、正規雇用・副業兼業の両方に対応する拠点。",
+    "benefit_text": "個人の相談・マッチング支援は無料",
+    "benefit_max_yen": null,
+    "conditions_text": "和歌山県内企業で副業・兼業として専門スキルを活かして働きたい人材、および人材活用を検討する県内中小企業が対象。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "self_employed"
+      ],
+      "purpose": [
+        "side_job",
+        "career_change"
+      ],
+      "region": [
+        "wakayama"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://yarukiouendan.or.jp/business/professional/",
+    "apply_method": "わかやま産業振興財団の拠点に電話・メールで相談を申し込む。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "wakayama-hataracoode-josei-shien",
+    "name": "はたらコーデわかやま(わかやま就職支援センター 女性再就職支援)",
+    "category": "女性支援",
+    "organization": "和歌山県(わかやま就職支援センター)",
+    "summary": "結婚・出産等で離職した女性を含む求職者に対し、キャリアコンサルタントによる個別相談・適職診断・セミナーを無料で提供する就職支援センター。ウェブ面談にも対応。",
+    "benefit_text": "相談・セミナー参加は無料",
+    "benefit_max_yen": null,
+    "conditions_text": "和歌山県内で再就職・就職を希望する女性等が対象。電話・来所またはウェブ面談で利用できる。",
+    "tags": {
+      "employment_status": [],
+      "purpose": [
+        "career_change",
+        "skill_up"
+      ],
+      "region": [
+        "wakayama"
+      ],
+      "gender": [
+        "female"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://hataracoorde.com/",
+    "apply_method": "公式サイトまたは電話で来所予約・ウェブ面談を申し込む。",
+    "source_checked_at": "2026-07-29",
+    "priority": 3,
+    "related_offers": []
+  },
+  {
+    "id": "high-age-employment-continuation-benefit",
+    "name": "高年齢雇用継続給付(高年齢雇用継続基本給付金)",
+    "category": "高年齢者雇用支援",
+    "organization": "厚生労働省(ハローワーク)",
+    "summary": "60歳以降も働き続ける雇用保険被保険者を対象に、60歳到達時と比べ賃金が75%未満に低下した場合、賃金の最大10%相当額を毎月上乗せ支給する制度。",
+    "benefit_text": "賃金の最大10%相当額を毎月支給(低下率に応じて逓減、支給限度額あり)",
+    "benefit_max_yen": null,
+    "conditions_text": "60歳以上65歳未満の雇用保険被保険者で、被保険者期間が通算5年以上あり、60歳到達時点と比べ賃金が75%未満に低下していること。",
+    "tags": {
+      "employment_status": [
+        "employee"
+      ],
+      "purpose": [
+        "career_change"
+      ],
+      "region": [
+        "nationwide"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        60,
+        64
+      ],
+      "requires_employment_insurance": true
+    },
+    "apply_url": "https://www.hellowork.mhlw.go.jp/insurance/insurance_continue.html",
+    "apply_method": "事業主が「高年齢雇用継続給付支給申請書」を管轄ハローワークへ提出。初回は支給対象月の初日から4ヶ月以内、以降は原則2ヶ月ごとに申請する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 1,
+    "related_offers": []
+  },
+  {
+    "id": "education-training-support-benefit",
+    "name": "教育訓練支援給付金",
+    "category": "教育訓練給付",
+    "organization": "厚生労働省",
+    "summary": "45歳未満の離職者が専門実践教育訓練を初めて受講する際、訓練期間中の生活を支えるため基本手当に上乗せして支給される時限的な給付金。",
+    "benefit_text": "基本手当日額の60%相当額を訓練期間中に支給(令和9年3月31日までの時限措置。令和7年3月31日以前に受講開始した場合は80%)",
+    "benefit_max_yen": null,
+    "conditions_text": "受講開始時45歳未満の離職者で、雇用保険の基本手当受給資格がなく、初めて専門実践教育訓練(通信制・夜間制を除く)を受講すること。",
+    "tags": {
+      "employment_status": [
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "skill_up",
+        "career_change"
+      ],
+      "region": [
+        "nationwide"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        44
+      ],
+      "requires_employment_insurance": true
+    },
+    "apply_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/jinzaikaihatsu/kyouiku.html",
+    "apply_method": "専門実践教育訓練の受給資格確認と同時にハローワークで申請し、訓練期間中は原則1ヶ月ごとに失業認定を受けて支給される。",
+    "source_checked_at": "2026-07-29",
+    "priority": 1,
+    "related_offers": [
+      "specialized-practical-education-training-benefit"
+    ]
+  },
+  {
+    "id": "national-pension-premium-exemption",
+    "name": "国民年金保険料免除・納付猶予制度",
+    "category": "年金保険料減免",
+    "organization": "日本年金機構",
+    "summary": "失業・収入減少などで国民年金保険料の納付が困難な人向けに、所得に応じて全額〜4分の1の保険料免除、または50歳未満向けの納付猶予を認める制度。",
+    "benefit_text": "保険料の全額・4分の3・半額・4分の1のいずれかを免除、または50歳未満は納付猶予(猶予期間分は10年以内なら追納可能)",
+    "benefit_max_yen": null,
+    "conditions_text": "本人・配偶者・世帯主の前年所得が一定基準以下、または失業・退職等の特例に該当する20歳以上60歳未満の国民年金第1号被保険者。",
+    "tags": {
+      "employment_status": [
+        "self_employed",
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "side_job",
+        "startup"
+      ],
+      "region": [
+        "nationwide"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        20,
+        59
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.nenkin.go.jp/service/kokunen/menjo/index.html",
+    "apply_method": "住所地の市区町村役場の国民年金担当窓口、年金事務所、または郵送・電子申請で「国民年金保険料免除・納付猶予申請書」を提出する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 1,
+    "related_offers": []
+  },
+  {
+    "id": "disabled-vocational-ability-development-school",
+    "name": "障害者職業能力開発校",
+    "category": "障害者就労支援",
+    "organization": "厚生労働省・都道府県",
+    "summary": "障害のある人が無料で職業に必要な知識・技能を習得できる公共職業訓練施設。全国の障害者職業能力開発校で個々の障害特性に配慮した訓練を実施する。",
+    "benefit_text": "受講料無料(テキスト代等の実費は自己負担となる場合あり)",
+    "benefit_max_yen": null,
+    "conditions_text": "身体障害・知的障害・精神障害等があり、就職を希望してハローワークで求職申込みをしている人。",
+    "tags": {
+      "employment_status": [
+        "unemployed_recent",
+        "student"
+      ],
+      "purpose": [
+        "skill_up",
+        "career_change"
+      ],
+      "region": [
+        "nationwide"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false
+    },
+    "apply_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/jinzaikaihatsu/shougaisha.html",
+    "apply_method": "最寄りのハローワークに相談し、障害者職業能力開発校への受講あっせんを受けたうえで入校選考(面接等)を受ける。",
+    "source_checked_at": "2026-07-29",
+    "priority": 1,
+    "related_offers": []
+  },
+  {
+    "id": "early-reemployment-allowance",
+    "name": "再就職手当",
+    "category": "就職促進給付",
+    "organization": "厚生労働省(ハローワーク)",
+    "summary": "雇用保険の基本手当受給者が所定給付日数を多く残して早期に安定した職業に再就職した場合、残日数に応じた手当を一時金で支給する制度。",
+    "benefit_text": "支給残日数×給付率(60%または70%)×基本手当日額(基本手当日額の上限は年齢区分ごとに設定)",
+    "benefit_max_yen": null,
+    "conditions_text": "基本手当の支給残日数が所定給付日数の3分の1以上ある受給資格者が、1年を超えて勤務することが確実な安定した職業に就いた場合。",
+    "tags": {
+      "employment_status": [
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "career_change"
+      ],
+      "region": [
+        "nationwide"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": true
+    },
+    "apply_url": "https://www.hellowork.mhlw.go.jp/insurance/insurance_stepup.html",
+    "apply_method": "再就職後、「再就職手当支給申請書」に必要事項を記入し事業主の証明を得て、管轄ハローワークへ提出する。",
+    "source_checked_at": "2026-07-29",
+    "priority": 1,
+    "related_offers": []
+  },
+  {
+    "id": "high-age-job-seeker-benefit",
+    "name": "高年齢求職者給付金",
+    "category": "高年齢者雇用支援",
+    "organization": "厚生労働省(ハローワーク)",
+    "summary": "65歳以上で雇用保険に加入していた人が離職した際、被保険者期間に応じて基本手当相当額を一時金でまとめて受け取れる制度。老齢年金との併給が可能。",
+    "benefit_text": "基本手当日額の30日分(被保険者期間1年未満)または50日分(1年以上)を一時金で支給(非課税)",
+    "benefit_max_yen": null,
+    "conditions_text": "離職日以前1年間に被保険者期間が通算6ヶ月以上ある65歳以上の高年齢被保険者で、離職し求職の申込みをしていること。",
+    "tags": {
+      "employment_status": [
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "career_change"
+      ],
+      "region": [
+        "nationwide"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        65,
+        null
+      ],
+      "requires_employment_insurance": true
+    },
+    "apply_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/koyouhoken/index_00003.html",
+    "apply_method": "離職後、管轄ハローワークで求職申込みを行い、「高年齢求職者給付金支給申請書」を提出する(離職日翌日から1年以内)。",
+    "source_checked_at": "2026-07-29",
+    "priority": 1,
     "related_offers": []
   }
 ]
