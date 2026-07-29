@@ -16,13 +16,22 @@ python -m http.server 8000
 ```
 subsidy-checker/
 ├─ index.html          … 診断フォーム+結果表示のSPA本体
+├─ .nojekyll             … GitHub PagesのJekyll処理を無効化(空ファイル)
+├─ robots.txt            … sitemap.xmlの場所を記載(生成)
+├─ sitemap.xml           … 全ページのURL一覧(生成)
 ├─ css/style.css        … ライト/ダーク対応スタイル(CSS変数)
 ├─ js/
 │   ├─ data.js           … SUBSIDIES配列(data/subsidies.jsonのコピー、グローバル変数として埋め込み)
+│   ├─ regions.js         … 都道府県コード⇔ラベル変換表(ブラウザ/Node両対応)
 │   ├─ match.js           … タグベースのスコアリングによるマッチングエンジン(純粋関数、DOM非依存)
 │   ├─ quiz.js            … 質問フロー・状態管理・DOM描画
-│   └─ render.js          … 結果カードのDOM生成
-└─ data/subsidies.json  … データの原本(人間が編集する場所)
+│   └─ render.js          … 結果カードのDOM生成(詳細ページへのリンク含む)
+├─ data/subsidies.json  … データの原本(人間が編集する場所)
+├─ scripts/
+│   └─ generate-seo-pages.js … SEO用の制度別静的ページ・一覧・sitemap.xml・robots.txtを生成するスクリプト
+└─ seido/                … 生成されるSEOページ(制度ごとの個別ページ+一覧ページ)
+    ├─ index.html          … 制度一覧(カテゴリ別)
+    └─ {id}/index.html     … 制度ごとの詳細ページ(125件)
 ```
 
 ## データの更新手順
@@ -35,6 +44,12 @@ subsidy-checker/
    printf ';\n' >> js/data.js
    ```
 3. `node --check js/data.js` で構文チェック、下記の動作確認コマンドでマッチングロジックが壊れていないか確認する。
+4. SEO用の個別ページ・一覧・sitemap.xml・robots.txtを再生成する:
+   ```
+   node scripts/generate-seo-pages.js
+   ```
+   このコマンドは`seido/`フォルダを一度削除してから作り直すため、`id`を変更・削除した制度がある場合は古いURLのページが自動的に消える(以後404になる)。運用上`id`は変更しないことを推奨。新しい`category`を追加した場合は`scripts/generate-seo-pages.js`内の`CATEGORY_KEYWORDS`にも追加しないとスクリプトがエラーで停止する(未登録カテゴリが一覧ページから漏れるのを防ぐための安全策)。
+5. `node --check scripts/generate-seo-pages.js`で構文チェック、`git status`で`seido/`配下の追加・削除件数が想定通りか確認してからコミットする。
 
 ### tagsフィールドの語彙
 
@@ -68,6 +83,18 @@ subsidy-checker/
 - 一部制度(熊本・鹿児島・沖縄の創業支援補助金など)は「既に開業している人は対象外」と明記されており`employment_status`が`["employee"]`のみになっている。地域によって「創業予定者のみ」「開業済みのみ」「両方可」がバラバラなので、追加時は必ず原文の条件を確認すること。
 - 千葉・兵庫・熊本・大分・鹿児島・宮崎の創業系補助金は年度ごとの公募制のため、直近の公募が終了している可能性がある(例年継続実施されている制度として掲載)。次年度公募時期の確認は継続課題。
 - リサーチ中、背景並列実行させたエージェントの一部が実際の調査を完了させず「調査中です」という報告だけで停止する不具合が複数回発生した(サブエージェント内でさらに別エージェントに委譲する挙動が原因と推測)。再実行時は「自分自身で完結させ、進捗報告だけで終わらせないこと」と明示的に指示することで解決した。同様の大規模並列リサーチを行う際は、事前にこの一文を含めることを推奨する。
+
+## SEO用の個別ページ(2026-07-29追加)
+
+診断アプリ本体はSPAでクローラーが個々の制度情報を直接インデックスできないため、`scripts/generate-seo-pages.js`で制度ごとの静的ページを機械生成している。
+
+- `subsidy-checker/seido/{id}/index.html`: 制度1件ごとの詳細ページ。title/meta description/canonical/JSON-LD(`GovernmentService`)付き、診断アプリへの誘導CTAあり。
+- `subsidy-checker/seido/index.html`: カテゴリ別に全件を一覧できるページ(JS任意の絞り込み入力欄付き)。
+- `sitemap.xml`・`robots.txt`: 生成スクリプトが自動作成。
+- `js/render.js`の結果カードにも「この制度の詳細ページを見る」という内部リンクを追加し、診断アプリ↔個別ページの内部リンク構造を作っている。
+- タイトルタグは制度名によっては60字を超える場合がある(最長43字の制度名 + 都道府県名 + カテゴリキーワード)。今回は機械生成を優先しており、個別の文字数最適化は行っていない。
+- マネタイズ導線(`related_offers`)は個別ページ側では今回呼び出していない(空配列のため実質未使用、将来追加する場合は`js/render.js`の`buildOfferLinks`相当のロジックを`scripts/generate-seo-pages.js`にも実装する必要がある)。
+- デプロイ後はGoogle Search Consoleに`sitemap.xml`を送信することを推奨(今回のスコープ外、手動作業)。
 
 ## マッチングロジックの手動テスト
 

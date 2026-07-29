@@ -322,6 +322,14 @@ html, body {
   margin: 0 0 14px;
 }
 
+.result-card__checked {
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+  margin: 12px 0 0;
+  padding-top: 10px;
+  border-top: 1px dashed var(--color-border);
+}
+
 .result-card__actions {
   display: flex;
   flex-wrap: wrap;
@@ -394,4 +402,97 @@ html, body {
 @media (min-width: 640px) {
   .app-header__title { font-size: 2rem; }
   .sp-only { display: none; }
+}
+
+/* --- SEO個別ページ・一覧ページ用 --- */
+
+.breadcrumb {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  margin-bottom: 16px;
+}
+.breadcrumb a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+.breadcrumb a:hover { text-decoration: underline; }
+
+.detail-card__title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin: 4px 0 8px;
+  text-wrap: balance;
+}
+.detail-card__org {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin: 0 0 14px;
+}
+.detail-card__summary { margin: 0 0 18px; }
+
+.detail-fields { margin: 0 0 18px; }
+.detail-field { margin-bottom: 14px; }
+.detail-field dt {
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-bottom: 4px;
+}
+.detail-field dd { margin: 0; }
+
+.detail-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.detail-cta { text-align: center; }
+.detail-back {
+  text-align: center;
+  font-size: 0.85rem;
+  margin: 8px 0 24px;
+}
+.detail-back a { color: var(--color-primary); }
+
+.result-card__link--detail {
+  color: var(--color-text-muted);
+  border-color: var(--color-border);
+}
+.result-card__link--detail:hover { background: var(--color-badge-bg); }
+
+.seido-list__section { margin-bottom: 28px; }
+.seido-list__heading {
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin: 0 0 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--color-border);
+}
+.seido-list__group {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+.seido-list__link {
+  display: block;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  text-decoration: none;
+  color: var(--color-text);
+  box-shadow: var(--shadow-card);
+}
+.seido-list__link:hover { border-color: var(--color-primary); }
+.seido-list__name {
+  display: block;
+  font-weight: 700;
+  margin: 6px 0 4px;
+}
+.seido-list__summary {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
 }

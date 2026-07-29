@@ -20,6 +20,17 @@ function formatYen(yen) {
   return `上限目安 ${yen.toLocaleString("ja-JP")}円`;
 }
 
+function formatCheckedDate(dateStr) {
+  if (!dateStr) return null;
+  const [y, m, d] = dateStr.split("-");
+  if (!y || !m || !d) return null;
+  return `${y}年${Number(m)}月${Number(d)}日 時点で確認`;
+}
+
+function buildDetailPageLink(subsidy) {
+  return `<a class="result-card__link result-card__link--detail" href="seido/${escapeHtml(subsidy.id)}/">この制度の詳細ページを見る</a>`;
+}
+
 function buildOfferLinks(subsidy) {
   const offers = subsidy.related_offers || [];
   if (offers.length === 0) return "";
@@ -41,6 +52,7 @@ function buildResultCard(subsidy) {
   }
 
   const yenLine = formatYen(subsidy.benefit_max_yen);
+  const checkedLine = formatCheckedDate(subsidy.source_checked_at);
 
   return `
     <article class="result-card">
@@ -52,8 +64,10 @@ function buildResultCard(subsidy) {
       <p class="result-card__conditions">対象条件: ${escapeHtml(subsidy.conditions_text)}</p>
       <div class="result-card__actions">
         <a class="result-card__link" href="${escapeHtml(subsidy.apply_url)}" target="_blank" rel="noopener">公式サイトで詳細を見る →</a>
+        ${buildDetailPageLink(subsidy)}
         ${buildOfferLinks(subsidy)}
       </div>
+      ${checkedLine ? `<p class="result-card__checked">${escapeHtml(checkedLine)}</p>` : ""}
     </article>
   `;
 }
