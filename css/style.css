@@ -352,6 +352,16 @@ html, body {
 .result-card__link--offer {
   color: var(--color-accent);
   border-color: var(--color-accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.badge--pr {
+  background: var(--color-accent);
+  color: var(--color-primary-contrast);
+  font-size: 0.62rem;
+  padding: 2px 6px;
 }
 
 .result-empty {

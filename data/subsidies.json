@@ -35,6 +35,23 @@
     "source_checked_at": "2026-07-28",
     "priority": 1,
     "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": [
       "specified-general-education-training-benefit",
       "specialized-practical-education-training-benefit"
     ]
@@ -75,6 +92,23 @@
     "source_checked_at": "2026-07-28",
     "priority": 1,
     "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": [
       "general-education-training-benefit",
       "specialized-practical-education-training-benefit"
     ]
@@ -115,6 +149,23 @@
     "source_checked_at": "2026-07-28",
     "priority": 1,
     "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": [
       "general-education-training-benefit",
       "specified-general-education-training-benefit"
     ]
@@ -153,7 +204,24 @@
     "apply_method": "ハローワークで求職申込・職業相談を行い、求職者支援訓練を受講しながら訓練開始後にハローワークで給付金を申請する。",
     "source_checked_at": "2026-07-28",
     "priority": 1,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "small-business-sustainability-subsidy-startup",
@@ -189,6 +257,28 @@
     "source_checked_at": "2026-07-28",
     "priority": 1,
     "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": [
       "tokyo-startup-subsidy",
       "local-startup-support-subsidy"
     ]
@@ -226,7 +316,24 @@
     "apply_method": "東京しごと財団の公式サイトから交付申請書等をダウンロードし、研修受講前に電子申請システムで交付申請を行う。",
     "source_checked_at": "2026-07-28",
     "priority": 2,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "osaka-skillup-support-fund",
@@ -264,6 +371,23 @@
     "source_checked_at": "2026-07-28",
     "priority": 2,
     "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": [
       "osaka-reskilling-support-power-up"
     ]
   },
@@ -303,7 +427,34 @@
     "apply_method": "特設サイトから参加募集期間中にエントリーし、ママと女性の就業支援センターの利用登録(無料)を行う。",
     "source_checked_at": "2026-07-28",
     "priority": 2,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "uij-turn-relocation-support",
@@ -341,6 +492,33 @@
     "source_checked_at": "2026-07-28",
     "priority": 2,
     "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": [
       "local-startup-support-subsidy"
     ]
   },
@@ -380,6 +558,28 @@
     "source_checked_at": "2026-07-28",
     "priority": 2,
     "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": [
       "uij-turn-relocation-support",
       "small-business-sustainability-subsidy-startup"
     ]
@@ -420,6 +620,23 @@
     "source_checked_at": "2026-07-28",
     "priority": 2,
     "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": [
       "single-parent-vocational-training-promotion-benefit"
     ]
   },
@@ -458,6 +675,23 @@
     "source_checked_at": "2026-07-28",
     "priority": 2,
     "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": [
       "single-parent-education-training-benefit"
     ]
   },
@@ -495,7 +729,24 @@
     "apply_method": "東京しごとセンター(女性しごと応援テラス)の窓口またはウェブサイトから利用登録・予約をして相談やセミナーに参加する。",
     "source_checked_at": "2026-07-28",
     "priority": 2,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "tokyo-startup-subsidy",
@@ -532,6 +783,28 @@
     "source_checked_at": "2026-07-28",
     "priority": 2,
     "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": [
       "small-business-sustainability-subsidy-startup"
     ]
   },
@@ -571,6 +844,28 @@
     "source_checked_at": "2026-07-28",
     "priority": 3,
     "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": [
       "tokyo-startup-subsidy"
     ]
   },
@@ -611,6 +906,23 @@
     "source_checked_at": "2026-07-28",
     "priority": 3,
     "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": [
       "osaka-skillup-support-fund"
     ]
   },
@@ -648,7 +960,29 @@
     "apply_method": "公式サイトまたは電話・メールでセンターに相談を申し込み、副業・兼業案件のマッチングを受ける。",
     "source_checked_at": "2026-07-28",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "manabi-dx-women-recommended-courses",
@@ -682,7 +1016,34 @@
     "apply_method": "マナビDXサイトで「特に女性におすすめ」カテゴリから講座を検索し、各講座提供事業者のページから直接申し込む。",
     "source_checked_at": "2026-07-28",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "kanagawa-dx-reskilling-jinzai-ikusei",
@@ -716,7 +1077,14 @@
     "apply_method": "公式サイトから募集要項を確認し、企業単位で応募書類を提出。書類選考を経て採択企業が受講を開始する。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "kanagawa-women-career-counseling",
@@ -752,7 +1120,24 @@
     "apply_method": "電話等で事前予約のうえ、マザーズハローワーク横浜内の相談室を利用する。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "aichi-startup-subsidy",
@@ -787,6 +1172,23 @@
     "source_checked_at": "2026-07-29",
     "priority": 3,
     "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": [
       "tokyo-startup-subsidy",
       "small-business-sustainability-subsidy-startup"
     ]
@@ -825,7 +1227,24 @@
     "apply_method": "電話・メール・FAX・窓口で相談を予約し、カウンセリングやセミナーを利用する。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "saitama-women-digital-jinzai-training",
@@ -863,7 +1282,34 @@
     "apply_method": "埼玉県女性キャリアセンター(電話048-601-5810)へ問い合わせ、開講月ごとの募集に申し込む。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "saitama-startup-social-challenge-program",
@@ -899,7 +1345,24 @@
     "apply_method": "創業・ベンチャー支援センター埼玉へ相談のうえ、募集要項に従い応募書類を提出する。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "chiba-startup-support-subsidy",
@@ -934,7 +1397,24 @@
     "apply_method": "受付審査後、外部委員によるプレゼンテーション審査を経て採択が決定する(例年4月頃募集)。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "chiba-job-support-center",
@@ -971,7 +1451,24 @@
     "apply_method": "電話等で事前予約のうえジョブサポちばの窓口を利用する。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "hokkaido-startup-promotion-subsidy",
@@ -1006,7 +1503,24 @@
     "apply_method": "直近の公募要項を確認のうえ北海道中小企業総合支援センターへ申請書類を提出する。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "hokkaido-professional-jinzai-matching",
@@ -1043,6 +1557,28 @@
     "source_checked_at": "2026-07-29",
     "priority": 3,
     "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": [
       "fukuoka-professional-jinzai-matching"
     ]
   },
@@ -1079,7 +1615,24 @@
     "apply_method": "商工会・商工会議所またはよろず支援拠点で事前相談後、オンラインフォームで応募し書面を提出する。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "hyogo-women-challenge-counseling",
@@ -1117,7 +1670,39 @@
     "apply_method": "予約専用電話(078-360-8554)で申し込み、対面・オンライン・電話のいずれかで相談を受ける。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "miyagi-startup-acceleration-subsidy",
@@ -1152,7 +1737,24 @@
     "apply_method": "事前に電話・メールで相談のうえ申請書類を作成し、募集期間中にみやぎ産業振興機構へ持参提出する。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "miyagi-women-career-restart-support",
@@ -1187,7 +1789,24 @@
     "apply_method": "平日火〜金10:00〜18:00に対面またはオンラインで予約し、1回90〜120分程度のカウンセリングを受ける。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "aomori-startup-subsidy",
@@ -1223,7 +1842,34 @@
     "apply_method": "所定の申請書類・事業計画書等を21あおもり産業総合支援センターへ郵送または持参で提出し、審査を受ける。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "aomori-professional-jinzai-matching",
@@ -1259,7 +1905,29 @@
     "apply_method": "電話またはメールで拠点に相談を申し込み、民間人材ビジネス事業者と連携したマッチングを受ける。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "iwate-startup-subsidy",
@@ -1295,7 +1963,34 @@
     "apply_method": "執行団体(岩手県中小企業団体中央会)のサイトから公募要領・申請様式をダウンロードし、必要書類を添えて提出する。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "iwate-professional-jinzai-matching",
@@ -1331,7 +2026,29 @@
     "apply_method": "電話・メール、またはWebの「副業・兼業人材調査票」から拠点に問い合わせ、マッチング支援を受ける。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "akita-digital-academy",
@@ -1368,7 +2085,24 @@
     "apply_method": "公式サイトから受講申込を行い、希望職種・スキルレベルに応じた学習パスでeラーニング等を受講する。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "akita-startup-subsidy-youth",
@@ -1403,7 +2137,24 @@
     "apply_method": "最寄りの商工会または商工会議所に相談のうえ、申請書類一式を提出する。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "akita-professional-jinzai-matching",
@@ -1439,7 +2190,29 @@
     "apply_method": "電話・メールで拠点に相談し、マネージャーによるマッチング支援を受ける。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "yamagata-startup-subsidy",
@@ -1475,7 +2248,34 @@
     "apply_method": "募集要領を確認のうえ、事業計画書等の必要書類を最寄りの商工会議所・商工会経由で提出する。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "yamagata-professional-jinzai-matching",
@@ -1511,7 +2311,29 @@
     "apply_method": "電話または問い合わせフォームで拠点に相談し、マッチング支援を受ける。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "yamagata-women-career-restart",
@@ -1547,7 +2369,24 @@
     "apply_method": "公式サイトまたは電話(023-673-0515)から相談・セミナー参加を申し込む。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "fukushima-startup-subsidy",
@@ -1583,7 +2422,34 @@
     "apply_method": "事業計画書・住民票・県税納税証明書等を添えて福島県産業振興センターへ郵送または持参で提出する。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "fukushima-professional-jinzai-matching",
@@ -1619,7 +2485,29 @@
     "apply_method": "マッチングサイトに登録し、事業者からの募集案件に直接応募する。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "fukushima-women-reemployment-support",
@@ -1655,7 +2543,24 @@
     "apply_method": "ふるさと福島就職情報センター福島窓口(コラッセふくしま2階)へ電話または来所で相談を申し込む。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "ibaraki-chiiki-kadai-kigyo-shien",
@@ -1691,7 +2596,24 @@
     "apply_method": "公募期間中に株式会社ひたちなかテクノセンターのサイトから募集要領・応募様式をダウンロードし申請書類を提出する。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "ibaraki-josei-wakamono-shogaisha-sogyo-yushi",
@@ -1727,7 +2649,24 @@
     "apply_method": "商工会・商工会議所または茨城県中小企業団体中央会へ認定申請し、保証協会・金融機関の審査を経て融資実行となる。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "ibaraki-reskilling-digital-literacy-course",
@@ -1762,7 +2701,14 @@
     "apply_method": "いばらきリスキリングポータルサイトの参加申込フォーム(Googleフォーム)から申し込む。各コース開始日の1週間前が締切。",
     "source_checked_at": "2026-07-29",
     "priority": 4,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "tochigi-chiiki-kadai-sogyo-hojokin",
@@ -1798,7 +2744,24 @@
     "apply_method": "公募期間中に募集要項・様式をダウンロードし、栃木県産業振興センターへ申請書類を提出する。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "tochigi-josei-katsuyaku-project2026",
@@ -1831,7 +2794,24 @@
     "apply_method": "パルティとちぎ男女共同参画センターへ電話または来所で直接相談を申し込む。",
     "source_checked_at": "2026-07-29",
     "priority": 4,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "tochigi-digital-women-workshare",
@@ -1864,7 +2844,24 @@
     "apply_method": "公式サイトの説明会に参加またはアーカイブ動画視聴後、申込フォームから登録・受講料決済を行う。",
     "source_checked_at": "2026-07-29",
     "priority": 4,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "gunma-maitsuru-project",
@@ -1900,7 +2897,24 @@
     "apply_method": "群馬県公式サイトまたは特設サイトで受講生募集案内を確認し、応募フォームから申し込む。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "gunma-cross-start-hojokin",
@@ -1936,7 +2950,24 @@
     "apply_method": "公募期間中に群馬県産業支援機構のサイトから公募要項・様式をダウンロードし申請書類を提出する。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "niigata-digital-jinzai-reskilling",
@@ -1972,7 +3003,24 @@
     "apply_method": "公式サイトまたはITスキルアップコース専用ページ(school.moripower.jp/itskill/)から申し込む。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "niigata-kigyo-challenge-ouen",
@@ -2007,7 +3055,24 @@
     "apply_method": "商工会・商工会議所または金融機関に相談し確認書を取得後、申請書類一式をNICOへ郵送または持参で提出する。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "yamanashi-chiiki-kadai-kigyo-shienkin",
@@ -2043,7 +3108,24 @@
     "apply_method": "募集期間内にエントリーし、書類審査・オンラインプレゼン審査・個別面談を経て採択される。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "yamanashi-chiiki-kasseika-koyo-sozo-project2",
@@ -2079,7 +3161,24 @@
     "apply_method": "キャリアアップ・ユニバーシティサイト(yamanashi-cuu.jp)の講座申込ページから申し込む。",
     "source_checked_at": "2026-07-29",
     "priority": 4,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "yamanashi-professional-jinzai-fukugyo-kengyo",
@@ -2114,7 +3213,19 @@
     "apply_method": "プロフェッショナル人材戦略拠点や登録人材紹介事業者を通じて、副業・兼業案件の紹介・マッチングを受ける。",
     "source_checked_at": "2026-07-29",
     "priority": 5,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "nagano-digichalle-shinshu",
@@ -2152,7 +3263,39 @@
     "apply_method": "オンライン申込フォームから応募し、選考を経て受講が決定する。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "nagano-social-business-sogyo-shienkin",
@@ -2188,7 +3331,24 @@
     "apply_method": "郵送またはメールでPDF形式の申請書類一式を長野県産業振興機構に提出する(期日厳守)。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "tottori-startup-try-subsidy",
@@ -2224,7 +3384,24 @@
     "apply_method": "産業未来創造課から様式をダウンロードし、必要書類を持参または郵送で提出後、書面審査とプレゼン審査を経て採択。",
     "source_checked_at": "2026-07-29",
     "priority": 2,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "tottori-digital-jinzai-program",
@@ -2259,7 +3436,24 @@
     "apply_method": "オンライン説明会に参加後、専用サイトから本申込みを行う。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "shimane-region-issue-startup-subsidy",
@@ -2295,7 +3489,24 @@
     "apply_method": "起業予定地の市町村窓口で地域課題適合性を確認後、商工会・商工会議所へ申請書類一式を提出。",
     "source_checked_at": "2026-07-29",
     "priority": 2,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "shimane-kaigo-fukushishi-shugaku-shikin",
@@ -2330,7 +3541,24 @@
     "apply_method": "島根県社会福祉協議会の募集要項を確認し、申請書類を提出して審査後に貸付決定。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "okayama-region-issue-startup-subsidy",
@@ -2366,7 +3594,24 @@
     "apply_method": "公募要項を確認し申請書類を提出、審査(書面・プレゼン等)を経て採択後に伴走支援を受けながら事業を実施。",
     "source_checked_at": "2026-07-29",
     "priority": 2,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "okayama-digital-joshi-project",
@@ -2400,7 +3645,34 @@
     "apply_method": "オンライン説明会に参加(またはアーカイブ視聴)後、特設サイトから受講申込を行う(定員あり)。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "hiroshima-chusankan-startup-subsidy",
@@ -2436,7 +3708,24 @@
     "apply_method": "必要書類を準備しメールまたは郵送で提出、資格審査・書面審査を経て採択後に交付決定、事業完了後に実績報告して精算払いを受ける。",
     "source_checked_at": "2026-07-29",
     "priority": 2,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "hiroshima-professional-jinzai-kyoten",
@@ -2472,7 +3761,29 @@
     "apply_method": "拠点サイトに掲載された登録人材紹介会社を通じて登録し、企業とのマッチングを受ける。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "yamaguchi-startup-subsidy",
@@ -2508,7 +3819,24 @@
     "apply_method": "公募要領を確認し、補助事業計画書等の応募書類をWord形式で作成して提出、審査を経て採択される。",
     "source_checked_at": "2026-07-29",
     "priority": 2,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "yamaguchi-professional-jinzai-kyoten",
@@ -2544,7 +3872,29 @@
     "apply_method": "拠点に電話またはフォームで相談・登録し、民間人材ビジネス事業者経由で企業とのマッチングを受ける。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "tokushima-startup-promotion-subsidy",
@@ -2580,7 +3930,24 @@
     "apply_method": "事前相談を予約したうえで、交付申請書・事業計画書等を持参・郵送・メール等で提出し審査を受ける。",
     "source_checked_at": "2026-07-29",
     "priority": 2,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "tokushima-professional-jinzai-kyoten",
@@ -2616,7 +3983,29 @@
     "apply_method": "拠点に相談し、連携する人材紹介事業者を通じて登録・企業とのマッチングを受ける。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "kagawa-startup-support-subsidy",
@@ -2653,6 +4042,23 @@
     "source_checked_at": "2026-07-29",
     "priority": 2,
     "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": [
       "kagawa-tokyo-iju-shien-kin"
     ]
   },
@@ -2693,6 +4099,38 @@
     "source_checked_at": "2026-07-29",
     "priority": 3,
     "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": [
       "kagawa-startup-support-subsidy"
     ]
   },
@@ -2731,7 +4169,24 @@
     "apply_method": "特設サイトでキープエントリー登録後、メールで届く本エントリーフォームから応募する。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "ehime-professional-jinzai-kyoten",
@@ -2767,7 +4222,29 @@
     "apply_method": "拠点または連携する民間人材会社に問い合わせ、企業とのマッチングを受ける。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "kochi-region-issue-startup-subsidy",
@@ -2803,7 +4280,24 @@
     "apply_method": "高知県電子申請サービスから申請書をダウンロードして作成し、アップロードして提出する。",
     "source_checked_at": "2026-07-29",
     "priority": 2,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "kochi-professional-jinzai-kyoten",
@@ -2839,7 +4333,29 @@
     "apply_method": "拠点または連携する民間人材会社に問い合わせ、企業とのマッチングを受ける。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "saga-kigyou-shien-kin",
@@ -2874,7 +4390,24 @@
     "apply_method": "公式サイトの応募フォーム・郵送・持参で佐賀起業支援金事務局へ提出し、書類審査・プレゼン審査を経て採択。",
     "source_checked_at": "2026-07-29",
     "priority": 2,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "saga-professional-jinzai-matching",
@@ -2910,7 +4443,29 @@
     "apply_method": "電話またはメールで事前予約のうえ、毎週木曜9時~17時の相談窓口(佐賀市白山)を利用する。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "nagasaki-startup-support-subsidy",
@@ -2945,7 +4500,24 @@
     "apply_method": "長崎県中小企業診断士協会を通じた間接補助方式。公式ページから公募要領・応募様式を確認し提出する。",
     "source_checked_at": "2026-07-29",
     "priority": 2,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "nagasaki-kokkyo-rito-startup-subsidy",
@@ -2980,7 +4552,24 @@
     "apply_method": "対象市町ごとに公募要領を公表。各市町ホームページから応募書類を確認し申請する。",
     "source_checked_at": "2026-07-29",
     "priority": 2,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "nagasaki-professional-jinzai-matching",
@@ -3016,7 +4605,29 @@
     "apply_method": "電話またはメールで問い合わせ、平日9時~17時の相談窓口を利用する。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "kumamoto-community-issue-startup-subsidy",
@@ -3050,7 +4661,24 @@
     "apply_method": "交付要望書・事業計画書等をくまもと産業支援財団 起業化支援室へ郵送または持参で提出する。",
     "source_checked_at": "2026-07-29",
     "priority": 2,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "kumamoto-professional-jinzai-matching",
@@ -3086,7 +4714,29 @@
     "apply_method": "電話またはメールでSAKURA MACHI Kumamoto内の相談窓口に問い合わせる。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "oita-community-issue-startup-subsidy",
@@ -3121,7 +4771,24 @@
     "apply_method": "事前相談後、公式サイトの公募要領に従い応募書類を作成し提出する。",
     "source_checked_at": "2026-07-29",
     "priority": 2,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "oita-women-matchwork-support",
@@ -3156,7 +4823,19 @@
     "apply_method": "Google Formsから事前予約(予約なしでも当日参加可)。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "miyazaki-women-youth-startup-challenge-subsidy",
@@ -3191,7 +4870,24 @@
     "apply_method": "宮崎県よろず支援拠点コーディネーターによる事前ブラッシュアップを経て、宮崎県産業振興機構へ応募書類を提出する。",
     "source_checked_at": "2026-07-29",
     "priority": 2,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "kagoshima-community-issue-startup-subsidy",
@@ -3225,7 +4921,24 @@
     "apply_method": "電子メールまたは郵送で交付要望書・事業計画書等を提出する(募集は年度ごとに実施)。",
     "source_checked_at": "2026-07-29",
     "priority": 2,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "kagoshima-professional-jinzai-matching",
@@ -3261,7 +4974,29 @@
     "apply_method": "電話またはメールフォームから無料相談を申し込む。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "okinawa-startup-support-subsidy",
@@ -3295,7 +5030,24 @@
     "apply_method": "専用応募ページから公募期間内(例年数回実施)に必要書類を提出する。",
     "source_checked_at": "2026-07-29",
     "priority": 2,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "okinawa-professional-jinzai-champloo",
@@ -3331,7 +5083,29 @@
     "apply_method": "電話または公式サイトの問い合わせフォームから無料相談を申し込む。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "toyama-startup-migration-grant",
@@ -3365,7 +5139,24 @@
     "apply_method": "富山県新世紀産業機構(TONIO)のウェブサイトで募集要項を確認し、必要書類を郵送で提出する。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "toyama-professional-jinzai-matching",
@@ -3401,7 +5192,29 @@
     "apply_method": "公式サイトの問い合わせフォームまたは電話で相談を申し込む。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "ishikawa-startup-migration-grant",
@@ -3435,7 +5248,24 @@
     "apply_method": "石川県産業創出支援機構(ISICO)へ募集期間内に必要書類を提出する。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "ishikawa-professional-jinzai-matching",
@@ -3471,7 +5301,29 @@
     "apply_method": "電話またはセンター窓口で相談を申し込む。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "fukui-startup-grant",
@@ -3506,7 +5358,24 @@
     "apply_method": "所定様式をダウンロードし、必要書類とともにメール(keieikaikaku@pref.fukui.lg.jp)で申請する。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "fukui-professional-jinzai-matching",
@@ -3542,7 +5411,29 @@
     "apply_method": "公式サイトから問い合わせ、または電話で相談を申し込む。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "fukui-women-career-support",
@@ -3575,7 +5466,24 @@
     "apply_method": "センターへ電話またはメールで相談を申し込む。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "gifu-startup-grant",
@@ -3610,7 +5518,24 @@
     "apply_method": "岐阜県産業経済振興センターのサイトから申請書をダウンロードし、持参または郵送で提出する。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "gifu-professional-jinzai-matching",
@@ -3646,7 +5571,29 @@
     "apply_method": "電話または公式サイトから相談を申し込む。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "gifu-women-career-support",
@@ -3679,7 +5626,24 @@
     "apply_method": "センターへ電話で相談予約するか、公式サイトから講座に申し込む。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "shizuoka-regional-startup-grant",
@@ -3714,7 +5678,24 @@
     "apply_method": "静岡県産業振興財団へ問い合わせのうえ、募集期間内に申請書類を提出する。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "shizuoka-professional-jinzai-matching",
@@ -3750,7 +5731,29 @@
     "apply_method": "公式サイトまたは電話で相談を申し込む。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "shizuoka-digital-jinzai-course",
@@ -3784,7 +5787,14 @@
     "apply_method": "ウェブサイトの申込みフォームから事前振込みのうえ申し込む。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "mie-startup-grant",
@@ -3819,7 +5829,24 @@
     "apply_method": "事務局(株式会社百五総合研究所)へ郵送またはメールで申請書類を提出する(持ち込み不可)。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "mie-professional-jinzai-matching",
@@ -3855,7 +5882,29 @@
     "apply_method": "電話または公式サイトから相談を申し込む。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "mie-women-career-support",
@@ -3888,7 +5937,24 @@
     "apply_method": "公式サイトから相談予約・講座申込みを行う。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "shiga-local-venture-shien",
@@ -3924,7 +5990,29 @@
     "apply_method": "公式サイトから募集要項・様式をダウンロードし、事業計画書等を作成して期限までに提出する。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "shiga-professional-jinzai-matching",
@@ -3960,7 +6048,29 @@
     "apply_method": "電話(077-511-1419)またはウェブから拠点に相談を申し込み、民間人材ビジネス事業者と連携したマッチングを受ける。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "kyoto-kigyo-shien-hojokin",
@@ -3994,7 +6104,24 @@
     "apply_method": "起業予定地の中小企業応援隊で無料コンサルティングを受けて計画書類を作成し、募集期間内に提出する。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "kyoto-professional-jinzai-matching",
@@ -4030,7 +6157,29 @@
     "apply_method": "電話(075-315-8897)またはメールフォームから拠点に相談を申し込む。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "kyoto-mothers-job-cafe",
@@ -4063,7 +6212,24 @@
     "apply_method": "予約不要で施設を訪問し、登録・カウンセリングを受ける(初回は案内含め約1時間)。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "nara-kigyoka-shien-jigyo",
@@ -4097,7 +6263,24 @@
     "apply_method": "公式サイトのエントリーフォームに入力し、必要書類をメールで提出して応募完了となる。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "nara-professional-jinzai-matching",
@@ -4133,7 +6316,29 @@
     "apply_method": "電話(0742-27-3171〜3172)で拠点(奈良しごとiセンター)に相談を申し込む。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "nara-womens-center-saishushoku-sodan",
@@ -4167,7 +6372,39 @@
     "apply_method": "電話(0742-24-1150)で予約するか、サテライト相談窓口へ問い合わせる。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "wakayama-chiiki-kadai-kaiketsu-kigyo-hojokin",
@@ -4201,7 +6438,24 @@
     "apply_method": "わかやま産業振興財団の募集案内から申請書類をダウンロードし、募集期間内(例年4〜5月頃)に提出する。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "wakayama-professional-jinzai-matching",
@@ -4237,7 +6491,29 @@
     "apply_method": "わかやま産業振興財団の拠点に電話・メールで相談を申し込む。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "wakayama-hataracoode-josei-shien",
@@ -4270,7 +6546,24 @@
     "apply_method": "公式サイトまたは電話で来所予約・ウェブ面談を申し込む。",
     "source_checked_at": "2026-07-29",
     "priority": 3,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "high-age-employment-continuation-benefit",
@@ -4304,7 +6597,19 @@
     "apply_method": "事業主が「高年齢雇用継続給付支給申請書」を管轄ハローワークへ提出。初回は支給対象月の初日から4ヶ月以内、以降は原則2ヶ月ごとに申請する。",
     "source_checked_at": "2026-07-29",
     "priority": 1,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "education-training-support-benefit",
@@ -4340,6 +6645,23 @@
     "source_checked_at": "2026-07-29",
     "priority": 1,
     "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": [
       "specialized-practical-education-training-benefit"
     ]
   },
@@ -4377,7 +6699,29 @@
     "apply_method": "住所地の市区町村役場の国民年金担当窓口、年金事務所、または郵送・電子申請で「国民年金保険料免除・納付猶予申請書」を提出する。",
     "source_checked_at": "2026-07-29",
     "priority": 1,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "クラウディアで副業を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FHVFV6+4F8I+BYLJM",
+        "type": "affiliate"
+      },
+      {
+        "label": "Karigoでバーチャルオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
+        "type": "affiliate"
+      },
+      {
+        "label": "0円バーチャルオフィスで副業・起業を支援",
+        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
+        "type": "affiliate"
+      },
+      {
+        "label": "ワークスタイリングでシェアオフィスを探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "disabled-vocational-ability-development-school",
@@ -4413,7 +6757,24 @@
     "apply_method": "最寄りのハローワークに相談し、障害者職業能力開発校への受講あっせんを受けたうえで入校選考(面接等)を受ける。",
     "source_checked_at": "2026-07-29",
     "priority": 1,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "エンラボカレッジで自立訓練を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "early-reemployment-allowance",
@@ -4447,7 +6808,19 @@
     "apply_method": "再就職後、「再就職手当支給申請書」に必要事項を記入し事業主の証明を得て、管轄ハローワークへ提出する。",
     "source_checked_at": "2026-07-29",
     "priority": 1,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   },
   {
     "id": "high-age-job-seeker-benefit",
@@ -4481,6 +6854,18 @@
     "apply_method": "離職後、管轄ハローワークで求職申込みを行い、「高年齢求職者給付金支給申請書」を提出する(離職日翌日から1年以内)。",
     "source_checked_at": "2026-07-29",
     "priority": 1,
-    "related_offers": []
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": []
   }
 ]

@@ -56,6 +56,17 @@ function formatCheckedDate(dateStr) {
   return `${y}年${Number(m)}月${Number(d)}日`;
 }
 
+function buildOfferLinks(subsidy) {
+  const offers = subsidy.related_offers || [];
+  if (offers.length === 0) return "";
+  return offers
+    .map(
+      (o) =>
+        `<a class="result-card__link result-card__link--offer" href="${escapeHtml(o.url)}" target="_blank" rel="noopener sponsored">${escapeHtml(o.label || "関連サービスを見る")}<span class="badge badge--pr">PR</span></a>`
+    )
+    .join("");
+}
+
 function buildTitle(subsidy) {
   const region = regionLabel(subsidy);
   const keyword = CATEGORY_KEYWORDS[subsidy.category];
@@ -128,6 +139,7 @@ function detailPageHtml(subsidy) {
 
     <div class="detail-actions">
       <a class="result-card__link" href="${escapeHtml(subsidy.apply_url)}" target="_blank" rel="noopener">公式サイトで詳細を見る →</a>
+      ${buildOfferLinks(subsidy)}
     </div>
 
     <p class="result-card__checked">${escapeHtml(formatCheckedDate(subsidy.source_checked_at))} 時点で確認</p>
@@ -142,7 +154,7 @@ function detailPageHtml(subsidy) {
   <p class="detail-back"><a href="../index.html">&larr; 制度一覧に戻る</a></p>
 
   <footer class="app-footer">
-    <p>本サイトは公的制度の情報提供を目的としており、申請の代行・保証を行うものではありません。制度の詳細・最新情報は各制度の公式サイト・所管窓口をご確認ください。</p>
+    <p>本サイトは公的制度の情報提供を目的としており、申請の代行・保証を行うものではありません。制度の詳細・最新情報は各制度の公式サイト・所管窓口をご確認ください。「PR」表記のあるリンクにはプロモーション(アフィリエイト広告)が含まれます。</p>
   </footer>
 
 </div>
@@ -213,7 +225,7 @@ function listPageHtml(subsidies) {
     <a class="btn btn--primary btn--large" href="../index.html">5つの質問で診断する</a>
   </div>
   <footer class="app-footer">
-    <p>本サイトは公的制度の情報提供を目的としており、申請の代行・保証を行うものではありません。制度の詳細・最新情報は各制度の公式サイト・所管窓口をご確認ください。</p>
+    <p>本サイトは公的制度の情報提供を目的としており、申請の代行・保証を行うものではありません。制度の詳細・最新情報は各制度の公式サイト・所管窓口をご確認ください。「PR」表記のあるリンクにはプロモーション(アフィリエイト広告)が含まれます。</p>
   </footer>
 </div>
 <script>
