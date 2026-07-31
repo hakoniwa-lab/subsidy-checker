@@ -52,6 +52,9 @@ const QUESTIONS = [
       { value: "side_job", label: "副業を始めたい" },
       { value: "career_change", label: "転職したい" },
       { value: "startup", label: "独立・開業したい" },
+      { value: "family_support", label: "子育てにかかる負担を減らしたい" },
+      { value: "housing", label: "住宅費の負担を減らしたい" },
+      { value: "medical", label: "医療費の負担を減らしたい" },
     ],
   },
   {

@@ -7612,6 +7612,646 @@ const SUBSIDIES = [
       }
     ],
     "related_subsidy_ids": []
+  },
+  {
+    "id": "child-allowance",
+    "name": "児童手当",
+    "category": "子育て支援",
+    "organization": "こども家庭庁",
+    "summary": "0歳〜高校生年代の子を養育する全世帯に、所得制限なしで月1万〜3万円を支給する基幹的な子育て給付。",
+    "benefit_text": "3歳未満は月額15,000円、3歳〜高校生年代は月額10,000円、第3子以降はいずれも月額30,000円",
+    "benefit_max_yen": 30000,
+    "conditions_text": "2024年10月の改正で所得制限は撤廃され、支給対象が高校生年代まで拡大された。",
+    "tags": {
+      "employment_status": [],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false,
+      "region": [
+        "nationwide"
+      ],
+      "purpose": [
+        "family_support"
+      ]
+    },
+    "apply_url": "https://www.cfa.go.jp/policies/kokoseido/jidouteate/mottoouen",
+    "apply_method": "新規該当者(高校生年代の子を養育し始めた等)は市区町村へ申請。継続受給者は原則手続き不要。",
+    "source_checked_at": "2026-07-31",
+    "priority": 1,
+    "related_offers": [],
+    "related_subsidy_ids": [
+      "childbirth-lump-sum-allowance",
+      "early-childhood-education-care-free"
+    ]
+  },
+  {
+    "id": "childbirth-lump-sum-allowance",
+    "name": "出産育児一時金",
+    "category": "子育て支援",
+    "organization": "厚生労働省(実施は全国健康保険協会・各健康保険組合・市区町村国民健康保険等)",
+    "summary": "健康保険・国民健康保険いずれの加入者も、出産時に子1人あたり原則50万円を受け取れる一時金。",
+    "benefit_text": "子1人につき原則50万円(産科医療補償制度未加入医療機関での出産は48万8千円)",
+    "benefit_max_yen": 500000,
+    "conditions_text": "妊娠85日(4か月)以上の出産(死産・流産含む)で、日本の公的医療保険加入者であること。",
+    "tags": {
+      "employment_status": [],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false,
+      "region": [
+        "nationwide"
+      ],
+      "purpose": [
+        "family_support"
+      ]
+    },
+    "apply_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/shussan/index.html",
+    "apply_method": "直接支払制度(医療機関が保険者に請求、差額のみ自己負担)が主流。申請期限は出産日翌日から2年以内。",
+    "source_checked_at": "2026-07-31",
+    "priority": 1,
+    "related_offers": [],
+    "related_subsidy_ids": [
+      "child-allowance",
+      "maternity-allowance"
+    ]
+  },
+  {
+    "id": "maternity-allowance",
+    "name": "出産手当金",
+    "category": "子育て支援",
+    "organization": "全国健康保険協会(協会けんぽ)・各健康保険組合",
+    "summary": "会社員等の健康保険被保険者に対し、産前産後休業中の収入減を標準報酬日額の3分の2相当で補う制度。",
+    "benefit_text": "出産日以前42日(多胎98日)〜出産翌日以後56日目まで、標準報酬日額の3分の2相当額を支給",
+    "benefit_max_yen": null,
+    "conditions_text": "健康保険(協会けんぽ・組合健保等)の被保険者本人が対象。国民健康保険加入者(自営業者・フリーランス等)には相当する制度がない。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "part_time"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false,
+      "region": [
+        "nationwide"
+      ],
+      "purpose": [
+        "family_support"
+      ]
+    },
+    "apply_url": "https://www.kyoukaikenpo.or.jp/benefit/childbirth/001/index.html",
+    "apply_method": "「健康保険出産手当金支給申請書」を勤務先経由、または本人が加入する協会けんぽ支部・健保組合へ提出。",
+    "source_checked_at": "2026-07-31",
+    "priority": 2,
+    "related_offers": [],
+    "related_subsidy_ids": [
+      "childbirth-lump-sum-allowance",
+      "childcare-leave-benefit"
+    ]
+  },
+  {
+    "id": "childcare-leave-benefit",
+    "name": "育児休業給付金",
+    "category": "子育て支援",
+    "organization": "厚生労働省/ハローワーク(雇用保険)",
+    "summary": "雇用保険加入者が育児休業を取得した際、休業前賃金の67%→50%(条件により実質80%)を支給する所得保障制度。",
+    "benefit_text": "休業開始180日目までは賃金日額の67%、181日目以降は50%。両親とも育休取得等の要件を満たすと最大28日間、実質80%相当に上乗せ(出生後休業支援給付金)",
+    "benefit_max_yen": null,
+    "conditions_text": "雇用保険の被保険者であり、育休開始前2年間に賃金支払基礎日数11日以上の月が12か月以上あること等が必要。自営業・フリーランスは雇用保険非加入のため対象外。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "part_time"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": true,
+      "region": [
+        "nationwide"
+      ],
+      "purpose": [
+        "family_support"
+      ]
+    },
+    "apply_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000158500.html",
+    "apply_method": "事業主経由(または本人直接)で、休業開始時賃金月額証明書等を勤務先管轄のハローワークへ提出。初回申請期限は育休開始日から4か月以内。",
+    "source_checked_at": "2026-07-31",
+    "priority": 2,
+    "related_offers": [],
+    "related_subsidy_ids": [
+      "maternity-allowance",
+      "child-allowance"
+    ]
+  },
+  {
+    "id": "high-school-tuition-support",
+    "name": "高等学校等就学支援金",
+    "category": "子育て支援",
+    "organization": "文部科学省",
+    "summary": "高校授業料相当額を学校経由で支給し、2026年度から所得制限なしで公立実質無償・私立最大45.7万円を支援する制度。",
+    "benefit_text": "私立全日制高校は年118,800円、私立全日制高校は年457,200円(月額38,100円)。定時制・通信制は別途金額あり",
+    "benefit_max_yen": 457200,
+    "conditions_text": "国公私立を問わず高等学校等に在学する生徒が対象。2026年4月以降は所得制限なし。",
+    "tags": {
+      "employment_status": [],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false,
+      "region": [
+        "nationwide"
+      ],
+      "purpose": [
+        "family_support"
+      ]
+    },
+    "apply_url": "https://www.mext.go.jp/a_menu/shotou/mushouka/1342600.htm",
+    "apply_method": "入学時等に「受給資格認定申請書」をオンライン(e-Shien)または書面で学校に提出。",
+    "source_checked_at": "2026-07-31",
+    "priority": 1,
+    "related_offers": [],
+    "related_subsidy_ids": []
+  },
+  {
+    "id": "early-childhood-education-care-free",
+    "name": "幼児教育・保育の無償化",
+    "category": "子育て支援",
+    "organization": "こども家庭庁",
+    "summary": "3〜5歳児は原則全世帯、0〜2歳児は住民税非課税世帯を対象に、幼稚園・保育所等の利用料を無償化する制度。",
+    "benefit_text": "3〜5歳児クラスは利用料無償化(幼稚園は月額上限25,700円)。0〜2歳児クラスは住民税非課税世帯のみ月額上限42,000円で無償化",
+    "benefit_max_yen": null,
+    "conditions_text": "3〜5歳児クラスは所得制限なく全世帯対象。0〜2歳児クラスは住民税非課税世帯のみ対象。認可外施設等の利用には市区町村の「保育の必要性の認定」が必要。",
+    "tags": {
+      "employment_status": [],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false,
+      "region": [
+        "nationwide"
+      ],
+      "purpose": [
+        "family_support"
+      ]
+    },
+    "apply_url": "https://www.cfa.go.jp/policies/kokoseido/mushouka/gaiyou",
+    "apply_method": "認可保育所等は通常の利用手続き内で無償化が自動適用。預かり保育・認可外施設利用は市区町村へ別途申請。",
+    "source_checked_at": "2026-07-31",
+    "priority": 1,
+    "related_offers": [],
+    "related_subsidy_ids": [
+      "child-allowance"
+    ]
+  },
+  {
+    "id": "child-rearing-allowance",
+    "name": "児童扶養手当",
+    "category": "ひとり親支援",
+    "organization": "こども家庭庁(実施主体は都道府県・市区町村)",
+    "summary": "ひとり親家庭等の生活安定・自立促進のため、所得に応じて月額最大45,500円(児童1人目)を支給する全国制度。",
+    "benefit_text": "児童1人目は月額最大45,500円(全部支給時)、2人目以降は加算額を上乗せ",
+    "benefit_max_yen": 45500,
+    "conditions_text": "父母の離婚・死亡等により父または母と生計を同じくしていない児童を監護するひとり親等が対象。所得制限があり、限度額を超えると一部支給または支給停止。",
+    "tags": {
+      "employment_status": [],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false,
+      "region": [
+        "nationwide"
+      ],
+      "purpose": [
+        "family_support"
+      ]
+    },
+    "apply_url": "https://www.cfa.go.jp/policies/hitori-oya/fuyou-teate",
+    "apply_method": "居住する市区町村の児童扶養手当担当窓口へ認定請求書等を提出。",
+    "source_checked_at": "2026-07-31",
+    "priority": 2,
+    "related_offers": [],
+    "related_subsidy_ids": [
+      "single-parent-education-training-benefit",
+      "single-parent-vocational-training-promotion-benefit"
+    ]
+  },
+  {
+    "id": "housing-security-benefit",
+    "name": "住居確保給付金",
+    "category": "住宅支援",
+    "organization": "厚生労働省(実施主体は福祉事務所設置自治体の自立相談支援機関)",
+    "summary": "離職・廃業などで住まいを失うおそれがある人に、家賃相当額を有期で給付する国のセーフティネット制度。",
+    "benefit_text": "家賃相当額を自治体が大家に直接支払う。原則3か月、誠実な求職活動継続で最大9か月まで延長可能",
+    "benefit_max_yen": null,
+    "conditions_text": "離職・廃業後2年以内、または休業等により収入が離職・廃業と同程度まで減少した方で、収入・資産が一定基準以下であり、誠実に求職活動を行うことが条件。支給上限額は地域の生活保護基準により異なる。",
+    "tags": {
+      "employment_status": [],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false,
+      "region": [
+        "nationwide"
+      ],
+      "purpose": [
+        "housing"
+      ]
+    },
+    "apply_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000073432.html",
+    "apply_method": "居住地の自立相談支援機関(福祉事務所設置自治体の窓口)に申請。",
+    "source_checked_at": "2026-07-31",
+    "priority": 2,
+    "related_offers": [],
+    "related_subsidy_ids": [
+      "comprehensive-support-fund-housing-entry"
+    ]
+  },
+  {
+    "id": "mirai-eco-jutaku-2026",
+    "name": "みらいエコ住宅2026事業",
+    "category": "住宅支援",
+    "organization": "国土交通省・環境省",
+    "summary": "省エネ性能の高い新築・リフォーム住宅の取得を、子育て世帯・若者夫婦世帯を中心に国が補助する住宅省エネ支援事業。",
+    "benefit_text": "新築はGX志向型住宅125万円/戸、長期優良住宅80万円/戸、ZEH水準住宅40万円/戸。リフォームは最大100万円/戸",
+    "benefit_max_yen": 1250000,
+    "conditions_text": "子育て世帯・若者夫婦世帯が主対象(GX志向型住宅は世帯要件なし)。床面積要件あり。事業名・補助額は年度ごとに変わるため要最新確認(前身は子育てエコホーム支援事業等)。",
+    "tags": {
+      "employment_status": [],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false,
+      "region": [
+        "nationwide"
+      ],
+      "purpose": [
+        "housing"
+      ]
+    },
+    "apply_url": "https://mirai-eco2026.mlit.go.jp/about/",
+    "apply_method": "国に登録された住宅事業者(工務店・ハウスメーカー等)を通じて予約・申請する。",
+    "source_checked_at": "2026-07-31",
+    "priority": 2,
+    "related_offers": [],
+    "related_subsidy_ids": [
+      "flat35-kosodate-plus",
+      "housing-loan-tax-deduction"
+    ]
+  },
+  {
+    "id": "flat35-kosodate-plus",
+    "name": "【フラット35】子育てプラス",
+    "category": "住宅支援",
+    "organization": "住宅金融支援機構(JHF)",
+    "summary": "子育て世帯・若者夫婦世帯を対象に、フラット35の金利を子どもの人数等に応じて引き下げる住宅ローン優遇制度。",
+    "benefit_text": "子どもの人数・住宅性能等に応じたポイント制で、1ポイントにつき当初5年間年▲0.25%金利を引き下げ",
+    "benefit_max_yen": null,
+    "conditions_text": "フラット35利用者のうち、子育て世帯(借入申込年度4月1日時点で18歳未満の子がいる世帯)または若年夫婦世帯(夫婦いずれかが40歳未満)が対象。",
+    "tags": {
+      "employment_status": [],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false,
+      "region": [
+        "nationwide"
+      ],
+      "purpose": [
+        "housing"
+      ]
+    },
+    "apply_url": "https://www.flat35.com/lp/19/kosodate-plus/index.html",
+    "apply_method": "フラット35取扱金融機関での借入申込時に子育てプラスの利用を申し出て、住民票等を提出。",
+    "source_checked_at": "2026-07-31",
+    "priority": 2,
+    "related_offers": [],
+    "related_subsidy_ids": [
+      "housing-loan-tax-deduction",
+      "mirai-eco-jutaku-2026"
+    ]
+  },
+  {
+    "id": "housing-loan-tax-deduction",
+    "name": "住宅ローン減税(住宅借入金等特別控除)",
+    "category": "住宅支援",
+    "organization": "国税庁/国土交通省",
+    "summary": "住宅ローンでマイホームを取得・増改築した人の税負担を、最長13年間軽減する国の税制優遇制度。",
+    "benefit_text": "年末の住宅ローン残高の0.7%を所得税額から控除(控除しきれない分は住民税から最大97,500円控除)。控除期間は最長13年間",
+    "benefit_max_yen": null,
+    "conditions_text": "令和8年1月1日〜令和12年12月31日の間に入居し、床面積40㎡以上、償還期間10年以上のローンを利用し、合計所得金額2,000万円以下であること等が要件。",
+    "tags": {
+      "employment_status": [],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false,
+      "region": [
+        "nationwide"
+      ],
+      "purpose": [
+        "housing"
+      ]
+    },
+    "apply_url": "https://www.mlit.go.jp/jutakukentiku/house/jutakukentiku_house_tk2_000017.html",
+    "apply_method": "入居初年度は確定申告が必要。給与所得者は2年目以降、勤務先の年末調整で適用可能。",
+    "source_checked_at": "2026-07-31",
+    "priority": 1,
+    "related_offers": [],
+    "related_subsidy_ids": [
+      "flat35-kosodate-plus",
+      "mirai-eco-jutaku-2026"
+    ]
+  },
+  {
+    "id": "comprehensive-support-fund-housing-entry",
+    "name": "生活福祉資金貸付制度 総合支援資金(住宅入居費)",
+    "category": "住宅支援",
+    "organization": "厚生労働省(実施主体は都道府県社会福祉協議会、窓口は市区町村社会福祉協議会)",
+    "summary": "住まいを失った・失うおそれのある低所得世帯等に、敷金・礼金等の入居初期費用を無利子または低利で貸し付ける制度。",
+    "benefit_text": "敷金・礼金など賃貸住宅契約に必要な費用を上限40万円まで貸付(連帯保証人ありなら無利子、なしでも年1.5%)",
+    "benefit_max_yen": 400000,
+    "conditions_text": "失業等により生活に困難を抱え、生活に必要な費用を他から借り入れることが困難な低所得世帯等が対象。返済義務のある「貸付」であり給付金ではない点に注意。",
+    "tags": {
+      "employment_status": [],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false,
+      "region": [
+        "nationwide"
+      ],
+      "purpose": [
+        "housing"
+      ]
+    },
+    "apply_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/seikatsuhogo/seikatsu-fukushi-shikin1/kashitsukejoken.html",
+    "apply_method": "居住地の市区町村社会福祉協議会の窓口へ相談・申請。",
+    "source_checked_at": "2026-07-31",
+    "priority": 3,
+    "related_offers": [],
+    "related_subsidy_ids": [
+      "housing-security-benefit"
+    ]
+  },
+  {
+    "id": "high-cost-medical-expense-benefit",
+    "name": "高額療養費制度",
+    "category": "医療費助成",
+    "organization": "協会けんぽ等/厚生労働省",
+    "summary": "公的医療保険加入者の月の医療費自己負担が上限額を超えた場合に、超えた分を払い戻す制度。",
+    "benefit_text": "月の自己負担が所得区分ごとの限度額を超えた分を払戻し",
+    "benefit_max_yen": null,
+    "conditions_text": "公的医療保険(健康保険・国民健康保険等)加入者であれば誰でも対象。限度額は所得・年齢区分により異なる。",
+    "tags": {
+      "employment_status": [],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false,
+      "region": [
+        "nationwide"
+      ],
+      "purpose": [
+        "medical"
+      ]
+    },
+    "apply_url": "https://www.kyoukaikenpo.or.jp/g3/sb3030/r150/",
+    "apply_method": "加入する医療保険者へ「限度額適用認定証」の交付を事前申請するか、事後に高額療養費の支給申請を行う。",
+    "source_checked_at": "2026-07-31",
+    "priority": 1,
+    "related_offers": [],
+    "related_subsidy_ids": [
+      "combined-high-cost-medical-and-longterm-care-benefit",
+      "medical-expense-tax-deduction"
+    ]
+  },
+  {
+    "id": "sickness-and-injury-allowance",
+    "name": "傷病手当金",
+    "category": "医療費助成",
+    "organization": "協会けんぽ・健康保険組合",
+    "summary": "会社員等の健康保険被保険者が病気やケガで働けなくなった際、標準報酬日額の3分の2を最長1年6か月支給する所得保障制度。",
+    "benefit_text": "標準報酬日額の3分の2を最長1年6か月支給",
+    "benefit_max_yen": null,
+    "conditions_text": "健康保険(協会けんぽ・組合健保等)の被保険者であることが条件。自営業者が加入する国民健康保険には原則この給付がない。",
+    "tags": {
+      "employment_status": [
+        "employee",
+        "part_time"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false,
+      "region": [
+        "nationwide"
+      ],
+      "purpose": [
+        "medical"
+      ]
+    },
+    "apply_url": "https://www.kyoukaikenpo.or.jp/benefit/injury_and_sickness_allowance/index.html",
+    "apply_method": "「健康保険傷病手当金支給申請書」を勤務先経由、または本人が加入する協会けんぽ支部・健保組合へ提出。",
+    "source_checked_at": "2026-07-31",
+    "priority": 2,
+    "related_offers": [],
+    "related_subsidy_ids": []
+  },
+  {
+    "id": "jiritsu-shien-iryo",
+    "name": "自立支援医療制度",
+    "category": "医療費助成",
+    "organization": "市区町村/厚生労働省",
+    "summary": "精神通院・更生・育成医療について、医療費の自己負担を原則1割に軽減する公的制度。",
+    "benefit_text": "精神通院・更生・育成医療の自己負担を原則1割に軽減(所得区分により月額上限あり)",
+    "benefit_max_yen": null,
+    "conditions_text": "精神疾患の通院治療、身体障害者の更生医療、障害児の育成医療のいずれかに該当する人が対象。育成医療は18歳未満、更生医療は18歳以上。",
+    "tags": {
+      "employment_status": [],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false,
+      "region": [
+        "nationwide"
+      ],
+      "purpose": [
+        "medical"
+      ]
+    },
+    "apply_url": "https://www.mhlw.go.jp/bunya/shougaihoken/jiritsu/gaiyo.html",
+    "apply_method": "居住する市区町村の担当窓口へ申請。",
+    "source_checked_at": "2026-07-31",
+    "priority": 2,
+    "related_offers": [],
+    "related_subsidy_ids": []
+  },
+  {
+    "id": "designated-intractable-disease-medical-subsidy",
+    "name": "指定難病医療費助成制度",
+    "category": "医療費助成",
+    "organization": "都道府県・指定都市/厚生労働省",
+    "summary": "国が指定する難病の患者に対し、医療費の自己負担を3割から2割に軽減し、月額の自己負担上限も設定する制度。",
+    "benefit_text": "自己負担を3割→2割に軽減し、所得区分に応じた月額自己負担上限を設定",
+    "benefit_max_yen": null,
+    "conditions_text": "厚生労働大臣が指定する難病(指定難病)と診断され、重症度分類等の基準を満たす患者が対象。",
+    "tags": {
+      "employment_status": [],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false,
+      "region": [
+        "nationwide"
+      ],
+      "purpose": [
+        "medical"
+      ]
+    },
+    "apply_url": "https://www.nanbyou.or.jp/entry/5460",
+    "apply_method": "居住する都道府県・指定都市の窓口(保健所等)へ申請。",
+    "source_checked_at": "2026-07-31",
+    "priority": 2,
+    "related_offers": [],
+    "related_subsidy_ids": []
+  },
+  {
+    "id": "medical-expense-tax-deduction",
+    "name": "医療費控除",
+    "category": "医療費助成",
+    "organization": "国税庁",
+    "summary": "年間の医療費が一定額を超えた場合に所得控除を受けられる税制優遇制度。",
+    "benefit_text": "年間医療費が(10万円/所得の5%のいずれか低い方)を超えた分を所得控除(上限200万円)",
+    "benefit_max_yen": 2000000,
+    "conditions_text": "本人または生計を一にする家族のために支払った医療費が対象。確定申告が必要。",
+    "tags": {
+      "employment_status": [],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false,
+      "region": [
+        "nationwide"
+      ],
+      "purpose": [
+        "medical"
+      ]
+    },
+    "apply_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1122.htm",
+    "apply_method": "確定申告時に医療費控除の明細書を添付して申告する。",
+    "source_checked_at": "2026-07-31",
+    "priority": 1,
+    "related_offers": [],
+    "related_subsidy_ids": [
+      "high-cost-medical-expense-benefit"
+    ]
+  },
+  {
+    "id": "combined-high-cost-medical-and-longterm-care-benefit",
+    "name": "高額医療・高額介護合算療養費制度",
+    "category": "医療費助成",
+    "organization": "医療保険者/厚生労働省",
+    "summary": "1年間の医療保険と介護保険の自己負担合計額が著しく高額になった場合に、基準額を超えた分を払い戻す制度。",
+    "benefit_text": "年間の医療+介護自己負担合計が所得区分ごとの基準額(目安約19万〜212万円)を超えた分を払戻し",
+    "benefit_max_yen": null,
+    "conditions_text": "同一世帯で医療保険と介護保険の両方の自己負担がある人が対象。所得・年齢区分により基準額が異なる。",
+    "tags": {
+      "employment_status": [],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        null
+      ],
+      "requires_employment_insurance": false,
+      "region": [
+        "nationwide"
+      ],
+      "purpose": [
+        "medical"
+      ]
+    },
+    "apply_url": "https://www.kyoukaikenpo.or.jp/benefit/high_cost_medical_expenses/003/index.html",
+    "apply_method": "加入する医療保険者へ支給申請。",
+    "source_checked_at": "2026-07-31",
+    "priority": 3,
+    "related_offers": [],
+    "related_subsidy_ids": [
+      "high-cost-medical-expense-benefit"
+    ]
   }
 ]
 ;

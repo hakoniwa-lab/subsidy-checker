@@ -38,10 +38,11 @@ function scoreSubsidy(subsidy, answers) {
     }
   }
 
-  // 目的: 一致すれば加点(除外はしない)
+  // 目的: 一致すれば加点(除外はしない)。雇用形態+雇用保険の加点合計(最大5点)を上回るよう6点とし、
+  // 「雇用保険必須の制度」が目的と無関係でも上位に出てしまうのを防ぐ(2026-07-31、housing/medical/family_support追加時に判明)
   const purposeTags = tags.purpose || [];
   if (purposeTags.includes(answers.purpose)) {
-    score += 3;
+    score += 6;
   }
 
   // 地域: 全国対象なら常にOK、都道府県指定なら必須条件

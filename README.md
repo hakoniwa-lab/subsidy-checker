@@ -54,13 +54,19 @@ subsidy-checker/
 ### tagsフィールドの語彙
 
 - `employment_status`: `employee` / `part_time` / `self_employed` / `unemployed_recent` / `student`(空配列は制限なし)
-- `purpose`: `skill_up` / `side_job` / `career_change` / `startup`
+- `purpose`: `skill_up` / `side_job` / `career_change` / `startup` / `family_support`(子育て) / `housing`(住宅) / `medical`(医療費)(2026-07-31追加)
 - `region`: `nationwide` または都道府県コード(例: `tokyo`, `osaka`, `fukuoka`)
 - `gender`: `any` または `female` / `male`
 - `age_range`: `[最小年齢, 最大年齢]`。制限なしは `[null, null]`
 - `requires_employment_insurance`: 雇用保険の加入(通算1年以上等)が要件の制度は `true`
 
 制度情報は手動キュレーションのため、公開前・定期的に一次情報(各省庁・自治体公式サイト)で内容を確認すること。
+
+**2026-07-31、「子育て」「住宅」「医療費」ジャンルを全国レベルで追加(125件→143件)**: `purpose`の選択肢に`family_support`/`housing`/`medical`を追加し、それぞれ全国共通で使える主要制度を計18件追加した(子育て6件+ひとり親支援1件[児童扶養手当]、住宅5件、医療費6件)。都道府県・市区町村独自の上乗せ制度(こども医療費助成の自治体差、家賃補助の地域差等)は対象外とし、将来のフェーズで扱う。
+
+調査時に判明した「事業主向け助成金」(建設業・運送業の技能実習コース助成金等)や「都道府県ごとに金額が大きく異なる修学資金貸付」(保育士・看護師の修学資金貸付制度)は、個人向け診断という本アプリの性質・データ精度の観点から今回は見送った。前者は労働者本人が直接申請できないため、後者は「全国共通」として単一の金額を出すと不正確になるため。
+
+**match.jsのスコアリングを調整(2026-07-31)**: `purpose`一致の加点を3点→6点に引き上げた。理由: `housing`/`medical`/`family_support`は対象を広く取るため`employment_status`や`requires_employment_insurance`による絞り込みタグを持たない制度が多く、そのままだと「雇用保険必須」という無関係な制度が雇用形態・雇用保険の加点(最大5点)だけで目的一致制度(旧3点)を上回ってしまう不具合があった。既存の`skill_up`等は変更後もスコア上位の顔ぶれに回帰なし(検証済み)。
 
 **2026-07-28に一次情報で裏取り済み、修正した点**:
 - 東京都DXリスキリング助成金: 個人事業主・法人代表者本人は受講対象外(受講できるのは雇用する従業員のみ)と判明。`employment_status`から`self_employed`を削除、`conditions_text`を修正。公式URLをR8年度版に更新・403エラーは解消済み。
