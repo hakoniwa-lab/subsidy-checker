@@ -128,6 +128,8 @@ console.log(r.results.map(x => x.name + ' (score=' + x.score + ')').join('\n'));
 
 新しいアフィリエイト案件を追加する場合は、`data/subsidies.json`の該当制度(または該当`purpose`タグを持つ全制度)の`related_offers`配列に`{label, url, type}`オブジェクトを追加し、`js/data.js`の再生成(上記手順)と`node scripts/generate-seo-pages.js`の再実行を行う。
 
+**2026-07-31、housing/medical/family_support向けA8.net案件を実装(14件)**: ハピタスリフォーム(`mirai-eco-jutaku-2026`)、保険マンモス(医療費助成6件全て)、ベビープラネット(子育て支援7件全て)、CampusTop(子育て支援のうち教育文脈の3件)。
+
 ## デプロイ
 
 `subsidy-checker/` フォルダをそのままGitHub Pages等の静的ホスティングにpushすれば公開できる(ビルド工程不要)。

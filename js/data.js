@@ -7643,7 +7643,18 @@ const SUBSIDIES = [
     "apply_method": "新規該当者(高校生年代の子を養育し始めた等)は市区町村へ申請。継続受給者は原則手続き不要。",
     "source_checked_at": "2026-07-31",
     "priority": 1,
-    "related_offers": [],
+    "related_offers": [
+      {
+        "label": "ベビープラネットで保険を無料相談する",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8DGS+IGPSI+503M+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "CampusTopでオンライン英語を体験する",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8DGS+1JDLAQ+4HHM+TRVYQ",
+        "type": "affiliate"
+      }
+    ],
     "related_subsidy_ids": [
       "childbirth-lump-sum-allowance",
       "early-childhood-education-care-free"
@@ -7679,7 +7690,13 @@ const SUBSIDIES = [
     "apply_method": "直接支払制度(医療機関が保険者に請求、差額のみ自己負担)が主流。申請期限は出産日翌日から2年以内。",
     "source_checked_at": "2026-07-31",
     "priority": 1,
-    "related_offers": [],
+    "related_offers": [
+      {
+        "label": "ベビープラネットで保険を無料相談する",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8DGS+IGPSI+503M+5YJRM",
+        "type": "affiliate"
+      }
+    ],
     "related_subsidy_ids": [
       "child-allowance",
       "maternity-allowance"
@@ -7718,7 +7735,13 @@ const SUBSIDIES = [
     "apply_method": "「健康保険出産手当金支給申請書」を勤務先経由、または本人が加入する協会けんぽ支部・健保組合へ提出。",
     "source_checked_at": "2026-07-31",
     "priority": 2,
-    "related_offers": [],
+    "related_offers": [
+      {
+        "label": "ベビープラネットで保険を無料相談する",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8DGS+IGPSI+503M+5YJRM",
+        "type": "affiliate"
+      }
+    ],
     "related_subsidy_ids": [
       "childbirth-lump-sum-allowance",
       "childcare-leave-benefit"
@@ -7757,7 +7780,13 @@ const SUBSIDIES = [
     "apply_method": "事業主経由(または本人直接)で、休業開始時賃金月額証明書等を勤務先管轄のハローワークへ提出。初回申請期限は育休開始日から4か月以内。",
     "source_checked_at": "2026-07-31",
     "priority": 2,
-    "related_offers": [],
+    "related_offers": [
+      {
+        "label": "ベビープラネットで保険を無料相談する",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8DGS+IGPSI+503M+5YJRM",
+        "type": "affiliate"
+      }
+    ],
     "related_subsidy_ids": [
       "maternity-allowance",
       "child-allowance"
@@ -7793,7 +7822,18 @@ const SUBSIDIES = [
     "apply_method": "入学時等に「受給資格認定申請書」をオンライン(e-Shien)または書面で学校に提出。",
     "source_checked_at": "2026-07-31",
     "priority": 1,
-    "related_offers": [],
+    "related_offers": [
+      {
+        "label": "ベビープラネットで保険を無料相談する",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8DGS+IGPSI+503M+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "CampusTopでオンライン英語を体験する",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8DGS+1JDLAQ+4HHM+TRVYQ",
+        "type": "affiliate"
+      }
+    ],
     "related_subsidy_ids": []
   },
   {
@@ -7826,7 +7866,18 @@ const SUBSIDIES = [
     "apply_method": "認可保育所等は通常の利用手続き内で無償化が自動適用。預かり保育・認可外施設利用は市区町村へ別途申請。",
     "source_checked_at": "2026-07-31",
     "priority": 1,
-    "related_offers": [],
+    "related_offers": [
+      {
+        "label": "ベビープラネットで保険を無料相談する",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8DGS+IGPSI+503M+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "CampusTopでオンライン英語を体験する",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8DGS+1JDLAQ+4HHM+TRVYQ",
+        "type": "affiliate"
+      }
+    ],
     "related_subsidy_ids": [
       "child-allowance"
     ]
@@ -7861,7 +7912,13 @@ const SUBSIDIES = [
     "apply_method": "居住する市区町村の児童扶養手当担当窓口へ認定請求書等を提出。",
     "source_checked_at": "2026-07-31",
     "priority": 2,
-    "related_offers": [],
+    "related_offers": [
+      {
+        "label": "ベビープラネットで保険を無料相談する",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8DGS+IGPSI+503M+5YJRM",
+        "type": "affiliate"
+      }
+    ],
     "related_subsidy_ids": [
       "single-parent-education-training-benefit",
       "single-parent-vocational-training-promotion-benefit"
@@ -7932,7 +7989,13 @@ const SUBSIDIES = [
     "apply_method": "国に登録された住宅事業者(工務店・ハウスメーカー等)を通じて予約・申請する。",
     "source_checked_at": "2026-07-31",
     "priority": 2,
-    "related_offers": [],
+    "related_offers": [
+      {
+        "label": "ハピタスリフォームで一括見積もりを取る",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+ARLGUQ+1LP8+1NJK7M",
+        "type": "affiliate"
+      }
+    ],
     "related_subsidy_ids": [
       "flat35-kosodate-plus",
       "housing-loan-tax-deduction"
@@ -8075,7 +8138,13 @@ const SUBSIDIES = [
     "apply_method": "加入する医療保険者へ「限度額適用認定証」の交付を事前申請するか、事後に高額療養費の支給申請を行う。",
     "source_checked_at": "2026-07-31",
     "priority": 1,
-    "related_offers": [],
+    "related_offers": [
+      {
+        "label": "保険マンモスでFPに無料相談する",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45DYA9+92V95E+5SIO+5YJRM",
+        "type": "affiliate"
+      }
+    ],
     "related_subsidy_ids": [
       "combined-high-cost-medical-and-longterm-care-benefit",
       "medical-expense-tax-deduction"
@@ -8114,7 +8183,13 @@ const SUBSIDIES = [
     "apply_method": "「健康保険傷病手当金支給申請書」を勤務先経由、または本人が加入する協会けんぽ支部・健保組合へ提出。",
     "source_checked_at": "2026-07-31",
     "priority": 2,
-    "related_offers": [],
+    "related_offers": [
+      {
+        "label": "保険マンモスでFPに無料相談する",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45DYA9+92V95E+5SIO+5YJRM",
+        "type": "affiliate"
+      }
+    ],
     "related_subsidy_ids": []
   },
   {
@@ -8147,7 +8222,13 @@ const SUBSIDIES = [
     "apply_method": "居住する市区町村の担当窓口へ申請。",
     "source_checked_at": "2026-07-31",
     "priority": 2,
-    "related_offers": [],
+    "related_offers": [
+      {
+        "label": "保険マンモスでFPに無料相談する",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45DYA9+92V95E+5SIO+5YJRM",
+        "type": "affiliate"
+      }
+    ],
     "related_subsidy_ids": []
   },
   {
@@ -8180,7 +8261,13 @@ const SUBSIDIES = [
     "apply_method": "居住する都道府県・指定都市の窓口(保健所等)へ申請。",
     "source_checked_at": "2026-07-31",
     "priority": 2,
-    "related_offers": [],
+    "related_offers": [
+      {
+        "label": "保険マンモスでFPに無料相談する",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45DYA9+92V95E+5SIO+5YJRM",
+        "type": "affiliate"
+      }
+    ],
     "related_subsidy_ids": []
   },
   {
@@ -8213,7 +8300,13 @@ const SUBSIDIES = [
     "apply_method": "確定申告時に医療費控除の明細書を添付して申告する。",
     "source_checked_at": "2026-07-31",
     "priority": 1,
-    "related_offers": [],
+    "related_offers": [
+      {
+        "label": "保険マンモスでFPに無料相談する",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45DYA9+92V95E+5SIO+5YJRM",
+        "type": "affiliate"
+      }
+    ],
     "related_subsidy_ids": [
       "high-cost-medical-expense-benefit"
     ]
@@ -8248,7 +8341,13 @@ const SUBSIDIES = [
     "apply_method": "加入する医療保険者へ支給申請。",
     "source_checked_at": "2026-07-31",
     "priority": 3,
-    "related_offers": [],
+    "related_offers": [
+      {
+        "label": "保険マンモスでFPに無料相談する",
+        "url": "https://px.a8.net/svt/ejp?a8mat=45DYA9+92V95E+5SIO+5YJRM",
+        "type": "affiliate"
+      }
+    ],
     "related_subsidy_ids": [
       "high-cost-medical-expense-benefit"
     ]
