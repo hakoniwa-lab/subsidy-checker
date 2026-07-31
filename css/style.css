@@ -330,6 +330,36 @@ html, body {
   border-top: 1px dashed var(--color-border);
 }
 
+.result-card__related {
+  margin: 14px 0 0;
+  padding-top: 12px;
+  border-top: 1px dashed var(--color-border);
+}
+
+.result-card__related-heading {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  margin: 0 0 6px;
+}
+
+.result-card__related-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.result-card__related-list a {
+  font-size: 0.85rem;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.result-card__related-list a:hover { text-decoration: underline; }
+
 .result-card__actions {
   display: flex;
   flex-wrap: wrap;

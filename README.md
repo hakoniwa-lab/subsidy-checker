@@ -92,7 +92,7 @@ subsidy-checker/
 - `subsidy-checker/seido/index.html`: カテゴリ別に全件を一覧できるページ(JS任意の絞り込み入力欄付き)。
 - `sitemap.xml`・`robots.txt`: 生成スクリプトが自動作成。
 - `js/render.js`の結果カードにも「この制度の詳細ページを見る」という内部リンクを追加し、診断アプリ↔個別ページの内部リンク構造を作っている。
-- タイトルタグは制度名によっては60字を超える場合がある(最長43字の制度名 + 都道府県名 + カテゴリキーワード)。今回は機械生成を優先しており、個別の文字数最適化は行っていない。
+- タイトルタグは60字を超える場合、制度名の末尾の括弧書き(通称・愛称)を落として短縮する(`buildTitle`、2026-07-31実装)。H1見出し(本文側)は省略せず正式名称のまま表示する。
 - マネタイズ導線(`related_offers`)は個別ページ側でも`scripts/generate-seo-pages.js`内の`buildOfferLinks`(js/render.jsと同等のロジック)で描画される(2026-07-29実装)。
 - デプロイ後はGoogle Search Consoleに`sitemap.xml`を送信することを推奨(今回のスコープ外、手動作業)。
 
@@ -115,7 +115,7 @@ console.log(r.results.map(x => x.name + ' (score=' + x.score + ')').join('\n'));
 ## マネタイズ導線
 
 - 各制度の `related_offers` フィールド。`{label, url, type}` 形式のオブジェクトの配列で、結果カード・SEO個別ページの両方に「PR」バッジ付きボタンとして自動表示される(`js/render.js` / `scripts/generate-seo-pages.js` それぞれの `buildOfferLinks`)。2026-07-29にA8.net案件(purpose=`side_job`にクラウディア、purpose=`career_change`にIT求人ナビ フリーランス・社内SE転職ナビ)を実装。リンクは`rel="noopener sponsored"`を付与し、フッターにもプロモーション表記あり(景品表示法のステマ規制対応)。
-- `related_subsidy_ids` フィールド: 関連する他制度のIDを列挙した配列(旧`related_offers`から改名、2026-07-29)。UI描画には未使用で、将来「関連する制度」セクションを作る場合のためのデータとして残置。
+- `related_subsidy_ids` フィールド: 関連する他制度のIDを列挙した配列(旧`related_offers`から改名、2026-07-29)。2026-07-31に結果カード・SEO個別ページ両方で「関連する制度」セクションとして描画するようにした(`js/render.js`/`scripts/generate-seo-pages.js`の`buildRelatedSubsidiesSection`)。現状125件中17件のみ値が入っている(残りは空配列)。
 - 結果一覧下部の `#ad-slot-result-bottom`(広告プレースホルダ、現在は空)。
 - 診断結果画面のメールリード獲得フォーム(`#lead-form`、現在は送信先未設定のダミー)。
 

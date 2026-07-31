@@ -42,6 +42,23 @@ function buildOfferLinks(subsidy) {
     .join("");
 }
 
+function buildRelatedSubsidiesSection(subsidy) {
+  const ids = subsidy.related_subsidy_ids || [];
+  if (ids.length === 0) return "";
+  const items = ids
+    .map((id) => (typeof SUBSIDIES !== "undefined" ? SUBSIDIES.find((s) => s.id === id) : null))
+    .filter(Boolean)
+    .map((s) => `<li><a href="seido/${escapeHtml(s.id)}/">${escapeHtml(s.name)}</a></li>`)
+    .join("");
+  if (!items) return "";
+  return `
+    <div class="result-card__related">
+      <p class="result-card__related-heading">関連する制度</p>
+      <ul class="result-card__related-list">${items}</ul>
+    </div>
+  `;
+}
+
 function buildResultCard(subsidy) {
   const badges = [`<span class="badge">${escapeHtml(subsidy.category)}</span>`, `<span class="badge badge--accent">マッチ度 ${starRating(subsidy.score)}</span>`];
   if (subsidy.needsReview) {
@@ -64,6 +81,7 @@ function buildResultCard(subsidy) {
         ${buildDetailPageLink(subsidy)}
         ${buildOfferLinks(subsidy)}
       </div>
+      ${buildRelatedSubsidiesSection(subsidy)}
       ${checkedLine ? `<p class="result-card__checked">${escapeHtml(checkedLine)}</p>` : ""}
     </article>
   `;

@@ -67,11 +67,32 @@ function buildOfferLinks(subsidy) {
     .join("");
 }
 
+function buildRelatedSubsidiesSection(subsidy) {
+  const ids = subsidy.related_subsidy_ids || [];
+  if (ids.length === 0) return "";
+  const items = ids
+    .map((id) => SUBSIDIES.find((s) => s.id === id))
+    .filter(Boolean)
+    .map((s) => `<li><a href="../${escapeHtml(s.id)}/">${escapeHtml(s.name)}</a></li>`)
+    .join("");
+  if (!items) return "";
+  return `
+    <div class="result-card__related">
+      <p class="result-card__related-heading">関連する制度</p>
+      <ul class="result-card__related-list">${items}</ul>
+    </div>
+  `;
+}
+
 function buildTitle(subsidy) {
   const region = regionLabel(subsidy);
   const keyword = CATEGORY_KEYWORDS[subsidy.category];
   const regionPart = region ? `【${region}】` : "【全国】";
-  return `${regionPart}${subsidy.name}｜${keyword}`;
+  const full = `${regionPart}${subsidy.name}｜${keyword}`;
+  if (full.length <= 60) return full;
+  // 60字超過時は制度名の括弧書き(通称・愛称)を落として短縮する。本文側のH1は省略しない。
+  const shortName = subsidy.name.replace(/\([^)]*\)$/, "");
+  return `${regionPart}${shortName}｜${keyword}`;
 }
 
 function canonicalUrl(subsidy) {
@@ -141,6 +162,8 @@ function detailPageHtml(subsidy) {
       <a class="result-card__link" href="${escapeHtml(subsidy.apply_url)}" target="_blank" rel="noopener">公式サイトで詳細を見る →</a>
       ${buildOfferLinks(subsidy)}
     </div>
+
+    ${buildRelatedSubsidiesSection(subsidy)}
 
     <p class="result-card__checked">${escapeHtml(formatCheckedDate(subsidy.source_checked_at))} 時点で確認</p>
   </article>
