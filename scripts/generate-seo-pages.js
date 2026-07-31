@@ -67,6 +67,17 @@ function buildOfferLinks(subsidy) {
     .join("");
 }
 
+function buildCrossLinkBanner(subsidy) {
+  const purposeTags = (subsidy.tags && subsidy.tags.purpose) || [];
+  if (purposeTags.includes("side_job")) {
+    return `<a class="cross-link-banner" href="../../../sidejob-checker/">この制度を使いながら、向いていそうな副業ジャンルも副業ジャンル診断で確認できます →</a>`;
+  }
+  if (purposeTags.includes("career_change")) {
+    return `<a class="cross-link-banner" href="../../../career-checker/">キャリアチェンジに合いそうな転職エージェントも、転職エージェント診断で確認できます →</a>`;
+  }
+  return "";
+}
+
 function buildRelatedSubsidiesSection(subsidy) {
   const ids = subsidy.related_subsidy_ids || [];
   if (ids.length === 0) return "";
@@ -164,6 +175,7 @@ function detailPageHtml(subsidy) {
     </div>
 
     ${buildRelatedSubsidiesSection(subsidy)}
+    ${buildCrossLinkBanner(subsidy)}
 
     <p class="result-card__checked">${escapeHtml(formatCheckedDate(subsidy.source_checked_at))} 時点で確認</p>
   </article>

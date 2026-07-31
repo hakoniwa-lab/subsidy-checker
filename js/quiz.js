@@ -172,7 +172,7 @@ function skipCurrentQuestion() {
 function finishQuiz() {
   progressBar.style.width = "100%";
   const matchResult = matchSubsidies(SUBSIDIES, state.answers);
-  renderResults(resultSummaryEl, resultListEl, matchResult);
+  renderResults(resultSummaryEl, resultListEl, matchResult, state.answers);
   showScreen("result");
 }
 

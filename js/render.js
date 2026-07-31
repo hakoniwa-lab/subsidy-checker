@@ -59,7 +59,17 @@ function buildRelatedSubsidiesSection(subsidy) {
   `;
 }
 
-function buildResultCard(subsidy) {
+function buildCrossLinkBanner(purpose) {
+  if (purpose === "side_job") {
+    return `<a class="cross-link-banner" href="../sidejob-checker/">この制度を使いながら、向いていそうな副業ジャンルも副業ジャンル診断で確認できます →</a>`;
+  }
+  if (purpose === "career_change") {
+    return `<a class="cross-link-banner" href="../career-checker/">キャリアチェンジに合いそうな転職エージェントも、転職エージェント診断で確認できます →</a>`;
+  }
+  return "";
+}
+
+function buildResultCard(subsidy, purpose) {
   const badges = [`<span class="badge">${escapeHtml(subsidy.category)}</span>`, `<span class="badge badge--accent">マッチ度 ${starRating(subsidy.score)}</span>`];
   if (subsidy.needsReview) {
     badges.push(`<span class="badge badge--warn">条件を要確認</span>`);
@@ -82,6 +92,7 @@ function buildResultCard(subsidy) {
         ${buildOfferLinks(subsidy)}
       </div>
       ${buildRelatedSubsidiesSection(subsidy)}
+      ${buildCrossLinkBanner(purpose)}
       ${checkedLine ? `<p class="result-card__checked">${escapeHtml(checkedLine)}</p>` : ""}
     </article>
   `;
@@ -91,9 +102,11 @@ function buildResultCard(subsidy) {
  * @param {HTMLElement} summaryEl
  * @param {HTMLElement} listEl
  * @param {{results: Array, relaxed: boolean}} matchResult
+ * @param {Object} answers
  */
-function renderResults(summaryEl, listEl, matchResult) {
+function renderResults(summaryEl, listEl, matchResult, answers) {
   const { results, relaxed } = matchResult;
+  const purpose = answers ? answers.purpose : null;
 
   if (results.length === 0) {
     summaryEl.innerHTML = `
@@ -109,5 +122,5 @@ function renderResults(summaryEl, listEl, matchResult) {
     <p class="result-summary__note">${relaxed ? "地域条件を緩めて表示しています。お住まいの地域の詳細は各公式サイトでご確認ください。" : "マッチ度が高い順に表示しています。"}</p>
   `;
 
-  listEl.innerHTML = results.map(buildResultCard).join("");
+  listEl.innerHTML = results.map((s) => buildResultCard(s, purpose)).join("");
 }

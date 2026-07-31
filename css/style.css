@@ -360,6 +360,20 @@ html, body {
 
 .result-card__related-list a:hover { text-decoration: underline; }
 
+.cross-link-banner {
+  display: block;
+  margin-top: 12px;
+  padding: 10px 14px;
+  background: var(--color-badge-bg);
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  color: var(--color-badge-text);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.cross-link-banner:hover { opacity: 0.85; }
+
 .result-card__actions {
   display: flex;
   flex-wrap: wrap;
