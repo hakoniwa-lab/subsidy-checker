@@ -57,10 +57,10 @@
 
       <div class="card card--lead" id="lead-card">
         <h2 class="card__title">診断結果をあとで見返したい方へ</h2>
-        <p>メールアドレスを登録すると、今回の診断結果と新しい支援制度の情報をお届けします。（準備中）</p>
-        <form id="lead-form" class="lead-form">
-          <input type="email" class="lead-form__input" placeholder="メールアドレス" disabled>
-          <button type="submit" class="btn btn--primary" disabled>登録する（準備中）</button>
+        <p>メールアドレスを登録すると、HAKONIWA LABの新しいツール・お得な情報をお届けします。</p>
+        <form id="lead-form" class="lead-form" action="https://buttondown.com/api/emails/embed-subscribe/hakoniwalab" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.com/hakoniwalab', 'popupwindow')">
+          <input type="email" name="email" class="lead-form__input" placeholder="メールアドレス" required>
+          <button type="submit" class="btn btn--primary">登録する</button>
         </form>
       </div>
 
