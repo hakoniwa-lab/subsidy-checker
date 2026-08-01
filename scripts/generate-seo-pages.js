@@ -135,6 +135,7 @@ function detailPageHtml(subsidy) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${escapeHtml(title)}</title>
 <meta name="description" content="${escapeHtml(subsidy.summary)}">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6465548593525933" crossorigin="anonymous"></script>
 <link rel="canonical" href="${canonical}">
 <link rel="stylesheet" href="../../css/style.css">
 <script type="application/ld+json">${jsonLd}</script>
@@ -245,6 +246,7 @@ function listPageHtml(subsidies) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>制度一覧(全${subsidies.length}件) | 給付金・補助金診断</title>
 <meta name="description" content="スキルアップ・副業・創業支援など、全${subsidies.length}件の給付金・補助金制度をカテゴリ別に一覧できます。">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6465548593525933" crossorigin="anonymous"></script>
 <link rel="canonical" href="${SITE_BASE}/seido/">
 <link rel="stylesheet" href="../css/style.css">
 </head>
