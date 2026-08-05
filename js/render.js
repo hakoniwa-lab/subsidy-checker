@@ -66,6 +66,15 @@ function buildCrossLinkBanner(purpose) {
   if (purpose === "career_change") {
     return `<a class="cross-link-banner" href="../career-checker/">キャリアチェンジに合いそうな転職エージェントも、転職エージェント診断で確認できます →</a>`;
   }
+  if (purpose === "medical") {
+    return `<a class="cross-link-banner" href="../insurance-checker/">医療費に備える保険が必要か、保険診断でも確認できます →</a>`;
+  }
+  if (purpose === "skill_up") {
+    return `<a class="cross-link-banner" href="../career-checker/">スキルアップ後のキャリアチェンジ先も転職エージェント診断で探せます →</a>`;
+  }
+  if (purpose === "startup") {
+    return `<a class="cross-link-banner" href="../takehome-calculator/">独立後の手取り額の目安も手取り年収シミュレーターで試算できます →</a>`;
+  }
   return "";
 }
 
