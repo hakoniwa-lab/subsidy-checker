@@ -550,3 +550,45 @@ html, body {
   font-size: 0.82rem;
   color: var(--color-text-muted);
 }
+
+/* --- 解説記事セクション(トップページ・一覧ページ) --- */
+
+.article-lead {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  margin: -8px 0 20px;
+}
+
+.card--article h2 {
+  font-size: 1.05rem;
+  margin: 0 0 12px;
+}
+.card--article p {
+  font-size: 0.9rem;
+  margin: 0 0 12px;
+}
+.card--article p:last-child { margin-bottom: 0; }
+.card--article ul {
+  font-size: 0.9rem;
+  margin: 0 0 12px;
+  padding-left: 22px;
+}
+
+.faq-item {
+  border-bottom: 1px dashed var(--color-border);
+  padding: 12px 0;
+}
+.faq-item:first-of-type { padding-top: 0; }
+.faq-item:last-child { border-bottom: none; padding-bottom: 0; }
+.faq-item summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 0.9rem;
+  list-style: revert;
+}
+.faq-item summary::marker { color: var(--color-primary); }
+.faq-item p {
+  margin: 8px 0 0;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
