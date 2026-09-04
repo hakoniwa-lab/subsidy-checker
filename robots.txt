@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hakoniwa-lab.github.io/subsidy-checker/sitemap.xml
+Sitemap: https://hakoniwalab.com/subsidy-checker/sitemap.xml

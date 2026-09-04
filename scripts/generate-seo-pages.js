@@ -4,7 +4,7 @@ const fs = require("fs");
 const path = require("path");
 
 const ROOT = path.resolve(__dirname, "..");
-const SITE_BASE = "https://hakoniwa-lab.github.io/subsidy-checker";
+const SITE_BASE = "https://hakoniwalab.com/subsidy-checker";
 const { PREFECTURES } = require(path.join(ROOT, "js/regions.js"));
 const SUBSIDIES = JSON.parse(fs.readFileSync(path.join(ROOT, "data/subsidies.json"), "utf8"));
 
