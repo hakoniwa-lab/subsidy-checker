@@ -27,8 +27,14 @@ function formatCheckedDate(dateStr) {
   return `${y}年${Number(m)}月${Number(d)}日 時点で確認`;
 }
 
+// 解説ページ(seido/<id>/)がある制度のid集合。js/seido-keep.js が定義する(scripts/generate-seo-pages.js が生成)。
+function hasDetailPage(id) {
+  return typeof SEIDO_DETAIL_IDS !== "undefined" && SEIDO_DETAIL_IDS.has(id);
+}
+
 function buildDetailPageLink(subsidy) {
-  return `<a class="result-card__link result-card__link--detail" href="seido/${escapeHtml(subsidy.id)}/">この制度の詳細ページを見る</a>`;
+  if (!hasDetailPage(subsidy.id)) return "";
+  return `<a class="result-card__link result-card__link--detail" href="seido/${escapeHtml(subsidy.id)}/">この制度の解説を読む</a>`;
 }
 
 function buildOfferLinks(subsidy) {
@@ -48,7 +54,11 @@ function buildRelatedSubsidiesSection(subsidy) {
   const items = ids
     .map((id) => (typeof SUBSIDIES !== "undefined" ? SUBSIDIES.find((s) => s.id === id) : null))
     .filter(Boolean)
-    .map((s) => `<li><a href="seido/${escapeHtml(s.id)}/">${escapeHtml(s.name)}</a></li>`)
+    .map((s) =>
+      hasDetailPage(s.id)
+        ? `<li><a href="seido/${escapeHtml(s.id)}/">${escapeHtml(s.name)}</a></li>`
+        : `<li>${escapeHtml(s.name)}</li>`
+    )
     .join("");
   if (!items) return "";
   return `
