@@ -521,11 +521,24 @@ document.getElementById("seido-filter").addEventListener("input", function (e) {
 `;
 }
 
+// guide/ 配下の解説記事。seido/ とは別に人が手で作るので、ディレクトリを走査して拾う。
+// (これを忘れると再生成のたびに sitemap から記事が消える。2026-09-09 に実際に消した)
+function guidePages() {
+  const dir = path.join(ROOT, "guide");
+  if (!fs.existsSync(dir)) return [];
+  return fs
+    .readdirSync(dir, { withFileTypes: true })
+    .filter((e) => e.isDirectory() && fs.existsSync(path.join(dir, e.name, "index.html")))
+    .filter((e) => !/noindex/i.test(fs.readFileSync(path.join(dir, e.name, "index.html"), "utf8")))
+    .map((e) => `${SITE_BASE}/guide/${e.name}/`);
+}
+
 function sitemapXml(subsidies) {
   const today = localDate();
   const urls = [
     { loc: `${SITE_BASE}/`, lastmod: today, priority: "1.0" },
     { loc: `${SITE_BASE}/seido/`, lastmod: today, priority: "0.8" },
+    ...guidePages().map((loc) => ({ loc, lastmod: today, priority: "0.8" })),
     ...subsidies
       .filter((s) => KEEP.has(s.id))
       .map((s) => ({ loc: canonicalUrl(s), lastmod: today, priority: "0.8" })),
@@ -581,8 +594,11 @@ function main() {
   fs.writeFileSync(path.join(ROOT, "robots.txt"), robotsTxt(), "utf8");
   fs.writeFileSync(path.join(ROOT, "js/seido-keep.js"), seidoKeepJs(), "utf8");
 
+  const guides = guidePages();
   console.log(
-    `生成完了: 解説ページ${articleCount}件(indexable) + noindexページ${SUBSIDIES.length - articleCount}件 + 一覧1件 + sitemap.xml(${2 + articleCount}件) + robots.txt + js/seido-keep.js`
+    `生成完了: 解説ページ${articleCount}件(indexable) + noindexページ${SUBSIDIES.length - articleCount}件 + 一覧1件 + robots.txt + js/seido-keep.js
+` +
+      `  sitemap.xml: ${2 + guides.length + articleCount}件 (トップ + 制度一覧 + guide記事${guides.length}件 + 制度解説${articleCount}件)`
   );
 }
 
