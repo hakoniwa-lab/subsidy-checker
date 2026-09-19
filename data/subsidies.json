@@ -2820,69 +2820,6 @@
     "related_subsidy_ids": []
   },
   {
-    "id": "fukushima-women-reemployment-support",
-    "name": "女性の就職支援(ふるさと福島就職情報センター)",
-    "category": "女性支援",
-    "organization": "福島県雇用労政課(ふるさと福島就職情報センター)",
-    "summary": "出産・育児・介護等で離職していた女性や転職希望の女性向けに、専任の女性キャリアカウンセラーによる就職相談・職業紹介・再就職支援セミナーを無料で提供する。",
-    "benefit_text": "就職相談・職業紹介・セミナーはすべて無料",
-    "benefit_max_yen": null,
-    "conditions_text": "出産・育児・介護等で離職していた期間がある、または転職を希望し再び働きたいと考えている女性が対象。",
-    "tags": {
-      "employment_status": [
-        "unemployed_recent",
-        "part_time"
-      ],
-      "purpose": [
-        "career_change",
-        "skill_up"
-      ],
-      "region": [
-        "fukushima"
-      ],
-      "gender": [
-        "female"
-      ],
-      "age_range": [
-        null,
-        null
-      ],
-      "requires_employment_insurance": false
-    },
-    "apply_url": "https://www.pref.fukushima.lg.jp/sec/32011c/josei-saishushoku.html",
-    "apply_method": "ふるさと福島就職情報センター福島窓口(コラッセふくしま2階)へ電話または来所で相談を申し込む。",
-    "source_checked_at": "2026-07-29",
-    "priority": 3,
-    "related_offers": [
-      {
-        "label": "IT求人ナビ フリーランスで案件を探す",
-        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
-        "type": "affiliate"
-      },
-      {
-        "label": "社内SE転職ナビで転職先を探す",
-        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
-        "type": "affiliate"
-      },
-      {
-        "label": "エンラボカレッジで自立訓練を探す",
-        "url": "https://px.a8.net/svt/ejp?a8mat=457DOC+4036FM+5QUO+5YRHE",
-        "type": "affiliate"
-      },
-      {
-        "label": "明光キャリアパートナーズでエンジニア転職を探す",
-        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3ENKNM+5P1E+5YJRM",
-        "type": "affiliate"
-      },
-      {
-        "label": "退職代行Jobsに相談する",
-        "url": "https://h.accesstrade.net/sp/cc?rk=0100q2uz00owel",
-        "type": "affiliate"
-      }
-    ],
-    "related_subsidy_ids": []
-  },
-  {
     "id": "ibaraki-chiiki-kadai-kigyo-shien",
     "name": "茨城県地域課題解決型起業支援事業",
     "category": "創業・開業支援",
@@ -5860,58 +5797,6 @@
       {
         "label": "退職代行Jobsに相談する",
         "url": "https://h.accesstrade.net/sp/cc?rk=0100q2uz00owel",
-        "type": "affiliate"
-      }
-    ],
-    "related_subsidy_ids": []
-  },
-  {
-    "id": "fukui-startup-grant",
-    "name": "福井型スタートアップ創出支援事業補助金(スタートアップ創出枠)",
-    "category": "創業・開業支援",
-    "organization": "福井県産業労働部経営改革課",
-    "summary": "特徴あるビジネスモデルで福井県内において起業する者を対象に、事業費の一部を補助するスタートアップ支援制度。",
-    "benefit_text": "県内起業者・UIターン者は補助率2/3以内(上限100万円)、学生は補助率10/10(上限100万円)",
-    "benefit_max_yen": 1000000,
-    "conditions_text": "福井県内で特徴あるビジネスモデルにより起業する者(県内起業者・UIターン者・学生)で、5年目売上高が初年度の1.5倍以上見込めること等が必要。",
-    "tags": {
-      "employment_status": [
-        "employee",
-        "student"
-      ],
-      "purpose": [
-        "startup"
-      ],
-      "region": [
-        "fukui"
-      ],
-      "gender": [
-        "any"
-      ],
-      "age_range": [
-        null,
-        null
-      ],
-      "requires_employment_insurance": false
-    },
-    "apply_url": "https://www.pref.fukui.lg.jp/doc/sinsan/sougyou.html",
-    "apply_method": "所定様式をダウンロードし、必要書類とともにメール(keieikaikaku@pref.fukui.lg.jp)で申請する。",
-    "source_checked_at": "2026-07-29",
-    "priority": 3,
-    "related_offers": [
-      {
-        "label": "Karigoでバーチャルオフィスを探す",
-        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWR+FGOKNM+1N1U+609HU",
-        "type": "affiliate"
-      },
-      {
-        "label": "0円バーチャルオフィスで副業・起業を支援",
-        "url": "https://px.a8.net/svt/ejp?a8mat=455NVQ+15OMDU+4V0U+15PEXE",
-        "type": "affiliate"
-      },
-      {
-        "label": "ワークスタイリングでシェアオフィスを探す",
-        "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+BNQVIQ+5SRK+5YJRM",
         "type": "affiliate"
       }
     ],
