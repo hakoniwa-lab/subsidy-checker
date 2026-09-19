@@ -114,7 +114,7 @@ module.exports = {
   ],
   sources: [
     { label: "厚生労働省「求職者支援制度のご案内」", url: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyushokusha_shien/index.html" },
-    { label: "ハローワークインターネットサービス「ハロートレーニング（公的職業訓練）」", url: "https://www.hellowork.mhlw.go.jp/member/hallotraining.html" },
+    { label: "厚生労働省「ハロートレーニング（公的職業訓練）」", url: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/jinzaikaihatsu/hellotraining_top.html" },
   ],
   guides: [
     { label: "転職エージェント診断", href: "../../../career-checker/", note: "訓練後の就職先を探す相談先を5問で診断できます" },

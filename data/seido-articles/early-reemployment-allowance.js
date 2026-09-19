@@ -112,7 +112,7 @@ module.exports = {
   ],
   sources: [
     { label: "ハローワークインターネットサービス「就職促進給付」", url: "https://www.hellowork.mhlw.go.jp/insurance/insurance_stepup.html" },
-    { label: "厚生労働省「雇用保険制度」", url: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000147326.html" },
+    { label: "厚生労働省「雇用保険制度」", url: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/koyouhoken/index_00003.html" },
   ],
   guides: [
     { label: "転職エージェント診断", href: "../../../career-checker/", note: "給付制限中の1か月は職業紹介事業者経由の就職が条件になるので、相談先を診断できます" },

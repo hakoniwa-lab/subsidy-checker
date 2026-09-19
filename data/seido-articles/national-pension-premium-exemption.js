@@ -112,7 +112,7 @@ module.exports = {
   sources: [
     { label: "日本年金機構「国民年金保険料の免除制度・納付猶予制度」", url: "https://www.nenkin.go.jp/service/kokunen/menjo/index.html" },
     { label: "日本年金機構「失業等による特例免除」", url: "https://www.nenkin.go.jp/service/kokunen/menjo/20150514.html" },
-    { label: "日本年金機構「国民年金保険料の追納制度」", url: "https://www.nenkin.go.jp/service/kokunen/tsuino/index.html" },
+    { label: "日本年金機構「国民年金保険料の追納制度」", url: "https://www.nenkin.go.jp/service/kokunen/menjo/20150331.html" },
   ],
   guides: [
     { label: "退職金手取りシミュレーター", href: "../../../retirement-simulator/", note: "退職金の手取りから、退職後の保険料や生活費の見通しを立てられます" },

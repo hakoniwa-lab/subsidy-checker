@@ -1307,9 +1307,9 @@ const SUBSIDIES = [
       ],
       "requires_employment_insurance": false
     },
-    "apply_url": "https://www.pref.aichi.jp/press-release/startup-hojokin2025.html",
+    "apply_url": "https://aichihojokin.com/",
     "apply_method": "電子申請システムで交付申請書・事業計画書等の必要書類を提出し、審査を経て採択される。",
-    "source_checked_at": "2026-07-29",
+    "source_checked_at": "2026-09-20",
     "priority": 3,
     "related_offers": [
       {
@@ -1428,9 +1428,9 @@ const SUBSIDIES = [
       ],
       "requires_employment_insurance": false
     },
-    "apply_url": "https://www.pref.saitama.lg.jp/a0816/library-info/2025080101.html",
+    "apply_url": "https://www.pref.saitama.lg.jp/swcc/joseidigital.html",
     "apply_method": "埼玉県女性キャリアセンター(電話048-601-5810)へ問い合わせ、開講月ごとの募集に申し込む。",
-    "source_checked_at": "2026-07-29",
+    "source_checked_at": "2026-09-20",
     "priority": 3,
     "related_offers": [
       {
@@ -1954,7 +1954,7 @@ const SUBSIDIES = [
     "summary": "子育て・介護・不妊治療等で離職した女性の再就職を支援する宮城県の拠点。専属キャリアコンサルタントによる個別カウンセリングやセミナーを無料で提供する。",
     "benefit_text": "カウンセリング・セミナーはすべて無料",
     "benefit_max_yen": null,
-    "conditions_text": "家庭の事情等により現在無職の女性が対象。平日火〜金曜に対面・オンラインで利用可能、参加中の一時保育支援制度もある。",
+    "conditions_text": "家庭と仕事の両立に悩む、就労していない女性が対象(子育て中の方・ブランクがある方など)。平日(月〜金)に対面・オンラインで利用でき、利用中の一時保育の費用補助制度もある。",
     "tags": {
       "employment_status": [
         "unemployed_recent"
@@ -1975,9 +1975,9 @@ const SUBSIDIES = [
       ],
       "requires_employment_insurance": false
     },
-    "apply_url": "https://www.pref.miyagi.jp/soshiki/koyou/josei_career.html",
-    "apply_method": "平日火〜金10:00〜18:00に対面またはオンラインで予約し、1回90〜120分程度のカウンセリングを受ける。",
-    "source_checked_at": "2026-07-29",
+    "apply_url": "https://my-musubi.pref.miyagi.jp/mrestart/",
+    "apply_method": "予約フォーム(サイト登録後)または電話(022-774-6977)で予約し、平日(月〜金)10:00〜18:00に対面またはオンラインで1回90分程度のカウンセリングを受ける。",
+    "source_checked_at": "2026-09-20",
     "priority": 3,
     "related_offers": [
       {

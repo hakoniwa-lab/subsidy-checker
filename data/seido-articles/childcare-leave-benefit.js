@@ -116,7 +116,7 @@ module.exports = {
   ],
   sources: [
     { label: "厚生労働省「育児休業給付について」", url: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000158500.html" },
-    { label: "厚生労働省「出生後休業支援給付金・育児時短就業給付金（令和7年4月創設）」", url: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyufu/index.html" },
+    { label: "厚生労働省「育児休業等給付について」（出生後休業支援給付金・育児時短就業給付金を含む）", url: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000135090_00001.html" },
     { label: "ハローワークインターネットサービス「育児休業給付」", url: "https://www.hellowork.mhlw.go.jp/insurance/insurance_childcareleave.html" },
   ],
   guides: [

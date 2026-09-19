@@ -97,7 +97,7 @@ module.exports = {
   ],
   sources: [
     { label: "ハローワークインターネットサービス「雇用継続給付」", url: "https://www.hellowork.mhlw.go.jp/insurance/insurance_continue.html" },
-    { label: "厚生労働省「高年齢雇用継続給付の内容及び支給申請手続について」", url: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/koyouhoken/koureisha.html" },
+    { label: "厚生労働省・ハローワーク「高年齢雇用継続給付の内容及び支給申請手続について」（PDF）", url: "https://www.hellowork.mhlw.go.jp/doc/kounenrei.pdf" },
   ],
   guides: [
     { label: "退職金手取りシミュレーター", href: "../../../retirement-simulator/", note: "60歳定年時の退職金の手取りを計算できます" },

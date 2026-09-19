@@ -98,7 +98,7 @@ module.exports = {
   ],
   sources: [
     { label: "全国健康保険協会（協会けんぽ）「病気やケガで会社を休んだとき（傷病手当金）」", url: "https://www.kyoukaikenpo.or.jp/benefit/injury_and_sickness_allowance/index.html" },
-    { label: "全国健康保険協会（協会けんぽ）「傷病手当金について」", url: "https://www.kyoukaikenpo.or.jp/g3/cat320/sb3170/r150/" },
+    { label: "全国健康保険協会（協会けんぽ）「健康保険傷病手当金支給申請書」", url: "https://www.kyoukaikenpo.or.jp/application_form/benefit/001/index.html" },
   ],
   guides: [
     { label: "保険診断", href: "../../../insurance-checker/", note: "傷病手当金でカバーできない分に民間保険が必要かを診断できます" },
