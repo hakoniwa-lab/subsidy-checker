@@ -163,6 +163,9 @@ function canonicalUrl(subsidy) {
   return `${SITE_BASE}/seido/${subsidy.id}/`;
 }
 
+// depth = そのページからサイトのトップ(hakoniwalab.com/)まで何階層上がるか。
+// 運営者情報・お問い合わせ・プライバシーはサイト共通でトップにある(subsidy-checker/ の中ではない)。
+//   seido/index.html → 2 / seido/<id>/index.html → 3
 function footerHtml(depth) {
   const up = "../".repeat(depth);
   return `
@@ -417,7 +420,7 @@ function thinPageHtml(subsidy) {
   </div>
 
   <p class="detail-back"><a href="../index.html">&larr; 制度一覧に戻る</a></p>
-${footerHtml(2)}
+${footerHtml(3)}
 
 </div>
 </body>
@@ -507,7 +510,7 @@ ${ADSENSE_TAG}
     <h2 class="card__title">どれが自分に合うか分からない方へ</h2>
     <a class="btn btn--primary btn--large" href="../index.html">5つの質問で診断する</a>
   </div>
-${footerHtml(1)}
+${footerHtml(2)}
 </div>
 <script>
 document.getElementById("seido-filter").addEventListener("input", function (e) {
