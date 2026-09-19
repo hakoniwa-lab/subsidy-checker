@@ -7489,9 +7489,9 @@ const SUBSIDIES = [
         "type": "affiliate"
       },
       {
-        "label": "障害者ナビで求人を探す",
-        "url": "https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3777130&pid=892668928",
-        "type": "affiliate"
+        "label": "障害者ナビの公式サイトを見る",
+        "url": "https://s-jobnavi.jp/",
+        "type": "official"
       }
     ],
     "related_subsidy_ids": []

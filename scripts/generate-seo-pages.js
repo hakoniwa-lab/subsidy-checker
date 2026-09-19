@@ -104,14 +104,15 @@ function formatCheckedDate(dateStr) {
   return `${y}年${Number(m)}月${Number(d)}日`;
 }
 
+/* type が "official" のリンクは広告ではない(提携前の公式サイトなど)ので、PR表記と sponsored を付けない */
 function buildOfferLinks(subsidy, limit) {
   const offers = (subsidy.related_offers || []).slice(0, limit || Infinity);
   if (offers.length === 0) return "";
   return offers
-    .map(
-      (o) =>
-        `<a class="result-card__link result-card__link--offer" href="${escapeHtml(o.url)}" target="_blank" rel="noopener sponsored">${escapeHtml(o.label || "関連サービスを見る")}<span class="badge badge--pr">PR</span></a>`
-    )
+    .map((o) => {
+      const isAd = o.type !== "official";
+      return `<a class="result-card__link result-card__link--offer" href="${escapeHtml(o.url)}" target="_blank" rel="noopener${isAd ? " sponsored" : ""}">${escapeHtml(o.label || "関連サービスを見る")}${isAd ? '<span class="badge badge--pr">PR</span>' : ""}</a>`;
+    })
     .join("");
 }
 
