@@ -7374,9 +7374,9 @@ const SUBSIDIES = [
         "type": "affiliate"
       },
       {
-        "label": "障害者ナビの公式サイトを見る",
-        "url": "https://s-jobnavi.jp/",
-        "type": "official"
+        "label": "【障害者ナビ】",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4BCFNI+5B4F82+5X02+5YRHE",
+        "type": "affiliate"
       }
     ],
     "related_subsidy_ids": []
