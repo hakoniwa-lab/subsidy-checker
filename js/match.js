@@ -90,14 +90,15 @@ function scoreSubsidy(subsidy, answers) {
 function matchSubsidies(subsidies, answers) {
   const primary = subsidies.map((s) => scoreSubsidy(s, answers)).filter((s) => !s.hardFail);
 
+  // 同点時は priority の小さい数字を優先表示する(1が最重要、数字が大きいほど重要度が低い)
   if (primary.length > 0) {
-    primary.sort((a, b) => b.score - a.score || (b.priority || 0) - (a.priority || 0));
+    primary.sort((a, b) => b.score - a.score || (a.priority || 99) - (b.priority || 99));
     return { results: primary, relaxed: false };
   }
 
   // 0件時のフォールバック: 地域条件だけ緩めて再提示する
   const relaxedAnswers = Object.assign({}, answers, { region: "no_answer" });
   const relaxed = subsidies.map((s) => scoreSubsidy(s, relaxedAnswers)).filter((s) => !s.hardFail);
-  relaxed.sort((a, b) => b.score - a.score || (b.priority || 0) - (a.priority || 0));
+  relaxed.sort((a, b) => b.score - a.score || (a.priority || 99) - (b.priority || 99));
   return { results: relaxed, relaxed: true };
 }
