@@ -261,7 +261,9 @@
         "type": "affiliate"
       }
     ],
-    "related_subsidy_ids": []
+    "related_subsidy_ids": [
+      "basic-allowance"
+    ]
   },
   {
     "id": "small-business-sustainability-subsidy-startup",
@@ -7382,6 +7384,67 @@
     "related_subsidy_ids": []
   },
   {
+    "id": "basic-allowance",
+    "name": "基本手当(失業保険・失業手当)",
+    "category": "求職者給付",
+    "organization": "厚生労働省(ハローワーク)",
+    "summary": "雇用保険の被保険者が離職し、働く意思と能力があるのに就職できない「失業の状態」にあるときに支給される給付。「失業保険」「失業手当」「退職給付金」と呼ばれるのはこの制度のこと。",
+    "benefit_text": "賃金日額の約50〜80%(60歳〜64歳は45〜80%)を所定給付日数90〜360日分。基本手当日額の上限は30歳未満7,450円・30歳以上45歳未満8,270円・45歳以上60歳未満9,110円・60歳以上65歳未満7,830円(2026年8月1日現在)",
+    "benefit_max_yen": null,
+    "conditions_text": "離職日以前2年間に被保険者期間が通算12か月以上あること(倒産・解雇等による特定受給資格者と、契約が更新されなかった等の特定理由離職者は、離職日以前1年間に通算6か月以上でも可)。ハローワークで求職の申込みをし、いつでも就職できる能力があるのに就職できない状態であること。病気・けが・妊娠・出産・育児ですぐに就職できない場合や、退職後しばらく休養する場合は対象外。65歳以上で離職した場合は基本手当ではなく高年齢求職者給付金の対象になる。",
+    "tags": {
+      "employment_status": [
+        "unemployed_recent"
+      ],
+      "purpose": [
+        "career_change"
+      ],
+      "region": [
+        "nationwide"
+      ],
+      "gender": [
+        "any"
+      ],
+      "age_range": [
+        null,
+        64
+      ],
+      "requires_employment_insurance": true
+    },
+    "apply_url": "https://www.hellowork.mhlw.go.jp/insurance/insurance_basicbenefit.html",
+    "apply_method": "離職後、会社から受け取る離職票とマイナンバー確認書類・本人確認書類等を持って住所地のハローワークで求職の申込みを行い、受給資格の決定を受ける。7日間の待期期間(正当な理由がない自己都合退職は、待期期間の後さらに原則1か月の給付制限)を経て、原則4週間ごとに失業の認定を受けて支給される。",
+    "source_checked_at": "2026-09-27",
+    "priority": 1,
+    "related_offers": [
+      {
+        "label": "IT求人ナビ フリーランスで案件を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3H1B2Q+4LXM+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "社内SE転職ナビで転職先を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3HMQOI+3IZO+I4NDE",
+        "type": "affiliate"
+      },
+      {
+        "label": "明光キャリアパートナーズでエンジニア転職を探す",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4B8BWS+3ENKNM+5P1E+5YJRM",
+        "type": "affiliate"
+      },
+      {
+        "label": "退職代行Jobsに相談する",
+        "url": "https://h.accesstrade.net/sp/cc?rk=0100q2uz00owel",
+        "type": "affiliate"
+      }
+    ],
+    "related_subsidy_ids": [
+      "early-reemployment-allowance",
+      "education-training-support-benefit",
+      "job-seeker-support-training-benefit",
+      "high-age-job-seeker-benefit"
+    ]
+  },
+  {
     "id": "early-reemployment-allowance",
     "name": "再就職手当",
     "category": "就職促進給付",
@@ -7435,7 +7498,9 @@
         "type": "affiliate"
       }
     ],
-    "related_subsidy_ids": []
+    "related_subsidy_ids": [
+      "basic-allowance"
+    ]
   },
   {
     "id": "high-age-job-seeker-benefit",
@@ -7496,7 +7561,9 @@
         "type": "affiliate"
       }
     ],
-    "related_subsidy_ids": []
+    "related_subsidy_ids": [
+      "basic-allowance"
+    ]
   },
   {
     "id": "child-allowance",

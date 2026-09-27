@@ -15,6 +15,15 @@ const path = require("path");
 
 const ROOT = path.resolve(__dirname, "..");
 const SITE_BASE = "https://hakoniwalab.com/subsidy-checker";
+const GA_TAG = `<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WTBHV5QYG3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-WTBHV5QYG3');
+</script>`;
+
 const ADSENSE_TAG = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6465548593525933" crossorigin="anonymous"></script>`;
 const { PREFECTURES } = require(path.join(ROOT, "js/regions.js"));
 const SUBSIDIES = JSON.parse(fs.readFileSync(path.join(ROOT, "data/subsidies.json"), "utf8"));
@@ -33,6 +42,7 @@ const PREF_LABEL = Object.fromEntries(PREFECTURES.map((p) => [p.code, p.label]))
 const CATEGORY_KEYWORDS = {
   "教育訓練給付": "スキルアップ・資格取得の給付金",
   "求職者支援": "求職者支援制度",
+  "求職者給付": "雇用保険の失業給付",
   "創業・開業支援": "起業・開業支援の補助金",
   "自治体リスキリング支援": "リスキリング支援・研修費助成",
   "女性支援": "女性向け支援制度",
@@ -234,6 +244,7 @@ function articlePageHtml(subsidy, art) {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+${GA_TAG}
 <title>${escapeHtml(art.title)}</title>
 <meta name="description" content="${escapeHtml(art.description)}">
 ${ADSENSE_TAG}
@@ -362,6 +373,7 @@ function thinPageHtml(subsidy) {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+${GA_TAG}
 <meta name="robots" content="noindex,follow">
 <title>${escapeHtml(title)}</title>
 <meta name="description" content="${escapeHtml(subsidy.summary)}">
@@ -484,6 +496,7 @@ function listPageHtml(subsidies) {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+${GA_TAG}
 <title>制度一覧(全${subsidies.length}件) | 給付金・補助金診断</title>
 <meta name="description" content="教育訓練給付・求職者支援・創業支援・子育て・住宅・医療費など、全国共通の制度と47都道府県の独自制度あわせて${subsidies.length}件をカテゴリ別に一覧できます。主要${keepCount}制度は条件・計算例・申請手順の解説付き、それ以外は公式サイトへ直接リンクしています。">
 ${ADSENSE_TAG}

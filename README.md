@@ -51,6 +51,8 @@ subsidy-checker/
    このコマンドは`seido/`フォルダを一度削除してから作り直すため、`id`を変更・削除した制度がある場合は古いURLのページが自動的に消える(以後404になる)。運用上`id`は変更しないことを推奨。新しい`category`を追加した場合は`scripts/generate-seo-pages.js`内の`CATEGORY_KEYWORDS`にも追加しないとスクリプトがエラーで停止する(未登録カテゴリが一覧ページから漏れるのを防ぐための安全策)。
 5. `node --check scripts/generate-seo-pages.js`で構文チェック、`git status`で`seido/`配下の追加・削除件数が想定通りか確認してからコミットする。
 
+> GA4の計測タグ(`G-WTBHV5QYG3`)は`generate-seo-pages.js`の`GA_TAG`から各ページに出力される。テンプレートを触るときに消さないこと(2026-09-27に一度、生成でseido配下142ページからタグが消えた)。
+
 ### tagsフィールドの語彙
 
 - `employment_status`: `employee` / `part_time` / `self_employed` / `unemployed_recent` / `student`(空配列は制限なし)
