@@ -7946,6 +7946,11 @@ const SUBSIDIES = [
         "label": "ハピタスリフォームで一括見積もりを取る",
         "url": "https://px.a8.net/svt/ejp?a8mat=45G21P+ARLGUQ+1LP8+1NJK7M",
         "type": "affiliate"
+      },
+      {
+        "label": "補助金活用でお得にリフォーム！まずはお見積もりから♪",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4BCFNI+5OTE4Y+2W92+60WN6",
+        "type": "affiliate"
       }
     ],
     "related_subsidy_ids": [
@@ -8019,7 +8024,13 @@ const SUBSIDIES = [
     "apply_method": "入居初年度は確定申告が必要。給与所得者は2年目以降、勤務先の年末調整で適用可能。",
     "source_checked_at": "2026-07-31",
     "priority": 1,
-    "related_offers": [],
+    "related_offers": [
+      {
+        "label": "全国優良リフォーム会社への一括見積もりなら【リショップナビ】",
+        "url": "https://px.a8.net/svt/ejp?a8mat=4BCFNI+5OTE4Y+2W92+5YJRM",
+        "type": "affiliate"
+      }
+    ],
     "related_subsidy_ids": [
       "flat35-kosodate-plus",
       "mirai-eco-jutaku-2026"
