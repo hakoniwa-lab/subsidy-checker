@@ -257,8 +257,8 @@ ${ARTICLE_STYLE}
 <div class="app">
 
   <nav class="guide-nav" aria-label="パンくずリスト">
-    <a href="../../index.html">給付金・補助金診断</a> &raquo;
-    <a href="../index.html">制度一覧</a> &raquo;
+    <a href="../../">給付金・補助金診断</a> &raquo;
+    <a href="../">制度一覧</a> &raquo;
     <span aria-current="page">${escapeHtml(subsidy.name)}</span>
   </nav>
 
@@ -315,10 +315,10 @@ ${sections}
       <div class="card card--article">
         <h2>他にも使える制度があるかもしれません</h2>
         <p>5つの質問に答えるだけで、あなたの状況に合いそうな給付金・補助金の候補を確認できます。無料・登録不要で、入力内容は端末の中だけで処理されます。</p>
-        <p class="guide-cta"><a class="btn btn--primary btn--large" href="../../index.html">5つの質問で診断する</a></p>
+        <p class="guide-cta"><a class="btn btn--primary btn--large" href="../../">5つの質問で診断する</a></p>
         ${related}
         ${buildCrossLinkBanner(subsidy)}
-        <p class="guide-note" style="margin-top:12px;"><a href="../index.html">制度一覧（全${SUBSIDIES.length}件）で他の制度を探す</a></p>
+        <p class="guide-note" style="margin-top:12px;"><a href="../">制度一覧（全${SUBSIDIES.length}件）で他の制度を探す</a></p>
       </div>
 
       <div class="card card--article">
@@ -385,8 +385,8 @@ ${GA_TAG}
 <div class="app detail-page">
 
   <nav class="breadcrumb" aria-label="パンくずリスト">
-    <a href="../../index.html">診断トップ</a> &raquo;
-    <a href="../index.html">制度一覧</a> &raquo;
+    <a href="../../">診断トップ</a> &raquo;
+    <a href="../">制度一覧</a> &raquo;
     <span aria-current="page">${escapeHtml(subsidy.name)}</span>
   </nav>
 
@@ -428,10 +428,10 @@ ${GA_TAG}
   <div class="card detail-cta">
     <h2 class="card__title">他にも使える制度があるかもしれません</h2>
     <p>5つの質問に答えるだけで、あなたに合いそうな給付金・補助金を診断できます。</p>
-    <a class="btn btn--primary btn--large" href="../../index.html">5つの質問で診断する</a>
+    <a class="btn btn--primary btn--large" href="../../">5つの質問で診断する</a>
   </div>
 
-  <p class="detail-back"><a href="../index.html">&larr; 制度一覧に戻る</a></p>
+  <p class="detail-back"><a href="../">&larr; 制度一覧に戻る</a></p>
 ${footerHtml(3)}
 
 </div>
@@ -510,7 +510,7 @@ ${ADSENSE_TAG}
 <body>
 <div class="app">
   <nav class="breadcrumb" aria-label="パンくずリスト">
-    <a href="../index.html">診断トップ</a> &raquo; <span aria-current="page">制度一覧</span>
+    <a href="../">診断トップ</a> &raquo; <span aria-current="page">制度一覧</span>
   </nav>
   <header class="app-header">
     <h1 class="app-header__title">給付金・補助金 制度一覧(全${subsidies.length}件)</h1>
@@ -521,7 +521,7 @@ ${ADSENSE_TAG}
   <main>${sections}</main>
   <div class="card detail-cta">
     <h2 class="card__title">どれが自分に合うか分からない方へ</h2>
-    <a class="btn btn--primary btn--large" href="../index.html">5つの質問で診断する</a>
+    <a class="btn btn--primary btn--large" href="../">5つの質問で診断する</a>
   </div>
 ${footerHtml(2)}
 </div>
