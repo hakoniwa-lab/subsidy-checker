@@ -101,6 +101,7 @@ module.exports = {
   ],
   guides: [
     { label: "退職金手取りシミュレーター", href: "../../../retirement-simulator/", note: "60歳定年時の退職金の手取りを計算できます" },
+    { label: "在職老齢年金の早見表 2026年度", href: "../../../retirement-simulator/guide/zaishoku-rourei-nenkin/", note: "60歳以降に働きながら年金を受け取ると止まる額を計算できます" },
     { label: "手取り年収シミュレーター", href: "../../../takehome-calculator/", note: "再雇用後の年収から手取りの目安を計算できます" },
     { label: "転職エージェント診断", href: "../../../career-checker/", note: "60歳以降の転職に対応した相談先も診断できます" },
   ],

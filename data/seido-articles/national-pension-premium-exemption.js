@@ -117,5 +117,6 @@ module.exports = {
   guides: [
     { label: "退職金手取りシミュレーター", href: "../../../retirement-simulator/", note: "退職金の手取りから、退職後の保険料や生活費の見通しを立てられます" },
     { label: "手取り年収シミュレーター", href: "../../../takehome-calculator/", note: "自営業に切り替えた場合の国民年金・国民健康保険を含めた手取りを計算できます" },
+    { label: "年金生活者支援給付金はいくら？", href: "../../guide/nenkin-seikatsusha-shienkyufukin/", note: "免除を受けた月も、65歳からの年金生活者支援給付金の額に反映されます" },
   ],
 };

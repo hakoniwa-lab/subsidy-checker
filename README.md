@@ -108,6 +108,16 @@ subsidy-checker/
 - マネタイズ導線(`related_offers`)は個別ページ側でも`scripts/generate-seo-pages.js`内の`buildOfferLinks`(js/render.jsと同等のロジック)で描画される(2026-07-29実装)。
 - デプロイ後はGoogle Search Consoleに`sitemap.xml`を送信することを推奨(今回のスコープ外、手動作業)。
 
+## 計算機つきの解説記事(guide/、2026-10-12追加)
+
+`guide/` の記事は手書きのもの(danna-ikukyu-tottehoshii・taishoku-kyufukin-ayashii)と、`C:/dev/tool-dev/tools/money-articles/build_*.py` で生成するものがある。生成する記事は手で直さず、build を直して流し直す(共通の枠は `kit.py`)。
+
+- `guide/juminzei-hikazei-nenshu/`(build_hikazei.py) … 住民税非課税になる年収。1〜3級地×扶養人数、給与のみ(2025年の収入/2026年の収入)・年金のみ(65歳以上/未満)の早見表と判定機。2026年の収入から給与所得控除の最低額が65万→74万円。練馬区(1級地)・柏市(2級地)の公表表と一致を確認
+- `guide/nenkin-seikatsusha-shienkyufukin/`(build_shienkyufu.py) … 年金生活者支援給付金。令和8年度は基準額5,620円・所得基準826,500円(昭和31年4月1日以前生まれ824,100円)・補足的は926,500円まで。毎年4月に額を入れ直す
+- `guide/taishokugo-kenkohoken/`(build_kenpo.py) … 任意継続と国保の比較。協会けんぽの都道府県別料率(令和8年度)・任意継続の上限32万円・国保は東京23区(大田区の料率)が既定。非自発的失業の100分の30と均等割の7・5・2割軽減を計算に入れる
+- 計算はすべて `js/kurashi-calc.js`(ブラウザとNodeの両方で読む)。記事の表も build がこれを node で呼んで出すので、計算を直せば表も直る
+- sitemap は `scripts/generate-seo-pages.js` が `guide/` を走査して拾う
+
 ## マッチングロジックの手動テスト
 
 ```

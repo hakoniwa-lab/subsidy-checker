@@ -150,6 +150,8 @@ module.exports = {
   ],
   guides: [
     { label: "「退職給付金」という制度はありません", href: "../../guide/taishoku-kyufukin-ayashii/", note: "広告で見かける「退職給付金」の正体と、自分で申請する手順をまとめた解説記事です" },
+    { label: "退職後の健康保険は任意継続と国保どっちが安い？", href: "../../guide/taishokugo-kenkohoken/", note: "会社都合などで辞めた人の国保の軽減(給与所得を100分の30)も入れて比べられます" },
+    { label: "退職日シミュレーター", href: "../../../retirement-simulator/taishokubi/", note: "65歳の前に辞めるか後に辞めるかで、基本手当か高年齢求職者給付金かが変わる境目を判定します" },
     { label: "転職エージェント診断", href: "../../../career-checker/", note: "求職活動の実績にもなる相談先を5問で診断できます" },
     { label: "手取り年収シミュレーター", href: "../../../takehome-calculator/", note: "再就職先の年収から手取りを計算し、離職前と比べられます" },
   ],

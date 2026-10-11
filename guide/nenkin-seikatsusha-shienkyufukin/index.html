@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WTBHV5QYG3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-WTBHV5QYG3');
+</script>
+<title>年金生活者支援給付金はいくら？計算機と早見表2026｜月5,620円・所得基準826,500円</title>
+<meta name="description" content="年金生活者支援給付金の2026年度の額は月5,620円(480か月納付の場合)。65歳以上・世帯全員が住民税非課税・年金収入とその他の所得の合計826,500円以下が条件です。納付月数と免除月数から月額を出す計算機、早見表、補足的老齢年金生活者支援給付金の計算も。日本年金機構の資料にもとづきます。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="年金生活者支援給付金はいくら？計算機と早見表2026｜月5,620円・所得基準826,500円">
+<meta property="og:description" content="年金生活者支援給付金の2026年度の額は月5,620円(480か月納付の場合)。65歳以上・世帯全員が住民税非課税・年金収入とその他の所得の合計826,500円以下が条件です。納付月数と免除月数から月額を出す計算機、早見表、補足的老齢年金生活者支援給付金の計算も。日本年金機構の資料にもとづきます。">
+<meta property="og:url" content="https://hakoniwalab.com/subsidy-checker/guide/nenkin-seikatsusha-shienkyufukin/">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6465548593525933" crossorigin="anonymous"></script>
+<link rel="canonical" href="https://hakoniwalab.com/subsidy-checker/guide/nenkin-seikatsusha-shienkyufukin/">
+<link rel="stylesheet" href="../../css/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"年金生活者支援給付金は月いくらですか？","acceptedAnswer":{"@type":"Answer","text":"2026年度の基準額は月5,620円(年67,440円)で、国民年金の保険料を480か月納めた人の額です。納めた月数が少ないと減り、免除の期間がある人は免除の月の分が加わります。"}},{"@type":"Question","name":"誰がもらえますか？","acceptedAnswer":{"@type":"Answer","text":"65歳以上で老齢基礎年金を受け取っていて、世帯の全員が住民税非課税、前の年の年金収入とその他の所得の合計が826,500円以下(昭和31年4月1日以前生まれは824,100円以下)の人です。926,500円以下までは、減額した補足的老齢年金生活者支援給付金が出ます。"}},{"@type":"Question","name":"遺族年金や障害年金は収入に含めますか？","acceptedAnswer":{"@type":"Answer","text":"含めません。障害年金・遺族年金などの非課税の収入は、判定に使う年金収入に入りません。"}},{"@type":"Question","name":"いつから受け取れますか？","acceptedAnswer":{"@type":"Answer","text":"請求書を出した月の翌月分からです。新たに対象になる人には毎年9月からはがき型の請求書が届きます。支払いは偶数月に、前の2か月分です。"}},{"@type":"Question","name":"納付240か月・全額免除60か月だといくらですか？","acceptedAnswer":{"@type":"Answer","text":"月4,281円です。5,620円×240÷480＝2,810円と、11,768円×60÷480＝1,471円の合計で、日本年金機構の計算例と同じです。"}}]}</script>
+<style>
+.guide-nav { max-width: 720px; margin: 0 auto 16px; padding: 0 20px; font-size: 0.85rem; color: var(--color-text-muted); }
+.guide-nav a { color: var(--color-text-muted); }
+.guide-lead { font-size: 0.95rem; }
+.guide-table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 0.9rem; }
+.guide-table th, .guide-table td { border: 1px solid var(--color-border); padding: 8px 10px; text-align: left; vertical-align: top; }
+.guide-table th { background: var(--color-bg); font-weight: 600; }
+.guide-table td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.guide-table tr.is-best td { background: var(--color-badge-bg); font-weight: 700; }
+.guide-note { font-size: 0.85rem; color: var(--color-text-muted); }
+.card--article h3 { font-size: 1rem; margin: 18px 0 6px; }
+.guide-cta { text-align: center; }
+.guide-cta .btn { display: inline-block; text-decoration: none; }
+.guide-calc { text-align: left; background: var(--color-bg); border: 1px solid var(--color-border); border-radius: 8px; padding: 12px 14px; margin: 14px 0; font-size: 0.92rem; }
+.guide-calc label { display: block; font-weight: 600; margin: 8px 0 4px; font-size: 0.88rem; }
+.guide-calc input, .guide-calc select { width: 100%; padding: 8px; border: 1px solid var(--color-border); border-radius: 6px; font-size: 1rem; background: var(--color-surface); color: var(--color-text); }
+.guide-calc .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.guide-calc .row3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+.guide-result { margin-top: 12px; font-size: 0.95rem; }
+.guide-result strong { font-size: 1.1rem; }
+.table-scroll { overflow-x: auto; }
+.date-row { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 6px; margin-bottom: 8px; }
+.form-help { font-size: 0.85rem; color: var(--color-text-muted); }
+.guide-calc .quiz-select, .date-row .quiz-select { width: 100%; }
+.nw { white-space: nowrap; }
+.card--article a[target="_blank"] { overflow-wrap: anywhere; }
+.art-cta { text-align: center; margin: 16px 0 4px; padding: 14px 12px; border: 1px dashed var(--color-border); border-radius: 8px; }
+.card--article .art-cta p { font-size: 0.85rem; margin: 0 0 10px; }
+.art-cta__links { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <nav class="guide-nav" aria-label="パンくずリスト">
+    <a href="../../">給付金・補助金診断</a> &raquo;
+    <span aria-current="page">年金生活者支援給付金はいくら？</span>
+  </nav>
+
+  <header class="app-header">
+    <p class="app-header__eyebrow">年金に上乗せされる給付金</p>
+    <h1 class="app-header__title">年金生活者支援給付金<br>計算機と早見表</h1>
+    <p class="app-header__lead">2026年度は月5,620円が基準。納めた月数と免除の月数で決まります。</p>
+  </header>
+
+  <main class="main">
+    <section class="screen">
+      <div class="card card--intro">
+        <form id="sk-form" class="guide-calc" style="margin:0">
+          <label><input type="checkbox" id="sk-over65" checked style="width:auto"> 65歳以上で、老齢基礎年金を受け取っている</label>
+          <label><input type="checkbox" id="sk-setai" checked style="width:auto"> 世帯の全員が住民税非課税</label>
+          <label for="sk-born">生まれた日</label>
+          <select id="sk-born">
+            <option value="after">昭和31年4月2日以後</option>
+            <option value="before">昭和31年4月1日以前</option>
+          </select>
+          <div class="row2">
+            <div><label for="sk-nenkin">2025年の年金収入(年額・万円)</label><input id="sk-nenkin" type="number" inputmode="decimal" min="0" step="0.1" value="70"></div>
+            <div><label for="sk-kyuyo">2025年の給与収入(万円)</label><input id="sk-kyuyo" type="number" inputmode="decimal" min="0" step="0.1" value="0"></div>
+          </div>
+          <label for="sk-sonota">給与以外のその他の所得(万円)</label>
+          <input id="sk-sonota" type="number" inputmode="decimal" min="0" step="0.1" value="0">
+          <label for="sk-nofu">保険料を納めた月数(会社員・公務員だった20〜60歳の期間、第3号被保険者の期間を含む)</label>
+          <input id="sk-nofu" type="number" inputmode="numeric" min="0" max="480" step="1" value="480">
+          <div class="row2">
+            <div><label for="sk-full">全額・4分の3・半額免除の月数</label><input id="sk-full" type="number" inputmode="numeric" min="0" max="480" step="1" value="0"></div>
+            <div><label for="sk-qtr">4分の1免除の月数</label><input id="sk-qtr" type="number" inputmode="numeric" min="0" max="480" step="1" value="0"></div>
+          </div>
+          <p class="guide-result" id="sk-out" role="status"></p>
+          <p class="guide-note">年金収入には障害年金・遺族年金を含めません。納付月数と免除月数は、年金証書や支給額変更通知書、ねんきんネットで確かめられます。入力は端末の外に送りません。</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="article">
+
+      <div class="card card--article">
+        <p class="guide-lead">年金生活者支援給付金は、年金の少ない人に年金とは別に上乗せされるお金です。2026年度(令和8年度)の基準額は<strong>月5,620円(年67,440円)</strong>で、国民年金の保険料を40年(480か月)納めた人が満額です。</p>
+        <p>65歳以上の人(老齢年金生活者支援給付金)が受け取れるのは、次の3つをすべて満たすときです。</p>
+        <ul>
+          <li>65歳以上で、老齢基礎年金を受け取っている</li>
+          <li><strong>世帯の全員</strong>が住民税非課税</li>
+          <li>前の年の<strong>年金収入とその他の所得の合計が826,500円以下</strong>(昭和31年4月1日以前生まれは824,100円以下)</li>
+        </ul>
+        <p>合計が826,500円を超えて926,500円以下の人(昭和31年4月1日以前生まれは824,100円超924,100円以下)には、所得の逆転が起きないように、少し減らした<strong>補足的老齢年金生活者支援給付金</strong>が出ます。2026年10月分から2027年9月分までは、2025年の収入で判定します。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>計算のしかた</h2>
+        <p>月額は、次の2つの合計です(昭和31年4月2日以後生まれの場合)。</p>
+        <ul>
+          <li><strong>納めた月の分</strong> ＝ 5,620円 × 保険料を納めた月数 ÷ 480</li>
+          <li><strong>免除の月の分</strong> ＝ 11,768円 × 全額・4分の3・半額免除の月数 ÷ 480(4分の1免除の月は5,884円)</li>
+        </ul>
+        <p>11,768円は老齢基礎年金の満額(月額)の6分の1です。昭和31年4月1日以前生まれの人は11,734円・5,867円で計算します。それぞれ50銭未満は切り捨て、50銭以上は1円に切り上げます。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>保険料を納めた月数ごとの早見表(免除なし)</h2>
+        <div class="table-scroll">
+          <table class="guide-table">
+            <thead><tr><th>納めた月数</th><th>給付金の月額</th></tr></thead>
+            <tbody>
+            <tr><td>480か月(40年)</td><td>5,620円<br><small>年67,440円</small></td></tr>
+            <tr><td>450か月(37年6か月)</td><td>5,269円<br><small>年63,228円</small></td></tr>
+            <tr><td>420か月(35年)</td><td>4,918円<br><small>年59,016円</small></td></tr>
+            <tr><td>400か月(33年4か月)</td><td>4,683円<br><small>年56,196円</small></td></tr>
+            <tr><td>360か月(30年)</td><td>4,215円<br><small>年50,580円</small></td></tr>
+            <tr><td>300か月(25年)</td><td>3,513円<br><small>年42,156円</small></td></tr>
+            <tr><td>240か月(20年)</td><td>2,810円<br><small>年33,720円</small></td></tr>
+            <tr><td>180か月(15年)</td><td>2,108円<br><small>年25,296円</small></td></tr>
+            <tr><td>120か月(10年)</td><td>1,405円<br><small>年16,860円</small></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card card--article">
+        <h2>免除の期間がある場合</h2>
+        <div class="table-scroll">
+          <table class="guide-table">
+            <thead><tr><th>納めた月数</th><th>全額などの免除</th><th>4分の1免除</th><th>給付金の月額</th></tr></thead>
+            <tbody>
+            <tr><td>240か月</td><td>60か月</td><td>—</td><td>4,281円<br><small>年51,372円</small></td></tr>
+            <tr><td>300か月</td><td>180か月</td><td>—</td><td>7,926円<br><small>年95,112円</small></td></tr>
+            <tr><td>360か月</td><td>120か月</td><td>—</td><td>7,157円<br><small>年85,884円</small></td></tr>
+            <tr><td>400か月</td><td>—</td><td>80か月</td><td>5,664円<br><small>年67,968円</small></td></tr>
+            <tr><td>0か月</td><td>480か月</td><td>—</td><td>11,768円<br><small>年141,216円</small></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="guide-note">納付240か月・全額免除60か月で月4,281円になるのは、日本年金機構が示している計算例と同じです。免除の月が多い人ほど、年金は少なく給付金は多くなります。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>補足的老齢年金生活者支援給付金(合計826,500円超〜926,500円)</h2>
+        <p>納めた月の分に、<strong>調整支給率＝(926,500円−年金収入とその他の所得の合計)÷10万円</strong>を掛けた額です。免除の月の分はつきません。</p>
+        <div class="table-scroll">
+          <table class="guide-table">
+            <thead><tr><th>年金収入＋その他の所得</th><th>調整支給率</th><th>月額(480か月納付)</th></tr></thead>
+            <tbody>
+            <tr><td>830,000円</td><td>0.965</td><td>5,423円<br><small>年65,076円</small></td></tr>
+            <tr><td>850,000円</td><td>0.765</td><td>4,299円<br><small>年51,588円</small></td></tr>
+            <tr><td>870,000円</td><td>0.565</td><td>3,175円<br><small>年38,100円</small></td></tr>
+            <tr><td>890,000円</td><td>0.365</td><td>2,051円<br><small>年24,612円</small></td></tr>
+            <tr><td>910,000円</td><td>0.165</td><td>927円<br><small>年11,124円</small></td></tr>
+            <tr><td>926,000円</td><td>0.005</td><td>28円<br><small>年336円</small></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card card--article">
+        <h2>障害・遺族の年金生活者支援給付金</h2>
+        <ul>
+          <li><strong>障害年金生活者支援給付金</strong> — 障害基礎年金を受け取っていて、前の年の所得が4,918,000円＋扶養親族の数×38万円以下。1級は月7,025円、2級は月5,620円</li>
+          <li><strong>遺族年金生活者支援給付金</strong> — 遺族基礎年金を受け取っていて、所得の条件は障害と同じ。月5,620円(2人以上の子が受け取る場合は人数で割った額)</li>
+        </ul>
+        <p>障害年金・遺族年金そのものは、所得に含めません。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>受け取るには請求が必要</h2>
+        <p>新たに対象になった人には、毎年9月から日本年金機構の<strong>年金生活者支援給付金請求書(はがき型)</strong>が届きます。必要事項を書いて出すと、原則として<strong>請求した月の翌月分から</strong>支払われるので、届いたら早めに出してください。65歳になる人は、誕生日の前日以降に請求できます。</p>
+        <p>支払いは年金と同じ口座に、偶数月の中旬に前の2か月分です。たとえば10月分と11月分は12月中旬に振り込まれます。</p>
+        <p class="guide-note">日本年金機構や厚生労働省が、電話で家族構成や口座番号・暗証番号を聞いたり、手数料を求めたりすることはありません。給付金を名乗る電話は詐欺を疑ってください。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>よくある質問</h2>
+        <details class="faq-item"><summary>年金生活者支援給付金は月いくらですか？</summary><p>2026年度の基準額は月5,620円(年67,440円)で、国民年金の保険料を480か月納めた人の額です。納めた月数が少ないと減り、免除の期間がある人は免除の月の分が加わります。</p></details>
+        <details class="faq-item"><summary>誰がもらえますか？</summary><p>65歳以上で老齢基礎年金を受け取っていて、世帯の全員が住民税非課税、前の年の年金収入とその他の所得の合計が826,500円以下(昭和31年4月1日以前生まれは824,100円以下)の人です。926,500円以下までは、減額した補足的老齢年金生活者支援給付金が出ます。</p></details>
+        <details class="faq-item"><summary>遺族年金や障害年金は収入に含めますか？</summary><p>含めません。障害年金・遺族年金などの非課税の収入は、判定に使う年金収入に入りません。</p></details>
+        <details class="faq-item"><summary>いつから受け取れますか？</summary><p>請求書を出した月の翌月分からです。新たに対象になる人には毎年9月からはがき型の請求書が届きます。支払いは偶数月に、前の2か月分です。</p></details>
+        <details class="faq-item"><summary>納付240か月・全額免除60か月だといくらですか？</summary><p>月4,281円です。5,620円×240÷480＝2,810円と、11,768円×60÷480＝1,471円の合計で、日本年金機構の計算例と同じです。</p></details>
+      </div>
+
+      <div class="card card--article">
+        <h2>出典</h2>
+        <ul>
+          <li>日本年金機構「老齢(補足的老齢)年金生活者支援給付金の概要」<br><a href="https://www.nenkin.go.jp/service/jukyu/seido/sonota-kyufu/shienkyufukin/rourei.html" target="_blank" rel="noopener">https://www.nenkin.go.jp/service/jukyu/seido/sonota-kyufu/shienkyufukin/rourei.html</a></li>
+          <li>日本年金機構「年金生活者支援給付金の金額はいくらですか。」<br><a href="https://www.nenkin.go.jp/section/faq/jukyu/seido/sonota-kyufu/shienkyufukin/shikyuyouken/shikyuyouken03.html" target="_blank" rel="noopener">https://www.nenkin.go.jp/section/faq/jukyu/seido/sonota-kyufu/shienkyufukin/shikyuyouken/shikyuyouken03.html</a></li>
+          <li>日本年金機構「障害年金生活者支援給付金の概要」<br><a href="https://www.nenkin.go.jp/service/jukyu/seido/sonota-kyufu/shienkyufukin/syougai.html" target="_blank" rel="noopener">https://www.nenkin.go.jp/service/jukyu/seido/sonota-kyufu/shienkyufukin/syougai.html</a></li>
+          <li>日本年金機構「遺族年金生活者支援給付金の概要」<br><a href="https://www.nenkin.go.jp/service/jukyu/seido/sonota-kyufu/shienkyufukin/izoku.html" target="_blank" rel="noopener">https://www.nenkin.go.jp/service/jukyu/seido/sonota-kyufu/shienkyufukin/izoku.html</a></li>
+          <li>日本年金機構「年金生活者支援給付金」<br><a href="https://www.nenkin.go.jp/service/jukyu/seido/sonota-kyufu/shienkyufukin/20190805.html" target="_blank" rel="noopener">https://www.nenkin.go.jp/service/jukyu/seido/sonota-kyufu/shienkyufukin/20190805.html</a></li>
+        </ul>
+      </div>
+
+      <div class="card card--article">
+        <h2>あわせて読みたい</h2>
+        <ul>
+          <li><a href="../../guide/juminzei-hikazei-nenshu/">住民税非課税になる年収の早見表</a></li>
+          <li><a href="../../../retirement-simulator/guide/nenkin-tsuchisho-calendar/">年金の書類カレンダー｜何月に何が届くか</a></li>
+          <li><a href="../../../retirement-simulator/nenkin-jukyu/">年金は何歳から受け取ると得？繰上げ・繰下げの損益分岐</a></li>
+          <li><a href="../../">給付金・補助金診断</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <p>本記事は日本年金機構が公表している計算方法で一般的な目安を示すものであり、個別の支給額を保証するものではありません。実際の額は日本年金機構の通知や給付金専用ダイヤルで確認してください。「PR」表記のあるリンクにはプロモーション(アフィリエイト広告)が含まれます。</p>
+    <p><a href="../../../about.html">運営者情報</a>・<a href="../../../contact.html">お問い合わせ</a>・<a href="../../../privacy.html">プライバシーポリシー</a></p>
+  </footer>
+
+</div>
+<script src="../../js/kurashi-calc.js"></script>
+<script>
+(function () {
+  const $ = (id) => document.getElementById(id);
+  const yen = (n) => Math.floor(n).toLocaleString("ja-JP") + "円";
+  const ids = ["sk-over65", "sk-setai", "sk-born", "sk-nenkin", "sk-kyuyo", "sk-sonota", "sk-nofu", "sk-full", "sk-qtr"];
+  const num = (id) => Math.max(0, Number($(id).value || 0));
+  const f = () => {
+    let nofu = Math.min(480, Math.floor(num("sk-nofu"))), full = Math.floor(num("sk-full")), qtr = Math.floor(num("sk-qtr"));
+    const over = nofu + full + qtr > 480;
+    const sonota = kyuyoShotoku(num("sk-kyuyo") * 10000, 8) + num("sk-sonota") * 10000;
+    const r = shienRourei({ over65: $("sk-over65").checked, hikazeiSetai: $("sk-setai").checked, born: $("sk-born").value,
+      nenkinShunyu: num("sk-nenkin") * 10000, sonota, nofu, menjoFull: full, menjoQuarter: qtr });
+    let html;
+    if (!r.ok) {
+      html = r.reason === "age" ? "老齢年金生活者支援給付金は、<strong>65歳以上で老齢基礎年金を受け取っている人</strong>が対象です。"
+        : r.reason === "setai" ? "世帯の全員が住民税非課税でないと対象になりません。<a href=\"../juminzei-hikazei-nenshu/\">住民税非課税になる年収の早見表</a>で、家族それぞれを確かめてください。"
+        : `年金収入とその他の所得の合計が${yen(r.total)}で、上限の${yen(r.hi)}を超えるので対象になりません。`;
+    } else {
+      html = `<strong>${r.kind}</strong>の対象で、<strong>月${yen(r.monthly)}(年${yen(r.monthly * 12)})</strong>の見込みです。`
+        + (r.b ? `<br>内訳は、納めた月の分${yen(r.a)}＋免除の月の分${yen(r.b)}。` : "")
+        + (r.rate != null ? `<br>年金収入とその他の所得の合計が${yen(r.total)}なので、納めた月の分に調整支給率${r.rate.toFixed(3)}を掛けています。` : "")
+        + "<br>偶数月に2か月分ずつ、年金とは別に振り込まれます。";
+    }
+    if (over) html += "<br>納付・免除の月数の合計は480か月までです。";
+    $("sk-out").innerHTML = html;
+    try { localStorage.setItem("subsidy-checker:shienkyufu", JSON.stringify(ids.map((id) => $(id).type === "checkbox" ? $(id).checked : $(id).value))); } catch (e) { /* noop */ }
+  };
+  try { const s = JSON.parse(localStorage.getItem("subsidy-checker:shienkyufu") || "null"); if (s) ids.forEach((id, i) => { if ($(id).type === "checkbox") $(id).checked = s[i]; else $(id).value = s[i]; }); } catch (e) { /* noop */ }
+  ids.forEach((id) => { $(id).addEventListener("input", f); $(id).addEventListener("change", f); });
+  f();
+})();
+</script>
+</body>
+</html>
