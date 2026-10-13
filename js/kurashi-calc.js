@@ -5,7 +5,10 @@
  *   3. 退職後の健康保険(任意継続と国保) … guide/taishokugo-kenkohoken/
  *   4. 高額療養費(ひと月の自己負担の上限) … guide/kogaku-ryoyohi-jogen/
  *   5. 医療費控除・セルフメディケーション税制 … guide/iryohi-kojo-ikura/
- * 金額はすべて円。年度の数字は 2026-10-12(4・5は10-13)に各公式ページで確認した
+ *   6. 標準報酬月額と会社員の手取りの目安(7で使う)
+ *   7. 産休・育休でもらえるお金(出産手当金・育児休業給付金・出生後休業支援給付金) … guide/sankyu-ikukyu-okane/
+ *   8. 児童手当の総額 … guide/jido-teate-sogaku/
+ * 金額はすべて円。年度の数字は 2026-10-12(4〜8は10-13)に各公式ページで確認した
  */
 
 /* ---------- 1. 所得の計算と住民税非課税 ---------- */
@@ -266,10 +269,176 @@ function iryohiKojoEffect(v) {
     iryo, self, better: self.total > iryo.total ? "self" : "iryo" };
 }
 
+/* ---------- 6. 標準報酬月額と会社員の手取りの目安 ---------- */
+/* 健康保険の標準報酬月額(50等級。[この額未満, 標準報酬月額]、135.5万円以上は139万円)。厚生年金は8.8万〜65万円の32等級 */
+const HYOJUN_KENPO = HYOJUN_TABLE.concat([
+  [330000, 320000], [350000, 340000], [370000, 360000], [395000, 380000], [425000, 410000], [455000, 440000],
+  [485000, 470000], [515000, 500000], [545000, 530000], [575000, 560000], [605000, 590000], [635000, 620000],
+  [665000, 650000], [695000, 680000], [730000, 710000], [770000, 750000], [810000, 790000], [855000, 830000],
+  [905000, 880000], [955000, 930000], [1005000, 980000], [1055000, 1030000], [1115000, 1090000], [1175000, 1150000],
+  [1235000, 1210000], [1295000, 1270000], [1355000, 1330000],
+]);
+function hyojunKenpo(gekkyu) {
+  const row = HYOJUN_KENPO.find(([lt]) => gekkyu < lt);
+  return row ? row[1] : 1390000;
+}
+const hyojunNenkin = (gekkyu) => Math.min(650000, Math.max(88000, hyojunKenpo(gekkyu)));
+/* 本人負担の料率(%)。健康保険は協会けんぽの全国平均(令和8年度)、雇用保険は一般の事業の労働者負担(令和8年度) */
+const SHAHO_R8 = { kenpo: 9.90, kodomo: 0.23, kaigo: 1.62, nenkin: 18.3, koyo: 0.5 };
+function shahoMonthly(gekkyu, over40) {
+  const h = hyojunKenpo(gekkyu);
+  const kenpo = Math.round(h * (SHAHO_R8.kenpo + SHAHO_R8.kodomo + (over40 ? SHAHO_R8.kaigo : 0)) / 200);
+  const nenkin = Math.round(hyojunNenkin(gekkyu) * SHAHO_R8.nenkin / 200);
+  const koyo = Math.round(gekkyu * SHAHO_R8.koyo / 100);
+  return { hyojun: h, kenpo, nenkin, koyo, total: kenpo + nenkin + koyo };
+}
+/* 賞与なし・扶養なし・2026年分の所得税と住民税(均等割5,000円)で見た、月の手取り */
+function tedoriMonthly(gekkyu, over40) {
+  const s = shahoMonthly(gekkyu, over40);
+  const gokei = kyuyoShotoku(gekkyu * 12, 9), shakai = s.total * 12;
+  const shotoku = shotokuzeiTotal(Math.max(0, gokei - shakai - kisoKojo(gokei, 2026)));
+  const jumin = Math.floor(Math.max(0, gokei - shakai - 430000) * 0.1 / 100) * 100 + (gokei > 450000 ? 5000 : 0);
+  return { shaho: s.total, shotoku: Math.round(shotoku / 12), jumin: Math.round(jumin / 12),
+    tedori: gekkyu - s.total - Math.round((shotoku + jumin) / 12) };
+}
+
+/* ---------- 7. 産休・育休でもらえるお金 ---------- */
+/* 休業開始時賃金日額の上限・下限(令和8年8月1日〜令和9年7月31日。厚労省「育児休業等給付の内容と支給申請手続」令和8年8月1日改訂版) */
+const IKUKYU_R8 = { max: 16540, min: 3203 };
+const SHUSSAN_ICHIJIKIN = 500000; // 出産育児一時金(産科医療補償制度に入っていない医療機関は48.8万円)
+/* 日付は "YYYY-MM-DD"。UTC の時刻で日を数える(toISOString は使わない) */
+const DAY_MS = 86400000;
+const parseYmd = (s) => { const [y, m, d] = String(s).split("-").map(Number); return Date.UTC(y, m - 1, d); };
+const ymdOf = (t) => { const d = new Date(t); return [d.getUTCFullYear(), d.getUTCMonth() + 1, d.getUTCDate()]; };
+const fmtYmd = (t) => { const [y, m, d] = ymdOf(t); return `${y}年${m}月${d}日`; };
+/* nか月後の応当日(無い日は月末) */
+function addMonthsUTC(t, n) {
+  const [y, m, d] = ymdOf(t);
+  const last = new Date(Date.UTC(y, m - 1 + n + 1, 0)).getUTCDate();
+  return Date.UTC(y, m - 1 + n, Math.min(d, last));
+}
+const monthIndex = (t) => { const [y, m] = ymdOf(t); return y * 12 + m - 1; };
+
+/* 出産手当金。標準報酬月額÷30 は10円未満四捨五入、×2/3 は1円未満四捨五入(協会けんぽ)。期間は予定日どおりに生まれた場合 */
+function shussanTeate(gekkyu, tatai) {
+  const hyojun = hyojunKenpo(gekkyu);
+  const daily = Math.round(Math.round(hyojun / 30 / 10) * 10 * 2 / 3);
+  const days = (tatai ? 98 : 42) + 56;
+  return { hyojun, daily, days, total: daily * days };
+}
+
+/* 育児休業給付金(出生時育児休業給付金を含む)。支給単位期間は休業開始日から1か月ごとで、休業を最後まで含む期間は30日、
+ * 最後の期間は実日数。通算180日までは67%、181日目から50% */
+function ikukyuPeriods(wageDay, start, end) {
+  const out = [];
+  let used = 0;
+  for (let k = 0; ; k++) {
+    const ps = addMonthsUTC(start, k);
+    if (ps > end) break;
+    const pe = addMonthsUTC(start, k + 1) - DAY_MS;
+    const days = pe <= end ? 30 : Math.round((end - ps) / DAY_MS) + 1;
+    const d67 = Math.max(0, Math.min(days, 180 - used));
+    const amount67 = Math.floor(wageDay * d67 * 0.67), amount50 = Math.floor(wageDay * (days - d67) * 0.5);
+    out.push({ from: ps, to: Math.min(pe, end), days, d67, amount67, amount50, amount: amount67 + amount50 });
+    used += days;
+  }
+  return out;
+}
+
+/* v = { role: "mama"|"papa", due, gekkyu, over40, kenpo(勤務先の健康保険・厚生年金に加入), tatai, until: "1y"|"18m"|"2y"|"days"|"none", days, spouse14 } */
+function sankyuIkukyu(v) {
+  const birth = parseYmd(v.due);
+  const mama = v.role !== "papa";
+  const wageDay = Math.min(IKUKYU_R8.max, Math.max(IKUKYU_R8.min, Math.floor((v.gekkyu || 0) * 6 / 180)));
+  const r = { birth, mama, wageDay, ichijikin: SHUSSAN_ICHIJIKIN };
+  if (mama) {
+    r.sanzenFrom = birth - ((v.tatai ? 98 : 42) - 1) * DAY_MS;
+    r.sangoTo = birth + 56 * DAY_MS;
+    r.teate = v.kenpo ? shussanTeate(v.gekkyu || 0, v.tatai) : null;
+  }
+  const start = mama ? birth + 57 * DAY_MS : birth;
+  let legalEnd = null; // 育休の終わり(子が◯歳に達する日)。給付はその前日まで
+  if (v.until === "1y") legalEnd = addMonthsUTC(birth, 12) - DAY_MS;
+  else if (v.until === "18m") legalEnd = addMonthsUTC(birth, 18) - DAY_MS;
+  else if (v.until === "2y") legalEnd = addMonthsUTC(birth, 24) - DAY_MS;
+  else if (v.until === "days" && v.days > 0) legalEnd = start + (v.days - 1) * DAY_MS;
+  const kyufuEnd = legalEnd == null ? null : v.until === "days" ? legalEnd : legalEnd - DAY_MS;
+  r.ikukyu = null;
+  if (kyufuEnd != null && kyufuEnd >= start) {
+    const periods = ikukyuPeriods(wageDay, start, kyufuEnd);
+    const total = periods.reduce((a, p) => a + p.amount, 0);
+    const days = Math.round((kyufuEnd - start) / DAY_MS) + 1;
+    /* 出生後休業支援給付金: ママは出生から16週、パパは8週の間に14日以上。ママは配偶者の14日以上の育休(または配偶者が会社員でない等)も要る */
+    const winEnd = birth + (mama ? 112 : 56) * DAY_MS;
+    const inWin = Math.max(0, Math.round((Math.min(kyufuEnd, winEnd) - start) / DAY_MS) + 1);
+    const shienOk = inWin >= 14 && (mama ? !!v.spouse14 : true);
+    const shien = shienOk ? Math.floor(wageDay * Math.min(28, inWin) * 0.13) : 0;
+    /* 67%が終わる日(通算180日目)。支給単位期間の途中で切り替わるときは、その期間の初日から数える */
+    const last67 = periods.filter((p) => p.d67 > 0).pop();
+    const end67 = last67.d67 === last67.days ? last67.to : last67.from + (last67.d67 - 1) * DAY_MS;
+    r.ikukyu = { start, end: kyufuEnd, legalEnd, days, periods, total, end67,
+      total67: periods.reduce((a, p) => a + p.amount67, 0), total50: periods.reduce((a, p) => a + p.amount50, 0),
+      shien, shienDays: shienOk ? Math.min(28, inWin) : 0,
+      month67: Math.floor(wageDay * 30 * 0.67), month50: Math.floor(wageDay * 30 * 0.5) };
+  }
+  /* 社会保険料の免除: 休業を始めた月から、休業が終わった日の翌日の月の前月まで。同じ月の中だけの育休は14日以上で1か月 */
+  const shaho = shahoMonthly(v.gekkyu || 0, v.over40);
+  const exFrom = mama && v.kenpo ? r.sanzenFrom : r.ikukyu ? start : null;
+  const exTo = r.ikukyu ? r.ikukyu.legalEnd : mama ? r.sangoTo : null;
+  let months = 0;
+  if (v.kenpo && exFrom != null && exTo != null) {
+    months = monthIndex(exTo + DAY_MS) - monthIndex(exFrom);
+    if (months === 0 && Math.round((exTo - exFrom) / DAY_MS) + 1 >= 14) months = 1;
+  }
+  r.menjo = { months, monthly: shaho.kenpo + shaho.nenkin, total: months * (shaho.kenpo + shaho.nenkin) };
+  r.tedori = tedoriMonthly(v.gekkyu || 0, v.over40);
+  r.total = (r.teate ? r.teate.total : 0) + (r.ikukyu ? r.ikukyu.total + r.ikukyu.shien : 0);
+  return r;
+}
+
+/* ---------- 8. 児童手当(2024年10月分から。こども家庭庁) ---------- */
+const JIDO_R6 = { u3: 15000, o3: 10000, dai3: 30000 };
+const JIDO_FROM = 2024 * 12 + 9; // 2024年10月分。それより前は旧制度(所得制限あり・第3子以降は小学生まで)なので数えない
+/* age 歳に達する日(誕生日の前日)以後の最初の3月31日の月 */
+function fiscalEndMonth(birth, age) {
+  const [y, m, d] = ymdOf(birth);
+  const reach = Date.UTC(y + age, m - 1, d) - DAY_MS;
+  const [ry] = ymdOf(reach);
+  return (reach <= Date.UTC(ry, 2, 31) ? ry : ry + 1) * 12 + 2;
+}
+/* children = [{ birth: "YYYY-MM-DD" }]。futan は高校卒業後〜22歳の年度末の子の費用を親が負担しているか(第3子の数え方に入る)
+ * 出生の翌月分から、18歳の年度末(3月)分まで。3歳の誕生月までは1.5万円。第3子以降は3万円 */
+function jidoTeate(children, futan) {
+  const kids = children.map((c, i) => {
+    const b = parseYmd(c.birth), [y, m] = ymdOf(b);
+    return { i, b, bm: y * 12 + m - 1, u3: (y + 3) * 12 + m - 1, end18: fiscalEndMonth(b, 18), end22: fiscalEndMonth(b, 22) };
+  }).sort((a, b) => a.b - b.b || a.i - b.i);
+  if (!kids.length) return { months: [], kids: [] };
+  const from = Math.max(JIDO_FROM, Math.min(...kids.map((k) => k.bm + 1))), to = Math.max(...kids.map((k) => k.end18));
+  const months = [];
+  const per = kids.map(() => ({ total: 0, byMonth: {} }));
+  for (let M = from; M <= to; M++) {
+    const counted = kids.filter((k) => k.bm <= M && M <= k.end22 && (M <= k.end18 || futan));
+    let sum = 0;
+    kids.forEach((k, j) => {
+      if (M < k.bm + 1 || M > k.end18) return;
+      const rank = counted.indexOf(k) + 1;
+      const amt = rank >= 3 ? JIDO_R6.dai3 : M <= k.u3 ? JIDO_R6.u3 : JIDO_R6.o3;
+      per[j].total += amt; per[j].byMonth[M] = amt; sum += amt;
+    });
+    months.push({ M, sum });
+  }
+  return { from, to, months, kids: kids.map((k, j) => ({ index: k.i, birth: k.b, start: Math.max(JIDO_FROM, k.bm + 1), end: k.end18,
+    partial: k.bm + 1 < JIDO_FROM, total: per[j].total, byMonth: per[j].byMonth })) };
+}
+
 if (typeof module !== "undefined") module.exports = {
   kyuyoShotoku, nenkinShotoku, gokeiShotoku, hikazeiLimit, shotokuwariLimit, hikazeiJudge, maxKyuyo, maxNenkin, maxIncome, HIKAZEI_SPECIAL,
   SHIEN_R8, shienRourei, yenRound,
   KYOKAI_R8, KYOKAI_KODOMO_R8, KYOKAI_KAIGO_R8, NINKEI_MAX_R8, hyojunHoshu, ninkeiPremium, KOKUHO_TOKYO23_R8, KOKUHO_KEIGEN_R8, kokuhoPremium,
   KOGAKU, KOGAKU_GAIRAI, KOGAKU_NENKAN_LOW_R8, kogakuLimit, kogakuCalc,
   kisoKojo, shotokuzei, shotokuzeiTotal, iryohiKojo, selfMedKojo, iryohiKojoEffect,
+  hyojunKenpo, hyojunNenkin, SHAHO_R8, shahoMonthly, tedoriMonthly,
+  IKUKYU_R8, SHUSSAN_ICHIJIKIN, parseYmd, ymdOf, fmtYmd, addMonthsUTC, shussanTeate, ikukyuPeriods, sankyuIkukyu,
+  JIDO_R6, JIDO_FROM, fiscalEndMonth, jidoTeate,
 };
