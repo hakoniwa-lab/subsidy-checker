@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WTBHV5QYG3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-WTBHV5QYG3');
+</script>
+<title>医療費控除でいくら戻る？計算シミュレーター｜年収別の早見表2026、セルフメディケーションとの比較つき</title>
+<meta name="description" content="医療費控除で戻る所得税と減る住民税を、年収と医療費から計算します。年収500万円で医療費30万円なら約30,200円(2026年分)。2026年分は基礎控除が上がって戻る額が変わる人がいます。10万円に届かなくても使える条件、対象になる医療費、セルフメディケーション税制との比較つき。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="医療費控除でいくら戻る？計算シミュレーター｜年収別の早見表2026、セルフメディケーションとの比較つき">
+<meta property="og:description" content="医療費控除で戻る所得税と減る住民税を、年収と医療費から計算します。年収500万円で医療費30万円なら約30,200円(2026年分)。2026年分は基礎控除が上がって戻る額が変わる人がいます。10万円に届かなくても使える条件、対象になる医療費、セルフメディケーション税制との比較つき。">
+<meta property="og:url" content="https://hakoniwalab.com/subsidy-checker/guide/iryohi-kojo-ikura/">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6465548593525933" crossorigin="anonymous"></script>
+<link rel="canonical" href="https://hakoniwalab.com/subsidy-checker/guide/iryohi-kojo-ikura/">
+<link rel="stylesheet" href="../../css/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"医療費控除でいくら戻りますか？","acceptedAnswer":{"@type":"Answer","text":"控除額(医療費−10万円)に所得税の税率をかけた額が戻り、住民税が控除額の10%減ります。年収500万円の会社員が2026年に医療費30万円を払った場合、合わせて約30,200円です。"}},{"@type":"Question","name":"医療費が10万円以下でも医療費控除は使えますか？","acceptedAnswer":{"@type":"Answer","text":"総所得金額等が200万円未満なら、10万円ではなくその5%を超えた分が控除になります。給与だけなら年収約297万円未満(2026年分)が目安です。"}},{"@type":"Question","name":"家族の医療費も合算できますか？","acceptedAnswer":{"@type":"Answer","text":"同じ家計(生計を一にする)の配偶者や子・親の医療費は、まとめて1人が申告できます。別居していても仕送りで生活している家族なら含められます。"}},{"@type":"Question","name":"高額療養費で戻った分はどうしますか？","acceptedAnswer":{"@type":"Answer","text":"払った医療費から差し引きます。申告のときにまだ受け取っていなくても、見込みの額を引きます。"}},{"@type":"Question","name":"会社の年末調整で医療費控除はできますか？","acceptedAnswer":{"@type":"Answer","text":"できません。確定申告(還付申告)が必要です。5年前までさかのぼって申告できます。"}},{"@type":"Question","name":"セルフメディケーション税制と両方使えますか？","acceptedAnswer":{"@type":"Answer","text":"どちらか一方だけです。対象の市販薬が多く病院代が少ない年はセルフメディケーション税制、医療費が10万円を大きく超える年は医療費控除が有利になりやすいです。"}}]}</script>
+<style>
+.guide-nav { max-width: 720px; margin: 0 auto 16px; padding: 0 20px; font-size: 0.85rem; color: var(--color-text-muted); }
+.guide-nav a { color: var(--color-text-muted); }
+.guide-lead { font-size: 0.95rem; }
+.guide-table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 0.9rem; }
+.guide-table th, .guide-table td { border: 1px solid var(--color-border); padding: 8px 10px; text-align: left; vertical-align: top; }
+.guide-table th { background: var(--color-bg); font-weight: 600; }
+.guide-table td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.guide-table tr.is-best td { background: var(--color-badge-bg); font-weight: 700; }
+.guide-note { font-size: 0.85rem; color: var(--color-text-muted); }
+.card--article h3 { font-size: 1rem; margin: 18px 0 6px; }
+.guide-cta { text-align: center; }
+.guide-cta .btn { display: inline-block; text-decoration: none; }
+.guide-calc { text-align: left; background: var(--color-bg); border: 1px solid var(--color-border); border-radius: 8px; padding: 12px 14px; margin: 14px 0; font-size: 0.92rem; }
+.guide-calc label { display: block; font-weight: 600; margin: 8px 0 4px; font-size: 0.88rem; }
+.guide-calc input, .guide-calc select { width: 100%; padding: 8px; border: 1px solid var(--color-border); border-radius: 6px; font-size: 1rem; background: var(--color-surface); color: var(--color-text); }
+.guide-calc .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.guide-calc .row3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+.guide-result { margin-top: 12px; font-size: 0.95rem; }
+.guide-result strong { font-size: 1.1rem; }
+.table-scroll { overflow-x: auto; }
+.date-row { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 6px; margin-bottom: 8px; }
+.form-help { font-size: 0.85rem; color: var(--color-text-muted); }
+.guide-calc .quiz-select, .date-row .quiz-select { width: 100%; }
+.nw { white-space: nowrap; }
+.card--article a[target="_blank"] { overflow-wrap: anywhere; }
+.art-cta { text-align: center; margin: 16px 0 4px; padding: 14px 12px; border: 1px dashed var(--color-border); border-radius: 8px; }
+.card--article .art-cta p { font-size: 0.85rem; margin: 0 0 10px; }
+.art-cta__links { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <nav class="guide-nav" aria-label="パンくずリスト">
+    <a href="../../">給付金・補助金診断</a> &raquo;
+    <span aria-current="page">医療費控除でいくら戻る？</span>
+  </nav>
+
+  <header class="app-header">
+    <p class="app-header__eyebrow">医療費が多かった年に</p>
+    <h1 class="app-header__title">医療費控除でいくら戻る？<br>計算機と早見表</h1>
+    <p class="app-header__lead">年収と医療費を入れると、戻る所得税と減る住民税の目安が出ます。</p>
+  </header>
+
+  <main class="main">
+    <section class="screen">
+      <div class="card card--intro">
+        <form id="ik-form" class="guide-calc" style="margin:0">
+          <label for="ik-year">医療費を払った年</label>
+          <select id="ik-year">
+            <option value="2026">2026年(2027年に確定申告)</option>
+            <option value="2025">2025年(2030年まで申告できる)</option>
+          </select>
+          <div class="row2">
+            <div><label for="ik-iryohi">1年間に払った医療費(円)</label><input id="ik-iryohi" type="number" inputmode="numeric" min="0" step="1" value="300000"></div>
+            <div><label for="ik-hoten">保険などで戻った額(円)</label><input id="ik-hoten" type="number" inputmode="numeric" min="0" step="1" value="0"></div>
+          </div>
+          <p class="form-help">医療費は、同じ家計の家族の分も合計できます。「保険などで戻った額」は高額療養費・医療保険の入院給付金・出産育児一時金などです。</p>
+          <div class="row2">
+            <div><label for="ik-kyuyo">給与収入(年収・万円)</label><input id="ik-kyuyo" type="number" inputmode="decimal" min="0" step="0.1" value="500"></div>
+            <div><label for="ik-nenkin">公的年金の収入(万円)</label><input id="ik-nenkin" type="number" inputmode="decimal" min="0" step="0.1" value="0"></div>
+          </div>
+          <label><input type="checkbox" id="ik-over65" style="width:auto"> その年の12月31日に65歳以上</label>
+          <div class="row2">
+            <div><label for="ik-shakai">社会保険料(円)</label><input id="ik-shakai" type="number" inputmode="numeric" min="0" step="1" placeholder="空欄なら給与の15%"></div>
+            <div><label for="ik-hoka">ほかの所得控除(円)</label><input id="ik-hoka" type="number" inputmode="numeric" min="0" step="1" value="0"></div>
+          </div>
+          <p class="form-help">社会保険料は源泉徴収票の「社会保険料等の金額」です。ほかの所得控除は配偶者控除・扶養控除・生命保険料控除などの合計(基礎控除は自動で入れます)。</p>
+          <label for="ik-otc">セルフメディケーション税制の対象の市販薬(円・任意)</label>
+          <input id="ik-otc" type="number" inputmode="numeric" min="0" step="1" value="0">
+          <p class="guide-result" id="ik-out" role="status"></p>
+          <p class="guide-note">住民税は所得割10%として計算した目安です。入力は端末の外に送りません。</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="article">
+
+      <div class="card card--article">
+        <p class="guide-lead">医療費控除で戻ってくるのは、<strong>医療費そのものではなく、医療費にかかる税金の分</strong>です。1年間の医療費から10万円を引いた額(控除額)に、所得税の税率をかけた額が戻り、さらに翌年度の住民税が控除額の10%減ります。</p>
+        <p>年収500万円の会社員が2026年に医療費30万円を払った場合、戻る所得税と減る住民税は合わせて<strong>約30,200円</strong>です。上の計算機に医療費と年収を入れると、自分の場合の額が出ます。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>計算のしかた</h2>
+        <ul>
+          <li><strong>医療費控除の額</strong> ＝ 1年間に払った医療費 − 保険などで戻った額 − 10万円(総所得金額等が200万円未満の人はその5%)。上限は200万円</li>
+          <li><strong>戻る所得税</strong> ＝ 控除額 × 所得税の税率(5〜45%) × 1.021(復興特別所得税)</li>
+          <li><strong>減る住民税</strong> ＝ 控除額 × 10%(確定申告をすると、次の年度の住民税に自動で反映されます)</li>
+        </ul>
+        <p>所得税の税率は、課税所得(収入から給与所得控除・社会保険料・基礎控除などを引いた額)で決まります。課税所得195万円以下は5%、330万円以下は10%、695万円以下は20%、900万円以下は23%です。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>年収と医療費で、いくら戻るか(早見表)</h2>
+        <h3>2026年に払った医療費(2027年に申告)</h3>
+        <div class="table-scroll">
+          <table class="guide-table">
+            <thead><tr><th>年収(給与)</th><th>医療費15万円</th><th>医療費20万円</th><th>医療費30万円</th><th>医療費50万円</th><th>医療費100万円</th></tr></thead>
+            <tbody>
+            <tr><td>300万円</td><td class="num">7,500円</td><td class="num">15,100円</td><td class="num">30,200円</td><td class="num">60,400円</td><td class="num">117,000円</td></tr>
+            <tr><td>400万円</td><td class="num">7,500円</td><td class="num">15,100円</td><td class="num">30,200円</td><td class="num">60,400円</td><td class="num">135,900円</td></tr>
+            <tr><td>500万円</td><td class="num">7,500円</td><td class="num">15,100円</td><td class="num">30,200円</td><td class="num">60,400円</td><td class="num">135,900円</td></tr>
+            <tr><td>600万円</td><td class="num">10,100円</td><td class="num">20,200円</td><td class="num">40,400円</td><td class="num">80,900円</td><td class="num">160,000円</td></tr>
+            <tr><td>700万円</td><td class="num">15,200円</td><td class="num">30,400円</td><td class="num">58,800円</td><td class="num">99,200円</td><td class="num">200,300円</td></tr>
+            <tr><td>800万円</td><td class="num">15,200円</td><td class="num">30,400円</td><td class="num">60,800円</td><td class="num">121,600円</td><td class="num">273,700円</td></tr>
+            <tr><td>1000万円</td><td class="num">15,200円</td><td class="num">30,400円</td><td class="num">60,900円</td><td class="num">121,700円</td><td class="num">273,800円</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>2025年に払った医療費(2030年まで申告できる)</h3>
+        <div class="table-scroll">
+          <table class="guide-table">
+            <thead><tr><th>年収(給与)</th><th>医療費15万円</th><th>医療費20万円</th><th>医療費30万円</th><th>医療費50万円</th><th>医療費100万円</th></tr></thead>
+            <tbody>
+            <tr><td>300万円</td><td class="num">7,600円</td><td class="num">15,100円</td><td class="num">30,200円</td><td class="num">60,400円</td><td class="num">125,200円</td></tr>
+            <tr><td>400万円</td><td class="num">7,600円</td><td class="num">15,100円</td><td class="num">30,200円</td><td class="num">60,400円</td><td class="num">136,000円</td></tr>
+            <tr><td>500万円</td><td class="num">10,100円</td><td class="num">20,200円</td><td class="num">39,400円</td><td class="num">69,600円</td><td class="num">145,200円</td></tr>
+            <tr><td>600万円</td><td class="num">10,100円</td><td class="num">20,200円</td><td class="num">40,400円</td><td class="num">80,800円</td><td class="num">178,300円</td></tr>
+            <tr><td>700万円</td><td class="num">15,300円</td><td class="num">30,500円</td><td class="num">60,900円</td><td class="num">103,300円</td><td class="num">204,400円</td></tr>
+            <tr><td>800万円</td><td class="num">15,200円</td><td class="num">30,400円</td><td class="num">60,800円</td><td class="num">121,700円</td><td class="num">273,800円</td></tr>
+            <tr><td>1000万円</td><td class="num">15,200円</td><td class="num">30,400円</td><td class="num">60,800円</td><td class="num">121,600円</td><td class="num">273,700円</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="guide-note">戻る所得税と減る住民税の合計。給与収入だけ・社会保険料は年収の15%・扶養や生命保険料などの控除なし・保険で戻った額なしとして計算しています。</p>
+        <p>2026年分は、所得税の<strong>基礎控除が大きく上がった</strong>(合計所得489万円以下の人は最大104万円)ので、課税所得が下がって税率が5%になる人が増えます。そのぶん、同じ医療費でも2025年分より戻る額が少なくなる人がいます。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>10万円に届かなくても使える人</h2>
+        <p>足切りの額は「10万円」か「総所得金額等の5%」の<strong>少ない方</strong>です。給与だけなら、2026年分は年収約297万円未満の人が10万円より少ない額から使えます。</p>
+        <div class="table-scroll">
+          <table class="guide-table">
+            <thead><tr><th>年収(給与だけ)</th><th>給与所得(2026年分)</th><th>足切りの額</th></tr></thead>
+            <tbody>
+            <tr><td>100万円</td><td class="num">260,000円</td><td class="num">13,000円</td></tr>
+            <tr><td>150万円</td><td class="num">760,000円</td><td class="num">38,000円</td></tr>
+            <tr><td>200万円</td><td class="num">1,260,000円</td><td class="num">63,000円</td></tr>
+            <tr><td>250万円</td><td class="num">1,670,000円</td><td class="num">83,500円</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>家族の医療費をまとめて申告する場合も、足切りは<strong>申告する人の所得</strong>で決まります。所得の低い家族がまとめて申告すると足切りは下がりますが、税率も低いので、計算機で両方を比べてください。所得税がかからない人が申告しても所得税は戻りません。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>対象になる医療費・ならない医療費</h2>
+        <h3>対象になる</h3>
+        <ul>
+          <li>病院・歯医者の診療代、治療のための薬代(薬局で買う風邪薬などの市販薬も含む)</li>
+          <li>通院の電車・バス代(公共交通機関が使えないときのタクシー代も)</li>
+          <li>入院の部屋代・食事代(通常必要なもの)</li>
+          <li>治療のためのあんま・マッサージ・はり・きゅう・柔道整復</li>
+          <li>介護保険のサービスの自己負担の一部、出産の費用</li>
+        </ul>
+        <h3>対象にならない</h3>
+        <ul>
+          <li>健康診断・人間ドックの費用(病気が見つかって治療した場合を除く)</li>
+          <li>ビタミン剤など、予防や健康づくりのための薬</li>
+          <li>自家用車で通院したガソリン代・駐車場代</li>
+          <li>治療と関係ない施術(疲れをとるためのマッサージなど)、医師への謝礼</li>
+        </ul>
+        <p class="guide-note">対象になるのは、病状に応じて一般的に払う水準の額までです。迷うものは国税庁の「医療費控除の対象となる医療費」で確かめてください。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>保険などで戻った額を引く</h2>
+        <p>高額療養費・医療保険の入院給付金・出産育児一時金などは、払った医療費から差し引きます。ただし差し引くのは<strong>その給付の対象になった医療費の分まで</strong>で、余った分をほかの医療費から引く必要はありません。申告のときにまだ受け取っていなくても、受け取る見込みの額を引きます。</p>
+        <p>高額療養費でいくら戻るかは、<a href="../kogaku-ryoyohi-jogen/">高額療養費の上限額シミュレーター</a>で計算できます(2026年8月の診療分から上限が上がっています)。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>セルフメディケーション税制とどっちが得か</h2>
+        <p>健康診断や予防接種などを受けている人は、医療費控除の代わりに<strong>セルフメディケーション税制</strong>を選べます。対象の市販薬(パッケージの識別マークやレシートの印で分かります)の購入費が<strong>12,000円を超えた分</strong>が控除になり、上限は88,000円です。<strong>両方は使えず</strong>、申告したあとで選び直すこともできません。</p>
+        <p>たとえば年収400万円の人が、対象の市販薬を5万円、病院代を3万円払った場合(合計8万円)、医療費控除は10万円に届かないので0円ですが、セルフメディケーション税制なら控除額38,000円で約5,700円戻ります。医療費が10万円を大きく超える年は、医療費控除の方が有利です。</p>
+        <p>計算機の「セルフメディケーション税制の対象の市販薬」に金額を入れると、どちらが得かを比べられます。2026年分までの購入が対象でしたが、令和8年度の税制改正で2027年以降も続くことになり、対象の薬の範囲も変わります。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>申告のしかた</h2>
+        <ul>
+          <li><strong>確定申告が必要</strong>です。会社員でも年末調整ではできません。税金が戻るだけの申告(還付申告)は、翌年1月1日から出せます</li>
+          <li><strong>5年さかのぼれます</strong>。2025年分は2030年12月31日まで、2026年分は2031年12月31日まで申告できます</li>
+          <li>領収書は提出せず、<strong>「医療費控除の明細書」</strong>を付けます。健康保険から届く「医療費のお知らせ(医療費通知)」を使うと明細を書く手間が減ります</li>
+          <li>領収書は申告期限から<strong>5年間</strong>、税務署から求められたら出せるように保存します</li>
+          <li>e-Tax(マイナンバーカード)なら、マイナポータルから医療費通知の情報を自動で入れられます</li>
+        </ul>
+      </div>
+
+      <div class="card card--article">
+        <h2>よくある質問</h2>
+        <details class="faq-item"><summary>医療費控除でいくら戻りますか？</summary><p>控除額(医療費−10万円)に所得税の税率をかけた額が戻り、住民税が控除額の10%減ります。年収500万円の会社員が2026年に医療費30万円を払った場合、合わせて約30,200円です。</p></details>
+        <details class="faq-item"><summary>医療費が10万円以下でも医療費控除は使えますか？</summary><p>総所得金額等が200万円未満なら、10万円ではなくその5%を超えた分が控除になります。給与だけなら年収約297万円未満(2026年分)が目安です。</p></details>
+        <details class="faq-item"><summary>家族の医療費も合算できますか？</summary><p>同じ家計(生計を一にする)の配偶者や子・親の医療費は、まとめて1人が申告できます。別居していても仕送りで生活している家族なら含められます。</p></details>
+        <details class="faq-item"><summary>高額療養費で戻った分はどうしますか？</summary><p>払った医療費から差し引きます。申告のときにまだ受け取っていなくても、見込みの額を引きます。</p></details>
+        <details class="faq-item"><summary>会社の年末調整で医療費控除はできますか？</summary><p>できません。確定申告(還付申告)が必要です。5年前までさかのぼって申告できます。</p></details>
+        <details class="faq-item"><summary>セルフメディケーション税制と両方使えますか？</summary><p>どちらか一方だけです。対象の市販薬が多く病院代が少ない年はセルフメディケーション税制、医療費が10万円を大きく超える年は医療費控除が有利になりやすいです。</p></details>
+      </div>
+
+      <div class="card card--article">
+        <h2>出典</h2>
+        <ul>
+          <li>国税庁「No.1120 医療費を支払ったとき(医療費控除)」<br><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1120.htm" target="_blank" rel="noopener">https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1120.htm</a></li>
+          <li>国税庁「No.1122 医療費控除の対象となる医療費」<br><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1122.htm" target="_blank" rel="noopener">https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1122.htm</a></li>
+          <li>国税庁「No.1129 特定一般用医薬品等購入費を支払ったとき(医療費控除の特例)【セルフメディケーション税制】」<br><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1129.htm" target="_blank" rel="noopener">https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1129.htm</a></li>
+          <li>国税庁「No.1199 基礎控除」<br><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1199.htm" target="_blank" rel="noopener">https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1199.htm</a></li>
+          <li>国税庁「No.1410 給与所得控除」<br><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1410.htm" target="_blank" rel="noopener">https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1410.htm</a></li>
+          <li>国税庁「No.2260 所得税の税率」<br><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2260.htm" target="_blank" rel="noopener">https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2260.htm</a></li>
+          <li>国税庁「No.2030 還付申告」<br><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2030.htm" target="_blank" rel="noopener">https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2030.htm</a></li>
+        </ul>
+      </div>
+
+      <div class="card card--article">
+        <h2>あわせて読みたい</h2>
+        <ul>
+          <li><a href="../../guide/kogaku-ryoyohi-jogen/">高額療養費の上限額シミュレーター(2026年8月から)</a></li>
+          <li><a href="../../guide/juminzei-hikazei-nenshu/">住民税非課税になる年収の早見表</a></li>
+          <li><a href="../../../sidejob-tax-simulator/">副業の税金シミュレーター</a></li>
+          <li><a href="../../">給付金・補助金診断</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <p>本記事は国税庁の公表資料をもとに一般的な目安を示すものであり、実際の還付額を保証するものではありません。正確な税額は確定申告書の作成画面や税務署で確認してください。「PR」表記のあるリンクにはプロモーション(アフィリエイト広告)が含まれます。</p>
+    <p><a href="../../../about.html">運営者情報</a>・<a href="../../../contact.html">お問い合わせ</a>・<a href="../../../privacy.html">プライバシーポリシー</a></p>
+  </footer>
+
+</div>
+<script src="../../js/kurashi-calc.js"></script>
+<script>
+(function () {
+  const $ = (id) => document.getElementById(id);
+  const yen = (n) => Math.round(n).toLocaleString("ja-JP") + "円";
+  const ids = ["ik-year", "ik-iryohi", "ik-hoten", "ik-kyuyo", "ik-nenkin", "ik-over65", "ik-shakai", "ik-hoka", "ik-otc"];
+  const f = () => {
+    const shakaiRaw = $("ik-shakai").value;
+    const v = { year: +$("ik-year").value, iryohi: Number($("ik-iryohi").value || 0), hoten: Number($("ik-hoten").value || 0),
+      kyuyo: Number($("ik-kyuyo").value || 0) * 10000, nenkin: Number($("ik-nenkin").value || 0) * 10000, over65: $("ik-over65").checked,
+      shakai: shakaiRaw === "" ? null : Number(shakaiRaw), hoka: Number($("ik-hoka").value || 0), otc: Number($("ik-otc").value || 0) };
+    const r = iryohiKojoEffect(v);
+    const net = Math.max(0, v.iryohi - v.hoten);
+    let s;
+    if (r.iryo.kojo > 0) {
+      s = `医療費控除の額は<strong>${yen(r.iryo.kojo)}</strong>です(医療費${yen(v.iryohi)}${v.hoten ? `−戻った額${yen(v.hoten)}` : ""}−${yen(r.ashikiri)}${r.iryo.kojo >= 2000000 ? "。上限200万円" : ""})。`;
+      if (r.iryo.total === 0) s += "<br>所得税も住民税もかからない収入なので、医療費控除で戻る税金はありません。";
+      else if (r.iryo.shotoku > 0) s += `<br>戻ってくる所得税は約<strong>${yen(r.iryo.shotoku)}</strong>、次の年度の住民税が約<strong>${yen(r.iryo.jumin)}</strong>減り、合わせて約<strong>${yen(r.iryo.total)}</strong>です。`;
+      else s += `<br>所得税はもともとかからないので戻りませんが、次の年度の住民税が約<strong>${yen(r.iryo.jumin)}</strong>減ります。`;
+    } else {
+      s = `医療費(戻った額を引いた後)が${yen(r.ashikiri)}を超えていないので、医療費控除は使えません。医療費があと${yen(r.ashikiri - net)}より多ければ使えます。`;
+    }
+    s += `<br><span class="form-help">${r.kazei > 0 ? `所得税の税率${r.rate}%(課税所得${yen(r.kazei)})として計算。` : "課税所得は0円(所得税はかからない)として計算。"}${v.shakai == null ? `社会保険料は給与の15%(${yen(r.shakai)})としています。` : ""}</span>`;
+    if (v.otc > 0) {
+      s += `<br>セルフメディケーション税制なら、控除額${yen(r.self.kojo)}で合わせて約${yen(r.self.total)}です。`;
+      if (r.self.total === 0 && r.iryo.total === 0) s += "どちらを選んでも税金は戻りません。";
+      else if (r.self.total === r.iryo.total) s += "どちらを選んでも同じです(両方は使えません)。";
+      else s += `<strong>${r.better === "self" ? "セルフメディケーション税制" : "医療費控除"}の方が有利</strong>です(両方は使えません)。`;
+    }
+    $("ik-out").innerHTML = s;
+    try { localStorage.setItem("subsidy-checker:iryohi", JSON.stringify(ids.map((id) => $(id).type === "checkbox" ? $(id).checked : $(id).value))); } catch (e) { /* 保存できなくても計算はする */ }
+  };
+  try { const s = JSON.parse(localStorage.getItem("subsidy-checker:iryohi") || "null"); if (s) ids.forEach((id, i) => { if ($(id).type === "checkbox") $(id).checked = s[i]; else $(id).value = s[i]; }); } catch (e) { /* noop */ }
+  ids.forEach((id) => { $(id).addEventListener("input", f); $(id).addEventListener("change", f); });
+  f();
+})();
+</script>
+</body>
+</html>

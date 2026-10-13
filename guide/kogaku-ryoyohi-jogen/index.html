@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WTBHV5QYG3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-WTBHV5QYG3');
+</script>
+<title>高額療養費の上限額シミュレーター｜2026年8月からの限度額と年間上限、医療費100万円なら92,940円</title>
+<meta name="description" content="2026年8月の診療分から高額療養費の自己負担の上限が上がり、年間上限ができました。年収約370万〜770万円の人は医療費100万円で87,430円から92,940円に。年齢・所得区分・窓口で払った額を入れると、ひと月の上限と戻ってくる額を計算できます。70歳以上の外来の上限・年間上限の早見表つき。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="高額療養費の上限額シミュレーター｜2026年8月からの限度額と年間上限、医療費100万円なら92,940円">
+<meta property="og:description" content="2026年8月の診療分から高額療養費の自己負担の上限が上がり、年間上限ができました。年収約370万〜770万円の人は医療費100万円で87,430円から92,940円に。年齢・所得区分・窓口で払った額を入れると、ひと月の上限と戻ってくる額を計算できます。70歳以上の外来の上限・年間上限の早見表つき。">
+<meta property="og:url" content="https://hakoniwalab.com/subsidy-checker/guide/kogaku-ryoyohi-jogen/">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6465548593525933" crossorigin="anonymous"></script>
+<link rel="canonical" href="https://hakoniwalab.com/subsidy-checker/guide/kogaku-ryoyohi-jogen/">
+<link rel="stylesheet" href="../../css/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"高額療養費の上限はいくらですか？","acceptedAnswer":{"@type":"Answer","text":"70歳未満で年収約370万〜770万円の人は、2026年8月の診療分から85,800円＋(医療費−286,000円)×1%です。医療費100万円(窓口で30万円)なら92,940円で、残りの207,060円が戻ります。年収約370万円までの人は61,500円、住民税非課税の人は36,900円です。"}},{"@type":"Question","name":"2026年8月から何が変わりましたか？","acceptedAnswer":{"@type":"Answer","text":"ひと月の上限が約4〜7%上がり、8月から翌年7月までの1年間の自己負担に年間上限ができました。4回目からの上限(多数回該当)は据え置きです。年収約370万〜770万円の人の年間上限は530,000円です。"}},{"@type":"Question","name":"年間上限の申請はいつからですか？","acceptedAnswer":{"@type":"Answer","text":"2026年8月〜2027年7月の分は、2027年8月から申請を受け付けます(協会けんぽ)。それまで領収書を取っておいてください。"}},{"@type":"Question","name":"月をまたいで入院したらどうなりますか？","acceptedAnswer":{"@type":"Answer","text":"月ごと(1日〜末日)に別々に計算します。月末から月初にかけての入院は、それぞれの月で上限に届かないことがあります。"}},{"@type":"Question","name":"差額ベッド代や入院中の食事代も対象ですか？","acceptedAnswer":{"@type":"Answer","text":"対象になりません。先進医療や保険のきかない治療も同じです。"}},{"@type":"Question","name":"高額療養費の申請に期限はありますか？","acceptedAnswer":{"@type":"Answer","text":"診療を受けた月の翌月1日から2年です。過ぎると時効で受け取れなくなります。"}}]}</script>
+<style>
+.guide-nav { max-width: 720px; margin: 0 auto 16px; padding: 0 20px; font-size: 0.85rem; color: var(--color-text-muted); }
+.guide-nav a { color: var(--color-text-muted); }
+.guide-lead { font-size: 0.95rem; }
+.guide-table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 0.9rem; }
+.guide-table th, .guide-table td { border: 1px solid var(--color-border); padding: 8px 10px; text-align: left; vertical-align: top; }
+.guide-table th { background: var(--color-bg); font-weight: 600; }
+.guide-table td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.guide-table tr.is-best td { background: var(--color-badge-bg); font-weight: 700; }
+.guide-note { font-size: 0.85rem; color: var(--color-text-muted); }
+.card--article h3 { font-size: 1rem; margin: 18px 0 6px; }
+.guide-cta { text-align: center; }
+.guide-cta .btn { display: inline-block; text-decoration: none; }
+.guide-calc { text-align: left; background: var(--color-bg); border: 1px solid var(--color-border); border-radius: 8px; padding: 12px 14px; margin: 14px 0; font-size: 0.92rem; }
+.guide-calc label { display: block; font-weight: 600; margin: 8px 0 4px; font-size: 0.88rem; }
+.guide-calc input, .guide-calc select { width: 100%; padding: 8px; border: 1px solid var(--color-border); border-radius: 6px; font-size: 1rem; background: var(--color-surface); color: var(--color-text); }
+.guide-calc .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.guide-calc .row3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+.guide-result { margin-top: 12px; font-size: 0.95rem; }
+.guide-result strong { font-size: 1.1rem; }
+.table-scroll { overflow-x: auto; }
+.date-row { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 6px; margin-bottom: 8px; }
+.form-help { font-size: 0.85rem; color: var(--color-text-muted); }
+.guide-calc .quiz-select, .date-row .quiz-select { width: 100%; }
+.nw { white-space: nowrap; }
+.card--article a[target="_blank"] { overflow-wrap: anywhere; }
+.art-cta { text-align: center; margin: 16px 0 4px; padding: 14px 12px; border: 1px dashed var(--color-border); border-radius: 8px; }
+.card--article .art-cta p { font-size: 0.85rem; margin: 0 0 10px; }
+.art-cta__links { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <nav class="guide-nav" aria-label="パンくずリスト">
+    <a href="../../">給付金・補助金診断</a> &raquo;
+    <span aria-current="page">高額療養費の上限額</span>
+  </nav>
+
+  <header class="app-header">
+    <p class="app-header__eyebrow">医療費が高くなったとき</p>
+    <h1 class="app-header__title">高額療養費の上限額<br>シミュレーター</h1>
+    <p class="app-header__lead">2026年8月からの新しい上限額と年間上限に対応しています。</p>
+  </header>
+
+  <main class="main">
+    <section class="screen">
+      <div class="card card--intro">
+        <form id="kg-form" class="guide-calc" style="margin:0">
+          <label for="kg-era">診療を受けた月</label>
+          <select id="kg-era">
+            <option value="r8">2026年8月以降</option>
+            <option value="old">2026年7月まで</option>
+          </select>
+          <label for="kg-age">年齢(診療を受けた月)</label>
+          <select id="kg-age">
+            <option value="u70">70歳未満</option>
+            <option value="o70">70歳以上(75歳以上の後期高齢者医療も含む)</option>
+          </select>
+          <div id="kg-k70u-wrap"><label for="kg-k70u">所得区分(年収の目安)</label>
+          <select id="kg-k70u"><option value="a">ア(年収約1,160万円〜)</option><option value="i">イ(年収約770万〜約1,160万円)</option><option value="u" selected>ウ(年収約370万〜約770万円)</option><option value="e">エ(年収約370万円まで)</option><option value="o">オ(住民税非課税)</option></select></div>
+          <div id="kg-k70o-wrap" style="display:none"><label for="kg-k70o">所得区分(70歳以上)</label>
+          <select id="kg-k70o"><option value="a">現役並みⅢ(課税所得690万円以上)</option><option value="i">現役並みⅡ(課税所得380万円以上)</option><option value="u">現役並みⅠ(課税所得145万円以上)</option><option value="ippan" selected>一般(課税所得145万円未満など)</option><option value="low2">低所得Ⅱ(世帯全員が住民税非課税)</option><option value="low1">低所得Ⅰ(そのうえ世帯全員の所得が0円)</option></select></div>
+          <div class="row2">
+            <div><label for="kg-gairai">通院で払った額(円)</label><input id="kg-gairai" type="number" inputmode="numeric" min="0" step="1" value="0"></div>
+            <div><label for="kg-nyuin">入院で払った額(円)</label><input id="kg-nyuin" type="number" inputmode="numeric" min="0" step="1" value="300000"></div>
+          </div>
+          <label><input type="checkbox" id="kg-tasukai" style="width:auto"> この月より前の12か月に、上限まで払った月がすでに3回以上ある</label>
+          <p class="guide-result" id="kg-out" role="status"></p>
+          <p class="guide-note">同じ月(1日〜末日)に窓口で払った保険診療の分を入れてください。食事代・差額ベッド代・保険のきかない治療は含めません。70歳未満は、1つの医療機関(入院・外来・医科・歯科は別々)で21,000円以上払った分だけを合計できます。入力は端末の外に送りません。</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="article">
+
+      <div class="card card--article">
+        <p class="guide-lead">高額療養費は、病院や薬局の窓口で払った額が<strong>ひと月の上限</strong>を超えたとき、超えた分が戻ってくる制度です。<strong>2026年8月の診療分から上限が上がり</strong>、年収約370万〜770万円の人が医療費100万円(窓口で30万円)の治療を受けたときの上限は、87,430円から<strong>92,940円</strong>になりました。</p>
+        <p>同時に、1年間(8月〜翌年7月)の自己負担の合計にも<strong>年間上限</strong>ができました。毎月の上限には届かなくても、治療が長く続く人は、1年の合計が年間上限を超えた分が戻ります。</p>
+        <p>上の計算機に、年齢・所得区分・窓口で払った額を入れると、その月の上限と戻ってくる額が出ます。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>2026年8月から変わったこと</h2>
+        <ul>
+          <li><strong>ひと月の上限が上がった</strong> — 住民税非課税の人は約4%、それ以外の人は約7%。年収約370万〜770万円の人は基本の額が80,100円から85,800円に</li>
+          <li><strong>1年間の上限(年間上限)ができた</strong> — 8月から翌年7月までの自己負担の合計が上限を超えたら、超えた分が戻ります。最初の期間(2026年8月〜2027年7月)の分は、2027年8月から申請を受け付けます(協会けんぽ)</li>
+          <li><strong>4回目からの上限(多数回該当)は据え置き</strong> — 直近12か月に上限まで払った月が3回以上あると、4回目からは上限が下がります。この額は変わっていません</li>
+          <li><strong>70歳以上の通院(外来)の上限も上がった</strong> — 一般の人は18,000円から22,000円(1年では144,000円から216,000円)、住民税非課税世帯(低所得Ⅱ)は8,000円から11,000円。低所得Ⅰは8,000円のまま</li>
+        </ul>
+        <p>2027年8月からは、所得区分がさらに細かく分かれる予定です。年収約200万円以下の人の4回目からの額は引き下げられます。金額が正式に決まったら、この記事の表と計算機を直します。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>70歳未満の上限額(2026年8月から)</h2>
+        <div class="table-scroll">
+          <table class="guide-table">
+            <thead><tr><th>区分</th><th>年収の目安</th><th>ひと月の上限</th><th>4回目から</th><th>年間上限</th></tr></thead>
+            <tbody>
+            <tr><td>ア</td><td>約1,160万円〜</td><td>270,300円＋(医療費−901,000円)×1%</td><td>140,100円</td><td>1,680,000円</td></tr>
+            <tr><td>イ</td><td>約770万〜約1,160万円</td><td>179,100円＋(医療費−597,000円)×1%</td><td>93,000円</td><td>1,110,000円</td></tr>
+            <tr><td>ウ</td><td>約370万〜約770万円</td><td>85,800円＋(医療費−286,000円)×1%</td><td>44,400円</td><td>530,000円</td></tr>
+            <tr><td>エ</td><td>約370万円まで</td><td>61,500円</td><td>44,400円</td><td>530,000円※</td></tr>
+            <tr><td>オ</td><td>住民税非課税</td><td>36,900円</td><td>24,600円</td><td>290,000円</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="guide-note">「医療費」は保険がきく治療の総額(10割)です。窓口で3割払う人なら、窓口で払った額の約3.3倍。※エのうち標準報酬月額15万円以下(年収約200万円以下)と確認できた人は、年間上限が410,000円になります(超えた分は2027年8月以降に払い戻し)。</p>
+        <h3>自分の区分の見分け方</h3>
+        <div class="table-scroll">
+          <table class="guide-table">
+            <thead><tr><th>区分</th><th>年収の目安</th><th>会社員など(標準報酬月額)</th><th>国民健康保険(所得−43万円)</th></tr></thead>
+            <tbody>
+            <tr><td>ア</td><td>約1,160万円〜</td><td>83万円以上</td><td>901万円超</td></tr>
+            <tr><td>イ</td><td>約770万〜約1,160万円</td><td>53万〜79万円</td><td>600万円超〜901万円</td></tr>
+            <tr><td>ウ</td><td>約370万〜約770万円</td><td>28万〜50万円</td><td>210万円超〜600万円</td></tr>
+            <tr><td>エ</td><td>約370万円まで</td><td>26万円以下</td><td>210万円以下</td></tr>
+            <tr><td>オ</td><td>住民税非課税</td><td>—</td><td>住民税非課税</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="guide-note">会社員などは、健康保険の<strong>標準報酬月額</strong>で決まります。給与明細の健康保険料から逆算するか、マイナポータルの「健康保険証」の欄で確かめられます。国民健康保険は、前の年の総所得金額等から43万円を引いた額(旧ただし書き所得)で決まります。限度額適用認定証には区分が書かれています。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>70歳以上の上限額(2026年8月から)</h2>
+        <p>70歳以上の一般・低所得の人は、通院(外来)だけの上限が個人ごとにあり、入院を含めた上限が世帯ごとにあります。75歳以上の後期高齢者医療も同じ額です。</p>
+        <div class="table-scroll">
+          <table class="guide-table">
+            <thead><tr><th>区分</th><th>年収の目安</th><th>外来(個人)</th><th>外来＋入院(世帯)</th><th>4回目から</th><th>年間上限</th></tr></thead>
+            <tbody>
+            <tr><td>現役並みⅢ</td><td>約1,160万円〜</td><td>—</td><td>270,300円＋(医療費−901,000円)×1%</td><td>140,100円</td><td>1,680,000円</td></tr>
+            <tr><td>現役並みⅡ</td><td>約770万〜約1,160万円</td><td>—</td><td>179,100円＋(医療費−597,000円)×1%</td><td>93,000円</td><td>1,110,000円</td></tr>
+            <tr><td>現役並みⅠ</td><td>約370万〜約770万円</td><td>—</td><td>85,800円＋(医療費−286,000円)×1%</td><td>44,400円</td><td>530,000円</td></tr>
+            <tr><td>一般</td><td>約156万〜約370万円</td><td>22,000円<br>(年216,000円)</td><td>61,500円</td><td>44,400円</td><td>530,000円※</td></tr>
+            <tr><td>低所得Ⅱ</td><td>住民税非課税世帯</td><td>11,000円<br>(年96,000円)</td><td>25,700円</td><td>24,600円</td><td>290,000円</td></tr>
+            <tr><td>低所得Ⅰ</td><td>住民税非課税世帯</td><td>8,000円</td><td>15,700円</td><td>—</td><td>180,000円</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="guide-note">※一般のうち標準報酬月額15万円以下(後期高齢者医療などは課税所得28万円未満)と確認できた人は、年間上限が410,000円になります(超えた分は2027年8月以降に払い戻し)。一般の外来だけで払い戻しを受けた月は、4回目からの回数に数えません。</p>
+        <div class="table-scroll">
+          <table class="guide-table">
+            <thead><tr><th>区分</th><th>判定</th></tr></thead>
+            <tbody>
+            <tr><td>現役並みⅢ</td><td>課税所得690万円以上</td></tr>
+            <tr><td>現役並みⅡ</td><td>課税所得380万円以上</td></tr>
+            <tr><td>現役並みⅠ</td><td>課税所得145万円以上</td></tr>
+            <tr><td>一般</td><td>課税所得145万円未満など</td></tr>
+            <tr><td>低所得Ⅱ</td><td>世帯全員が住民税非課税</td></tr>
+            <tr><td>低所得Ⅰ</td><td>そのうえ世帯全員の所得が0円</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="guide-note">現役並みかどうかは、保険証・資格確認書の負担割合(3割)でも分かります。現役並みの人は70歳未満と同じ計算です。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>医療費100万円のとき、いくら上がったか</h2>
+        <p>70歳未満で、ひと月の医療費が100万円(窓口で30万円)だった場合の自己負担です。</p>
+        <div class="table-scroll">
+          <table class="guide-table">
+            <thead><tr><th>区分</th><th>2026年7月まで</th><th>2026年8月から</th><th>上がった額</th><th>戻る額(8月から)</th></tr></thead>
+            <tbody>
+            <tr><td>ア</td><td class="num">254,180円</td><td class="num">271,290円</td><td class="num">+17,110円</td><td class="num">28,710円</td></tr>
+            <tr><td>イ</td><td class="num">171,820円</td><td class="num">183,130円</td><td class="num">+11,310円</td><td class="num">116,870円</td></tr>
+            <tr><td>ウ</td><td class="num">87,430円</td><td class="num">92,940円</td><td class="num">+5,510円</td><td class="num">207,060円</td></tr>
+            <tr><td>エ</td><td class="num">57,600円</td><td class="num">61,500円</td><td class="num">+3,900円</td><td class="num">238,500円</td></tr>
+            <tr><td>オ</td><td class="num">35,400円</td><td class="num">36,900円</td><td class="num">+1,500円</td><td class="num">263,100円</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>年収約370万〜770万円(ウ)の人なら、自己負担は5,510円増えました。それでも、窓口で払った30万円のうち207,060円は戻ってきます。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>年間上限で戻るのはどんな人か</h2>
+        <p>毎月の上限には届かないけれど、通院が1年続く人です。たとえば、通院と薬代で毎月上限の少し手前まで払うのが1年続くケースです。月ごとの計算では1円も戻りませんが、1年分を合計すると年間上限を超えます。</p>
+        <div class="table-scroll">
+          <table class="guide-table">
+            <thead><tr><th>区分</th><th>毎月の自己負担</th><th>1年の合計</th><th>年間上限</th><th>戻る額</th></tr></thead>
+            <tbody>
+            <tr><td>ウ(年収約370万〜770万円)</td><td class="num">80,000円</td><td class="num">960,000円</td><td class="num">530,000円</td><td class="num">430,000円</td></tr>
+            <tr><td>エ(年収約370万円まで)</td><td class="num">50,000円</td><td class="num">600,000円</td><td class="num">530,000円</td><td class="num">70,000円</td></tr>
+            <tr><td>オ(住民税非課税)</td><td class="num">30,000円</td><td class="num">360,000円</td><td class="num">290,000円</td><td class="num">70,000円</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>年間上限は<strong>8月から翌年7月まで</strong>の12か月で数えます(暦の1年ではありません)。最初の期間の分の申請は2027年8月からなので、それまで<strong>領収書を捨てずに取っておいてください</strong>。どの支払いを合計できるかは、加入している健康保険の案内で確かめてください。</p>
+        <div class="art-cta">
+          <p>医療保険が必要かどうかは、高額療養費でまかなえない分(差額ベッド代・食事代・働けない間の収入)で決まります。保険の見直しをFPに無料で相談できるサービスもあります。</p>
+          <div class="art-cta__links"><a class="result-card__link result-card__link--offer" href="https://px.a8.net/svt/ejp?a8mat=4B8DGT+864EVM+5MAS+5YJRM" target="_blank" rel="nofollow sponsored noopener">「未来への安心を、今ここで。無料FP相談でハーゲンダッツギフト券をゲット！」<span class="badge badge--pr">PR</span></a><img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4B8DGT+864EVM+5MAS+5YJRM" alt=""></div>
+        </div>
+        <p class="guide-note">民間の医療保険がどこまで必要かは、<a href="../../../insurance-checker/">保険診断</a>でも確かめられます。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>計算のきまり</h2>
+        <ul>
+          <li><strong>月の1日から末日まで</strong>で計算します。月をまたぐ入院は、それぞれの月で別々に計算します</li>
+          <li><strong>医療機関ごと</strong>に計算し、同じ病院でも入院と外来、医科と歯科は別にします。薬局の支払いは、処方せんを出した医療機関の分に合わせます</li>
+          <li>70歳未満は、1つの医療機関で<strong>21,000円以上</strong>払った分だけを合計できます。同じ健康保険に入っている家族の分も、21,000円以上なら合わせられます(世帯合算)。70歳以上は金額にかかわらず合計できます</li>
+          <li><strong>対象にならないもの</strong> — 入院中の食事代・差額ベッド代・先進医療・保険のきかない治療</li>
+        </ul>
+      </div>
+
+      <div class="card card--article">
+        <h2>窓口での支払いを最初から上限までにするには</h2>
+        <p>病院で<strong>マイナ保険証</strong>を使い、限度額の情報の提供に同意すれば、窓口で払うのは最初から上限額までになります。マイナ保険証を使わない人は、加入している健康保険に<strong>限度額適用認定証</strong>を申請して、病院に出します。</p>
+        <p>どちらも使わなかった場合は、いったん窓口で全額(3割など)を払い、あとから高額療養費を申請して戻してもらいます。協会けんぽは申請書を出して受け取ります(健康保険組合には自動で払い戻すところもあります)。国民健康保険や後期高齢者医療は、該当すると診療の数か月後に申請のお知らせが届くことが多いです。<strong>申請の期限は、診療を受けた月の翌月1日から2年</strong>です。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>戻った分は医療費控除から引く</h2>
+        <p>高額療養費で戻ってくる額は、確定申告の医療費控除では「保険などで補填される金額」として、払った医療費から差し引きます。年をまたいで戻ってくる場合も、その医療費を払った年の分から引きます。</p>
+        <p>1年間の医療費が多かった年は、医療費控除で税金も戻ってきます。<a href="../iryohi-kojo-ikura/">医療費控除でいくら戻るかの計算機</a>で確かめてください。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>よくある質問</h2>
+        <details class="faq-item"><summary>高額療養費の上限はいくらですか？</summary><p>70歳未満で年収約370万〜770万円の人は、2026年8月の診療分から85,800円＋(医療費−286,000円)×1%です。医療費100万円(窓口で30万円)なら92,940円で、残りの207,060円が戻ります。年収約370万円までの人は61,500円、住民税非課税の人は36,900円です。</p></details>
+        <details class="faq-item"><summary>2026年8月から何が変わりましたか？</summary><p>ひと月の上限が約4〜7%上がり、8月から翌年7月までの1年間の自己負担に年間上限ができました。4回目からの上限(多数回該当)は据え置きです。年収約370万〜770万円の人の年間上限は530,000円です。</p></details>
+        <details class="faq-item"><summary>年間上限の申請はいつからですか？</summary><p>2026年8月〜2027年7月の分は、2027年8月から申請を受け付けます(協会けんぽ)。それまで領収書を取っておいてください。</p></details>
+        <details class="faq-item"><summary>月をまたいで入院したらどうなりますか？</summary><p>月ごと(1日〜末日)に別々に計算します。月末から月初にかけての入院は、それぞれの月で上限に届かないことがあります。</p></details>
+        <details class="faq-item"><summary>差額ベッド代や入院中の食事代も対象ですか？</summary><p>対象になりません。先進医療や保険のきかない治療も同じです。</p></details>
+        <details class="faq-item"><summary>高額療養費の申請に期限はありますか？</summary><p>診療を受けた月の翌月1日から2年です。過ぎると時効で受け取れなくなります。</p></details>
+      </div>
+
+      <div class="card card--article">
+        <h2>出典</h2>
+        <ul>
+          <li>全国健康保険協会(協会けんぽ)「高額療養費」(令和8年8月以降の自己負担限度額・年間上限)<br><a href="https://www.kyoukaikenpo.or.jp/benefit/high_cost_medical_expenses/002/" target="_blank" rel="noopener">https://www.kyoukaikenpo.or.jp/benefit/high_cost_medical_expenses/002/</a></li>
+          <li>全国健康保険協会(協会けんぽ)「【制度改正】令和8年8月から高額療養費制度が見直されます」<br><a href="https://www.kyoukaikenpo.or.jp/about/business/public_relations/009/002/index.html" target="_blank" rel="noopener">https://www.kyoukaikenpo.or.jp/about/business/public_relations/009/002/index.html</a></li>
+          <li>厚生労働省「高額療養費制度を利用される皆さまへ」<br><a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/juuyou/kougakuiryou/index.html" target="_blank" rel="noopener">https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/juuyou/kougakuiryou/index.html</a></li>
+          <li>厚生労働省「(参考)高額療養費制度の見直しについて」<br><a href="https://www.mhlw.go.jp/content/12400000/001661792.pdf" target="_blank" rel="noopener">https://www.mhlw.go.jp/content/12400000/001661792.pdf</a></li>
+          <li>豊中市「後期高齢者医療制度 高額療養費制度／自己負担限度額について(令和8年8月)」<br><a href="https://www.city.toyonaka.osaka.jp/kenko/kouki/kyufu/kyuufunonaiyou.files/kouki_gendo_202608.pdf" target="_blank" rel="noopener">https://www.city.toyonaka.osaka.jp/kenko/kouki/kyufu/kyuufunonaiyou.files/kouki_gendo_202608.pdf</a></li>
+        </ul>
+      </div>
+
+      <div class="card card--article">
+        <h2>あわせて読みたい</h2>
+        <ul>
+          <li><a href="../../guide/iryohi-kojo-ikura/">医療費控除でいくら戻る？計算機と年収別の早見表</a></li>
+          <li><a href="../../guide/taishokugo-kenkohoken/">退職後の健康保険は任意継続と国保どっちが安い？</a></li>
+          <li><a href="../../../insurance-checker/">保険診断(医療保険は必要？)</a></li>
+          <li><a href="../../">給付金・補助金診断</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <p>本記事は協会けんぽ・厚生労働省の公表資料をもとに一般的な目安を示すものであり、実際の支給額を保証するものではありません。正確な額は加入している健康保険で確認してください。「PR」表記のあるリンクにはプロモーション(アフィリエイト広告)が含まれます。</p>
+    <p><a href="../../../about.html">運営者情報</a>・<a href="../../../contact.html">お問い合わせ</a>・<a href="../../../privacy.html">プライバシーポリシー</a></p>
+  </footer>
+
+</div>
+<script src="../../js/kurashi-calc.js"></script>
+<script>
+(function () {
+  const $ = (id) => document.getElementById(id);
+  const yen = (n) => Math.round(n).toLocaleString("ja-JP") + "円";
+  const ids = ["kg-era", "kg-age", "kg-k70u", "kg-k70o", "kg-gairai", "kg-nyuin", "kg-tasukai"];
+  const f = () => {
+    const over70 = $("kg-age").value === "o70";
+    $("kg-k70u-wrap").style.display = over70 ? "none" : "";
+    $("kg-k70o-wrap").style.display = over70 ? "" : "none";
+    const kubun = over70 ? $("kg-k70o").value : $("kg-k70u").value;
+    const era = $("kg-era").value;
+    const v = { era, kubun, gairai: Number($("kg-gairai").value || 0), nyuin: Number($("kg-nyuin").value || 0), tasukai: $("kg-tasukai").checked };
+    const r = kogakuCalc(v);
+    const other = kogakuCalc(Object.assign({}, v, { era: era === "r8" ? "old" : "r8" }));
+    const [base, from] = KOGAKU[r.era][kubun];
+    let s = r.gairaiLimit != null
+      ? `この月の自己負担の上限は、通院(外来)だけなら<strong>${yen(r.gairaiLimit)}</strong>、入院も含めると<strong>${yen(r.limit)}</strong>です`
+      : `この月の自己負担の上限は<strong>${yen(r.limit)}</strong>です`;
+    if (r.formula) s += `(${yen(base)}＋(医療費${yen(r.iryohi)}−${yen(from)})×1%。医療費は窓口で払った額を3割として逆算)`;
+    else if (r.tasukai) s += "(4回目からの多数回該当の額)";
+    s += "。";
+    if (r.paid > 0) s += r.modoru > 0
+      ? `<br>窓口で${yen(r.paid)}払った場合、<strong>${yen(r.modoru)}</strong>が高額療養費として戻ります(自己負担は${yen(r.futan)})。`
+      : `<br>窓口で払った${yen(r.paid)}は上限に届いていないので、この月の分は戻りません。`;
+    const both = (x) => x.gairaiLimit != null ? `通院だけ${yen(x.gairaiLimit)}・入院も含めて${yen(x.limit)}` : yen(x.limit);
+    if (r.limit !== other.limit || r.gairaiLimit !== other.gairaiLimit) s += era === "r8"
+      ? `<br>2026年7月までの上限は${both(other)}でした。`
+      : `<br>2026年8月以降の診療なら、上限は${both(other)}です。`;
+    if (era === "r8" && r.nenkan) {
+      s += `<br>2026年8月〜2027年7月の自己負担の合計が<strong>${yen(r.nenkan)}</strong>を超えると、超えた分も戻ります(年間上限。申請は2027年8月から)。`;
+      if (kubun === "e") s += `年収約200万円以下(会社員などは標準報酬月額15万円以下)と確認できた人は${yen(KOGAKU_NENKAN_LOW_R8)}です。`;
+      if (kubun === "ippan") s += `標準報酬月額15万円以下(後期高齢者医療などは課税所得28万円未満)と確認できた人は${yen(KOGAKU_NENKAN_LOW_R8)}です。`;
+      if (r.gairaiNenkan) s += `通院だけの年間上限は${yen(r.gairaiNenkan)}です。`;
+    }
+    $("kg-out").innerHTML = s;
+    try { localStorage.setItem("subsidy-checker:kogaku", JSON.stringify(ids.map((id) => $(id).type === "checkbox" ? $(id).checked : $(id).value))); } catch (e) { /* 保存できなくても計算はする */ }
+  };
+  try { const s = JSON.parse(localStorage.getItem("subsidy-checker:kogaku") || "null"); if (s) ids.forEach((id, i) => { if ($(id).type === "checkbox") $(id).checked = s[i]; else $(id).value = s[i]; }); } catch (e) { /* noop */ }
+  ids.forEach((id) => { $(id).addEventListener("input", f); $(id).addEventListener("change", f); });
+  f();
+})();
+</script>
+</body>
+</html>

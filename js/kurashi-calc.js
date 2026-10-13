@@ -3,7 +3,9 @@
  *   1. 住民税非課税の判定 … guide/juminzei-hikazei-nenshu/
  *   2. 年金生活者支援給付金 … guide/nenkin-seikatsusha-shienkyufukin/
  *   3. 退職後の健康保険(任意継続と国保) … guide/taishokugo-kenkohoken/
- * 金額はすべて円。年度の数字は 2026-10-12 に各公式ページで確認した
+ *   4. 高額療養費(ひと月の自己負担の上限) … guide/kogaku-ryoyohi-jogen/
+ *   5. 医療費控除・セルフメディケーション税制 … guide/iryohi-kojo-ikura/
+ * 金額はすべて円。年度の数字は 2026-10-12(4・5は10-13)に各公式ページで確認した
  */
 
 /* ---------- 1. 所得の計算と住民税非課税 ---------- */
@@ -163,8 +165,111 @@ function kokuhoPremium(v) {
   return { shotoku, hijihatsu, keigen, kiso, iryo, shien, kodomo, kaigo, annual, monthly: Math.round(annual / 12) };
 }
 
+/* ---------- 4. 高額療養費 ---------- */
+/* 区分ごとの [基本の額, 1%がかかり始める総医療費(0なら定額), 多数回該当(4回目から), 年間上限(8月〜翌7月)]
+ * r8 は令和8年8月診療分から(協会けんぽ「高額療養費」・厚労省「高額療養費制度の見直しについて」・豊中市の後期高齢者の表)
+ * old は令和8年7月診療分まで(平成30年8月〜)。年間上限は無い
+ * a/i/u は70歳未満のア・イ・ウと70歳以上の現役並みⅢ・Ⅱ・Ⅰで同じ額。e/o は70歳未満のエ・オ
+ * ippan/low2/low1 は70歳以上の一般・低所得Ⅱ・低所得Ⅰの「外来＋入院(世帯)」。75歳以上の後期高齢者医療も同じ額 */
+const KOGAKU = {
+  r8: {
+    a: [270300, 901000, 140100, 1680000], i: [179100, 597000, 93000, 1110000], u: [85800, 286000, 44400, 530000],
+    e: [61500, 0, 44400, 530000], o: [36900, 0, 24600, 290000],
+    ippan: [61500, 0, 44400, 530000], low2: [25700, 0, 24600, 290000], low1: [15700, 0, null, 180000],
+  },
+  old: {
+    a: [252600, 842000, 140100, null], i: [167400, 558000, 93000, null], u: [80100, 267000, 44400, null],
+    e: [57600, 0, 44400, null], o: [35400, 0, 24600, null],
+    ippan: [57600, 0, 44400, null], low2: [24600, 0, null, null], low1: [15000, 0, null, null],
+  },
+};
+/* 70歳以上の一般・低所得の外来(個人ごと) [月額, 外来の年間上限] */
+const KOGAKU_GAIRAI = {
+  r8: { ippan: [22000, 216000], low2: [11000, 96000], low1: [8000, null] },
+  old: { ippan: [18000, 144000], low2: [8000, null], low1: [8000, null] },
+};
+/* エ(70歳以上は一般)のうち標準報酬月額15万円以下(年収約200万円以下)と確認できた人の年間上限。超えた分は令和9年8月以降に払い戻し */
+const KOGAKU_NENKAN_LOW_R8 = 410000;
+
+/* ひと月の上限額。iryohi は総医療費(10割) */
+function kogakuLimit(kubun, iryohi, era, tasukai) {
+  const [base, from, multi] = KOGAKU[era || "r8"][kubun];
+  if (tasukai && multi) return multi;
+  return from ? base + Math.max(0, Math.round((iryohi - from) / 100)) : base;
+}
+
+/* gairai・nyuin は窓口で払った額(保険診療の分)。70歳未満のア〜ウ・現役並みは3割負担なので 窓口負担÷0.3 を総医療費とみなす
+ * 70歳以上の一般・低所得は、外来を個人の上限で抑えてから入院と合わせ、世帯の上限で抑える(本人ひとり分の計算) */
+function kogakuCalc(v) {
+  const era = v.era === "old" ? "old" : "r8";
+  const gairai = Math.max(0, v.gairai || 0), nyuin = Math.max(0, v.nyuin || 0);
+  const paid = gairai + nyuin;
+  const G = KOGAKU_GAIRAI[era][v.kubun];
+  let gairaiCapped = gairai, gairaiLimit = null;
+  if (G) { gairaiLimit = G[0]; gairaiCapped = Math.min(gairai, gairaiLimit); }
+  const iryohi = Math.round(paid / 0.3);
+  const limit = kogakuLimit(v.kubun, iryohi, era, v.tasukai);
+  const futan = Math.min(gairaiCapped + nyuin, limit);
+  const [, from, multi, nenkan] = KOGAKU[era][v.kubun];
+  return { era, paid, iryohi, limit, gairaiLimit, futan, modoru: paid - futan, formula: !!from && !(v.tasukai && multi),
+    tasukai: !!(v.tasukai && multi), multi, nenkan, gairaiNenkan: G ? G[1] : null };
+}
+
+/* ---------- 5. 医療費控除 ---------- */
+/* 所得税の基礎控除。year=2025 は令和7年分、2026 は令和8年分(令和9年分も同じ)。国税庁 No.1199 */
+function kisoKojo(gokei, year) {
+  if (gokei > 25000000) return 0;
+  if (gokei > 24500000) return 160000;
+  if (gokei > 24000000) return 320000;
+  if (gokei > 23500000) return 480000;
+  if (year >= 2026) return gokei <= 4890000 ? 1040000 : gokei <= 6550000 ? 670000 : 620000;
+  return gokei <= 1320000 ? 950000 : gokei <= 3360000 ? 880000 : gokei <= 4890000 ? 680000 : gokei <= 6550000 ? 630000 : 580000;
+}
+/* 所得税(復興特別所得税を含まない)。課税所得は1,000円未満切り捨て。国税庁 No.2260 */
+const SHOTOKUZEI_TABLE = [[1950000, 5, 0], [3300000, 10, 97500], [6950000, 20, 427500], [9000000, 23, 636000],
+  [18000000, 33, 1536000], [40000000, 40, 2796000], [Infinity, 45, 4796000]];
+function shotokuzei(kazei) {
+  const k = Math.floor(Math.max(0, kazei) / 1000) * 1000;
+  const [, rate, sub] = SHOTOKUZEI_TABLE.find(([lim]) => k <= lim);
+  return Math.max(0, k * rate / 100 - sub);
+}
+/* 復興特別所得税(2.1%)を足して100円未満を切り捨てた、納める所得税 */
+const shotokuzeiTotal = (kazei) => Math.floor(shotokuzei(kazei) * 1.021 / 100) * 100;
+
+/* 医療費控除の額。足切りは10万円か総所得金額等の5%の少ない方、上限200万円 */
+function iryohiKojo(iryohi, hoten, sotoku) {
+  const ashikiri = Math.min(100000, Math.floor(Math.max(0, sotoku) * 0.05));
+  return { ashikiri, kojo: Math.min(2000000, Math.max(0, (iryohi || 0) - (hoten || 0) - ashikiri)) };
+}
+/* セルフメディケーション税制(令和8年分までの購入分)。対象の市販薬が1万2千円を超えた分、上限8万8千円 */
+const selfMedKojo = (otc) => Math.min(88000, Math.max(0, (otc || 0) - 12000));
+
+/* 控除で減る税金の目安。v = { year, kyuyo, nenkin, over65, shakai(社会保険料。null なら給与の15%), hoka(ほかの所得控除), iryohi, hoten, otc }
+ * 住民税は所得割10%で、課税所得(基礎控除43万円)が残っている分だけ減るとして計算 */
+function iryohiKojoEffect(v) {
+  const year = v.year >= 2026 ? 2026 : 2025;
+  const gokei = gokeiShotoku({ kyuyo: v.kyuyo || 0, nenkin: v.nenkin || 0, over65: !!v.over65, nendo: year >= 2026 ? 9 : 8 });
+  const shakai = v.shakai == null ? Math.round((v.kyuyo || 0) * 0.15) : v.shakai;
+  const hoka = v.hoka || 0;
+  const kiso = kisoKojo(gokei, year);
+  const kazei = Math.max(0, gokei - shakai - kiso - hoka);
+  const juminKazei = Math.max(0, gokei - shakai - 430000 - hoka);
+  const effect = (kojo) => {
+    const shotoku = shotokuzeiTotal(kazei) - shotokuzeiTotal(kazei - kojo);
+    const jumin = Math.floor(Math.min(kojo, juminKazei) * 0.1 / 100) * 100;
+    return { kojo, shotoku, jumin, total: shotoku + jumin };
+  };
+  const { ashikiri, kojo } = iryohiKojo(v.iryohi, v.hoten, gokei);
+  const iryo = effect(kojo);
+  const self = effect(selfMedKojo(v.otc));
+  return { year, gokei, shakai, kiso, kazei, juminKazei, ashikiri, rate: (SHOTOKUZEI_TABLE.find(([lim]) => Math.floor(kazei / 1000) * 1000 <= lim))[1],
+    iryo, self, better: self.total > iryo.total ? "self" : "iryo" };
+}
+
 if (typeof module !== "undefined") module.exports = {
-  kyuyoShotoku, nenkinShotoku, gokeiShotoku, hikazeiLimit, shotokuwariLimit, hikazeiJudge, maxKyuyo, maxNenkin, HIKAZEI_SPECIAL,
+  kyuyoShotoku, nenkinShotoku, gokeiShotoku, hikazeiLimit, shotokuwariLimit, hikazeiJudge, maxKyuyo, maxNenkin, maxIncome, HIKAZEI_SPECIAL,
   SHIEN_R8, shienRourei, yenRound,
   KYOKAI_R8, KYOKAI_KODOMO_R8, KYOKAI_KAIGO_R8, NINKEI_MAX_R8, hyojunHoshu, ninkeiPremium, KOKUHO_TOKYO23_R8, KOKUHO_KEIGEN_R8, kokuhoPremium,
+  KOGAKU, KOGAKU_GAIRAI, KOGAKU_NENKAN_LOW_R8, kogakuLimit, kogakuCalc,
+  kisoKojo, shotokuzei, shotokuzeiTotal, iryohiKojo, selfMedKojo, iryohiKojoEffect,
 };
