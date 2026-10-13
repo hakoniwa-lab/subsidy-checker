@@ -20,7 +20,7 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6465548593525933" crossorigin="anonymous"></script>
 <link rel="canonical" href="https://hakoniwalab.com/subsidy-checker/guide/jido-fuyo-teate/">
 <link rel="stylesheet" href="../../css/style.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"児童扶養手当はいくらもらえますか？","acceptedAnswer":{"@type":"Answer","text":"2026年4月分から、子ども1人で全部支給なら月48,050円、2人目以降は1人につき月11,350円が加わります。一部支給は所得に応じて月11,340円〜48,040円(1人目)です。"}},{"@type":"Question","name":"児童扶養手当は年収いくらまでもらえますか？","acceptedAnswer":{"@type":"Answer","text":"給与だけで養育費がない場合、親と子1人なら年収190万円未満で全部支給、385.2万円未満まで一部支給です(2025年の収入)。子2人なら244.4万円未満で全部支給、432.8万円未満まで一部支給です。"}},{"@type":"Question","name":"養育費は収入に入りますか？","acceptedAnswer":{"@type":"Answer","text":"受け取った養育費の8割が、手当の計算に使う所得に足されます。"}},{"@type":"Question","name":"実家暮らしでも児童扶養手当はもらえますか？","acceptedAnswer":{"@type":"Answer","text":"同じ家計の親やきょうだいの所得が限度額(扶養0人なら236万円)未満なら受け取れます。限度額以上だと、本人の所得にかかわらず手当は出ません。"}},{"@type":"Question","name":"児童扶養手当はいつ振り込まれますか？","acceptedAnswer":{"@type":"Answer","text":"奇数月(1・3・5・7・9・11月)に、前の2か月分がまとめて振り込まれます。"}},{"@type":"Question","name":"2026年度の児童扶養手当はいくら上がりましたか？","acceptedAnswer":{"@type":"Answer","text":"1人目の全部支給が46,690円から48,050円に、2人目以降の加算が11,030円から11,350円に上がりました(2026年4月分から)。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"児童扶養手当はいくらもらえますか？","acceptedAnswer":{"@type":"Answer","text":"2026年4月分から、子ども1人で全部支給なら月48,050円、2人目以降は1人につき月11,350円が加わります。一部支給は所得に応じて月11,340円〜48,040円(1人目)です。"}},{"@type":"Question","name":"児童扶養手当は年収いくらまでもらえますか？","acceptedAnswer":{"@type":"Answer","text":"給与だけで養育費がない場合、親と子1人なら年収190万円未満で全部支給、385.2万円未満まで一部支給です(2025年の収入)。子2人なら244.4万円未満で全部支給、432.8万円未満まで一部支給です。"}},{"@type":"Question","name":"養育費は収入に入りますか？","acceptedAnswer":{"@type":"Answer","text":"受け取った養育費の8割が、手当の計算に使う所得に足されます。"}},{"@type":"Question","name":"実家暮らしでも児童扶養手当はもらえますか？","acceptedAnswer":{"@type":"Answer","text":"同じ家計の親やきょうだいの所得が限度額未満なら受け取れます。親が誰も扶養していない場合、限度額は所得236万円で、65歳以上で年金だけなら年金収入375.3万円未満、給与だけなら年収372.8万円未満が目安です。父と母は1人ずつ判定し、合算しません。"}},{"@type":"Question","name":"児童扶養手当はいつ振り込まれますか？","acceptedAnswer":{"@type":"Answer","text":"奇数月(1・3・5・7・9・11月)に、前の2か月分がまとめて振り込まれます。"}},{"@type":"Question","name":"2026年度の児童扶養手当はいくら上がりましたか？","acceptedAnswer":{"@type":"Answer","text":"1人目の全部支給が46,690円から48,050円に、2人目以降の加算が11,030円から11,350円に上がりました(2026年4月分から)。"}}]}</script>
 <style>
 .guide-nav { max-width: 720px; margin: 0 auto 16px; padding: 0 20px; font-size: 0.85rem; color: var(--color-text-muted); }
 .guide-nav a { color: var(--color-text-muted); }
@@ -95,6 +95,36 @@
               <div><label for="fy-other">人数</label><select id="fy-other" class="quiz-select"><option value="0">0人</option><option value="1">1人</option><option value="2">2人</option><option value="3">3人</option><option value="4">4人</option></select></div>
               <div><label for="fy-otherT">19〜22歳</label><select id="fy-otherT" class="quiz-select"><option value="0">0人</option><option value="1">1人</option><option value="2">2人</option><option value="3">3人</option><option value="4">4人</option></select></div>
               <div><label for="fy-otherR">70歳以上</label><select id="fy-otherR" class="quiz-select"><option value="0">0人</option><option value="1">1人</option><option value="2">2人</option><option value="3">3人</option><option value="4">4人</option></select></div>
+            </div>
+          </details>
+          <details id="fy-gimu-box">
+            <summary>実家で親などと暮らしている(同じ家計の親・祖父母・きょうだい)</summary>
+            <p class="form-help">収入のある人を2人まで入れられます。1人ずつ判定し、合算はしません。扶養している人数はその人の税法上の扶養(配偶者を含む)、「うち70歳以上」は配偶者を除いた70歳以上の扶養親族です。</p>
+            <p class="form-help" style="margin:12px 0 0"><strong>同居の家族1人目</strong></p>
+            <div class="row2">
+              <div><label for="fy-g1k">給与の年収(万円)</label><input id="fy-g1k" type="number" inputmode="decimal" min="0" step="0.1" value="0"></div>
+              <div><label for="fy-g1n">年金の収入(万円)</label><input id="fy-g1n" type="number" inputmode="decimal" min="0" step="0.1" value="0"></div>
+            </div>
+            <div class="row2">
+              <div><label for="fy-g1s">事業所得(万円)</label><input id="fy-g1s" type="number" inputmode="decimal" min="0" step="0.1" value="0"></div>
+              <div><label for="fy-g1f">扶養している人数</label><select id="fy-g1f" class="quiz-select"><option value="0">0人</option><option value="1">1人</option><option value="2">2人</option><option value="3">3人</option><option value="4">4人</option><option value="5">5人</option><option value="6">6人</option></select></div>
+            </div>
+            <div class="row2">
+              <div><label for="fy-g1r">うち70歳以上</label><select id="fy-g1r" class="quiz-select"><option value="0">0人</option><option value="1">1人</option><option value="2">2人</option><option value="3">3人</option><option value="4">4人</option></select></div>
+              <div><label style="margin-top:30px"><input type="checkbox" id="fy-g1o" style="width:auto"> 65歳以上</label></div>
+            </div>
+            <p class="form-help" style="margin:12px 0 0"><strong>同居の家族2人目</strong></p>
+            <div class="row2">
+              <div><label for="fy-g2k">給与の年収(万円)</label><input id="fy-g2k" type="number" inputmode="decimal" min="0" step="0.1" value="0"></div>
+              <div><label for="fy-g2n">年金の収入(万円)</label><input id="fy-g2n" type="number" inputmode="decimal" min="0" step="0.1" value="0"></div>
+            </div>
+            <div class="row2">
+              <div><label for="fy-g2s">事業所得(万円)</label><input id="fy-g2s" type="number" inputmode="decimal" min="0" step="0.1" value="0"></div>
+              <div><label for="fy-g2f">扶養している人数</label><select id="fy-g2f" class="quiz-select"><option value="0">0人</option><option value="1">1人</option><option value="2">2人</option><option value="3">3人</option><option value="4">4人</option><option value="5">5人</option><option value="6">6人</option></select></div>
+            </div>
+            <div class="row2">
+              <div><label for="fy-g2r">うち70歳以上</label><select id="fy-g2r" class="quiz-select"><option value="0">0人</option><option value="1">1人</option><option value="2">2人</option><option value="3">3人</option><option value="4">4人</option></select></div>
+              <div><label style="margin-top:30px"><input type="checkbox" id="fy-g2o" style="width:auto"> 65歳以上</label></div>
             </div>
           </details>
           <p class="guide-result" id="fy-out" role="status"></p>
@@ -204,9 +234,27 @@
       </div>
 
       <div class="card card--article">
+        <h2>実家で親と暮らしている場合</h2>
+        <p>同じ家計の父母・祖父母・きょうだいなど(<strong>扶養義務者</strong>)がいると、その人の所得も判定に使います。<strong>1人ずつ判定し</strong>、誰か1人でも限度額以上だと、本人の所得にかかわらず手当は全部止まります。父と母の所得を合算することはありません。</p>
+        <div class="table-scroll">
+          <table class="guide-table">
+            <thead><tr><th>その人が扶養している人数</th><th>所得の限度額</th><th>65歳以上・年金だけなら</th><th>給与だけなら</th></tr></thead>
+            <tbody>
+            <tr><td>0人</td><td class="num">2,360,000円</td><td class="num">375.3万円</td><td class="num">372.8万円</td></tr>
+            <tr><td>1人</td><td class="num">2,740,000円</td><td class="num">424.1万円</td><td class="num">420万円</td></tr>
+            <tr><td>2人</td><td class="num">3,120,000円</td><td class="num">468.8万円</td><td class="num">467.6万円</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="guide-note">右の2列は、この収入未満なら手当が止まらない目安です(千円未満切り捨て)。扶養している人数はその人の税法上の扶養(配偶者を含む)で、3人目からは1人につき38万円を足します。70歳以上の扶養親族(配偶者を除く)がいると、1人につきさらに6万円上がります(扶養しているのが70歳以上の人だけなら1人を除く)。</p>
+        <p>扶養義務者の所得も、給与所得と年金の所得から10万円、全員から8万円を引いて計算します。本人と違って<strong>ひとり親控除・寡婦控除も引けます</strong>。養育費は足しません。</p>
+        <p>同じ家に住んでいれば、住民票の世帯を分けていても同じ家計として扱われることが多いです。最終的な判断は市区町村がするので、窓口で確かめてください。</p>
+      </div>
+
+      <div class="card card--article">
         <h2>もらえない・減るときに気をつけること</h2>
         <ul>
-          <li><strong>実家で親と暮らしている</strong> — 同じ家計の親やきょうだい(扶養義務者)の所得が上の表の右の列以上だと、本人の所得にかかわらず手当は出ません</li>
+          <li><strong>実家で親と暮らしている</strong> — 同じ家計の親やきょうだい(扶養義務者)の所得が限度額以上だと、本人の所得にかかわらず手当は出ません。上の計算機の「実家で親などと暮らしている」に入れると判定できます</li>
           <li><strong>受け取り始めて5年たった</strong> — 働いている、求職中、病気で働けないなどの届けを出さないと、手当が半分になります(届けは現況届と一緒に出せます)</li>
           <li><strong>遺族年金などを受け取っている</strong> — 年金の額が手当より少ない場合だけ、差額が出ます</li>
           <li><strong>毎年8月の現況届</strong> — 出さないと11月分から止まります。2年出さないと受給資格がなくなります</li>
@@ -229,7 +277,7 @@
         <details class="faq-item"><summary>児童扶養手当はいくらもらえますか？</summary><p>2026年4月分から、子ども1人で全部支給なら月48,050円、2人目以降は1人につき月11,350円が加わります。一部支給は所得に応じて月11,340円〜48,040円(1人目)です。</p></details>
         <details class="faq-item"><summary>児童扶養手当は年収いくらまでもらえますか？</summary><p>給与だけで養育費がない場合、親と子1人なら年収190万円未満で全部支給、385.2万円未満まで一部支給です(2025年の収入)。子2人なら244.4万円未満で全部支給、432.8万円未満まで一部支給です。</p></details>
         <details class="faq-item"><summary>養育費は収入に入りますか？</summary><p>受け取った養育費の8割が、手当の計算に使う所得に足されます。</p></details>
-        <details class="faq-item"><summary>実家暮らしでも児童扶養手当はもらえますか？</summary><p>同じ家計の親やきょうだいの所得が限度額(扶養0人なら236万円)未満なら受け取れます。限度額以上だと、本人の所得にかかわらず手当は出ません。</p></details>
+        <details class="faq-item"><summary>実家暮らしでも児童扶養手当はもらえますか？</summary><p>同じ家計の親やきょうだいの所得が限度額未満なら受け取れます。親が誰も扶養していない場合、限度額は所得236万円で、65歳以上で年金だけなら年金収入375.3万円未満、給与だけなら年収372.8万円未満が目安です。父と母は1人ずつ判定し、合算しません。</p></details>
         <details class="faq-item"><summary>児童扶養手当はいつ振り込まれますか？</summary><p>奇数月(1・3・5・7・9・11月)に、前の2か月分がまとめて振り込まれます。</p></details>
         <details class="faq-item"><summary>2026年度の児童扶養手当はいくら上がりましたか？</summary><p>1人目の全部支給が46,690円から48,050円に、2人目以降の加算が11,030円から11,350円に上がりました(2026年4月分から)。</p></details>
       </div>
@@ -269,15 +317,25 @@
   const yen = (n) => Math.round(n).toLocaleString("ja-JP") + "円";
   const man = (n) => (Math.floor(n / 1000) / 10).toLocaleString("ja-JP") + "万円";
   const KIND = { zenbu: "全部支給", ichibu: "一部支給", teishi: "支給なし(全部停止)" };
-  const ids = ["fy-year", "fy-kids", "fy-kids16", "fy-kyuyo", "fy-youiku", "fy-sonota", "fy-kojo", "fy-other", "fy-otherT", "fy-otherR"];
+  const ids = ["fy-year", "fy-kids", "fy-kids16", "fy-kyuyo", "fy-youiku", "fy-sonota", "fy-kojo", "fy-other", "fy-otherT", "fy-otherR",
+    "fy-g1k", "fy-g1n", "fy-g1s", "fy-g1f", "fy-g1r", "fy-g1o", "fy-g2k", "fy-g2n", "fy-g2s", "fy-g2f", "fy-g2r", "fy-g2o"];
+  const num = (id) => Number($(id).value || 0) * 10000;
   const f = () => {
     const kids = +$("fy-kids").value;
     if (+$("fy-kids16").value > kids) $("fy-kids16").value = kids;
-    const v = { year: +$("fy-year").value, kids, kids16: +$("fy-kids16").value, kyuyo: Number($("fy-kyuyo").value || 0) * 10000,
-      youikuhi: Number($("fy-youiku").value || 0) * 10000, sonota: Number($("fy-sonota").value || 0) * 10000, kojo: Number($("fy-kojo").value || 0) * 10000,
+    const v = { year: +$("fy-year").value, kids, kids16: +$("fy-kids16").value, kyuyo: num("fy-kyuyo"),
+      youikuhi: num("fy-youiku"), sonota: num("fy-sonota"), kojo: num("fy-kojo"),
       other: +$("fy-other").value, otherTokutei: Math.min(+$("fy-otherT").value, +$("fy-other").value), otherRojin: Math.min(+$("fy-otherR").value, +$("fy-other").value) };
+    /* 同居の家族(扶養義務者)は、収入を入れた人だけ判定する */
+    v.gimu = [1, 2].map((i) => ({ i, kyuyo: num(`fy-g${i}k`), nenkin: num(`fy-g${i}n`), sonota: num(`fy-g${i}s`), over65: $(`fy-g${i}o`).checked,
+      fuyo: +$(`fy-g${i}f`).value, rojin: Math.min(+$(`fy-g${i}r`).value, +$(`fy-g${i}f`).value) })).filter((g) => g.kyuyo || g.nenkin || g.sonota);
     const r = jidoFuyo(v);
-    let s = r.monthly > 0
+    let s;
+    if (r.kind === "gimu") {
+      const self = jidoFuyo(Object.assign({}, v, { gimu: [] }));
+      s = `同居している家族の所得が限度額以上なので、<strong>手当は出ません</strong>(全部停止)。`;
+      if (self.monthly > 0) s += `同居の家族がいなければ、${KIND[self.kind]}で月${yen(self.monthly)}になる所得です。`;
+    } else s = r.monthly > 0
       ? `<strong>${KIND[r.kind]}</strong>で、月額<strong>${yen(r.monthly)}</strong>(年額約${man(r.annual)})です。奇数月(1・3・5・7・9・11月)に2か月分ずつ(${yen(r.monthly * 2)})振り込まれます。`
       : `所得が一部支給の上限(${yen(r.ichibu)}未満)を超えているので、<strong>手当は出ません</strong>(全部停止)。`;
     if (r.kind === "ichibu") s += `<br>内訳は1人目${yen(r.hon)}${kids > 1 ? `、2人目以降${yen(r.ka)}×${kids - 1}人` : ""}です。`;
@@ -289,13 +347,26 @@
     s += `(${parts.join("")}−8万円${v.kojo ? `−控除${yen(v.kojo)}` : ""})。`;
     s += `全部支給は${yen(r.zenbu)}未満、一部支給は${yen(r.ichibu)}未満です。`;
     const r0 = jidoFuyo(Object.assign({}, v, { kyuyo: 0 })); // 給与が0円でも限度額を超えるなら年収の目安は出さない。事業所得のある人にも出さない
-    if (v.sonota > 0) { /* 給与の年収の目安は給与だけの人向け */ }
+    if (v.sonota > 0 || r.kind === "gimu") { /* 給与の年収の目安は給与だけの人向け。同居の家族で止まっているときも出さない */ }
     else if (r0.shotoku < r0.zenbu) s += `<br>この条件なら、給与の年収が<strong>約${man(fuyoMaxKyuyo(v, "zenbu") + 1)}未満で全部支給</strong>、約${man(fuyoMaxKyuyo(v, "ichibu") + 1)}未満まで一部支給です。`;
     else if (r0.shotoku < r0.ichibu) s += `<br>この条件なら、給与の年収が約${man(fuyoMaxKyuyo(v, "ichibu") + 1)}未満まで一部支給です。`;
+    v.gimu.forEach((g, j) => {
+      const x = r.gimu[j];
+      s += `<br>同居の家族${g.i}人目: 所得${yen(x.shotoku)}・限度額${yen(x.limit)}で、`;
+      s += x.stop ? "<strong>限度額以上</strong>です。" : `限度額未満なので手当には影響しません(あと${yen(x.margin)})。`;
+      const key = g.nenkin >= g.kyuyo ? "nenkin" : "kyuyo";
+      if (!fuyoGimu(Object.assign({}, g, { [key]: 0 }), v.year).stop) {
+        s += `ほかの収入がこのままなら、${key === "nenkin" ? "年金" : "給与"}の収入が約${man(fuyoGimuMax(g, v.year, key) + 1)}未満なら止まりません。`;
+      }
+    });
     $("fy-out").innerHTML = s;
-    try { localStorage.setItem("subsidy-checker:fuyo", JSON.stringify(ids.map((id) => $(id).value))); } catch (e) { /* 保存できなくても計算はする */ }
+    try { localStorage.setItem("subsidy-checker:fuyo", JSON.stringify(ids.map((id) => $(id).type === "checkbox" ? $(id).checked : $(id).value))); } catch (e) { /* 保存できなくても計算はする */ }
   };
-  try { const s = JSON.parse(localStorage.getItem("subsidy-checker:fuyo") || "null"); if (s) ids.forEach((id, i) => { $(id).value = s[i]; }); } catch (e) { /* noop */ }
+  try {
+    const s = JSON.parse(localStorage.getItem("subsidy-checker:fuyo") || "null");
+    if (s) ids.forEach((id, i) => { if (s[i] === undefined) return; if ($(id).type === "checkbox") $(id).checked = s[i]; else $(id).value = s[i]; });
+    if ([1, 2].some((i) => +$(`fy-g${i}k`).value || +$(`fy-g${i}n`).value || +$(`fy-g${i}s`).value)) $("fy-gimu-box").open = true;
+  } catch (e) { /* noop */ }
   ids.forEach((id) => { $(id).addEventListener("input", f); $(id).addEventListener("change", f); });
   f();
 })();
