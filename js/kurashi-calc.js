@@ -248,12 +248,13 @@ function iryohiKojo(iryohi, hoten, sotoku) {
 /* セルフメディケーション税制(令和8年分までの購入分)。対象の市販薬が1万2千円を超えた分、上限8万8千円 */
 const selfMedKojo = (otc) => Math.min(88000, Math.max(0, (otc || 0) - 12000));
 
-/* 控除で減る税金の目安。v = { year, kyuyo, nenkin, over65, shakai(社会保険料。null なら給与の15%), hoka(ほかの所得控除), iryohi, hoten, otc }
+/* 控除で減る税金の目安。v = { year, kyuyo, nenkin, over65, shakai(社会保険料。null なら年収から計算), hoka(ほかの所得控除), iryohi, hoten, otc }
+ * 社会保険料の既定は、年収÷12を月給として標準報酬月額(健康保険139万円・厚生年金65万円が上限)と協会けんぽの全国平均の料率で出す(6節。介護保険料は入れない)
  * 住民税は所得割10%で、課税所得(基礎控除43万円)が残っている分だけ減るとして計算 */
 function iryohiKojoEffect(v) {
   const year = v.year >= 2026 ? 2026 : 2025;
   const gokei = gokeiShotoku({ kyuyo: v.kyuyo || 0, nenkin: v.nenkin || 0, over65: !!v.over65, nendo: year >= 2026 ? 9 : 8 });
-  const shakai = v.shakai == null ? Math.round((v.kyuyo || 0) * 0.15) : v.shakai;
+  const shakai = v.shakai == null ? (v.kyuyo > 0 ? shahoMonthly(v.kyuyo / 12, false).total * 12 : 0) : v.shakai;
   const hoka = v.hoka || 0;
   const kiso = kisoKojo(gokei, year);
   const kazei = Math.max(0, gokei - shakai - kiso - hoka);

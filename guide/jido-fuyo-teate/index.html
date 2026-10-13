@@ -99,7 +99,7 @@
           </details>
           <details id="fy-gimu-box">
             <summary>実家で親などと暮らしている(同じ家計の親・祖父母・きょうだい)</summary>
-            <p class="form-help">収入のある人を2人まで入れられます。1人ずつ判定し、合算はしません。扶養している人数はその人の税法上の扶養(配偶者を含む)、「うち70歳以上」は配偶者を除いた70歳以上の扶養親族です。</p>
+            <p class="form-help">収入のある人を2人まで入れられます。1人ずつ判定し、合算はしません。扶養している人数はその人の税法上の扶養(配偶者を含む)、「うち70歳以上」は配偶者を除いた70歳以上の扶養親族です。控除の合計は、その人が住民税で受けた医療費控除・障害者控除(1人27万円、特別障害者40万円)・小規模企業共済等掛金控除などの合計です。</p>
             <p class="form-help" style="margin:12px 0 0"><strong>同居の家族1人目</strong></p>
             <div class="row2">
               <div><label for="fy-g1k">給与の年収(万円)</label><input id="fy-g1k" type="number" inputmode="decimal" min="0" step="0.1" value="0"></div>
@@ -113,6 +113,10 @@
               <div><label for="fy-g1r">うち70歳以上</label><select id="fy-g1r" class="quiz-select"><option value="0">0人</option><option value="1">1人</option><option value="2">2人</option><option value="3">3人</option><option value="4">4人</option></select></div>
               <div><label style="margin-top:30px"><input type="checkbox" id="fy-g1o" style="width:auto"> 65歳以上</label></div>
             </div>
+            <div class="row2">
+              <div><label for="fy-g1j">控除の合計(万円)</label><input id="fy-g1j" type="number" inputmode="decimal" min="0" step="0.1" value="0"></div>
+              <div><label for="fy-g1h">寡婦・ひとり親</label><select id="fy-g1h" class="quiz-select"><option value="0">なし</option><option value="270000">寡婦控除(27万円)</option><option value="350000">ひとり親控除(35万円)</option></select></div>
+            </div>
             <p class="form-help" style="margin:12px 0 0"><strong>同居の家族2人目</strong></p>
             <div class="row2">
               <div><label for="fy-g2k">給与の年収(万円)</label><input id="fy-g2k" type="number" inputmode="decimal" min="0" step="0.1" value="0"></div>
@@ -125,6 +129,10 @@
             <div class="row2">
               <div><label for="fy-g2r">うち70歳以上</label><select id="fy-g2r" class="quiz-select"><option value="0">0人</option><option value="1">1人</option><option value="2">2人</option><option value="3">3人</option><option value="4">4人</option></select></div>
               <div><label style="margin-top:30px"><input type="checkbox" id="fy-g2o" style="width:auto"> 65歳以上</label></div>
+            </div>
+            <div class="row2">
+              <div><label for="fy-g2j">控除の合計(万円)</label><input id="fy-g2j" type="number" inputmode="decimal" min="0" step="0.1" value="0"></div>
+              <div><label for="fy-g2h">寡婦・ひとり親</label><select id="fy-g2h" class="quiz-select"><option value="0">なし</option><option value="270000">寡婦控除(27万円)</option><option value="350000">ひとり親控除(35万円)</option></select></div>
             </div>
           </details>
           <p class="guide-result" id="fy-out" role="status"></p>
@@ -247,7 +255,7 @@
           </table>
         </div>
         <p class="guide-note">右の2列は、この収入未満なら手当が止まらない目安です(千円未満切り捨て)。扶養している人数はその人の税法上の扶養(配偶者を含む)で、3人目からは1人につき38万円を足します。70歳以上の扶養親族(配偶者を除く)がいると、1人につきさらに6万円上がります(扶養しているのが70歳以上の人だけなら1人を除く)。</p>
-        <p>扶養義務者の所得も、給与所得と年金の所得から10万円、全員から8万円を引いて計算します。本人と違って<strong>ひとり親控除・寡婦控除も引けます</strong>。養育費は足しません。</p>
+        <p>扶養義務者の所得も、給与所得と年金の所得から10万円、全員から8万円を引いて計算します。医療費控除や障害者控除なども引けて、本人と違って<strong>ひとり親控除・寡婦控除も引けます</strong>。養育費は足しません。計算機の「控除の合計」「寡婦・ひとり親」に入れると反映されます。</p>
         <p>同じ家に住んでいれば、住民票の世帯を分けていても同じ家計として扱われることが多いです。最終的な判断は市区町村がするので、窓口で確かめてください。</p>
       </div>
 
@@ -318,7 +326,8 @@
   const man = (n) => (Math.floor(n / 1000) / 10).toLocaleString("ja-JP") + "万円";
   const KIND = { zenbu: "全部支給", ichibu: "一部支給", teishi: "支給なし(全部停止)" };
   const ids = ["fy-year", "fy-kids", "fy-kids16", "fy-kyuyo", "fy-youiku", "fy-sonota", "fy-kojo", "fy-other", "fy-otherT", "fy-otherR",
-    "fy-g1k", "fy-g1n", "fy-g1s", "fy-g1f", "fy-g1r", "fy-g1o", "fy-g2k", "fy-g2n", "fy-g2s", "fy-g2f", "fy-g2r", "fy-g2o"];
+    "fy-g1k", "fy-g1n", "fy-g1s", "fy-g1f", "fy-g1r", "fy-g1o", "fy-g2k", "fy-g2n", "fy-g2s", "fy-g2f", "fy-g2r", "fy-g2o",
+    "fy-g1j", "fy-g1h", "fy-g2j", "fy-g2h"];
   const num = (id) => Number($(id).value || 0) * 10000;
   const f = () => {
     const kids = +$("fy-kids").value;
@@ -328,6 +337,7 @@
       other: +$("fy-other").value, otherTokutei: Math.min(+$("fy-otherT").value, +$("fy-other").value), otherRojin: Math.min(+$("fy-otherR").value, +$("fy-other").value) };
     /* 同居の家族(扶養義務者)は、収入を入れた人だけ判定する */
     v.gimu = [1, 2].map((i) => ({ i, kyuyo: num(`fy-g${i}k`), nenkin: num(`fy-g${i}n`), sonota: num(`fy-g${i}s`), over65: $(`fy-g${i}o`).checked,
+      kojo: num(`fy-g${i}j`) + Number($(`fy-g${i}h`).value || 0),
       fuyo: +$(`fy-g${i}f`).value, rojin: Math.min(+$(`fy-g${i}r`).value, +$(`fy-g${i}f`).value) })).filter((g) => g.kyuyo || g.nenkin || g.sonota);
     const r = jidoFuyo(v);
     let s;

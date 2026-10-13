@@ -7754,7 +7754,7 @@
     "category": "子育て支援",
     "organization": "文部科学省",
     "summary": "高校授業料相当額を学校経由で支給し、2026年度から所得制限なしで公立実質無償・私立最大45.7万円を支援する制度。",
-    "benefit_text": "私立全日制高校は年118,800円、私立全日制高校は年457,200円(月額38,100円)。定時制・通信制は別途金額あり",
+    "benefit_text": "公立全日制高校は年118,800円、私立全日制高校は年457,200円(月額38,100円)まで(授業料の範囲内)。定時制・通信制は別途金額あり",
     "benefit_max_yen": 457200,
     "conditions_text": "国公私立を問わず高等学校等に在学する生徒が対象。2026年4月以降は所得制限なし。",
     "tags": {
@@ -7776,7 +7776,7 @@
     },
     "apply_url": "https://www.mext.go.jp/a_menu/shotou/mushouka/1342600.htm",
     "apply_method": "入学時等に「受給資格認定申請書」をオンライン(e-Shien)または書面で学校に提出。",
-    "source_checked_at": "2026-07-31",
+    "source_checked_at": "2026-10-14",
     "priority": 1,
     "related_offers": [
       {
@@ -8082,7 +8082,7 @@
     "category": "医療費助成",
     "organization": "協会けんぽ等/厚生労働省",
     "summary": "公的医療保険加入者の月の医療費自己負担が上限額を超えた場合に、超えた分を払い戻す制度。",
-    "benefit_text": "月の自己負担が所得区分ごとの限度額を超えた分を払戻し",
+    "benefit_text": "月の自己負担が所得区分ごとの限度額を超えた分を払戻し。2026年8月診療分から限度額を引き上げ、8月〜翌年7月の年間上限を新設",
     "benefit_max_yen": null,
     "conditions_text": "公的医療保険(健康保険・国民健康保険等)加入者であれば誰でも対象。限度額は所得・年齢区分により異なる。",
     "tags": {
@@ -8105,7 +8105,7 @@
     "apply_url": "https://www.kyoukaikenpo.or.jp/g3/sb3030/r150/",
     "calculator": "guide/kogaku-ryoyohi-jogen/",
     "apply_method": "加入する医療保険者へ「限度額適用認定証」の交付を事前申請するか、事後に高額療養費の支給申請を行う。",
-    "source_checked_at": "2026-07-31",
+    "source_checked_at": "2026-10-14",
     "priority": 1,
     "related_offers": [
       {

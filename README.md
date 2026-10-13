@@ -115,8 +115,15 @@ subsidy-checker/
 - `guide/juminzei-hikazei-nenshu/`(build_hikazei.py) … 住民税非課税になる年収。1〜3級地×扶養人数、給与のみ(2025年の収入/2026年の収入)・年金のみ(65歳以上/未満)の早見表と判定機。2026年の収入から給与所得控除の最低額が65万→74万円。練馬区(1級地)・柏市(2級地)の公表表と一致を確認
 - `guide/nenkin-seikatsusha-shienkyufukin/`(build_shienkyufu.py) … 年金生活者支援給付金。令和8年度は基準額5,620円・所得基準826,500円(昭和31年4月1日以前生まれ824,100円)・補足的は926,500円まで。毎年4月に額を入れ直す
 - `guide/taishokugo-kenkohoken/`(build_kenpo.py) … 任意継続と国保の比較。協会けんぽの都道府県別料率(令和8年度)・任意継続の上限32万円・国保は東京23区(大田区の料率)が既定。非自発的失業の100分の30と均等割の7・5・2割軽減を計算に入れる
+- `guide/kogaku-ryoyohi-jogen/`(build_kogaku.py、2026-10-13) … 高額療養費の上限額。2026年8月診療分からの限度額と年間上限(8月〜翌7月、申請は2027年8月から)、70歳以上の外来の上限。協会けんぽ・豊中市(後期高齢者)の表と全区分一致。**2027年8月に所得区分の細分化**が予定
+- `guide/iryohi-kojo-ikura/`(build_iryohi.py、2026-10-13) … 医療費控除でいくら戻るか＋セルフメディケーション税制との比較。2025年分と2026年分で基礎控除が違う(令和8・9年分は最大104万円、令和10年分から特例が外れる)。社会保険料の既定は年収から標準報酬月額で計算(10-14に年収の15%から変更)
+- `guide/sankyu-ikukyu-okane/`(build_sankyu.py、2026-10-13) … 出産手当金・育児休業給付金・出生後休業支援給付金・社会保険料の免除を、予定日と月給から期間つきで。育休給付の賃金日額の上限は2026年8月〜2027年7月が16,540円(毎年8月に変わる)
+- `guide/jido-teate-sogaku/`(build_jido.py、2026-10-13) … 児童手当の総額。2024年10月分からの制度だけで数える。3歳の誕生月までが1.5万円(児童手当法9条3項で確認)、第3子は22歳の年度末までの子で数える
+- `guide/jido-fuyo-teate/`(build_fuyo.py、2026-10-14) … 児童扶養手当。令和8年度は全部支給48,050円・係数0.0264029(毎年4月に変わる。一次資料は都道府県の「しおり」)。同居の親など(扶養義務者)の所得も1人ずつ判定でき、控除(医療費控除・寡婦・ひとり親)も入れられる
 - 計算はすべて `js/kurashi-calc.js`(ブラウザとNodeの両方で読む)。記事の表も build がこれを node で呼んで出すので、計算を直せば表も直る
 - sitemap は `scripts/generate-seo-pages.js` が `guide/` を走査して拾う
+- `data/subsidies.json` の `calculator`(guide へのパス)がある制度は、診断結果のカードと `/seido/` 一覧に「自分の場合の金額を計算する」リンクが出る(render.js の buildCalculatorLink・generate-seo-pages.js)。計算機つきの記事を足したら、該当する制度に `calculator` を足す
+- 毎年の見直し(額が変わる時期)は `C:\Users\tsuki\.claude\skills\site-checkup\annual-checks.md` と `tools/money-articles/README.md` にまとめてある
 
 ## マッチングロジックの手動テスト
 

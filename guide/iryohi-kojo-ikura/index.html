@@ -86,7 +86,7 @@
           </div>
           <label><input type="checkbox" id="ik-over65" style="width:auto"> その年の12月31日に65歳以上</label>
           <div class="row2">
-            <div><label for="ik-shakai">社会保険料(円)</label><input id="ik-shakai" type="number" inputmode="numeric" min="0" step="1" placeholder="空欄なら給与の15%"></div>
+            <div><label for="ik-shakai">社会保険料(円)</label><input id="ik-shakai" type="number" inputmode="numeric" min="0" step="1" placeholder="空欄なら年収から計算"></div>
             <div><label for="ik-hoka">ほかの所得控除(円)</label><input id="ik-hoka" type="number" inputmode="numeric" min="0" step="1" value="0"></div>
           </div>
           <p class="form-help">社会保険料は源泉徴収票の「社会保険料等の金額」です。ほかの所得控除は配偶者控除・扶養控除・生命保険料控除などの合計(基礎控除は自動で入れます)。</p>
@@ -122,13 +122,13 @@
           <table class="guide-table">
             <thead><tr><th>年収(給与)</th><th>医療費15万円</th><th>医療費20万円</th><th>医療費30万円</th><th>医療費50万円</th><th>医療費100万円</th></tr></thead>
             <tbody>
-            <tr><td>300万円</td><td class="num">7,500円</td><td class="num">15,100円</td><td class="num">30,200円</td><td class="num">60,400円</td><td class="num">117,000円</td></tr>
+            <tr><td>300万円</td><td class="num">7,500円</td><td class="num">15,100円</td><td class="num">30,200円</td><td class="num">60,400円</td><td class="num">116,500円</td></tr>
             <tr><td>400万円</td><td class="num">7,500円</td><td class="num">15,100円</td><td class="num">30,200円</td><td class="num">60,400円</td><td class="num">135,900円</td></tr>
-            <tr><td>500万円</td><td class="num">7,500円</td><td class="num">15,100円</td><td class="num">30,200円</td><td class="num">60,400円</td><td class="num">135,900円</td></tr>
-            <tr><td>600万円</td><td class="num">10,100円</td><td class="num">20,200円</td><td class="num">40,400円</td><td class="num">80,900円</td><td class="num">160,000円</td></tr>
-            <tr><td>700万円</td><td class="num">15,200円</td><td class="num">30,400円</td><td class="num">58,800円</td><td class="num">99,200円</td><td class="num">200,300円</td></tr>
-            <tr><td>800万円</td><td class="num">15,200円</td><td class="num">30,400円</td><td class="num">60,800円</td><td class="num">121,600円</td><td class="num">273,700円</td></tr>
-            <tr><td>1000万円</td><td class="num">15,200円</td><td class="num">30,400円</td><td class="num">60,900円</td><td class="num">121,700円</td><td class="num">273,800円</td></tr>
+            <tr><td>500万円</td><td class="num">7,600円</td><td class="num">15,100円</td><td class="num">30,200円</td><td class="num">60,400円</td><td class="num">136,000円</td></tr>
+            <tr><td>600万円</td><td class="num">10,100円</td><td class="num">20,200円</td><td class="num">40,400円</td><td class="num">80,800円</td><td class="num">160,800円</td></tr>
+            <tr><td>700万円</td><td class="num">15,200円</td><td class="num">30,400円</td><td class="num">59,600円</td><td class="num">100,000円</td><td class="num">201,100円</td></tr>
+            <tr><td>800万円</td><td class="num">15,200円</td><td class="num">30,400円</td><td class="num">60,900円</td><td class="num">121,700円</td><td class="num">273,800円</td></tr>
+            <tr><td>1000万円</td><td class="num">15,200円</td><td class="num">30,400円</td><td class="num">60,800円</td><td class="num">121,600円</td><td class="num">273,700円</td></tr>
             </tbody>
           </table>
         </div>
@@ -137,17 +137,17 @@
           <table class="guide-table">
             <thead><tr><th>年収(給与)</th><th>医療費15万円</th><th>医療費20万円</th><th>医療費30万円</th><th>医療費50万円</th><th>医療費100万円</th></tr></thead>
             <tbody>
-            <tr><td>300万円</td><td class="num">7,600円</td><td class="num">15,100円</td><td class="num">30,200円</td><td class="num">60,400円</td><td class="num">125,200円</td></tr>
+            <tr><td>300万円</td><td class="num">7,500円</td><td class="num">15,100円</td><td class="num">30,200円</td><td class="num">60,400円</td><td class="num">124,700円</td></tr>
             <tr><td>400万円</td><td class="num">7,600円</td><td class="num">15,100円</td><td class="num">30,200円</td><td class="num">60,400円</td><td class="num">136,000円</td></tr>
-            <tr><td>500万円</td><td class="num">10,100円</td><td class="num">20,200円</td><td class="num">39,400円</td><td class="num">69,600円</td><td class="num">145,200円</td></tr>
-            <tr><td>600万円</td><td class="num">10,100円</td><td class="num">20,200円</td><td class="num">40,400円</td><td class="num">80,800円</td><td class="num">178,300円</td></tr>
-            <tr><td>700万円</td><td class="num">15,300円</td><td class="num">30,500円</td><td class="num">60,900円</td><td class="num">103,300円</td><td class="num">204,400円</td></tr>
-            <tr><td>800万円</td><td class="num">15,200円</td><td class="num">30,400円</td><td class="num">60,800円</td><td class="num">121,700円</td><td class="num">273,800円</td></tr>
-            <tr><td>1000万円</td><td class="num">15,200円</td><td class="num">30,400円</td><td class="num">60,800円</td><td class="num">121,600円</td><td class="num">273,700円</td></tr>
+            <tr><td>500万円</td><td class="num">10,100円</td><td class="num">20,200円</td><td class="num">40,400円</td><td class="num">70,900円</td><td class="num">146,400円</td></tr>
+            <tr><td>600万円</td><td class="num">10,100円</td><td class="num">20,200円</td><td class="num">40,400円</td><td class="num">80,900円</td><td class="num">179,200円</td></tr>
+            <tr><td>700万円</td><td class="num">15,200円</td><td class="num">30,400円</td><td class="num">60,800円</td><td class="num">104,100円</td><td class="num">205,200円</td></tr>
+            <tr><td>800万円</td><td class="num">15,200円</td><td class="num">30,400円</td><td class="num">60,800円</td><td class="num">121,600円</td><td class="num">273,700円</td></tr>
+            <tr><td>1000万円</td><td class="num">15,200円</td><td class="num">30,400円</td><td class="num">60,800円</td><td class="num">121,700円</td><td class="num">273,800円</td></tr>
             </tbody>
           </table>
         </div>
-        <p class="guide-note">戻る所得税と減る住民税の合計。給与収入だけ・社会保険料は年収の15%・扶養や生命保険料などの控除なし・保険で戻った額なしとして計算しています。</p>
+        <p class="guide-note">戻る所得税と減る住民税の合計。給与収入だけ・社会保険料は年収から計算(ボーナスなし・協会けんぽの全国平均の料率)・扶養や生命保険料などの控除なし・保険で戻った額なしとして計算しています。</p>
         <p>2026年分は、所得税の<strong>基礎控除が大きく上がった</strong>(合計所得489万円以下の人は最大104万円)ので、課税所得が下がって税率が5%になる人が増えます。そのぶん、同じ医療費でも2025年分より戻る額が少なくなる人がいます。</p>
       </div>
 
@@ -192,6 +192,7 @@
         <h2>保険などで戻った額を引く</h2>
         <p>高額療養費・医療保険の入院給付金・出産育児一時金などは、払った医療費から差し引きます。ただし差し引くのは<strong>その給付の対象になった医療費の分まで</strong>で、余った分をほかの医療費から引く必要はありません。申告のときにまだ受け取っていなくても、受け取る見込みの額を引きます。</p>
         <p>高額療養費でいくら戻るかは、<a href="../kogaku-ryoyohi-jogen/">高額療養費の上限額シミュレーター</a>で計算できます(2026年8月の診療分から上限が上がっています)。</p>
+        <p>出産した年は、妊婦健診の自己負担・出産の入院費・通院の交通費も医療費控除の対象です。出産育児一時金(50万円)はその出産費用から差し引きます。出産でもらえるお金は<a href="../sankyu-ikukyu-okane/">産休・育休でもらえるお金シミュレーター</a>で計算できます。</p>
       </div>
 
       <div class="card card--article">
@@ -275,7 +276,7 @@
     } else {
       s = `医療費(戻った額を引いた後)が${yen(r.ashikiri)}を超えていないので、医療費控除は使えません。医療費があと${yen(r.ashikiri - net)}より多ければ使えます。`;
     }
-    s += `<br><span class="form-help">${r.kazei > 0 ? `所得税の税率${r.rate}%(課税所得${yen(r.kazei)})として計算。` : "課税所得は0円(所得税はかからない)として計算。"}${v.shakai == null ? `社会保険料は給与の15%(${yen(r.shakai)})としています。` : ""}</span>`;
+    s += `<br><span class="form-help">${r.kazei > 0 ? `所得税の税率${r.rate}%(課税所得${yen(r.kazei)})として計算。` : "課税所得は0円(所得税はかからない)として計算。"}${v.shakai == null && r.shakai > 0 ? `社会保険料は年収から計算した約${yen(r.shakai)}(協会けんぽの平均の料率)としています。` : ""}</span>`;
     if (v.otc > 0) {
       s += `<br>セルフメディケーション税制なら、控除額${yen(r.self.kojo)}で合わせて約${yen(r.self.total)}です。`;
       if (r.self.total === 0 && r.iryo.total === 0) s += "どちらを選んでも税金は戻りません。";
