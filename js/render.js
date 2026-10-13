@@ -37,6 +37,12 @@ function buildDetailPageLink(subsidy) {
   return `<a class="result-card__link result-card__link--detail" href="seido/${escapeHtml(subsidy.id)}/">この制度の解説を読む</a>`;
 }
 
+/* calculator は計算機つきの記事(guide/...)への相対パス。tools/money-articles の build で作ったページ */
+function buildCalculatorLink(subsidy) {
+  if (!subsidy.calculator) return "";
+  return `<a class="result-card__link result-card__link--detail" href="${escapeHtml(subsidy.calculator)}">自分の場合の金額を計算する</a>`;
+}
+
 /* type が "official" のリンクは広告ではない(提携前の公式サイトなど)ので、PR表記と sponsored を付けない */
 function buildOfferLinks(subsidy) {
   const offers = subsidy.related_offers || [];
@@ -109,6 +115,7 @@ function buildResultCard(subsidy, purpose) {
       <div class="result-card__actions">
         <a class="result-card__link" href="${escapeHtml(subsidy.apply_url)}" target="_blank" rel="noopener">公式サイトで詳細を見る →</a>
         ${buildDetailPageLink(subsidy)}
+        ${buildCalculatorLink(subsidy)}
         ${buildOfferLinks(subsidy)}
       </div>
       ${buildRelatedSubsidiesSection(subsidy)}

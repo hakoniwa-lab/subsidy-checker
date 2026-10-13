@@ -8,6 +8,7 @@
  *   6. 標準報酬月額と会社員の手取りの目安(7で使う)
  *   7. 産休・育休でもらえるお金(出産手当金・育児休業給付金・出生後休業支援給付金) … guide/sankyu-ikukyu-okane/
  *   8. 児童手当の総額 … guide/jido-teate-sogaku/
+ *   9. 児童扶養手当(ひとり親) … guide/jido-fuyo-teate/
  * 金額はすべて円。年度の数字は 2026-10-12(4〜8は10-13)に各公式ページで確認した
  */
 
@@ -432,6 +433,47 @@ function jidoTeate(children, futan) {
     partial: k.bm + 1 < JIDO_FROM, total: per[j].total, byMonth: per[j].byMonth })) };
 }
 
+/* ---------- 9. 児童扶養手当(令和8年4月分から。奈良県「児童扶養手当のしおり」令和8年度版) ---------- */
+/* 月額 [全部支給, 一部支給の上限, 一部支給の下限, 係数]。毎年4月に物価スライドで変わる */
+const FUYO_R8 = {
+  hon: [48050, 48040, 11340, 0.0264029],   // 児童1人目
+  ka: [11350, 11340, 5680, 0.0040719],     // 2人目以降の加算(1人につき)
+};
+/* 本人の所得制限限度額(扶養0人)。扶養1人につき38万円、70歳以上の同一生計配偶者・老人扶養は1人10万円、
+ * 特定扶養親族と16〜18歳の扶養親族は1人15万円を足す。扶養義務者(同居の父母など)は別の表 */
+const FUYO_LIMIT = { zenbu: 690000, ichibu: 2080000, gimu: 2360000, per: 380000, rojin: 100000, tokutei: 150000 };
+const round10 = (x) => Math.round(x / 10) * 10;
+
+/* 手当の計算に使う所得 = 給与所得(・公的年金の所得 −10万円) ＋ その他の所得 ＋ 養育費の8割 − 8万円 − 諸控除。
+ * year=2025 は令和7年中の所得(2026年11月〜2027年10月の手当)、2026 は令和8年中の所得
+ * v = { year, kyuyo, sonota, youikuhi(年額), kojo(障害者控除・医療費控除など), kids(18歳の年度末までの子),
+ *       kids16(そのうち16歳以上), other(ほかの扶養親族), otherTokutei(うち19〜22歳), otherRojin(うち70歳以上) } */
+function jidoFuyo(v) {
+  const kyuyoS = kyuyoShotoku(v.kyuyo || 0, v.year >= 2026 ? 9 : 8);
+  const base = Math.max(0, kyuyoS - (kyuyoS > 0 ? 100000 : 0)) + Math.max(0, v.sonota || 0);
+  const youiku = Math.round(Math.max(0, v.youikuhi || 0) * 0.8);
+  const shotoku = Math.max(0, base + youiku - 80000 - Math.max(0, v.kojo || 0));
+  const kids = Math.max(1, v.kids || 1);
+  const fuyo = kids + Math.max(0, v.other || 0);
+  const add = FUYO_LIMIT.per * fuyo + FUYO_LIMIT.tokutei * ((v.kids16 || 0) + (v.otherTokutei || 0)) + FUYO_LIMIT.rojin * (v.otherRojin || 0);
+  const zenbu = FUYO_LIMIT.zenbu + add, ichibu = FUYO_LIMIT.ichibu + add;
+  let kind, hon = 0, ka = 0;
+  if (shotoku < zenbu) { kind = "zenbu"; hon = FUYO_R8.hon[0]; ka = FUYO_R8.ka[0]; }
+  else if (shotoku < ichibu) {
+    kind = "ichibu";
+    hon = FUYO_R8.hon[1] - round10((shotoku - zenbu) * FUYO_R8.hon[3]);
+    ka = FUYO_R8.ka[1] - round10((shotoku - zenbu) * FUYO_R8.ka[3]);
+  } else kind = "teishi";
+  const monthly = hon + ka * (kids - 1);
+  return { kyuyoS, youiku, shotoku, fuyo, zenbu, ichibu, kind, hon, ka, monthly, annual: monthly * 12,
+    gimu: FUYO_LIMIT.gimu + FUYO_LIMIT.per * fuyo };
+}
+/* 手当が全部支給・一部支給になる給与収入の上限(給与だけ・養育費なしのとき) */
+function fuyoMaxKyuyo(v, which) {
+  const lim = jidoFuyo(Object.assign({}, v, { kyuyo: 0 }))[which];
+  return maxIncome((x) => jidoFuyo(Object.assign({}, v, { kyuyo: x })).shotoku, lim - 1);
+}
+
 if (typeof module !== "undefined") module.exports = {
   kyuyoShotoku, nenkinShotoku, gokeiShotoku, hikazeiLimit, shotokuwariLimit, hikazeiJudge, maxKyuyo, maxNenkin, maxIncome, HIKAZEI_SPECIAL,
   SHIEN_R8, shienRourei, yenRound,
@@ -441,4 +483,5 @@ if (typeof module !== "undefined") module.exports = {
   hyojunKenpo, hyojunNenkin, SHAHO_R8, shahoMonthly, tedoriMonthly,
   IKUKYU_R8, SHUSSAN_ICHIJIKIN, parseYmd, ymdOf, fmtYmd, addMonthsUTC, shussanTeate, ikukyuPeriods, sankyuIkukyu,
   JIDO_R6, JIDO_FROM, fiscalEndMonth, jidoTeate,
+  FUYO_R8, FUYO_LIMIT, round10, jidoFuyo, fuyoMaxKyuyo,
 };

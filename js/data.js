@@ -7592,6 +7592,7 @@ const SUBSIDIES = [
       ]
     },
     "apply_url": "https://www.cfa.go.jp/policies/kokoseido/jidouteate/mottoouen",
+    "calculator": "guide/jido-teate-sogaku/",
     "apply_method": "新規該当者(高校生年代の子を養育し始めた等)は市区町村へ申請。継続受給者は原則手続き不要。",
     "source_checked_at": "2026-07-31",
     "priority": 1,
@@ -7639,6 +7640,7 @@ const SUBSIDIES = [
       ]
     },
     "apply_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryouhoken/shussan/index.html",
+    "calculator": "guide/sankyu-ikukyu-okane/",
     "apply_method": "直接支払制度(医療機関が保険者に請求、差額のみ自己負担)が主流。申請期限は出産日翌日から2年以内。",
     "source_checked_at": "2026-07-31",
     "priority": 1,
@@ -7684,6 +7686,7 @@ const SUBSIDIES = [
       ]
     },
     "apply_url": "https://www.kyoukaikenpo.or.jp/benefit/childbirth/001/index.html",
+    "calculator": "guide/sankyu-ikukyu-okane/",
     "apply_method": "「健康保険出産手当金支給申請書」を勤務先経由、または本人が加入する協会けんぽ支部・健保組合へ提出。",
     "source_checked_at": "2026-07-31",
     "priority": 2,
@@ -7729,6 +7732,7 @@ const SUBSIDIES = [
       ]
     },
     "apply_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000158500.html",
+    "calculator": "guide/sankyu-ikukyu-okane/",
     "apply_method": "事業主経由(または本人直接)で、休業開始時賃金月額証明書等を勤務先管轄のハローワークへ提出。初回申請期限は育休開始日から4か月以内。",
     "source_checked_at": "2026-07-31",
     "priority": 2,
@@ -7839,9 +7843,9 @@ const SUBSIDIES = [
     "name": "児童扶養手当",
     "category": "ひとり親支援",
     "organization": "こども家庭庁(実施主体は都道府県・市区町村)",
-    "summary": "ひとり親家庭等の生活安定・自立促進のため、所得に応じて月額最大45,500円(児童1人目)を支給する全国制度。",
-    "benefit_text": "児童1人目は月額最大45,500円(全部支給時)、2人目以降は加算額を上乗せ",
-    "benefit_max_yen": 45500,
+    "summary": "ひとり親家庭等の生活安定・自立促進のため、所得に応じて月額最大48,050円(児童1人目・2026年4月分から)を支給する全国制度。",
+    "benefit_text": "児童1人目は月額最大48,050円(全部支給時・2026年4月分から)、2人目以降は1人につき最大11,350円を上乗せ",
+    "benefit_max_yen": 48050,
     "conditions_text": "父母の離婚・死亡等により父または母と生計を同じくしていない児童を監護するひとり親等が対象。所得制限があり、限度額を超えると一部支給または支給停止。",
     "tags": {
       "employment_status": [],
@@ -7861,8 +7865,9 @@ const SUBSIDIES = [
       ]
     },
     "apply_url": "https://www.cfa.go.jp/policies/hitori-oya/fuyou-teate",
+    "calculator": "guide/jido-fuyo-teate/",
     "apply_method": "居住する市区町村の児童扶養手当担当窓口へ認定請求書等を提出。",
-    "source_checked_at": "2026-07-31",
+    "source_checked_at": "2026-10-14",
     "priority": 2,
     "related_offers": [
       {
@@ -8098,6 +8103,7 @@ const SUBSIDIES = [
       ]
     },
     "apply_url": "https://www.kyoukaikenpo.or.jp/g3/sb3030/r150/",
+    "calculator": "guide/kogaku-ryoyohi-jogen/",
     "apply_method": "加入する医療保険者へ「限度額適用認定証」の交付を事前申請するか、事後に高額療養費の支給申請を行う。",
     "source_checked_at": "2026-07-31",
     "priority": 1,
@@ -8260,6 +8266,7 @@ const SUBSIDIES = [
       ]
     },
     "apply_url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1122.htm",
+    "calculator": "guide/iryohi-kojo-ikura/",
     "apply_method": "確定申告時に医療費控除の明細書を添付して申告する。",
     "source_checked_at": "2026-07-31",
     "priority": 1,

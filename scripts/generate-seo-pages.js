@@ -467,19 +467,23 @@ function listPageHtml(subsidies) {
             <span class="badge badge--accent">${escapeHtml(regionLabel(s) || "全国")}</span>
             <span class="seido-list__name">${escapeHtml(s.name)}</span>
             <span class="seido-list__summary">${escapeHtml(s.summary)}</span>`;
+          // 計算機つきの記事がある制度は、カードの下にリンクを足す(<a>の入れ子にしないため外に出す)
+          const calc = s.calculator
+            ? `\n          <a class="seido-list__calc" href="../${escapeHtml(s.calculator)}">自分の場合の金額を計算する →</a>`
+            : "";
           if (KEEP.has(s.id)) {
             return `
         <li class="seido-list__item">
           <a class="seido-list__link" href="${s.id}/">${inner}
             <span class="seido-list__more">解説を読む →</span>
-          </a>
+          </a>${calc}
         </li>`;
           }
           return `
         <li class="seido-list__item">
           <a class="seido-list__link seido-list__link--official" href="${escapeHtml(s.apply_url)}" target="_blank" rel="noopener">${inner}
             <span class="seido-list__more">公式サイトで確認 ↗</span>
-          </a>
+          </a>${calc}
         </li>`;
         })
         .join("");

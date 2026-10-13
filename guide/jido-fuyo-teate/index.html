@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WTBHV5QYG3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-WTBHV5QYG3');
+</script>
+<title>児童扶養手当の計算シミュレーター｜2026年度は月48,050円、子1人なら年収190万円未満で全額</title>
+<meta name="description" content="年収・子どもの人数・養育費を入れると、児童扶養手当の月額(全部支給・一部支給)を計算します。2026年4月分から全部支給は月48,050円、2人目以降の加算は11,350円。親と子1人なら給与の年収190万円未満で全部支給、385.2万円未満まで一部支給。計算式・所得制限の表・養育費の扱いつき。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="児童扶養手当の計算シミュレーター｜2026年度は月48,050円、子1人なら年収190万円未満で全額">
+<meta property="og:description" content="年収・子どもの人数・養育費を入れると、児童扶養手当の月額(全部支給・一部支給)を計算します。2026年4月分から全部支給は月48,050円、2人目以降の加算は11,350円。親と子1人なら給与の年収190万円未満で全部支給、385.2万円未満まで一部支給。計算式・所得制限の表・養育費の扱いつき。">
+<meta property="og:url" content="https://hakoniwalab.com/subsidy-checker/guide/jido-fuyo-teate/">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6465548593525933" crossorigin="anonymous"></script>
+<link rel="canonical" href="https://hakoniwalab.com/subsidy-checker/guide/jido-fuyo-teate/">
+<link rel="stylesheet" href="../../css/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"児童扶養手当はいくらもらえますか？","acceptedAnswer":{"@type":"Answer","text":"2026年4月分から、子ども1人で全部支給なら月48,050円、2人目以降は1人につき月11,350円が加わります。一部支給は所得に応じて月11,340円〜48,040円(1人目)です。"}},{"@type":"Question","name":"児童扶養手当は年収いくらまでもらえますか？","acceptedAnswer":{"@type":"Answer","text":"給与だけで養育費がない場合、親と子1人なら年収190万円未満で全部支給、385.2万円未満まで一部支給です(2025年の収入)。子2人なら244.4万円未満で全部支給、432.8万円未満まで一部支給です。"}},{"@type":"Question","name":"養育費は収入に入りますか？","acceptedAnswer":{"@type":"Answer","text":"受け取った養育費の8割が、手当の計算に使う所得に足されます。"}},{"@type":"Question","name":"実家暮らしでも児童扶養手当はもらえますか？","acceptedAnswer":{"@type":"Answer","text":"同じ家計の親やきょうだいの所得が限度額(扶養0人なら236万円)未満なら受け取れます。限度額以上だと、本人の所得にかかわらず手当は出ません。"}},{"@type":"Question","name":"児童扶養手当はいつ振り込まれますか？","acceptedAnswer":{"@type":"Answer","text":"奇数月(1・3・5・7・9・11月)に、前の2か月分がまとめて振り込まれます。"}},{"@type":"Question","name":"2026年度の児童扶養手当はいくら上がりましたか？","acceptedAnswer":{"@type":"Answer","text":"1人目の全部支給が46,690円から48,050円に、2人目以降の加算が11,030円から11,350円に上がりました(2026年4月分から)。"}}]}</script>
+<style>
+.guide-nav { max-width: 720px; margin: 0 auto 16px; padding: 0 20px; font-size: 0.85rem; color: var(--color-text-muted); }
+.guide-nav a { color: var(--color-text-muted); }
+.guide-lead { font-size: 0.95rem; }
+.guide-table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 0.9rem; }
+.guide-table th, .guide-table td { border: 1px solid var(--color-border); padding: 8px 10px; text-align: left; vertical-align: top; }
+.guide-table th { background: var(--color-bg); font-weight: 600; }
+.guide-table td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.guide-table tr.is-best td { background: var(--color-badge-bg); font-weight: 700; }
+.guide-note { font-size: 0.85rem; color: var(--color-text-muted); }
+.card--article h3 { font-size: 1rem; margin: 18px 0 6px; }
+.guide-cta { text-align: center; }
+.guide-cta .btn { display: inline-block; text-decoration: none; }
+.guide-calc { text-align: left; background: var(--color-bg); border: 1px solid var(--color-border); border-radius: 8px; padding: 12px 14px; margin: 14px 0; font-size: 0.92rem; }
+.guide-calc label { display: block; font-weight: 600; margin: 8px 0 4px; font-size: 0.88rem; }
+.guide-calc input, .guide-calc select { width: 100%; padding: 8px; border: 1px solid var(--color-border); border-radius: 6px; font-size: 1rem; background: var(--color-surface); color: var(--color-text); }
+.guide-calc .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.guide-calc .row3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+.guide-result { margin-top: 12px; font-size: 0.95rem; }
+.guide-result strong { font-size: 1.1rem; }
+.table-scroll { overflow-x: auto; }
+.date-row { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 6px; margin-bottom: 8px; }
+.form-help { font-size: 0.85rem; color: var(--color-text-muted); }
+.guide-calc .quiz-select, .date-row .quiz-select { width: 100%; }
+.nw { white-space: nowrap; }
+.card--article a[target="_blank"] { overflow-wrap: anywhere; }
+.art-cta { text-align: center; margin: 16px 0 4px; padding: 14px 12px; border: 1px dashed var(--color-border); border-radius: 8px; }
+.card--article .art-cta p { font-size: 0.85rem; margin: 0 0 10px; }
+.art-cta__links { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <nav class="guide-nav" aria-label="パンくずリスト">
+    <a href="../../">給付金・補助金診断</a> &raquo;
+    <span aria-current="page">児童扶養手当の計算</span>
+  </nav>
+
+  <header class="app-header">
+    <p class="app-header__eyebrow">ひとり親の手当</p>
+    <h1 class="app-header__title">児童扶養手当の<br>計算シミュレーター</h1>
+    <p class="app-header__lead">年収と子どもの人数から、月額と全部支給・一部支給を判定します。</p>
+  </header>
+
+  <main class="main">
+    <section class="screen">
+      <div class="card card--intro">
+        <form id="fy-form" class="guide-calc" style="margin:0">
+          <label for="fy-year">どの年の収入で計算するか(かっこ内は手当の時期)</label>
+          <select id="fy-year">
+            <option value="2025">2025年の収入(2026年11月〜)</option>
+            <option value="2026">2026年の収入(2027年11月〜)</option>
+          </select>
+          <div class="row2">
+            <div><label for="fy-kids">子どもの人数</label><select id="fy-kids" class="quiz-select"><option value="1">1人</option><option value="2">2人</option><option value="3">3人</option><option value="4">4人</option><option value="5">5人</option></select></div>
+            <div><label for="fy-kids16">うち16歳以上</label><select id="fy-kids16" class="quiz-select"><option value="0">0人</option><option value="1">1人</option><option value="2">2人</option><option value="3">3人</option><option value="4">4人</option><option value="5">5人</option></select></div>
+          </div>
+          <p class="form-help">子どもは18歳の年度末(高校3年の3月)までの子を数えます。</p>
+          <div class="row2">
+            <div><label for="fy-kyuyo">給与の年収(万円)</label><input id="fy-kyuyo" type="number" inputmode="decimal" min="0" step="0.1" value="200"></div>
+            <div><label for="fy-youiku">養育費(年・万円)</label><input id="fy-youiku" type="number" inputmode="decimal" min="0" step="0.1" value="0"></div>
+          </div>
+          <div class="row2">
+            <div><label for="fy-sonota">事業などの所得(万円)</label><input id="fy-sonota" type="number" inputmode="decimal" min="0" step="0.1" value="0"></div>
+            <div><label for="fy-kojo">医療費控除などの額(万円)</label><input id="fy-kojo" type="number" inputmode="decimal" min="0" step="0.1" value="0"></div>
+          </div>
+          <details>
+            <summary>子ども以外にも扶養している家族がいる</summary>
+            <p class="form-help">19歳以上の子や親など。右の2つは、そのうち何人か。</p>
+            <div class="row3">
+              <div><label for="fy-other">人数</label><select id="fy-other" class="quiz-select"><option value="0">0人</option><option value="1">1人</option><option value="2">2人</option><option value="3">3人</option><option value="4">4人</option></select></div>
+              <div><label for="fy-otherT">19〜22歳</label><select id="fy-otherT" class="quiz-select"><option value="0">0人</option><option value="1">1人</option><option value="2">2人</option><option value="3">3人</option><option value="4">4人</option></select></div>
+              <div><label for="fy-otherR">70歳以上</label><select id="fy-otherR" class="quiz-select"><option value="0">0人</option><option value="1">1人</option><option value="2">2人</option><option value="3">3人</option><option value="4">4人</option></select></div>
+            </div>
+          </details>
+          <p class="guide-result" id="fy-out" role="status"></p>
+          <p class="guide-note">母または父が受け取る場合の計算です(祖父母などの養育者は所得の数え方が違います)。遺族年金などの公的年金を受け取っている人は、年金との差額になります。入力は端末の外に送りません。</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="article">
+
+      <div class="card card--article">
+        <p class="guide-lead">児童扶養手当は、ひとり親家庭などに出る手当です。2026年4月分から、子ども1人で<strong>月48,050円</strong>(全部支給)、2人目以降は1人につき<strong>月11,350円</strong>が加わります。所得が一定を超えると額が下がり(一部支給)、さらに超えると出なくなります。</p>
+        <p>給与だけで養育費がない場合、親と子1人なら<strong>年収190万円未満で全部支給</strong>、385.2万円未満まで一部支給が目安です(2025年の収入で判定)。上の計算機に年収と子どもの人数を入れると、月額が出ます。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>手当の月額(2026年4月分から)</h2>
+        <div class="table-scroll">
+          <table class="guide-table">
+            <thead><tr><th></th><th>全部支給</th><th>一部支給</th></tr></thead>
+            <tbody>
+            <tr><td>子ども1人目</td><td class="num">48,050円</td><td class="num">48,040円〜11,340円</td></tr>
+            <tr><td>2人目以降(1人につき加算)</td><td class="num">11,350円</td><td class="num">11,340円〜5,680円</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>物価に合わせて毎年4月に見直され、2026年4月分から1人目の全部支給は1,360円上がりました(2025年度は46,690円)。子ども2人で全部支給なら月59,400円、3人なら月70,750円です。</p>
+        <p class="guide-note">支払いは奇数月(1・3・5・7・9・11月)の年6回で、それぞれ前の2か月分です。申請した月の翌月分から出て、さかのぼっては受け取れません。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>年収いくらまでもらえるか(給与だけ・養育費なし)</h2>
+        <div class="table-scroll">
+          <table class="guide-table">
+            <thead><tr><th>世帯</th><th>全部支給(2025年の収入)</th><th>一部支給(2025年の収入)</th><th>全部支給(2026年の収入)</th><th>一部支給(2026年の収入)</th></tr></thead>
+            <tbody>
+            <tr><td>親と子1人</td><td class="num">190万円</td><td class="num">385.2万円</td><td class="num">199万円</td><td class="num">385.2万円</td></tr>
+            <tr><td>親と子2人</td><td class="num">244.4万円</td><td class="num">432.8万円</td><td class="num">244.4万円</td><td class="num">432.8万円</td></tr>
+            <tr><td>親と子3人</td><td class="num">298.8万円</td><td class="num">480万円</td><td class="num">298.8万円</td><td class="num">480万円</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="guide-note">この年収未満なら全部支給・一部支給です(千円未満切り捨て)。子どもは16歳未満、ほかに扶養している家族はいない場合。16歳以上の子がいると1人につき所得の上限が15万円上がります。</p>
+        <p>2026年の収入からは給与所得控除の最低額が65万円から74万円に上がるので、親と子1人の全部支給の目安は<strong>190万円から199万円</strong>に上がります。一部支給の上限は変わりません。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>年収別の月額</h2>
+        <div class="table-scroll">
+          <table class="guide-table">
+            <thead><tr><th>給与の年収</th><th>子1人</th><th>子2人</th><th>子3人</th></tr></thead>
+            <tbody>
+            <tr><td>150万円</td><td class="num">48,050円</td><td class="num">59,400円</td><td class="num">70,750円</td></tr>
+            <tr><td>200万円</td><td class="num">46,190円</td><td class="num">59,400円</td><td class="num">70,750円</td></tr>
+            <tr><td>250万円</td><td class="num">36,950円</td><td class="num">58,160円</td><td class="num">70,750円</td></tr>
+            <tr><td>300万円</td><td class="num">27,710円</td><td class="num">47,490円</td><td class="num">70,380円</td></tr>
+            <tr><td>350万円</td><td class="num">18,470円</td><td class="num">36,830円</td><td class="num">58,270円</td></tr>
+            <tr><td>400万円</td><td class="num">0円</td><td class="num">24,940円</td><td class="num">44,820円</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="guide-note">2025年の収入・給与だけ・養育費なし・子どもは16歳未満として計算。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>計算のしかた</h2>
+        <ol>
+          <li><strong>手当の計算に使う所得</strong> ＝ 給与所得(源泉徴収票の「給与所得控除後の金額」) − 10万円 ＋ 養育費の8割 − 8万円 − 諸控除</li>
+          <li><strong>全部支給</strong> — 所得が全部支給の限度額(扶養1人なら107万円)未満</li>
+          <li><strong>一部支給</strong> — 1人目 ＝ 48,040円 −(所得 − 全部支給の限度額)× 0.0264029、2人目以降 ＝ 11,340円 −(所得 − 全部支給の限度額)× 0.0040719(引く額は10円未満を四捨五入)</li>
+        </ol>
+        <p>10万円は給与所得か公的年金の所得がある人だけ、8万円は全員が引けます。諸控除は、障害者控除(27万円)・勤労学生控除(27万円)・医療費控除・小規模企業共済等掛金控除などで、<strong>母・父が受け取る場合はひとり親控除と寡婦控除は引けません</strong>。</p>
+        <p>たとえば親と子1人で給与の年収250万円なら、給与所得1,670,000円から10万円と8万円を引いて所得は1,490,000円。全部支給の限度額107万円を超えるので一部支給で、月36,950円です。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>養育費は8割が所得に入る</h2>
+        <p>離れて暮らす親から受け取った養育費は、<strong>8割が所得に足されます</strong>。給与の年収250万円・子1人の場合です。</p>
+        <div class="table-scroll">
+          <table class="guide-table">
+            <thead><tr><th>養育費</th><th>所得に足される額</th><th>手当の計算に使う所得</th><th>手当の月額</th></tr></thead>
+            <tbody>
+            <tr><td>なし</td><td class="num">0円</td><td class="num">1,490,000円</td><td class="num">36,950円</td></tr>
+            <tr><td>月2万円</td><td class="num">192,000円</td><td class="num">1,682,000円</td><td class="num">31,880円</td></tr>
+            <tr><td>月3万円</td><td class="num">288,000円</td><td class="num">1,778,000円</td><td class="num">29,350円</td></tr>
+            <tr><td>月5万円</td><td class="num">480,000円</td><td class="num">1,970,000円</td><td class="num">24,280円</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>養育費が月3万円なら、手当は減りますが、養育費の方が多いので合計の収入は増えます。養育費の取り決めをためらう理由にはなりません。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>所得制限の限度額</h2>
+        <div class="table-scroll">
+          <table class="guide-table">
+            <thead><tr><th>扶養親族の数</th><th>全部支給(本人)</th><th>一部支給(本人)</th><th>同居の親など(扶養義務者)</th></tr></thead>
+            <tbody>
+            <tr><td>0人</td><td class="num">690,000円</td><td class="num">2,080,000円</td><td class="num">2,360,000円</td></tr>
+            <tr><td>1人</td><td class="num">1,070,000円</td><td class="num">2,460,000円</td><td class="num">2,740,000円</td></tr>
+            <tr><td>2人</td><td class="num">1,450,000円</td><td class="num">2,840,000円</td><td class="num">3,120,000円</td></tr>
+            <tr><td>3人</td><td class="num">1,830,000円</td><td class="num">3,220,000円</td><td class="num">3,500,000円</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="guide-note">4人目からは1人につき38万円を足します。本人の限度額は、16歳以上23歳未満の扶養親族1人につき15万円、70歳以上の扶養親族(同一生計配偶者を含む)1人につき10万円が加わります。扶養親族の数は税法上の扶養の数で、16歳未満の子も数えます。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>もらえない・減るときに気をつけること</h2>
+        <ul>
+          <li><strong>実家で親と暮らしている</strong> — 同じ家計の親やきょうだい(扶養義務者)の所得が上の表の右の列以上だと、本人の所得にかかわらず手当は出ません</li>
+          <li><strong>受け取り始めて5年たった</strong> — 働いている、求職中、病気で働けないなどの届けを出さないと、手当が半分になります(届けは現況届と一緒に出せます)</li>
+          <li><strong>遺族年金などを受け取っている</strong> — 年金の額が手当より少ない場合だけ、差額が出ます</li>
+          <li><strong>毎年8月の現況届</strong> — 出さないと11月分から止まります。2年出さないと受給資格がなくなります</li>
+          <li><strong>再婚・事実婚</strong> — 同居している相手がいると受給資格がなくなります</li>
+        </ul>
+      </div>
+
+      <div class="card card--article">
+        <h2>ひとり親が一緒に確かめたい制度</h2>
+        <ul>
+          <li><strong>児童手当</strong> — 児童扶養手当とは別に、両方受け取れます。<a href="../jido-teate-sogaku/">児童手当の総額シミュレーター</a></li>
+          <li><strong>住民税の非課税</strong> — ひとり親は合計所得135万円以下なら住民税がかかりません。<a href="../juminzei-hikazei-nenshu/">住民税非課税になる年収の早見表</a></li>
+          <li><strong>ひとり親家庭等医療費助成</strong> — 親と子の医療費の自己負担を、都道府県・市区町村が助成します(内容は自治体ごと)</li>
+          <li><strong>国民年金・国民健康保険の免除や減額</strong> — 所得が低い年は、市区町村や年金事務所で申請できます</li>
+        </ul>
+      </div>
+
+      <div class="card card--article">
+        <h2>よくある質問</h2>
+        <details class="faq-item"><summary>児童扶養手当はいくらもらえますか？</summary><p>2026年4月分から、子ども1人で全部支給なら月48,050円、2人目以降は1人につき月11,350円が加わります。一部支給は所得に応じて月11,340円〜48,040円(1人目)です。</p></details>
+        <details class="faq-item"><summary>児童扶養手当は年収いくらまでもらえますか？</summary><p>給与だけで養育費がない場合、親と子1人なら年収190万円未満で全部支給、385.2万円未満まで一部支給です(2025年の収入)。子2人なら244.4万円未満で全部支給、432.8万円未満まで一部支給です。</p></details>
+        <details class="faq-item"><summary>養育費は収入に入りますか？</summary><p>受け取った養育費の8割が、手当の計算に使う所得に足されます。</p></details>
+        <details class="faq-item"><summary>実家暮らしでも児童扶養手当はもらえますか？</summary><p>同じ家計の親やきょうだいの所得が限度額(扶養0人なら236万円)未満なら受け取れます。限度額以上だと、本人の所得にかかわらず手当は出ません。</p></details>
+        <details class="faq-item"><summary>児童扶養手当はいつ振り込まれますか？</summary><p>奇数月(1・3・5・7・9・11月)に、前の2か月分がまとめて振り込まれます。</p></details>
+        <details class="faq-item"><summary>2026年度の児童扶養手当はいくら上がりましたか？</summary><p>1人目の全部支給が46,690円から48,050円に、2人目以降の加算が11,030円から11,350円に上がりました(2026年4月分から)。</p></details>
+      </div>
+
+      <div class="card card--article">
+        <h2>出典</h2>
+        <ul>
+          <li>奈良県「児童扶養手当制度のしおり(令和8年度版)」(手当額・一部支給の計算式・所得制限限度額表・所得の計算方法)<br><a href="https://www.pref.nara.lg.jp/documents/5238/r8jifushiori.pdf" target="_blank" rel="noopener">https://www.pref.nara.lg.jp/documents/5238/r8jifushiori.pdf</a></li>
+          <li>こども家庭庁「児童扶養手当について」<br><a href="https://www.cfa.go.jp/policies/hitori-oya/fuyou-teate" target="_blank" rel="noopener">https://www.cfa.go.jp/policies/hitori-oya/fuyou-teate</a></li>
+          <li>沖縄県「児童扶養手当」(令和8年4月からの手当額)<br><a href="https://www.pref.okinawa.jp/kyoiku/kosodate/1008226/1036501/1036529/1036522.html" target="_blank" rel="noopener">https://www.pref.okinawa.jp/kyoiku/kosodate/1008226/1036501/1036529/1036522.html</a></li>
+          <li>岡山市「児童扶養手当の所得制限と一部支給手当額の計算について」<br><a href="https://www.city.okayama.jp/kurashi/0000011187.html" target="_blank" rel="noopener">https://www.city.okayama.jp/kurashi/0000011187.html</a></li>
+        </ul>
+      </div>
+
+      <div class="card card--article">
+        <h2>あわせて読みたい</h2>
+        <ul>
+          <li><a href="../../guide/jido-teate-sogaku/">児童手当の総額シミュレーター</a></li>
+          <li><a href="../../guide/juminzei-hikazei-nenshu/">住民税非課税になる年収の早見表</a></li>
+          <li><a href="../../guide/sankyu-ikukyu-okane/">産休・育休でもらえるお金シミュレーター</a></li>
+          <li><a href="../../">給付金・補助金診断</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <p>本記事は公表されている手当額・計算式をもとに一般的な目安を示すものであり、実際の支給額を保証するものではありません。正確な額はお住まいの市区町村で確認してください。「PR」表記のあるリンクにはプロモーション(アフィリエイト広告)が含まれます。</p>
+    <p><a href="../../../about.html">運営者情報</a>・<a href="../../../contact.html">お問い合わせ</a>・<a href="../../../privacy.html">プライバシーポリシー</a></p>
+  </footer>
+
+</div>
+<script src="../../js/kurashi-calc.js"></script>
+<script>
+(function () {
+  const $ = (id) => document.getElementById(id);
+  const yen = (n) => Math.round(n).toLocaleString("ja-JP") + "円";
+  const man = (n) => (Math.floor(n / 1000) / 10).toLocaleString("ja-JP") + "万円";
+  const KIND = { zenbu: "全部支給", ichibu: "一部支給", teishi: "支給なし(全部停止)" };
+  const ids = ["fy-year", "fy-kids", "fy-kids16", "fy-kyuyo", "fy-youiku", "fy-sonota", "fy-kojo", "fy-other", "fy-otherT", "fy-otherR"];
+  const f = () => {
+    const kids = +$("fy-kids").value;
+    if (+$("fy-kids16").value > kids) $("fy-kids16").value = kids;
+    const v = { year: +$("fy-year").value, kids, kids16: +$("fy-kids16").value, kyuyo: Number($("fy-kyuyo").value || 0) * 10000,
+      youikuhi: Number($("fy-youiku").value || 0) * 10000, sonota: Number($("fy-sonota").value || 0) * 10000, kojo: Number($("fy-kojo").value || 0) * 10000,
+      other: +$("fy-other").value, otherTokutei: Math.min(+$("fy-otherT").value, +$("fy-other").value), otherRojin: Math.min(+$("fy-otherR").value, +$("fy-other").value) };
+    const r = jidoFuyo(v);
+    let s = r.monthly > 0
+      ? `<strong>${KIND[r.kind]}</strong>で、月額<strong>${yen(r.monthly)}</strong>(年額約${man(r.annual)})です。奇数月(1・3・5・7・9・11月)に2か月分ずつ(${yen(r.monthly * 2)})振り込まれます。`
+      : `所得が一部支給の上限(${yen(r.ichibu)}未満)を超えているので、<strong>手当は出ません</strong>(全部停止)。`;
+    if (r.kind === "ichibu") s += `<br>内訳は1人目${yen(r.hon)}${kids > 1 ? `、2人目以降${yen(r.ka)}×${kids - 1}人` : ""}です。`;
+    s += `<br>手当の計算に使う所得は${yen(r.shotoku)}`;
+    const parts = [];
+    if (r.kyuyoS > 0) parts.push(`給与所得${yen(r.kyuyoS)}−10万円`);
+    if (v.sonota) parts.push(`${parts.length ? "＋" : ""}事業などの所得${yen(v.sonota)}`);
+    if (r.youiku) parts.push(`${parts.length ? "＋" : ""}養育費の8割${yen(r.youiku)}`);
+    s += `(${parts.join("")}−8万円${v.kojo ? `−控除${yen(v.kojo)}` : ""})。`;
+    s += `全部支給は${yen(r.zenbu)}未満、一部支給は${yen(r.ichibu)}未満です。`;
+    const r0 = jidoFuyo(Object.assign({}, v, { kyuyo: 0 })); // 給与が0円でも限度額を超えるなら年収の目安は出さない。事業所得のある人にも出さない
+    if (v.sonota > 0) { /* 給与の年収の目安は給与だけの人向け */ }
+    else if (r0.shotoku < r0.zenbu) s += `<br>この条件なら、給与の年収が<strong>約${man(fuyoMaxKyuyo(v, "zenbu") + 1)}未満で全部支給</strong>、約${man(fuyoMaxKyuyo(v, "ichibu") + 1)}未満まで一部支給です。`;
+    else if (r0.shotoku < r0.ichibu) s += `<br>この条件なら、給与の年収が約${man(fuyoMaxKyuyo(v, "ichibu") + 1)}未満まで一部支給です。`;
+    $("fy-out").innerHTML = s;
+    try { localStorage.setItem("subsidy-checker:fuyo", JSON.stringify(ids.map((id) => $(id).value))); } catch (e) { /* 保存できなくても計算はする */ }
+  };
+  try { const s = JSON.parse(localStorage.getItem("subsidy-checker:fuyo") || "null"); if (s) ids.forEach((id, i) => { $(id).value = s[i]; }); } catch (e) { /* noop */ }
+  ids.forEach((id) => { $(id).addEventListener("input", f); $(id).addEventListener("change", f); });
+  f();
+})();
+</script>
+</body>
+</html>

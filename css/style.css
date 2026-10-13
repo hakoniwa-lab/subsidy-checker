@@ -550,6 +550,12 @@ html, body {
   font-size: 0.82rem;
   color: var(--color-text-muted);
 }
+.seido-list__calc {
+  display: inline-block;
+  margin: 6px 0 0 16px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
 
 /* --- 解説記事セクション(トップページ・一覧ページ) --- */
 
