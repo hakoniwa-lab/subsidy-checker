@@ -13,6 +13,7 @@
  *  11. 傷病手当金 … guide/shobyo-teate/
  *  12. 国民年金保険料の免除・納付猶予 … guide/kokumin-nenkin-menjo/
  *  13. 高年齢雇用継続給付 … guide/kounenrei-keizoku/
+ *  14. 住宅ローン控除 … guide/jutaku-loan-kojo/
  * 金額はすべて円。年度の数字は 2026-10-12(4〜8は10-13)に各公式ページで確認した
  */
 
@@ -628,6 +629,46 @@ function nenkinMenjo(v) {
   return { people, level, name, monthly, saving: NENKIN_HOKENRYO_R8 - monthly, reflect, yuyo };
 }
 
+/* ---------- 14. 住宅ローン控除(住宅借入金等特別控除) ---------- */
+/* 2026・2027年(令和8・9年)に入居した場合。国税庁 No.1211-1(新築等)・No.1211-3(中古) 令和8年4月1日現在
+ * [控除期間(年), 借入限度額, 特例対象個人(子育て世帯・若者夫婦世帯)の借入限度額]。控除額は年末残高(限度額まで)×0.7% */
+const JUTAKU_R8 = {
+  shinchiku: { nintei: [13, 45000000, 50000000], zeh: [13, 35000000, 45000000], shoene: [13, 20000000, 30000000], sonota: [0, 0, 0] },
+  chuko: { nintei: [13, 35000000, 45000000], zeh: [13, 35000000, 45000000], shoene: [13, 20000000, 30000000], sonota: [10, 20000000, 20000000] },
+};
+/* 元利均等返済の年末残高。入居した月に借り入れ、翌月から返済するとして、1年目は (12−入居月) 回払った後の残高 */
+function loanBalances(principal, ratePct, years, month, count) {
+  const n = years * 12, r = ratePct / 100 / 12;
+  const pay = r > 0 ? principal * r / (1 - Math.pow(1 + r, -n)) : principal / n;
+  const bal = (k) => k >= n ? 0 : r > 0 ? principal * Math.pow(1 + r, k) - pay * (Math.pow(1 + r, k) - 1) / r : principal - pay * k;
+  const out = [];
+  for (let i = 0; i < count; i++) out.push(Math.max(0, Math.round(bal(12 - month + 12 * i))));
+  return { pay: Math.round(pay), balances: out };
+}
+/* v = { shinchiku, kind("nintei"|"zeh"|"shoene"|"sonota"), tokurei(特例対象個人), small(床面積40〜50㎡), principal, rate, years, month,
+ *       kyuyo(給与収入), hoka(社会保険料・基礎控除以外の所得控除) }
+ * 所得税(復興特別所得税を含まない額)から引き、引ききれない分は住民税から(所得税の課税総所得金額等×5%、上限97,500円)
+ * 税は2026年分の決まり(基礎控除・給与所得控除)で、収入が変わらないとして毎年同じに計算する */
+function jutakuLoan(v) {
+  const [period, lim, limT] = JUTAKU_R8[v.shinchiku ? "shinchiku" : "chuko"][v.kind];
+  const limit = v.tokurei && !v.small ? limT : lim;              // 40〜50㎡の住宅は上乗せなし(2026年1月以降の入居)
+  const gokei = kyuyoShotoku(v.kyuyo || 0, 9);
+  const shakai = v.kyuyo > 0 ? shahoMonthly(v.kyuyo / 12, false).total * 12 : 0;
+  const kazei = Math.floor(Math.max(0, gokei - shakai - kisoKojo(gokei, 2026) - (v.hoka || 0)) / 1000) * 1000;
+  const itax = shotokuzei(kazei);
+  const juminCap = Math.min(97500, Math.floor(kazei * 0.05));
+  const ng = gokei > (v.small ? 10000000 : 20000000) ? "income" : period === 0 ? "kind" : "";
+  const { pay, balances } = loanBalances(v.principal || 0, v.rate || 0, v.years || 35, v.month || 1, period);
+  const rows = ng ? [] : balances.map((bal, i) => {
+    const kojo = Math.floor(Math.min(bal, limit) * 0.007 / 100) * 100;
+    const fromItax = Math.min(kojo, itax), fromJumin = Math.min(kojo - fromItax, juminCap);
+    return { year: i + 1, bal, kojo, fromItax, fromJumin, benefit: Math.floor(fromItax * 1.021) + fromJumin, unused: kojo - fromItax - fromJumin };
+  });
+  const sum = (k) => rows.reduce((a, r) => a + r[k], 0);
+  return { period, limit, maxKojo: Math.floor(limit * 0.007), pay, gokei, kazei, itax, juminCap, ng, rows,
+    total: sum("benefit"), totalKojo: sum("kojo"), totalUnused: sum("unused") };
+}
+
 if (typeof module !== "undefined") module.exports = {
   kyuyoShotoku, nenkinShotoku, gokeiShotoku, hikazeiLimit, shotokuwariLimit, hikazeiJudge, maxKyuyo, maxNenkin, maxIncome, HIKAZEI_SPECIAL,
   SHIEN_R8, shienRourei, yenRound,
@@ -641,4 +682,5 @@ if (typeof module !== "undefined") module.exports = {
   KIHON_R8, kihonDaily, shitsugyoHoken, teateDaily, SHOBYO_UNDER12_R7, shobyoTeate,
   NENKIN_HOKENRYO_R8, MENJO_LEVELS, menjoPerson, nenkinMenjo,
   KIHON_SHOKON, KOUNEN_R8, kounenreiKeizoku,
+  JUTAKU_R8, loanBalances, jutakuLoan,
 };

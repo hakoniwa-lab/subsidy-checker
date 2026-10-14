@@ -8031,6 +8031,7 @@ const SUBSIDIES = [
       ]
     },
     "apply_url": "https://www.mlit.go.jp/jutakukentiku/house/jutakukentiku_house_tk2_000017.html",
+    "calculator": "guide/jutaku-loan-kojo/",
     "apply_method": "入居初年度は確定申告が必要。給与所得者は2年目以降、勤務先の年末調整で適用可能。",
     "source_checked_at": "2026-07-31",
     "priority": 1,
