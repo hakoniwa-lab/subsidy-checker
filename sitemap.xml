@@ -41,6 +41,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://hakoniwalab.com/subsidy-checker/guide/kokumin-nenkin-menjo/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://hakoniwalab.com/subsidy-checker/guide/nenkin-seikatsusha-shienkyufukin/</loc>
     <lastmod>2026-10-12</lastmod>
     <priority>0.8</priority>
@@ -51,13 +56,23 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://hakoniwalab.com/subsidy-checker/guide/shitsugyo-hoken-keisan/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hakoniwalab.com/subsidy-checker/guide/shobyo-teate/</loc>
+    <lastmod>2026-10-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://hakoniwalab.com/subsidy-checker/guide/taishoku-kyufukin-ayashii/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hakoniwalab.com/subsidy-checker/guide/taishokugo-kenkohoken/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -102,17 +117,17 @@
   </url>
   <url>
     <loc>https://hakoniwalab.com/subsidy-checker/seido/national-pension-premium-exemption/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hakoniwalab.com/subsidy-checker/seido/basic-allowance/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hakoniwalab.com/subsidy-checker/seido/early-reemployment-allowance/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
@@ -127,7 +142,7 @@
   </url>
   <url>
     <loc>https://hakoniwalab.com/subsidy-checker/seido/sickness-and-injury-allowance/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <priority>0.8</priority>
   </url>
 </urlset>

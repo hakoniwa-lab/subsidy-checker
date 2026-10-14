@@ -120,6 +120,9 @@ subsidy-checker/
 - `guide/sankyu-ikukyu-okane/`(build_sankyu.py、2026-10-13) … 出産手当金・育児休業給付金・出生後休業支援給付金・社会保険料の免除を、予定日と月給から期間つきで。育休給付の賃金日額の上限は2026年8月〜2027年7月が16,540円(毎年8月に変わる)
 - `guide/jido-teate-sogaku/`(build_jido.py、2026-10-13) … 児童手当の総額。2024年10月分からの制度だけで数える。3歳の誕生月までが1.5万円(児童手当法9条3項で確認)、第3子は22歳の年度末までの子で数える
 - `guide/jido-fuyo-teate/`(build_fuyo.py、2026-10-14) … 児童扶養手当。令和8年度は全部支給48,050円・係数0.0264029(毎年4月に変わる。一次資料は都道府県の「しおり」)。同居の親など(扶養義務者)の所得も1人ずつ判定でき、控除(医療費控除・寡婦・ひとり親)も入れられる
+- `guide/shitsugyo-hoken-keisan/`(build_shitsugyo.py、2026-10-14) … 失業保険の基本手当日額・総額・再就職手当。計算式と上限は2026年8月1日〜(毎年8月に変わる)。所定給付日数は `retirement-simulator/js/taishokubi.js` の tbBenefit を読み込んで使う(写さない。taishokubi.js の画面の処理は tb-form がないページでは動かない)
+- `guide/shobyo-teate/`(build_shobyo.py、2026-10-14) … 傷病手当金。待期3日・通算1年6か月。休業中も払う社会保険料と住民税を引いた「手元に残る額」を出す
+- `guide/kokumin-nenkin-menjo/`(build_menjo.py、2026-10-14) … 国民年金の免除・納付猶予の判定。本人・配偶者・世帯主、失業特例、障害者・寡婦・ひとり親の135万円。同日、解説ページの「給与収入およそ122万円」(給与所得控除55万円時代の値)を132万円/141万円に直した
 - 計算はすべて `js/kurashi-calc.js`(ブラウザとNodeの両方で読む)。記事の表も build がこれを node で呼んで出すので、計算を直せば表も直る
 - sitemap は `scripts/generate-seo-pages.js` が `guide/` を走査して拾う
 - `data/subsidies.json` の `calculator`(guide へのパス)がある制度は、診断結果のカードと `/seido/` 一覧に「自分の場合の金額を計算する」リンクが出る(render.js の buildCalculatorLink・generate-seo-pages.js)。計算機つきの記事を足したら、該当する制度に `calculator` を足す

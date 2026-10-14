@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WTBHV5QYG3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-WTBHV5QYG3');
+</script>
+<title>国民年金の免除シミュレーター｜所得いくらで全額免除？2026年度の基準と月の保険料</title>
+<meta name="description" content="収入と家族を入れると、国民年金保険料の全額・4分の3・半額・4分の1免除と納付猶予のどれになるかを判定します。単身で給与だけなら2025年の収入132万円以下で全額免除が目安。本人・配偶者・世帯主の判定、失業特例、年金への反映、2026年度の保険料(月17,920円)つき。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="国民年金の免除シミュレーター｜所得いくらで全額免除？2026年度の基準と月の保険料">
+<meta property="og:description" content="収入と家族を入れると、国民年金保険料の全額・4分の3・半額・4分の1免除と納付猶予のどれになるかを判定します。単身で給与だけなら2025年の収入132万円以下で全額免除が目安。本人・配偶者・世帯主の判定、失業特例、年金への反映、2026年度の保険料(月17,920円)つき。">
+<meta property="og:url" content="https://hakoniwalab.com/subsidy-checker/guide/kokumin-nenkin-menjo/">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6465548593525933" crossorigin="anonymous"></script>
+<link rel="canonical" href="https://hakoniwalab.com/subsidy-checker/guide/kokumin-nenkin-menjo/">
+<link rel="stylesheet" href="../../css/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"国民年金は年収いくらで全額免除になりますか？","acceptedAnswer":{"@type":"Answer","text":"単身で給与だけなら、2025年の収入が132万円以下(2026年の収入なら141万円以下)が目安です。所得では67万円＋35万円×扶養している人数以下です。"}},{"@type":"Question","name":"一部免除の基準はいくらですか？","acceptedAnswer":{"@type":"Answer","text":"4分の3免除は88万円、半額免除は128万円、4分の1免除は168万円に、扶養控除(1人38万円など)と社会保険料控除などを足した所得以下です。"}},{"@type":"Question","name":"親と同居していると免除されませんか？","acceptedAnswer":{"@type":"Answer","text":"世帯主の所得も審査されるので、親が世帯主で所得が基準を超えていると免除は受けられません。50歳未満なら、世帯主を見ない納付猶予なら受けられることがあります。"}},{"@type":"Question","name":"会社を辞めたら国民年金は免除されますか？","acceptedAnswer":{"@type":"Answer","text":"失業特例で、本人の所得を除いて判定できます。配偶者と世帯主の所得は審査されます。離職票などの写しが必要です。"}},{"@type":"Question","name":"免除されると年金はいくら減りますか？","acceptedAnswer":{"@type":"Answer","text":"全額免除の月は2分の1、4分の3免除は8分の5、半額免除は8分の6、4分の1免除は8分の7として年金額に反映されます。10年以内に追納すれば満額に戻せます。"}},{"@type":"Question","name":"いつまでさかのぼって申請できますか？","acceptedAnswer":{"@type":"Answer","text":"申請した月から2年1か月前の月の分まで申請できます。"}}]}</script>
+<style>
+.guide-nav { max-width: 720px; margin: 0 auto 16px; padding: 0 20px; font-size: 0.85rem; color: var(--color-text-muted); }
+.guide-nav a { color: var(--color-text-muted); }
+.guide-lead { font-size: 0.95rem; }
+.guide-table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 0.9rem; }
+.guide-table th, .guide-table td { border: 1px solid var(--color-border); padding: 8px 10px; text-align: left; vertical-align: top; }
+.guide-table th { background: var(--color-bg); font-weight: 600; }
+.guide-table td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.guide-table tr.is-best td { background: var(--color-badge-bg); font-weight: 700; }
+.guide-note { font-size: 0.85rem; color: var(--color-text-muted); }
+.card--article h3 { font-size: 1rem; margin: 18px 0 6px; }
+.guide-cta { text-align: center; }
+.guide-cta .btn { display: inline-block; text-decoration: none; }
+.guide-calc { text-align: left; background: var(--color-bg); border: 1px solid var(--color-border); border-radius: 8px; padding: 12px 14px; margin: 14px 0; font-size: 0.92rem; }
+.guide-calc label { display: block; font-weight: 600; margin: 8px 0 4px; font-size: 0.88rem; }
+.guide-calc input, .guide-calc select { width: 100%; padding: 8px; border: 1px solid var(--color-border); border-radius: 6px; font-size: 1rem; background: var(--color-surface); color: var(--color-text); }
+.guide-calc .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.guide-calc .row3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+.guide-result { margin-top: 12px; font-size: 0.95rem; }
+.guide-result strong { font-size: 1.1rem; }
+.table-scroll { overflow-x: auto; }
+.date-row { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 6px; margin-bottom: 8px; }
+.form-help { font-size: 0.85rem; color: var(--color-text-muted); }
+.guide-calc .quiz-select, .date-row .quiz-select { width: 100%; }
+.nw { white-space: nowrap; }
+.card--article a[target="_blank"] { overflow-wrap: anywhere; }
+.art-cta { text-align: center; margin: 16px 0 4px; padding: 14px 12px; border: 1px dashed var(--color-border); border-radius: 8px; }
+.card--article .art-cta p { font-size: 0.85rem; margin: 0 0 10px; }
+.art-cta__links { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <nav class="guide-nav" aria-label="パンくずリスト">
+    <a href="../../">給付金・補助金診断</a> &raquo;
+    <span aria-current="page">国民年金の免除</span>
+  </nav>
+
+  <header class="app-header">
+    <p class="app-header__eyebrow">保険料が払えないとき</p>
+    <h1 class="app-header__title">国民年金の免除<br>判定シミュレーター</h1>
+    <p class="app-header__lead">収入と家族から、全額・一部免除・納付猶予のどれになるかを判定します。</p>
+  </header>
+
+  <main class="main">
+    <section class="screen">
+      <div class="card card--intro">
+        <form id="nm-form" class="guide-calc" style="margin:0">
+          <label for="nm-year">どの年の所得で判定するか(かっこ内は保険料の期間)</label>
+          <select id="nm-year">
+            <option value="2025">2025年の所得(2026年7月〜2027年6月)</option>
+            <option value="2026">2026年の所得(2027年7月〜2028年6月)</option>
+          </select>
+          <p class="form-help" style="margin-top:10px"><strong>本人</strong></p>
+          <div class="row2">
+            <div><label for="nm-kyuyo">給与の年収(万円)</label><input id="nm-kyuyo" type="number" inputmode="decimal" min="0" step="0.1" value="150"></div>
+            <div><label for="nm-sonota">事業所得(万円)</label><input id="nm-sonota" type="number" inputmode="decimal" min="0" step="0.1" value="0"></div>
+          </div>
+          <div class="row2">
+            <div><label for="nm-shaho">社会保険料(万円)</label><input id="nm-shaho" type="number" inputmode="decimal" min="0" step="0.1" value="0"></div>
+            <div><label for="nm-kojo">医療費控除(万円)</label><input id="nm-kojo" type="number" inputmode="decimal" min="0" step="0.1" value="0"></div>
+          </div>
+          <p class="form-help">社会保険料は、その年に払った国民健康保険料・国民年金保険料などの1年分の合計です(一部免除の判定に使います)。医療費控除の欄には、障害者控除など住民税で受けたほかの控除も足して入れます。</p>
+          <div class="row2">
+            <div><label for="nm-fuyo">扶養している人数</label><select id="nm-fuyo" class="quiz-select"><option value="0" selected>0人</option><option value="1">1人</option><option value="2">2人</option><option value="3">3人</option><option value="4">4人</option><option value="5">5人</option><option value="6">6人</option></select></div>
+            <div><label for="nm-special">ひとり親など</label><select id="nm-special" class="quiz-select"><option value="0" selected>なし</option><option value="270000">障害者・寡婦</option><option value="350000">ひとり親</option></select></div>
+          </div>
+          <div class="row2">
+            <div><label for="nm-tokutei">うち16〜22歳</label><select id="nm-tokutei" class="quiz-select"><option value="0" selected>0人</option><option value="1">1人</option><option value="2">2人</option><option value="3">3人</option><option value="4">4人</option></select></div>
+            <div><label for="nm-rojin">うち70歳以上</label><select id="nm-rojin" class="quiz-select"><option value="0" selected>0人</option><option value="1">1人</option><option value="2">2人</option><option value="3">3人</option><option value="4">4人</option></select></div>
+          </div>
+          <p class="form-help">扶養している人数は、同じ家計の配偶者と16歳未満の子も数えます。</p>
+          <label><input type="checkbox" id="nm-u50" checked style="width:auto"> 50歳未満(納付猶予を選べる)</label>
+          <label><input type="checkbox" id="nm-shitsu" style="width:auto"> 会社を辞めた・失業した(失業特例)</label>
+          <details id="nm-spouse-box">
+            <summary>配偶者がいる</summary>
+            <div class="row2">
+              <div><label for="nm-sk">給与の年収(万円)</label><input id="nm-sk" type="number" inputmode="decimal" min="0" step="0.1" value="0"></div>
+              <div><label for="nm-ss">事業所得(万円)</label><input id="nm-ss" type="number" inputmode="decimal" min="0" step="0.1" value="0"></div>
+            </div>
+            <div class="row2">
+              <div><label for="nm-sh">社会保険料(万円)</label><input id="nm-sh" type="number" inputmode="decimal" min="0" step="0.1" value="0"></div>
+              <div><label for="nm-sf">扶養している人数</label><select id="nm-sf" class="quiz-select"><option value="0" selected>0人</option><option value="1">1人</option><option value="2">2人</option><option value="3">3人</option><option value="4">4人</option><option value="5">5人</option><option value="6">6人</option></select></div>
+            </div>
+          </details>
+          <details id="nm-head-box">
+            <summary>世帯主が本人・配偶者以外(親など)</summary>
+            <div class="row2">
+              <div><label for="nm-hk">給与の年収(万円)</label><input id="nm-hk" type="number" inputmode="decimal" min="0" step="0.1" value="0"></div>
+              <div><label for="nm-hn">年金の収入(万円)</label><input id="nm-hn" type="number" inputmode="decimal" min="0" step="0.1" value="0"></div>
+            </div>
+            <div class="row2">
+              <div><label for="nm-hs">事業所得(万円)</label><input id="nm-hs" type="number" inputmode="decimal" min="0" step="0.1" value="0"></div>
+              <div><label for="nm-hh">社会保険料(万円)</label><input id="nm-hh" type="number" inputmode="decimal" min="0" step="0.1" value="0"></div>
+            </div>
+            <div class="row2">
+              <div><label for="nm-hf">扶養している人数</label><select id="nm-hf" class="quiz-select"><option value="0" selected>0人</option><option value="1">1人</option><option value="2">2人</option><option value="3">3人</option><option value="4">4人</option><option value="5">5人</option><option value="6">6人</option></select></div>
+              <div><label style="margin-top:30px"><input type="checkbox" id="nm-ho" style="width:auto"> 65歳以上</label></div>
+            </div>
+          </details>
+          <p class="guide-result" id="nm-out" role="status"></p>
+          <p class="guide-note">日本年金機構の所得基準で判定した目安です。学生は学生納付特例(本人の所得だけで判定)になります。入力は端末の外に送りません。</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="article">
+
+      <div class="card card--article">
+        <p class="guide-lead">国民年金の保険料(2026年度は月17,920円)は、所得が少ないと<strong>全額・4分の3・半額・4分の1の免除</strong>を受けられます。判定には<strong>本人・配偶者・世帯主の前の年の所得</strong>を使います。</p>
+        <p>単身で給与だけなら、2025年の収入が<strong>132万円以下で全額免除</strong>、251.5万円以下なら少なくとも4分の1免除の目安です(社会保険料を払っていればもう少し上がります)。会社を辞めた人は<strong>失業特例</strong>で本人の所得を外して判定できます。上の計算機に収入と家族を入れると、どの免除になるかが出ます。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>所得の基準(2026年7月〜2027年6月の分)</h2>
+        <div class="table-scroll">
+          <table class="guide-table">
+            <thead><tr><th>世帯</th><th>全額免除</th><th>4分の3免除</th><th>半額免除</th><th>4分の1免除</th></tr></thead>
+            <tbody>
+            <tr><td>単身(扶養なし)</td><td class="num">67万円</td><td class="num">88万円</td><td class="num">128万円</td><td class="num">168万円</td></tr>
+            <tr><td>扶養1人(配偶者など)</td><td class="num">102万円</td><td class="num">126万円</td><td class="num">166万円</td><td class="num">206万円</td></tr>
+            <tr><td>扶養2人(配偶者と子)</td><td class="num">137万円</td><td class="num">164万円</td><td class="num">204万円</td><td class="num">244万円</td></tr>
+            <tr><td>扶養3人</td><td class="num">172万円</td><td class="num">202万円</td><td class="num">242万円</td><td class="num">282万円</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <ul>
+          <li><strong>全額免除</strong> ＝ 67万円 ＋ 35万円 × 扶養している人数(以下)</li>
+          <li><strong>4分の3免除</strong> ＝ 88万円 ＋ 扶養控除 ＋ 社会保険料控除など。半額は128万円、4分の1は168万円から</li>
+          <li>扶養控除は1人38万円(16〜22歳は63万円、70歳以上は48万円)。表は社会保険料などの控除が0円の場合</li>
+          <li>障害者・寡婦・ひとり親の人は、所得<strong>135万円以下</strong>なら全額免除</li>
+        </ul>
+      </div>
+
+      <div class="card card--article">
+        <h2>給与収入に直すと</h2>
+        <h3>2025年の収入(2026年7月〜2027年6月の保険料)</h3>
+        <div class="table-scroll">
+          <table class="guide-table">
+            <thead><tr><th>世帯</th><th>全額免除</th><th>4分の3免除</th><th>半額免除</th><th>4分の1免除</th></tr></thead>
+            <tbody>
+            <tr><td>単身(扶養なし)</td><td class="num">132万円</td><td class="num">153万円</td><td class="num">194.3万円</td><td class="num">251.5万円</td></tr>
+            <tr><td>扶養1人(配偶者など)</td><td class="num">167万円</td><td class="num">191.5万円</td><td class="num">248.7万円</td><td class="num">305.9万円</td></tr>
+            <tr><td>扶養2人(配偶者と子)</td><td class="num">207.1万円</td><td class="num">245.9万円</td><td class="num">303.1万円</td><td class="num">360.3万円</td></tr>
+            <tr><td>扶養3人</td><td class="num">257.1万円</td><td class="num">300.3万円</td><td class="num">357.1万円</td><td class="num">407.5万円</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>2026年の収入(2027年7月〜2028年6月の保険料)</h3>
+        <div class="table-scroll">
+          <table class="guide-table">
+            <thead><tr><th>世帯</th><th>全額免除</th><th>4分の3免除</th><th>半額免除</th><th>4分の1免除</th></tr></thead>
+            <tbody>
+            <tr><td>単身(扶養なし)</td><td class="num">141万円</td><td class="num">162万円</td><td class="num">202万円</td><td class="num">251.5万円</td></tr>
+            <tr><td>扶養1人(配偶者など)</td><td class="num">176万円</td><td class="num">200万円</td><td class="num">248.7万円</td><td class="num">305.9万円</td></tr>
+            <tr><td>扶養2人(配偶者と子)</td><td class="num">211万円</td><td class="num">245.9万円</td><td class="num">303.1万円</td><td class="num">360.3万円</td></tr>
+            <tr><td>扶養3人</td><td class="num">257.1万円</td><td class="num">300.3万円</td><td class="num">357.1万円</td><td class="num">407.5万円</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="guide-note">この年収以下が目安です(千円未満切り捨て)。扶養は配偶者・16歳未満の子として計算。社会保険料などの控除が0円の場合です。2026年の収入からは給与所得控除の最低額が74万円になるので、年収の低い人の目安が上がります。</p>
+        <h3>国民健康保険料・国民年金保険料を年30万円払っている場合(2025年の収入)</h3>
+        <div class="table-scroll">
+          <table class="guide-table">
+            <thead><tr><th>世帯</th><th>全額免除</th><th>4分の3免除</th><th>半額免除</th><th>4分の1免除</th></tr></thead>
+            <tbody>
+            <tr><td>単身(扶養なし)</td><td class="num">132万円</td><td class="num">183万円</td><td class="num">237.1万円</td><td class="num">294.3万円</td></tr>
+            <tr><td>扶養1人(配偶者など)</td><td class="num">167万円</td><td class="num">234.3万円</td><td class="num">291.5万円</td><td class="num">348.7万円</td></tr>
+            <tr><td>扶養2人(配偶者と子)</td><td class="num">207.1万円</td><td class="num">288.7万円</td><td class="num">345.9万円</td><td class="num">397.5万円</td></tr>
+            <tr><td>扶養3人</td><td class="num">257.1万円</td><td class="num">343.1万円</td><td class="num">395.1万円</td><td class="num">445.1万円</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="guide-note">一部免除の基準には払った社会保険料が足されるので、年収の目安が上がります。全額免除の基準には足されません。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>免除されると保険料と年金はどうなるか</h2>
+        <div class="table-scroll">
+          <table class="guide-table">
+            <thead><tr><th>種類</th><th>月の保険料(2026年度)</th><th>将来の年金への反映</th></tr></thead>
+            <tbody>
+            <tr><td>全額免除</td><td>0円</td><td>2分の1</td></tr>
+            <tr><td>4分の3免除</td><td>4,480円</td><td>8分の5</td></tr>
+            <tr><td>半額免除</td><td>8,960円</td><td>8分の6</td></tr>
+            <tr><td>4分の1免除</td><td>13,440円</td><td>8分の7</td></tr>
+            <tr><td>納付猶予(50歳未満)</td><td>0円</td><td>入らない(受給資格の期間には数える)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>免除された期間も、受給資格の期間(10年)に数えます。<strong>10年以内なら後から納める(追納)</strong>ことができ、追納すると年金は満額に戻ります(3年度目以降は少し加算額がつきます)。未納のままにすると、障害年金・遺族年金を受け取れなくなることがあるので、払えないときは未納にせず申請してください。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>親と同居している・会社を辞めた場合</h2>
+        <ul>
+          <li><strong>世帯主の所得も審査される</strong> — 実家で親が世帯主なら、親の所得が基準を超えると免除は受けられません。50歳未満なら、世帯主を見ない<strong>納付猶予</strong>なら本人と配偶者の所得だけで判定されます</li>
+          <li><strong>失業特例</strong> — 会社を辞めた人は、本人の所得を除いて判定します(配偶者・世帯主の所得は見ます)。離職票や雇用保険の受給資格者証の写しを付けて申請します</li>
+          <li><strong>学生</strong> — 免除・納付猶予ではなく学生納付特例(本人の所得が128万円＋扶養控除など以下)</li>
+        </ul>
+        <p>辞めた後のお金は、<a href="../shitsugyo-hoken-keisan/">失業保険の計算機</a>と<a href="../taishokugo-kenkohoken/">任意継続と国保の比較</a>でも確かめられます。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>申請のしかた</h2>
+        <ul>
+          <li>7月から翌年6月までを1つの期間として、毎年申請します(全額免除・納付猶予は、継続を希望すれば翌年から自動で審査)</li>
+          <li><strong>2年1か月前までさかのぼって</strong>申請できます。マイナポータルからの電子申請、市区町村の窓口、年金事務所で受け付けます</li>
+          <li>審査は約2か月かかり、承認・却下の通知が届きます</li>
+          <li>出産する人は<strong>産前産後の免除</strong>(出産予定月の前月から4か月)、1歳未満の子を育てる父母は<strong>2026年10月からの育児期間の免除</strong>もあります。<a href="../sankyu-ikukyu-okane/">産休・育休のお金の計算機</a>の記事で説明しています</li>
+        </ul>
+      </div>
+
+      <div class="card card--article">
+        <h2>よくある質問</h2>
+        <details class="faq-item"><summary>国民年金は年収いくらで全額免除になりますか？</summary><p>単身で給与だけなら、2025年の収入が132万円以下(2026年の収入なら141万円以下)が目安です。所得では67万円＋35万円×扶養している人数以下です。</p></details>
+        <details class="faq-item"><summary>一部免除の基準はいくらですか？</summary><p>4分の3免除は88万円、半額免除は128万円、4分の1免除は168万円に、扶養控除(1人38万円など)と社会保険料控除などを足した所得以下です。</p></details>
+        <details class="faq-item"><summary>親と同居していると免除されませんか？</summary><p>世帯主の所得も審査されるので、親が世帯主で所得が基準を超えていると免除は受けられません。50歳未満なら、世帯主を見ない納付猶予なら受けられることがあります。</p></details>
+        <details class="faq-item"><summary>会社を辞めたら国民年金は免除されますか？</summary><p>失業特例で、本人の所得を除いて判定できます。配偶者と世帯主の所得は審査されます。離職票などの写しが必要です。</p></details>
+        <details class="faq-item"><summary>免除されると年金はいくら減りますか？</summary><p>全額免除の月は2分の1、4分の3免除は8分の5、半額免除は8分の6、4分の1免除は8分の7として年金額に反映されます。10年以内に追納すれば満額に戻せます。</p></details>
+        <details class="faq-item"><summary>いつまでさかのぼって申請できますか？</summary><p>申請した月から2年1か月前の月の分まで申請できます。</p></details>
+      </div>
+
+      <div class="card card--article">
+        <h2>出典</h2>
+        <ul>
+          <li>日本年金機構「国民年金保険料の免除制度・納付猶予制度」<br><a href="https://www.nenkin.go.jp/service/kokunen/menjo/20150428.html" target="_blank" rel="noopener">https://www.nenkin.go.jp/service/kokunen/menjo/20150428.html</a></li>
+          <li>日本年金機構「失業等による特例免除」<br><a href="https://www.nenkin.go.jp/service/kokunen/menjo/20150514.html" target="_blank" rel="noopener">https://www.nenkin.go.jp/service/kokunen/menjo/20150514.html</a></li>
+          <li>日本年金機構「国民年金保険料の追納制度」<br><a href="https://www.nenkin.go.jp/service/kokunen/menjo/20150331.html" target="_blank" rel="noopener">https://www.nenkin.go.jp/service/kokunen/menjo/20150331.html</a></li>
+          <li>札幌市「国民年金のしおり」令和8年度(所得基準額の表)<br><a href="https://www.city.sapporo.jp/hoken-iryo/nenkin/documents/r8nenkinshiori_2.pdf" target="_blank" rel="noopener">https://www.city.sapporo.jp/hoken-iryo/nenkin/documents/r8nenkinshiori_2.pdf</a></li>
+          <li>厚生労働省「育児期間の国民年金保険料免除制度」<br><a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000143356_00038.html" target="_blank" rel="noopener">https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000143356_00038.html</a></li>
+        </ul>
+      </div>
+
+      <div class="card card--article">
+        <h2>あわせて読みたい</h2>
+        <ul>
+          <li><a href="../../seido/national-pension-premium-exemption/">国民年金保険料の免除の解説</a></li>
+          <li><a href="../../guide/shitsugyo-hoken-keisan/">失業保険はいくら？計算シミュレーター</a></li>
+          <li><a href="../../guide/juminzei-hikazei-nenshu/">住民税非課税になる年収の早見表</a></li>
+          <li><a href="../../">給付金・補助金診断</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <p>本記事は日本年金機構などの公表資料をもとに一般的な目安を示すものであり、承認を保証するものではありません。審査は日本年金機構が行います。「PR」表記のあるリンクにはプロモーション(アフィリエイト広告)が含まれます。</p>
+    <p><a href="../../../about.html">運営者情報</a>・<a href="../../../contact.html">お問い合わせ</a>・<a href="../../../privacy.html">プライバシーポリシー</a></p>
+  </footer>
+
+</div>
+<script src="../../js/kurashi-calc.js"></script>
+<script>
+(function () {
+  const $ = (id) => document.getElementById(id);
+  const yen = (n) => Math.round(n).toLocaleString("ja-JP") + "円";
+  const ids = ["nm-year", "nm-kyuyo", "nm-sonota", "nm-shaho", "nm-kojo", "nm-fuyo", "nm-special", "nm-tokutei", "nm-rojin", "nm-u50", "nm-shitsu",
+    "nm-sk", "nm-ss", "nm-sh", "nm-sf", "nm-hk", "nm-hn", "nm-hs", "nm-hh", "nm-hf", "nm-ho"];
+  const num = (id) => Number($(id).value || 0) * 10000;
+  const REFLECT = ["", "8分の7", "8分の6", "8分の5", "2分の1"];
+  const LIM = [["zengaku", "全額免除"], ["q3", "4分の3免除"], ["han", "半額免除"], ["q1", "4分の1免除"]];
+  const f = () => {
+    const year = +$("nm-year").value;
+    const self = { kyuyo: num("nm-kyuyo"), sonota: num("nm-sonota"), shaho: num("nm-shaho"), kojo: num("nm-kojo"), special: +$("nm-special").value,
+      fuyo: +$("nm-fuyo").value, tokutei: +$("nm-tokutei").value, rojin: +$("nm-rojin").value };
+    const spouse = { kyuyo: num("nm-sk"), sonota: num("nm-ss"), shaho: num("nm-sh"), fuyo: +$("nm-sf").value };
+    const head = { kyuyo: num("nm-hk"), nenkin: num("nm-hn"), over65: $("nm-ho").checked, sonota: num("nm-hs"), shaho: num("nm-hh"), fuyo: +$("nm-hf").value };
+    const has = (p) => p.kyuyo || p.nenkin || p.sonota;
+    const r = nenkinMenjo({ year, self, spouse: has(spouse) ? spouse : null, head: has(head) ? head : null, under50: $("nm-u50").checked, shitsugyo: $("nm-shitsu").checked });
+    let s;
+    if (r.level === 4) s = `<strong>全額免除</strong>の見込みです。月${yen(NENKIN_HOKENRYO_R8)}の保険料が0円になり、1年で${yen(r.saving * 12)}の負担が減ります。免除した月は、将来の年金に<strong>2分の1</strong>として計算されます。`;
+    else if (r.level > 0) s = `<strong>${r.name}</strong>の見込みです。月の保険料は<strong>${yen(r.monthly)}</strong>になり(1年で${yen(r.saving * 12)}の負担減)、将来の年金にはその月が<strong>${REFLECT[r.level]}</strong>として計算されます。`;
+    else s = "所得が基準を超えているので、<strong>免除は受けられない</strong>見込みです。";
+    if (r.yuyo) s += "<br>50歳未満なので、本人と配偶者の所得だけで判定する<strong>納付猶予</strong>なら受けられます(猶予した月は年金額に入りませんが、受給資格の期間には数え、10年以内なら追納できます)。";
+    r.people.forEach((p) => {
+      s += `<br>${p.who}: `;
+      if (p.tokurei) { s += "失業特例で、所得を判定から外します(離職票などの写しが必要)。"; return; }
+      s += `所得${yen(p.shotoku)}。` + LIM.map(([k, n]) => `${n}は${yen(p.lim[k])}以下`).join("、") + "。";
+      if (p.who === "本人" && self.special > 0) s += "障害者・寡婦・ひとり親なので、135万円以下なら全額免除です。";
+    });
+    if (!$("nm-shitsu").checked && r.people[0].level < 4) s += "<br>会社を辞めた人は、失業特例で本人の所得を外して判定できます。";
+    $("nm-out").innerHTML = s;
+    try { localStorage.setItem("subsidy-checker:menjo", JSON.stringify(ids.map((id) => $(id).type === "checkbox" ? $(id).checked : $(id).value))); } catch (e) { /* 保存できなくても計算はする */ }
+  };
+  try {
+    const s = JSON.parse(localStorage.getItem("subsidy-checker:menjo") || "null");
+    if (s) ids.forEach((id, i) => { if (s[i] === undefined) return; if ($(id).type === "checkbox") $(id).checked = s[i]; else $(id).value = s[i]; });
+    if (+$("nm-sk").value || +$("nm-ss").value) $("nm-spouse-box").open = true;
+    if (+$("nm-hk").value || +$("nm-hn").value || +$("nm-hs").value) $("nm-head-box").open = true;
+  } catch (e) { /* noop */ }
+  ids.forEach((id) => { $(id).addEventListener("input", f); $(id).addEventListener("change", f); });
+  f();
+})();
+</script>
+</body>
+</html>

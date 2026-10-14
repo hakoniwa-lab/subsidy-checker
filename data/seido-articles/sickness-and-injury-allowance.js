@@ -101,6 +101,7 @@ module.exports = {
     { label: "全国健康保険協会（協会けんぽ）「健康保険傷病手当金支給申請書」", url: "https://www.kyoukaikenpo.or.jp/application_form/benefit/001/index.html" },
   ],
   guides: [
+    { label: "傷病手当金はいくら？計算シミュレーター", href: "../../guide/shobyo-teate/", note: "月給と休む日数から、1日あたりの額・期間・手元に残る額を計算できます" },
     { label: "高額療養費の上限額シミュレーター", href: "../../guide/kogaku-ryoyohi-jogen/", note: "療養中の医療費がひと月いくらまでで済むかを計算できます(2026年8月からの上限額)" },
     { label: "医療費控除でいくら戻るかの計算機", href: "../../guide/iryohi-kojo-ikura/", note: "1年の医療費が多かった年に、確定申告で戻る税金の目安が分かります" },
     { label: "保険診断", href: "../../../insurance-checker/", note: "傷病手当金でカバーできない分に民間保険が必要かを診断できます" },

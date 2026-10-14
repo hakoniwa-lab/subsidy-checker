@@ -149,6 +149,7 @@ module.exports = {
     { label: "国民生活センター「失業保険の給付額等を増やすことができるとうたう申請サポートに注意」(2025年12月3日)", url: "https://www.kokusen.go.jp/news/data/n-20251203_1.html" },
   ],
   guides: [
+    { label: "失業保険はいくら？計算シミュレーター", href: "../../guide/shitsugyo-hoken-keisan/", note: "年齢と月給から、基本手当日額・総額・再就職手当を計算できます(2026年8月の上限額)" },
     { label: "「退職給付金」という制度はありません", href: "../../guide/taishoku-kyufukin-ayashii/", note: "広告で見かける「退職給付金」の正体と、自分で申請する手順をまとめた解説記事です" },
     { label: "退職後の健康保険は任意継続と国保どっちが安い？", href: "../../guide/taishokugo-kenkohoken/", note: "会社都合などで辞めた人の国保の軽減(給与所得を100分の30)も入れて比べられます" },
     { label: "退職日シミュレーター", href: "../../../retirement-simulator/taishokubi/", note: "65歳の前に辞めるか後に辞めるかで、基本手当か高年齢求職者給付金かが変わる境目を判定します" },

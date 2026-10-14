@@ -115,6 +115,7 @@ module.exports = {
     { label: "厚生労働省「雇用保険制度」", url: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/koyouhoken/index_00003.html" },
   ],
   guides: [
+    { label: "失業保険・再就職手当の計算シミュレーター", href: "../../guide/shitsugyo-hoken-keisan/", note: "受け取った日数を入れると、再就職手当の額が分かります" },
     { label: "転職エージェント診断", href: "../../../career-checker/", note: "給付制限中の1か月は職業紹介事業者経由の就職が条件になるので、相談先を診断できます" },
     { label: "手取り年収シミュレーター", href: "../../../takehome-calculator/", note: "再就職先の年収から手取りを計算し、離職前と比べられます" },
   ],

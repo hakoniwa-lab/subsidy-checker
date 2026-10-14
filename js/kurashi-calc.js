@@ -9,6 +9,9 @@
  *   7. 産休・育休でもらえるお金(出産手当金・育児休業給付金・出生後休業支援給付金) … guide/sankyu-ikukyu-okane/
  *   8. 児童手当の総額 … guide/jido-teate-sogaku/
  *   9. 児童扶養手当(ひとり親) … guide/jido-fuyo-teate/
+ *  10. 失業保険(基本手当)と再就職手当 … guide/shitsugyo-hoken-keisan/(所定給付日数は retirement-simulator/js/taishokubi.js の tbBenefit)
+ *  11. 傷病手当金 … guide/shobyo-teate/
+ *  12. 国民年金保険料の免除・納付猶予 … guide/kokumin-nenkin-menjo/
  * 金額はすべて円。年度の数字は 2026-10-12(4〜8は10-13)に各公式ページで確認した
  */
 
@@ -324,7 +327,7 @@ const monthIndex = (t) => { const [y, m] = ymdOf(t); return y * 12 + m - 1; };
 /* 出産手当金。標準報酬月額÷30 は10円未満四捨五入、×2/3 は1円未満四捨五入(協会けんぽ)。期間は予定日どおりに生まれた場合 */
 function shussanTeate(gekkyu, tatai) {
   const hyojun = hyojunKenpo(gekkyu);
-  const daily = Math.round(Math.round(hyojun / 30 / 10) * 10 * 2 / 3);
+  const daily = teateDaily(hyojun); // 傷病手当金と同じ計算(11節)
   const days = (tatai ? 98 : 42) + 56;
   return { hyojun, daily, days, total: daily * days };
 }
@@ -495,6 +498,100 @@ function fuyoMaxKyuyo(v, which) {
   return maxIncome((x) => jidoFuyo(Object.assign({}, v, { kyuyo: x })).shotoku, lim - 1);
 }
 
+/* ---------- 10. 失業保険(基本手当)と再就職手当 ---------- */
+/* 令和8年8月1日〜令和9年7月31日。厚労省「雇用保険の基本手当日額の変更」別添の計算式(参考1)と、
+ * リーフレット「雇用保険の基本手当日額が変更になります」の就業促進手当の上限 */
+const KIHON_R8 = {
+  min: 3203,                 // 賃金日額の下限(基本手当日額 2,562円)
+  lo: 5480, hi: 13490,       // 80%が逓減し始める額と、50%になる額(60歳未満)
+  hi60: 12120,               // 60〜64歳が45%になる額
+  cap: [[30, 14900], [45, 16540], [60, 18220], [65, 17400]], // [この年齢未満, 賃金日額の上限]
+  saishu: [[60, 6745], [65, 5454]],                          // 再就職手当などに使う基本手当日額の上限
+};
+/* 基本手当日額(1円未満切り捨て)。age は離職日の年齢 */
+function kihonDaily(wage, age) {
+  const cap = KIHON_R8.cap.find(([a]) => age < a)[1];
+  const w = Math.min(Math.max(wage, KIHON_R8.min), cap);
+  const { lo, hi, hi60 } = KIHON_R8;
+  let y;
+  if (w < lo) y = 0.8 * w;
+  else if (age < 60) y = w <= hi ? 0.8 * w - 0.3 * ((w - lo) / (hi - lo)) * w : 0.5 * w;
+  else y = w <= hi60 ? Math.min(0.8 * w - 0.35 * ((w - lo) / (hi60 - lo)) * w, 0.05 * w + 0.4 * hi60) : 0.45 * w;
+  return Math.floor(y);
+}
+/* 所定給付日数は退職日シミュレーターの表を使う(写さない)。ブラウザでは taishokubi.js を先に読み込む */
+function tbBenefitRef() {
+  if (typeof tbBenefit === "function") return tbBenefit;
+  if (typeof require === "function") return require("../../retirement-simulator/js/taishokubi.js").tbBenefit;
+  throw new Error("taishokubi.js が読み込まれていない");
+}
+/* v = { age(離職日の年齢・65歳未満), gekkyu(離職前6か月の月給の平均。賞与を除く), period("lt1"|"1to5"|"5to10"|"10to20"|"ge20"),
+ *       reason("jiko"|"kaisha"), received(再就職までに受け取った日数) } */
+function shitsugyoHoken(v) {
+  const wage = Math.floor((v.gekkyu || 0) * 6 / 180);
+  const daily = kihonDaily(wage, v.age);
+  const days = tbBenefitRef()(v.age, v.period, v.reason === "kaisha" ? "kaisha" : "jiko").days;
+  if (!days) return { wage, daily, days: 0, ok: false };
+  const remain = Math.max(0, days - Math.max(0, v.received || 0));
+  const rate = remain * 3 >= days * 2 ? 0.7 : remain * 3 >= days ? 0.6 : 0;
+  const saishuDaily = Math.min(daily, KIHON_R8.saishu.find(([a]) => v.age < a)[1]);
+  return { wage, daily, days, ok: true, per28: daily * 28, total: daily * days, remain, rate, saishuDaily,
+    saishu: Math.floor(saishuDaily * remain * rate), seigen: v.reason === "kaisha" ? 0 : 1 };
+}
+
+/* ---------- 11. 傷病手当金 ---------- */
+/* 1日あたりの額 = 標準報酬月額の平均 ÷30(10円未満四捨五入) ×2/3(1円未満四捨五入)。出産手当金と同じ(協会けんぽ) */
+const teateDaily = (hyojun) => Math.round(Math.round(hyojun / 30 / 10) * 10 * 2 / 3);
+const SHOBYO_UNDER12_R7 = 320000; // 加入12か月未満のとき比べる全被保険者の平均(2025年4月1日以降の支給開始)
+/* v = { gekkyu, under12(加入12か月未満), over40, start("YYYY-MM-DD" 休み始めた日), days(連続して休む日数) }
+ * 待期は最初の3日(連続)。4日目から支給し、支給開始日から通算1年6か月まで */
+function shobyoTeate(v) {
+  let hyojun = hyojunKenpo(v.gekkyu || 0);
+  if (v.under12) hyojun = Math.min(hyojun, SHOBYO_UNDER12_R7);
+  const daily = teateDaily(hyojun);
+  const start = parseYmd(v.start), payFrom = start + 3 * DAY_MS;
+  const maxDays = Math.round((addMonthsUTC(payFrom, 18) - payFrom) / DAY_MS); // 支給開始日から1年6か月の日数
+  const payDays = Math.min(maxDays, Math.max(0, (v.days || 0) - 3));
+  const shaho = shahoMonthly(v.gekkyu || 0, v.over40), tedori = tedoriMonthly(v.gekkyu || 0, v.over40);
+  return { hyojun, daily, per30: daily * 30, payFrom, payDays, maxDays, total: daily * payDays,
+    payTo: payDays > 0 ? payFrom + (payDays - 1) * DAY_MS : null, shaho: shaho.kenpo + shaho.nenkin, tedori };
+}
+
+/* ---------- 12. 国民年金保険料の免除・納付猶予(令和8年度。日本年金機構「免除制度・納付猶予制度」、札幌市「国民年金のしおり」令和8年度) ---------- */
+const NENKIN_HOKENRYO_R8 = 17920;  // 月額(令和8年度)。taishokubi.js の KOKUMIN_NENKIN_R8 と同じ額(名前は重ねない)
+/* 免除の段階 [名前, 納める割合, 年金への反映] */
+const MENJO_LEVELS = [
+  ["免除なし", 1, 1], ["4分の1免除", 0.75, 7 / 8], ["半額免除", 0.5, 6 / 8], ["4分の3免除", 0.25, 5 / 8], ["全額免除", 0, 1 / 2],
+];
+/* 1人分の判定。p = { kyuyo, nenkin, over65, sonota, shaho(社会保険料控除), kojo(医療費控除などの(A)), special(障害者・寡婦・ひとり親の控除額。0なら該当なし),
+ *   fuyo(扶養親族等の数・同一生計配偶者と16歳未満も数える), tokutei(うち16〜22歳), rojin(うち70歳以上) }。year は所得の年
+ * 全額: 67万円＋35万円×扶養。3/4: 88万円＋(A)＋(B)。半額: 128万円＋…。1/4: 168万円＋…。障害者・寡婦・ひとり親は135万円以下なら全額 */
+function menjoPerson(p, year) {
+  const shotoku = gokeiShotoku({ kyuyo: p.kyuyo || 0, nenkin: p.nenkin || 0, over65: !!p.over65, sonota: p.sonota || 0, nendo: year >= 2026 ? 9 : 8 });
+  const fuyo = Math.max(0, p.fuyo || 0), tokutei = Math.min(p.tokutei || 0, fuyo), rojin = Math.min(p.rojin || 0, fuyo - tokutei);
+  const A = Math.max(0, p.shaho || 0) + Math.max(0, p.kojo || 0) + Math.max(0, p.special || 0);
+  const B = 380000 * (fuyo - tokutei - rojin) + 630000 * tokutei + 480000 * rojin;
+  const lim = { zengaku: 670000 + 350000 * fuyo, q3: 880000 + A + B, han: 1280000 + A + B, q1: 1680000 + A + B };
+  let level = shotoku <= lim.q1 ? 1 : 0;
+  if (shotoku <= lim.han) level = 2;
+  if (shotoku <= lim.q3) level = 3;
+  if (shotoku <= lim.zengaku || (p.special > 0 && shotoku <= 1350000)) level = 4;
+  return { shotoku, lim, level };
+}
+/* v = { year, self, spouse(なければ null), head(本人・配偶者以外の世帯主。なければ null), under50, shitsugyo(本人が失業・退職した) }
+ * 免除は本人・配偶者・世帯主の全員が基準内の段階(いちばん低い段階)。納付猶予は50歳未満で、本人と配偶者が全額免除の基準内
+ * 失業特例は本人の所得を判定から外す */
+function nenkinMenjo(v) {
+  const people = [["本人", v.self], ["配偶者", v.spouse], ["世帯主", v.head]].filter(([, p]) => p)
+    .map(([who, p]) => Object.assign({ who }, menjoPerson(p, v.year)));
+  if (v.shitsugyo) people[0].level = 4, people[0].tokurei = true;
+  const level = Math.min(...people.map((x) => x.level));
+  const yuyo = !!v.under50 && level < 4 && people.filter((x) => x.who !== "世帯主").every((x) => x.level === 4);
+  const [name, pay, reflect] = MENJO_LEVELS[level];
+  const monthly = Math.round(NENKIN_HOKENRYO_R8 * pay); // 一部免除の保険料は 4,480円・8,960円・13,440円(10円未満が出ない)
+  return { people, level, name, monthly, saving: NENKIN_HOKENRYO_R8 - monthly, reflect, yuyo };
+}
+
 if (typeof module !== "undefined") module.exports = {
   kyuyoShotoku, nenkinShotoku, gokeiShotoku, hikazeiLimit, shotokuwariLimit, hikazeiJudge, maxKyuyo, maxNenkin, maxIncome, HIKAZEI_SPECIAL,
   SHIEN_R8, shienRourei, yenRound,
@@ -505,4 +602,6 @@ if (typeof module !== "undefined") module.exports = {
   IKUKYU_R8, SHUSSAN_ICHIJIKIN, parseYmd, ymdOf, fmtYmd, addMonthsUTC, shussanTeate, ikukyuPeriods, sankyuIkukyu,
   JIDO_R6, JIDO_FROM, fiscalEndMonth, jidoTeate,
   FUYO_R8, FUYO_LIMIT, round10, jidoFuyo, fuyoMaxKyuyo, fuyoGimu, fuyoGimuMax,
+  KIHON_R8, kihonDaily, shitsugyoHoken, teateDaily, SHOBYO_UNDER12_R7, shobyoTeate,
+  NENKIN_HOKENRYO_R8, MENJO_LEVELS, menjoPerson, nenkinMenjo,
 };

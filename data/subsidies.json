@@ -7288,6 +7288,7 @@
       "requires_employment_insurance": false
     },
     "apply_url": "https://www.nenkin.go.jp/service/kokunen/menjo/index.html",
+    "calculator": "guide/kokumin-nenkin-menjo/",
     "apply_method": "住所地の市区町村役場の国民年金担当窓口、年金事務所、または郵送・電子申請で「国民年金保険料免除・納付猶予申請書」を提出する。",
     "source_checked_at": "2026-07-29",
     "priority": 1,
@@ -7412,6 +7413,7 @@
       "requires_employment_insurance": true
     },
     "apply_url": "https://www.hellowork.mhlw.go.jp/insurance/insurance_basicbenefit.html",
+    "calculator": "guide/shitsugyo-hoken-keisan/",
     "apply_method": "離職後、会社から受け取る離職票とマイナンバー確認書類・本人確認書類等を持って住所地のハローワークで求職の申込みを行い、受給資格の決定を受ける。7日間の待期期間(正当な理由がない自己都合退職は、待期期間の後さらに原則1か月の給付制限)を経て、原則4週間ごとに失業の認定を受けて支給される。",
     "source_checked_at": "2026-09-27",
     "priority": 1,
@@ -7473,6 +7475,7 @@
       "requires_employment_insurance": true
     },
     "apply_url": "https://www.hellowork.mhlw.go.jp/insurance/insurance_stepup.html",
+    "calculator": "guide/shitsugyo-hoken-keisan/",
     "apply_method": "再就職後、「再就職手当支給申請書」に必要事項を記入し事業主の証明を得て、管轄ハローワークへ提出する。",
     "source_checked_at": "2026-07-29",
     "priority": 1,
@@ -7531,6 +7534,7 @@
       "requires_employment_insurance": true
     },
     "apply_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/koyouhoken/index_00003.html",
+    "calculator": "../retirement-simulator/taishokubi/",
     "apply_method": "離職後、管轄ハローワークで求職申込みを行い、「高年齢求職者給付金支給申請書」を提出する(離職日翌日から1年以内)。",
     "source_checked_at": "2026-07-29",
     "priority": 1,
@@ -8149,6 +8153,7 @@
       ]
     },
     "apply_url": "https://www.kyoukaikenpo.or.jp/benefit/injury_and_sickness_allowance/index.html",
+    "calculator": "guide/shobyo-teate/",
     "apply_method": "「健康保険傷病手当金支給申請書」を勤務先経由、または本人が加入する協会けんぽ支部・健保組合へ提出。",
     "source_checked_at": "2026-07-31",
     "priority": 2,
