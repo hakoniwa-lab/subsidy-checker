@@ -123,6 +123,8 @@ subsidy-checker/
 - `guide/shitsugyo-hoken-keisan/`(build_shitsugyo.py、2026-10-14) … 失業保険の基本手当日額・総額・再就職手当。計算式と上限は2026年8月1日〜(毎年8月に変わる)。所定給付日数は `retirement-simulator/js/taishokubi.js` の tbBenefit を読み込んで使う(写さない。taishokubi.js の画面の処理は tb-form がないページでは動かない)
 - `guide/shobyo-teate/`(build_shobyo.py、2026-10-14) … 傷病手当金。待期3日・通算1年6か月。休業中も払う社会保険料と住民税を引いた「手元に残る額」を出す
 - `guide/kokumin-nenkin-menjo/`(build_menjo.py、2026-10-14) … 国民年金の免除・納付猶予の判定。本人・配偶者・世帯主、失業特例、障害者・寡婦・ひとり親の135万円。同日、解説ページの「給与収入およそ122万円」(給与所得控除55万円時代の値)を132万円/141万円に直した
+- `guide/kounenrei-keizoku/`(build_kounen.py、2026-10-14) … 高年齢雇用継続給付。2025年4月以降に60歳=64%以下で10%(式は厚労省の計算式PDF)、それ以前=61%以下で15%。同日、解説ページの「61%以下で10%」「年金停止は最大6%」の誤りを64%・4%(旧制度は6%)に直した
+- 同日、失業保険の計算機に65歳以上(高年齢求職者給付金。日額は30歳未満と同じ上限・給付率=雇用保険法37条の4・16条)、正当な理由のある自己都合、雇い止め(2027年3月31日までの離職は会社都合と同じ日数)、就職困難者の日数を足した
 - 計算はすべて `js/kurashi-calc.js`(ブラウザとNodeの両方で読む)。記事の表も build がこれを node で呼んで出すので、計算を直せば表も直る
 - sitemap は `scripts/generate-seo-pages.js` が `guide/` を走査して拾う
 - `data/subsidies.json` の `calculator`(guide へのパス)がある制度は、診断結果のカードと `/seido/` 一覧に「自分の場合の金額を計算する」リンクが出る(render.js の buildCalculatorLink・generate-seo-pages.js)。計算機つきの記事を足したら、該当する制度に `calculator` を足す

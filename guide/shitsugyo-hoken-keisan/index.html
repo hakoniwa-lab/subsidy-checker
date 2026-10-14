@@ -20,7 +20,7 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6465548593525933" crossorigin="anonymous"></script>
 <link rel="canonical" href="https://hakoniwalab.com/subsidy-checker/guide/shitsugyo-hoken-keisan/">
 <link rel="stylesheet" href="../../css/style.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"失業保険はいくらもらえますか？","acceptedAnswer":{"@type":"Answer","text":"辞める前6か月の給料の1日分(賃金日額)の50〜80%が1日あたりの額です。35歳・月給30万円なら基本手当日額は6,307円で、自己都合・勤続10年未満(90日)なら総額は約56.8万円です。"}},{"@type":"Question","name":"失業保険の上限はいくらですか？","acceptedAnswer":{"@type":"Answer","text":"2026年8月1日からは、基本手当日額の上限が30歳未満7,450円・30〜44歳8,270円・45〜59歳9,110円・60〜64歳7,830円です。下限は2,562円です。"}},{"@type":"Question","name":"自己都合だといつから振り込まれますか？","acceptedAnswer":{"@type":"Answer","text":"7日間の待期のあと1か月の給付制限があり、最初の振込は手続きからおよそ1か月半〜2か月後です。会社都合なら給付制限はなく、およそ1か月後です。"}},{"@type":"Question","name":"ボーナスは計算に入りますか？","acceptedAnswer":{"@type":"Answer","text":"入りません。賃金日額は辞める前6か月の毎月の給料(残業代・通勤手当を含む)の合計÷180で計算します。"}},{"@type":"Question","name":"再就職手当はいくらですか？","acceptedAnswer":{"@type":"Answer","text":"残りの日数×基本手当日額×60%または70%です。35歳・月給30万円・90日の人が待期明けすぐに就職すると、約39.7万円です。"}},{"@type":"Question","name":"65歳以上で辞めたらどうなりますか？","acceptedAnswer":{"@type":"Answer","text":"基本手当ではなく高年齢求職者給付金になり、基本手当日額の30日分または50日分が一時金で出ます。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"失業保険はいくらもらえますか？","acceptedAnswer":{"@type":"Answer","text":"辞める前6か月の給料の1日分(賃金日額)の50〜80%が1日あたりの額です。35歳・月給30万円なら基本手当日額は6,307円で、自己都合・勤続10年未満(90日)なら総額は約56.8万円です。"}},{"@type":"Question","name":"失業保険の上限はいくらですか？","acceptedAnswer":{"@type":"Answer","text":"2026年8月1日からは、基本手当日額の上限が30歳未満7,450円・30〜44歳8,270円・45〜59歳9,110円・60〜64歳7,830円です。下限は2,562円です。"}},{"@type":"Question","name":"自己都合だといつから振り込まれますか？","acceptedAnswer":{"@type":"Answer","text":"7日間の待期のあと1か月の給付制限があり、最初の振込は手続きからおよそ1か月半〜2か月後です。会社都合なら給付制限はなく、およそ1か月後です。"}},{"@type":"Question","name":"ボーナスは計算に入りますか？","acceptedAnswer":{"@type":"Answer","text":"入りません。賃金日額は辞める前6か月の毎月の給料(残業代・通勤手当を含む)の合計÷180で計算します。"}},{"@type":"Question","name":"再就職手当はいくらですか？","acceptedAnswer":{"@type":"Answer","text":"残りの日数×基本手当日額×60%または70%です。35歳・月給30万円・90日の人が待期明けすぐに就職すると、約39.7万円です。"}},{"@type":"Question","name":"65歳以上で辞めたらどうなりますか？","acceptedAnswer":{"@type":"Answer","text":"基本手当ではなく高年齢求職者給付金になり、日額の30日分(雇用保険1年未満)または50日分(1年以上)が一時金で出ます。月給30万円・1年以上なら約31.5万円です。年金と同時に受け取れます。"}},{"@type":"Question","name":"雇い止めや病気で辞めた場合は自己都合ですか？","acceptedAnswer":{"@type":"Answer","text":"契約が更新されなかった人は、2027年3月31日までの離職なら会社都合と同じ日数になります。病気・介護・転居など正当な理由のある自己都合は、日数は自己都合と同じですが給付制限がありません。"}}]}</script>
 <style>
 .guide-nav { max-width: 720px; margin: 0 auto 16px; padding: 0 20px; font-size: 0.85rem; color: var(--color-text-muted); }
 .guide-nav a { color: var(--color-text-muted); }
@@ -71,7 +71,7 @@
       <div class="card card--intro">
         <form id="sh-form" class="guide-calc" style="margin:0">
           <div class="row2">
-            <div><label for="sh-age">離職した日の年齢</label><input id="sh-age" type="number" inputmode="numeric" min="15" max="64" step="1" value="35"></div>
+            <div><label for="sh-age">離職した日の年齢</label><input id="sh-age" type="number" inputmode="numeric" min="15" max="99" step="1" value="35"></div>
             <div><label for="sh-gekkyu">月給(額面・万円)</label><input id="sh-gekkyu" type="number" inputmode="decimal" min="0" step="0.1" value="30"></div>
           </div>
           <p class="form-help">月給は辞める前6か月の平均で、残業代・通勤手当を含み、ボーナスは入れません。</p>
@@ -80,12 +80,15 @@
           <label for="sh-reason">辞めた理由</label>
           <select id="sh-reason">
             <option value="jiko">自己都合(転職・独立など)</option>
+            <option value="seito">正当な理由のある自己都合(病気・妊娠出産・介護・通えない所への転居など)</option>
+            <option value="yatoidome">契約が更新されなかった(雇い止め)</option>
             <option value="kaisha">会社都合(倒産・解雇・退職勧奨など)</option>
           </select>
+          <label><input type="checkbox" id="sh-shokon" style="width:auto"> 障害者手帳があるなど、就職が難しい人(就職困難者)</label>
           <label for="sh-received">再就職までに受け取った日数(再就職手当の計算用)</label>
           <input id="sh-received" type="number" inputmode="numeric" min="0" step="1" value="0">
           <p class="guide-result" id="sh-out" role="status"></p>
-          <p class="guide-note">65歳以上で辞めた人は高年齢求職者給付金(一時金)になるので、<a href="../../../retirement-simulator/taishokubi/">退職日シミュレーター</a>で確かめてください。入力は端末の外に送りません。</p>
+          <p class="guide-note">65歳以上で辞めた人は高年齢求職者給付金(一時金)で計算します。64歳と65歳のどちらで辞めるかの比べ方は<a href="../../../retirement-simulator/taishokubi/">退職日シミュレーター</a>へ。入力は端末の外に送りません。</p>
         </form>
       </div>
     </section>
@@ -161,7 +164,39 @@
             </tbody>
           </table>
         </div>
-        <p class="guide-note">期間は雇用保険に入っていた期間(前の会社と1年以内につながっていれば通算)。会社都合の1年未満は、6か月以上入っていた場合です。障害などで就職が難しい人は日数が長くなります。</p>
+        <h3>障害者など就職が難しい人(就職困難者)</h3>
+        <div class="table-scroll">
+          <table class="guide-table">
+            <thead><tr><th>年齢</th><th>1年未満</th><th>1年以上</th></tr></thead>
+            <tbody>
+            <tr><td>45歳未満</td><td>150日</td><td>300日</td></tr>
+            <tr><td>45〜64歳</td><td>150日</td><td>360日</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="guide-note">期間は雇用保険に入っていた期間(前の会社と1年以内につながっていれば通算)。会社都合の1年未満は、6か月以上入っていた場合です。</p>
+        <ul>
+          <li><strong>正当な理由のある自己都合</strong>(病気・妊娠出産・家族の介護・通勤できない所への転居など)は、日数は自己都合と同じですが、<strong>給付制限がなく</strong>、雇用保険に6か月以上入っていれば受け取れます</li>
+          <li><strong>契約が更新されなかった(雇い止め)</strong>人は、2027年3月31日までの離職なら<strong>会社都合と同じ日数</strong>になり、給付制限もありません</li>
+          <li>どれに当たるかは、離職票の離職理由をもとにハローワークが判断します</li>
+        </ul>
+      </div>
+
+      <div class="card card--article">
+        <h2>65歳以上で辞めた場合(高年齢求職者給付金)</h2>
+        <p>65歳以上で辞めた人は、基本手当ではなく<strong>高年齢求職者給付金</strong>を一時金で受け取ります。雇用保険に1年以上入っていれば<strong>50日分</strong>、1年未満なら<strong>30日分</strong>です(辞める前の1年間に6か月以上入っていることが条件)。日額の上限は30歳未満と同じ7,450円です。</p>
+        <div class="table-scroll">
+          <table class="guide-table">
+            <thead><tr><th>月給</th><th>日額</th><th>30日分</th><th>50日分</th></tr></thead>
+            <tbody>
+            <tr><td>20万円</td><td class="num">5,036円</td><td class="num">151,080円</td><td class="num">251,800円</td></tr>
+            <tr><td>30万円</td><td class="num">6,307円</td><td class="num">189,210円</td><td class="num">315,350円</td></tr>
+            <tr><td>40万円</td><td class="num">6,744円</td><td class="num">202,320円</td><td class="num">337,200円</td></tr>
+            <tr><td>50万円</td><td class="num">7,450円</td><td class="num">223,500円</td><td class="num">372,500円</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>65歳前の失業保険を受け取ると老齢厚生年金(65歳前の特別支給)が止まりますが、高年齢求職者給付金は<strong>年金と同時に受け取れます</strong>。何度でも受け取れるので、65歳以降に働いて辞めるたびに対象になります。64歳で辞めるか65歳で辞めるかで大きく変わるので、<a href="../../../retirement-simulator/taishokubi/">退職日シミュレーター</a>で比べてください。</p>
       </div>
 
       <div class="card card--article">
@@ -201,7 +236,8 @@
         <details class="faq-item"><summary>自己都合だといつから振り込まれますか？</summary><p>7日間の待期のあと1か月の給付制限があり、最初の振込は手続きからおよそ1か月半〜2か月後です。会社都合なら給付制限はなく、およそ1か月後です。</p></details>
         <details class="faq-item"><summary>ボーナスは計算に入りますか？</summary><p>入りません。賃金日額は辞める前6か月の毎月の給料(残業代・通勤手当を含む)の合計÷180で計算します。</p></details>
         <details class="faq-item"><summary>再就職手当はいくらですか？</summary><p>残りの日数×基本手当日額×60%または70%です。35歳・月給30万円・90日の人が待期明けすぐに就職すると、約39.7万円です。</p></details>
-        <details class="faq-item"><summary>65歳以上で辞めたらどうなりますか？</summary><p>基本手当ではなく高年齢求職者給付金になり、基本手当日額の30日分または50日分が一時金で出ます。</p></details>
+        <details class="faq-item"><summary>65歳以上で辞めたらどうなりますか？</summary><p>基本手当ではなく高年齢求職者給付金になり、日額の30日分(雇用保険1年未満)または50日分(1年以上)が一時金で出ます。月給30万円・1年以上なら約31.5万円です。年金と同時に受け取れます。</p></details>
+        <details class="faq-item"><summary>雇い止めや病気で辞めた場合は自己都合ですか？</summary><p>契約が更新されなかった人は、2027年3月31日までの離職なら会社都合と同じ日数になります。病気・介護・転居など正当な理由のある自己都合は、日数は自己都合と同じですが給付制限がありません。</p></details>
       </div>
 
       <div class="card card--article">
@@ -241,21 +277,32 @@
   const $ = (id) => document.getElementById(id);
   const yen = (n) => Math.round(n).toLocaleString("ja-JP") + "円";
   const man = (n) => (Math.round(n / 1000) / 10).toLocaleString("ja-JP") + "万円";
-  const ids = ["sh-age", "sh-gekkyu", "sh-period", "sh-reason", "sh-received"];
+  const ids = ["sh-age", "sh-gekkyu", "sh-period", "sh-reason", "sh-received", "sh-shokon"];
   const f = () => {
     const age = Math.floor(Number($("sh-age").value || 0));
-    if (!(age >= 15 && age <= 64)) { $("sh-out").innerHTML = "離職した日の年齢を15〜64歳で入れてください(65歳以上は高年齢求職者給付金です)。"; return; }
+    if (!(age >= 15 && age <= 99)) { $("sh-out").innerHTML = "離職した日の年齢を入れてください。"; return; }
     const v = { age, gekkyu: Number($("sh-gekkyu").value || 0) * 10000, period: $("sh-period").value, reason: $("sh-reason").value,
-      received: Math.max(0, Math.floor(Number($("sh-received").value || 0))) };
+      shokon: $("sh-shokon").checked, received: Math.max(0, Math.floor(Number($("sh-received").value || 0))) };
     const r = shitsugyoHoken(v);
-    let s = `基本手当日額は<strong>${yen(r.daily)}</strong>です(賃金日額${yen(r.wage)})。`;
+    let s;
+    if (r.kourei) {
+      s = `65歳以上なので<strong>高年齢求職者給付金</strong>(一時金)です。日額${yen(r.daily)}(賃金日額${yen(r.wage)})の${r.days}日分で、<strong>約${man(r.total)}</strong>を一度に受け取ります。`;
+      s += "<br>受け取るには、辞める前の1年間に雇用保険に6か月以上入っていたことが必要です。老齢年金と同時に受け取れます(65歳前の失業保険と違い、年金は止まりません)。";
+      if (r.seigen) s += "自己都合なので、7日間の待期のあと1か月の給付制限があります。";
+      $("sh-out").innerHTML = s;
+      try { localStorage.setItem("subsidy-checker:shitsugyo", JSON.stringify(ids.map((id) => $(id).type === "checkbox" ? $(id).checked : $(id).value))); } catch (e) { /* noop */ }
+      return;
+    }
+    s = `基本手当日額は<strong>${yen(r.daily)}</strong>です(賃金日額${yen(r.wage)})。`;
     if (!r.ok) {
       s += "<br>雇用保険に入っていた期間が1年未満の自己都合の離職は、原則として失業保険を受け取れません(会社都合なら6か月以上で対象)。";
     } else {
       s += `所定給付日数は<strong>${r.days}日</strong>で、総額は約<strong>${man(r.total)}</strong>です。4週間ごとの認定日に28日分(${yen(r.per28)})ずつ振り込まれます。`;
       s += r.seigen
-        ? "<br>自己都合なので、7日間の待期のあと<strong>1か月の給付制限</strong>があり、最初の振込はハローワークでの手続きからおよそ1か月半〜2か月後です(正当な理由のある自己都合や、教育訓練を受ける場合は給付制限がありません)。"
+        ? "<br>自己都合なので、7日間の待期のあと<strong>1か月の給付制限</strong>があり、最初の振込はハローワークでの手続きからおよそ1か月半〜2か月後です(教育訓練を受ける場合は給付制限がありません)。"
         : "<br>7日間の待期のあとすぐ支給が始まり、最初の振込はハローワークでの手続きからおよそ1か月後です。";
+      if (v.reason === "yatoidome" && !v.shokon) s += "雇い止めで会社都合と同じ日数になるのは、2027年3月31日までに辞めた場合です。";
+      if (v.shokon) s += "就職困難者の日数で計算しています(ハローワークで障害者手帳などを見せて認められた場合)。";
       const best = shitsugyoHoken(Object.assign({}, v, { received: 0 }));
       s += `<br>待期のあとすぐ再就職すると、再就職手当は最大<strong>${yen(best.saishu)}</strong>(残り${best.days}日×${yen(best.saishuDaily)}×70%)です。`;
       if (v.received > 0) s += r.rate
@@ -263,9 +310,9 @@
         : `${v.received}日分受け取ってからの再就職は、残りが所定給付日数の3分の1未満なので再就職手当は出ません。`;
     }
     $("sh-out").innerHTML = s;
-    try { localStorage.setItem("subsidy-checker:shitsugyo", JSON.stringify(ids.map((id) => $(id).value))); } catch (e) { /* 保存できなくても計算はする */ }
+    try { localStorage.setItem("subsidy-checker:shitsugyo", JSON.stringify(ids.map((id) => $(id).type === "checkbox" ? $(id).checked : $(id).value))); } catch (e) { /* 保存できなくても計算はする */ }
   };
-  try { const s = JSON.parse(localStorage.getItem("subsidy-checker:shitsugyo") || "null"); if (s) ids.forEach((id, i) => { if (s[i] !== undefined) $(id).value = s[i]; }); } catch (e) { /* noop */ }
+  try { const s = JSON.parse(localStorage.getItem("subsidy-checker:shitsugyo") || "null"); if (s) ids.forEach((id, i) => { if (s[i] === undefined) return; if ($(id).type === "checkbox") $(id).checked = s[i]; else $(id).value = s[i]; }); } catch (e) { /* noop */ }
   ids.forEach((id) => { $(id).addEventListener("input", f); $(id).addEventListener("change", f); });
   f();
 })();

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WTBHV5QYG3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-WTBHV5QYG3');
+</script>
+<title>高年齢雇用継続給付の計算シミュレーター｜60歳以降の給料が下がったらいくら？2026年8月の上限額に対応</title>
+<meta name="description" content="60歳時の月給と今の月給を入れると、高年齢雇用継続給付の支給率と月額を計算します。2025年4月以降に60歳になった人は64%以下で最大10%(それ以前は61%以下で15%)。40万円→26万円なら月23,270円。2026年8月からの支給限度額397,369円・年金の一部停止(最大4%)つき。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="高年齢雇用継続給付の計算シミュレーター｜60歳以降の給料が下がったらいくら？2026年8月の上限額に対応">
+<meta property="og:description" content="60歳時の月給と今の月給を入れると、高年齢雇用継続給付の支給率と月額を計算します。2025年4月以降に60歳になった人は64%以下で最大10%(それ以前は61%以下で15%)。40万円→26万円なら月23,270円。2026年8月からの支給限度額397,369円・年金の一部停止(最大4%)つき。">
+<meta property="og:url" content="https://hakoniwalab.com/subsidy-checker/guide/kounenrei-keizoku/">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6465548593525933" crossorigin="anonymous"></script>
+<link rel="canonical" href="https://hakoniwalab.com/subsidy-checker/guide/kounenrei-keizoku/">
+<link rel="stylesheet" href="../../css/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"高年齢雇用継続給付はいくらもらえますか？","acceptedAnswer":{"@type":"Answer","text":"2025年4月以降に60歳になった人は、今の月給が60歳時の64%以下なら月給の10%です。60歳時40万円・今26万円(65%)なら支給率8.95%で月23,270円です。"}},{"@type":"Question","name":"支給率はいくらから下がりますか？","acceptedAnswer":{"@type":"Answer","text":"64%を超えると10%から少しずつ下がり、75%以上では出ません。2025年3月以前に60歳になった人は、61%以下で15%、75%以上で0%です。"}},{"@type":"Question","name":"上限はありますか？","acceptedAnswer":{"@type":"Answer","text":"2026年8月1日からは、賃金と給付の合計が397,369円まで、60歳時の賃金月額は522,000円が上限です。計算した額が2,562円以下の月は出ません。"}},{"@type":"Question","name":"いつまでもらえますか？","acceptedAnswer":{"@type":"Answer","text":"65歳になる月までです。申請は会社が2か月ごとにハローワークへ行います。"}},{"@type":"Question","name":"年金をもらっていても受け取れますか？","acceptedAnswer":{"@type":"Answer","text":"受け取れます。ただし65歳前の特別支給の老齢厚生年金を受け取っている人は、年金の一部(標準報酬月額の最大4%。2025年3月以前に60歳になった人は6%)が止まります。"}},{"@type":"Question","name":"自営業や、雇用保険に5年入っていない人は？","acceptedAnswer":{"@type":"Answer","text":"雇用保険に入っていない人は対象外です。入っていた期間が5年に満たない人は、5年になった時点から対象になります。"}}]}</script>
+<style>
+.guide-nav { max-width: 720px; margin: 0 auto 16px; padding: 0 20px; font-size: 0.85rem; color: var(--color-text-muted); }
+.guide-nav a { color: var(--color-text-muted); }
+.guide-lead { font-size: 0.95rem; }
+.guide-table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 0.9rem; }
+.guide-table th, .guide-table td { border: 1px solid var(--color-border); padding: 8px 10px; text-align: left; vertical-align: top; }
+.guide-table th { background: var(--color-bg); font-weight: 600; }
+.guide-table td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.guide-table tr.is-best td { background: var(--color-badge-bg); font-weight: 700; }
+.guide-note { font-size: 0.85rem; color: var(--color-text-muted); }
+.card--article h3 { font-size: 1rem; margin: 18px 0 6px; }
+.guide-cta { text-align: center; }
+.guide-cta .btn { display: inline-block; text-decoration: none; }
+.guide-calc { text-align: left; background: var(--color-bg); border: 1px solid var(--color-border); border-radius: 8px; padding: 12px 14px; margin: 14px 0; font-size: 0.92rem; }
+.guide-calc label { display: block; font-weight: 600; margin: 8px 0 4px; font-size: 0.88rem; }
+.guide-calc input, .guide-calc select { width: 100%; padding: 8px; border: 1px solid var(--color-border); border-radius: 6px; font-size: 1rem; background: var(--color-surface); color: var(--color-text); }
+.guide-calc .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.guide-calc .row3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px; }
+.guide-result { margin-top: 12px; font-size: 0.95rem; }
+.guide-result strong { font-size: 1.1rem; }
+.table-scroll { overflow-x: auto; }
+.date-row { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 6px; margin-bottom: 8px; }
+.form-help { font-size: 0.85rem; color: var(--color-text-muted); }
+.guide-calc .quiz-select, .date-row .quiz-select { width: 100%; }
+.nw { white-space: nowrap; }
+.card--article a[target="_blank"] { overflow-wrap: anywhere; }
+.art-cta { text-align: center; margin: 16px 0 4px; padding: 14px 12px; border: 1px dashed var(--color-border); border-radius: 8px; }
+.card--article .art-cta p { font-size: 0.85rem; margin: 0 0 10px; }
+.art-cta__links { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+</style>
+</head>
+<body>
+<div class="app">
+
+  <nav class="guide-nav" aria-label="パンくずリスト">
+    <a href="../../">給付金・補助金診断</a> &raquo;
+    <span aria-current="page">高年齢雇用継続給付の計算</span>
+  </nav>
+
+  <header class="app-header">
+    <p class="app-header__eyebrow">60歳からの給料</p>
+    <h1 class="app-header__title">高年齢雇用継続給付の<br>計算シミュレーター</h1>
+    <p class="app-header__lead">60歳時と今の月給から、支給率と毎月の額を計算します。</p>
+  </header>
+
+  <main class="main">
+    <section class="screen">
+      <div class="card card--intro">
+        <form id="kk-form" class="guide-calc" style="margin:0">
+          <div class="row2">
+            <div><label for="kk-base">60歳時の月給</label><input id="kk-base" type="number" inputmode="decimal" min="0" step="0.1" value="40"></div>
+            <div><label for="kk-wage">今の月給</label><input id="kk-wage" type="number" inputmode="decimal" min="0" step="0.1" value="26"></div>
+          </div>
+          <p class="form-help">どちらも万円で入れます。60歳時の月給は、60歳になる前6か月の平均(残業代・通勤手当を含み、ボーナスは除く)です。</p>
+          <label for="kk-old">60歳になった時期</label>
+          <select id="kk-old">
+            <option value="0">2025年4月1日以降(最大10%)</option>
+            <option value="1">2025年3月31日以前(最大15%)</option>
+          </select>
+          <p class="guide-result" id="kk-out" role="status"></p>
+          <p class="guide-note">雇用保険に5年以上入っていて、60歳以降も同じ会社などで働いている60〜64歳の人の計算です。入力は端末の外に送りません。</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="article">
+
+      <div class="card card--article">
+        <p class="guide-lead">高年齢雇用継続給付は、60歳以降も働き続けて、<strong>月給が60歳時の75%未満に下がった</strong>60〜64歳の人に、雇用保険から出るお金です。2025年4月1日以降に60歳になった人は、今の月給の<strong>最大10%</strong>(64%以下に下がった場合)が毎月出ます。</p>
+        <p>たとえば60歳時の月給40万円が、再雇用で26万円(65%)になった場合、支給率は8.95%で<strong>月23,270円</strong>です。上の計算機に60歳時と今の月給を入れると、自分の場合の額が出ます。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>早見表(2025年4月以降に60歳になった人)</h2>
+        <div class="table-scroll">
+          <table class="guide-table">
+            <thead><tr><th>60歳時の月給</th><th>今の月給50%</th><th>60%</th><th>64%</th><th>70%</th><th>74%</th></tr></thead>
+            <tbody>
+            <tr><td>30万円</td><td class="num">150,000円→15,000円</td><td class="num">180,000円→18,000円</td><td class="num">192,000円→19,200円</td><td class="num">210,000円→8,736円</td><td class="num">222,000円→0円</td></tr>
+            <tr><td>40万円</td><td class="num">200,000円→20,000円</td><td class="num">240,000円→24,000円</td><td class="num">256,000円→25,600円</td><td class="num">280,000円→11,648円</td><td class="num">296,000円→0円</td></tr>
+            <tr><td>50万円</td><td class="num">250,000円→25,000円</td><td class="num">300,000円→30,000円</td><td class="num">320,000円→32,000円</td><td class="num">350,000円→14,560円</td><td class="num">370,000円→2,923円</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="guide-note">「今の月給→給付の月額」。60歳時の月給は賃金月額(60歳前6か月の賃金÷180×30)とみなしています。</p>
+        <h3>下がり方と支給率</h3>
+        <div class="table-scroll">
+          <table class="guide-table">
+            <thead><tr><th>今の月給÷60歳時</th><th>2025年4月以降に60歳</th><th>2025年3月以前に60歳</th></tr></thead>
+            <tbody>
+            <tr><td>60%</td><td class="num">10%</td><td class="num">15%</td></tr>
+            <tr><td>64%</td><td class="num">10%</td><td class="num">11.23%</td></tr>
+            <tr><td>66%</td><td class="num">7.93%</td><td class="num">8.91%</td></tr>
+            <tr><td>68%</td><td class="num">5.99%</td><td class="num">6.73%</td></tr>
+            <tr><td>70%</td><td class="num">4.16%</td><td class="num">4.67%</td></tr>
+            <tr><td>72%</td><td class="num">2.42%</td><td class="num">2.72%</td></tr>
+            <tr><td>74%</td><td class="num">0.79%</td><td class="num">0.88%</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>2025年3月以前に60歳になった人は、従来どおり<strong>61%以下で最大15%</strong>です。どちらも75%以上なら出ません。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>計算のしかた</h2>
+        <ol>
+          <li><strong>低下率</strong> ＝ その月の賃金 ÷ 60歳時の賃金月額 × 100(小数第3位を四捨五入)</li>
+          <li><strong>支給率</strong> ＝ 64%以下なら10%。64%超75%未満なら (−64×低下率＋4800)÷110×100÷低下率(小数第3位を四捨五入)</li>
+          <li><strong>支給額</strong> ＝ その月の賃金 × 支給率(1円未満切り捨て)</li>
+        </ol>
+        <p>2026年8月1日からは、次の上限・下限があります。</p>
+        <ul>
+          <li>60歳時の賃金月額は、上限<strong>522,000円</strong>・下限96,090円で計算します</li>
+          <li>その月の賃金と給付の合計は<strong>397,369円まで</strong>(賃金がこの額以上の月は出ません)</li>
+          <li>計算した額が2,562円以下の月は出ません</li>
+        </ul>
+        <p class="guide-note">上限・下限は毎年8月1日に見直されます。賃金は月ごとに判定するので、残業で給料が増えた月は支給率が下がることがあります。</p>
+        <div class="art-cta">
+          <p>60歳からの働き方と年金・退職金の受け取り方を、FPに無料で相談できるサービスもあります。</p>
+          <div class="art-cta__links"><a class="result-card__link result-card__link--offer" href="https://px.a8.net/svt/ejp?a8mat=4BEET0+5Q09CI+4GN2+1NJK7M" target="_blank" rel="nofollow sponsored noopener">老後資金・資産形成をFPに無料相談！厳選プロが丁寧サポート【ガーデン】<span class="badge badge--pr">PR</span></a><img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4BEET0+5Q09CI+4GN2+1NJK7M" alt=""></div>
+        </div>
+      </div>
+
+      <div class="card card--article">
+        <h2>受け取れる条件</h2>
+        <ul>
+          <li>60歳以上65歳未満で、雇用保険に入って働いている</li>
+          <li>雇用保険に入っていた期間が<strong>5年以上</strong>(5年に満たない人は、5年になった時点から)</li>
+          <li>その月の賃金が、60歳時の賃金月額の<strong>75%未満</strong></li>
+        </ul>
+        <p>受け取れるのは<strong>65歳になる月まで</strong>で、申請は原則として会社が2か月ごとにハローワークへ行います。60歳で一度辞めて失業保険を受け取り、所定給付日数を100日以上残して再就職した人は、別の<strong>高年齢再就職給付金</strong>(1年または2年)になります。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>年金が一部止まる場合</h2>
+        <p>65歳前の<strong>特別支給の老齢厚生年金</strong>を受け取りながら厚生年金に入って働いている人は、高年齢雇用継続給付を受けている間、年金の一部が止まります。止まる額は<strong>標準報酬月額の最大4%</strong>(2025年3月以前に60歳になった人は6%)です。</p>
+        <p>給付の10%に対して年金の停止は最大4%なので、差し引きでは給付を受けた方が多くなるのが普通です。働きながら受け取る年金そのものの停止(在職老齢年金)は別の仕組みで、2026年4月からは<a href="../../../retirement-simulator/guide/zaishoku-rourei-nenkin/">月65万円</a>が基準です。</p>
+      </div>
+
+      <div class="card card--article">
+        <h2>よくある質問</h2>
+        <details class="faq-item"><summary>高年齢雇用継続給付はいくらもらえますか？</summary><p>2025年4月以降に60歳になった人は、今の月給が60歳時の64%以下なら月給の10%です。60歳時40万円・今26万円(65%)なら支給率8.95%で月23,270円です。</p></details>
+        <details class="faq-item"><summary>支給率はいくらから下がりますか？</summary><p>64%を超えると10%から少しずつ下がり、75%以上では出ません。2025年3月以前に60歳になった人は、61%以下で15%、75%以上で0%です。</p></details>
+        <details class="faq-item"><summary>上限はありますか？</summary><p>2026年8月1日からは、賃金と給付の合計が397,369円まで、60歳時の賃金月額は522,000円が上限です。計算した額が2,562円以下の月は出ません。</p></details>
+        <details class="faq-item"><summary>いつまでもらえますか？</summary><p>65歳になる月までです。申請は会社が2か月ごとにハローワークへ行います。</p></details>
+        <details class="faq-item"><summary>年金をもらっていても受け取れますか？</summary><p>受け取れます。ただし65歳前の特別支給の老齢厚生年金を受け取っている人は、年金の一部(標準報酬月額の最大4%。2025年3月以前に60歳になった人は6%)が止まります。</p></details>
+        <details class="faq-item"><summary>自営業や、雇用保険に5年入っていない人は？</summary><p>雇用保険に入っていない人は対象外です。入っていた期間が5年に満たない人は、5年になった時点から対象になります。</p></details>
+      </div>
+
+      <div class="card card--article">
+        <h2>出典</h2>
+        <ul>
+          <li>厚生労働省「令和7年4月1日から高年齢雇用継続給付の支給率を変更します」<br><a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000160564_00043.html" target="_blank" rel="noopener">https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000160564_00043.html</a></li>
+          <li>厚生労働省「令和7年4月1日の支給額の計算式」<br><a href="https://www.mhlw.go.jp/content/001328826.pdf" target="_blank" rel="noopener">https://www.mhlw.go.jp/content/001328826.pdf</a></li>
+          <li>厚生労働省・ハローワーク「高年齢雇用継続給付金・介護休業給付金・育児休業等給付の受給者の皆さまへ」(令和8年8月1日からの支給限度額)<br><a href="https://www.mhlw.go.jp/content/001728499.pdf" target="_blank" rel="noopener">https://www.mhlw.go.jp/content/001728499.pdf</a></li>
+          <li>日本年金機構「年金と雇用保険の高年齢雇用継続給付との調整」<br><a href="https://www.nenkin.go.jp/service/jukyu/seido/roureinenkin/koyou-chosei/20140421-02.html" target="_blank" rel="noopener">https://www.nenkin.go.jp/service/jukyu/seido/roureinenkin/koyou-chosei/20140421-02.html</a></li>
+        </ul>
+      </div>
+
+      <div class="card card--article">
+        <h2>あわせて読みたい</h2>
+        <ul>
+          <li><a href="../../seido/high-age-employment-continuation-benefit/">高年齢雇用継続給付の解説(条件・手続き)</a></li>
+          <li><a href="../../../retirement-simulator/guide/zaishoku-rourei-nenkin/">在職老齢年金はいくら止まる？(2026年4月から65万円)</a></li>
+          <li><a href="../../guide/shitsugyo-hoken-keisan/">失業保険はいくら？計算シミュレーター</a></li>
+          <li><a href="../../">給付金・補助金診断</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <p>本記事は厚生労働省・日本年金機構の公表資料をもとに一般的な目安を示すものであり、実際の支給額を保証するものではありません。正確な額はハローワークで確認してください。「PR」表記のあるリンクにはプロモーション(アフィリエイト広告)が含まれます。</p>
+    <p><a href="../../../about.html">運営者情報</a>・<a href="../../../contact.html">お問い合わせ</a>・<a href="../../../privacy.html">プライバシーポリシー</a></p>
+  </footer>
+
+</div>
+<script src="../../js/kurashi-calc.js"></script>
+<script>
+(function () {
+  const $ = (id) => document.getElementById(id);
+  const yen = (n) => Math.round(n).toLocaleString("ja-JP") + "円";
+  const man = (n) => (Math.round(n / 1000) / 10).toLocaleString("ja-JP") + "万円";
+  const ids = ["kk-base", "kk-wage", "kk-old"];
+  const f = () => {
+    const v = { base: Number($("kk-base").value || 0) * 10000, wage: Number($("kk-wage").value || 0) * 10000, old: $("kk-old").value === "1" };
+    const r = kounenreiKeizoku(v);
+    let s = `今の月給は、60歳時の賃金月額${yen(r.base)}の<strong>${r.X}%</strong>です。`;
+    if (r.note === "gendo") s += `今の月給が支給限度額(${yen(KOUNEN_R8.gendo)})以上なので、<strong>給付はありません</strong>。`;
+    else if (r.X >= 75) s += "75%以上なので、<strong>給付はありません</strong>(60歳時より25%以上下がった人が対象です)。";
+    else if (r.note === "min") s += `計算した額が最低限度額(${yen(KOUNEN_R8.min)})以下なので、<strong>給付はありません</strong>。`;
+    else {
+      s += `支給率は<strong>${r.Y}%</strong>で、<strong>月${yen(r.amount)}</strong>(1年で約${man(r.amount * 12)})が出ます。`;
+      if (r.note === "capped") s += `賃金と給付の合計が支給限度額(${yen(KOUNEN_R8.gendo)})までなので、そこまでに減らしています。`;
+    }
+    if (v.base > KOUNEN_R8.baseMax) s += `<br>60歳時の賃金月額は上限の${yen(KOUNEN_R8.baseMax)}で計算します。`;
+    s += `<br>65歳前の特別支給の老齢厚生年金を受け取っている人は、年金の一部(標準報酬月額の最大${r.nenkinStop}%)が止まります。`;
+    $("kk-out").innerHTML = s;
+    try { localStorage.setItem("subsidy-checker:kounen", JSON.stringify(ids.map((id) => $(id).value))); } catch (e) { /* 保存できなくても計算はする */ }
+  };
+  try { const s = JSON.parse(localStorage.getItem("subsidy-checker:kounen") || "null"); if (s) ids.forEach((id, i) => { if (s[i] !== undefined) $(id).value = s[i]; }); } catch (e) { /* noop */ }
+  ids.forEach((id) => { $(id).addEventListener("input", f); $(id).addEventListener("change", f); });
+  f();
+})();
+</script>
+</body>
+</html>

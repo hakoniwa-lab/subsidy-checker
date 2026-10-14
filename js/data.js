@@ -7161,6 +7161,7 @@ const SUBSIDIES = [
       "requires_employment_insurance": true
     },
     "apply_url": "https://www.hellowork.mhlw.go.jp/insurance/insurance_continue.html",
+    "calculator": "guide/kounenrei-keizoku/",
     "apply_method": "事業主が「高年齢雇用継続給付支給申請書」を管轄ハローワークへ提出。初回は支給対象月の初日から4ヶ月以内、以降は原則2ヶ月ごとに申請する。",
     "source_checked_at": "2026-07-29",
     "priority": 1,
@@ -7534,7 +7535,7 @@ const SUBSIDIES = [
       "requires_employment_insurance": true
     },
     "apply_url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/koyouhoken/index_00003.html",
-    "calculator": "../retirement-simulator/taishokubi/",
+    "calculator": "guide/shitsugyo-hoken-keisan/",
     "apply_method": "離職後、管轄ハローワークで求職申込みを行い、「高年齢求職者給付金支給申請書」を提出する(離職日翌日から1年以内)。",
     "source_checked_at": "2026-07-29",
     "priority": 1,

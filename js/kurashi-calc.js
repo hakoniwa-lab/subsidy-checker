@@ -12,6 +12,7 @@
  *  10. 失業保険(基本手当)と再就職手当 … guide/shitsugyo-hoken-keisan/(所定給付日数は retirement-simulator/js/taishokubi.js の tbBenefit)
  *  11. 傷病手当金 … guide/shobyo-teate/
  *  12. 国民年金保険料の免除・納付猶予 … guide/kokumin-nenkin-menjo/
+ *  13. 高年齢雇用継続給付 … guide/kounenrei-keizoku/
  * 金額はすべて円。年度の数字は 2026-10-12(4〜8は10-13)に各公式ページで確認した
  */
 
@@ -525,18 +526,53 @@ function tbBenefitRef() {
   if (typeof require === "function") return require("../../retirement-simulator/js/taishokubi.js").tbBenefit;
   throw new Error("taishokubi.js が読み込まれていない");
 }
-/* v = { age(離職日の年齢・65歳未満), gekkyu(離職前6か月の月給の平均。賞与を除く), period("lt1"|"1to5"|"5to10"|"10to20"|"ge20"),
- *       reason("jiko"|"kaisha"), received(再就職までに受け取った日数) } */
+/* 就職困難者(障害者など)の所定給付日数 [この年齢未満, 1年未満, 1年以上]。ハローワーク「基本手当の所定給付日数」 */
+const KIHON_SHOKON = [[45, 150, 300], [65, 150, 360]];
+/* v = { age(離職日の年齢), gekkyu(離職前6か月の月給の平均。賞与を除く), period("lt1"|"1to5"|"5to10"|"10to20"|"ge20"),
+ *       reason("jiko" 自己都合 | "seito" 正当な理由のある自己都合 | "yatoidome" 契約の雇い止め | "kaisha" 倒産・解雇など),
+ *       shokon(就職困難者), received(再就職までに受け取った日数) }
+ * 雇い止め(特定理由離職者の範囲1)は2027年3月31日までの離職なら会社都合と同じ日数。正当な理由のある自己都合は一般の日数で、6か月以上で受給資格
+ * 65歳以上は高年齢求職者給付金(一時金。1年以上50日分・1年未満30日分)。日額は30歳未満と同じ上限・給付率(雇用保険法37条の4第2項・16条) */
 function shitsugyoHoken(v) {
   const wage = Math.floor((v.gekkyu || 0) * 6 / 180);
+  if (v.age >= 65) {
+    const daily = kihonDaily(wage, 29), days = v.period === "lt1" ? 30 : 50;
+    return { wage, daily, days, ok: true, kourei: true, total: daily * days, seigen: v.reason === "jiko" ? 1 : 0 };
+  }
   const daily = kihonDaily(wage, v.age);
-  const days = tbBenefitRef()(v.age, v.period, v.reason === "kaisha" ? "kaisha" : "jiko").days;
+  let days;
+  if (v.shokon) { const row = KIHON_SHOKON.find(([a]) => v.age < a); days = v.period === "lt1" ? row[1] : row[2]; }
+  else if (v.reason === "kaisha" || v.reason === "yatoidome") days = tbBenefitRef()(v.age, v.period, "kaisha").days;
+  else days = v.reason === "seito" && v.period === "lt1" ? 90 : tbBenefitRef()(v.age, v.period, "jiko").days;
   if (!days) return { wage, daily, days: 0, ok: false };
   const remain = Math.max(0, days - Math.max(0, v.received || 0));
   const rate = remain * 3 >= days * 2 ? 0.7 : remain * 3 >= days ? 0.6 : 0;
   const saishuDaily = Math.min(daily, KIHON_R8.saishu.find(([a]) => v.age < a)[1]);
   return { wage, daily, days, ok: true, per28: daily * 28, total: daily * days, remain, rate, saishuDaily,
-    saishu: Math.floor(saishuDaily * remain * rate), seigen: v.reason === "kaisha" ? 0 : 1 };
+    saishu: Math.floor(saishuDaily * remain * rate), seigen: v.reason === "jiko" ? 1 : 0 };
+}
+
+/* ---------- 13. 高年齢雇用継続給付(高年齢雇用継続基本給付金) ---------- */
+/* 令和8年8月1日以後の支給対象期間。厚労省リーフレット「高年齢雇用継続給付金・介護休業給付金・育児休業等給付の受給者の皆さまへ」 */
+const KOUNEN_R8 = { gendo: 397369, min: 2562, baseMax: 522000, baseMin: 96090 };
+const round2 = (x) => Math.round(x * 100) / 100;
+/* v = { base(60歳到達時の賃金月額。60歳前6か月の賃金÷180×30), wage(その月に支払われた賃金), old(60歳到達が2025年3月31日以前) }
+ * 低下率X＝賃金÷賃金月額×100。新: 64%以下10%、64%超75%未満は Y＝(−64X＋4800)/110×100/X(厚労省「令和7年4月1日の支給額の計算式」)
+ * 旧: 61%以下15%、61%超75%未満は Y＝(−183X＋13725)/280×100/X。X と Y は小数第3位を四捨五入、支給額は1円未満切り捨て */
+function kounenreiKeizoku(v) {
+  const base = Math.min(KOUNEN_R8.baseMax, Math.max(KOUNEN_R8.baseMin, v.base || 0));
+  const wage = Math.max(0, v.wage || 0);
+  const X = base > 0 ? round2(wage / base * 100) : 100;
+  const [full, edge] = v.old ? [15, 61] : [10, 64];
+  let Y;
+  if (X >= 75 || wage <= 0) Y = 0;
+  else if (X <= edge) Y = full;
+  else Y = v.old ? round2((-183 * X + 13725) / 280 * 100 / X) : round2((-64 * X + 4800) / 110 * 100 / X);
+  let amount = Math.floor(wage * Y / 100), note = "";
+  if (wage >= KOUNEN_R8.gendo) { amount = 0; note = "gendo"; }
+  else if (wage + amount > KOUNEN_R8.gendo) { amount = KOUNEN_R8.gendo - wage; note = "capped"; }
+  if (amount > 0 && amount <= KOUNEN_R8.min) { amount = 0; note = "min"; }
+  return { base, wage, X, Y, amount, note, nenkinStop: v.old ? 6 : 4 };
 }
 
 /* ---------- 11. 傷病手当金 ---------- */
@@ -604,4 +640,5 @@ if (typeof module !== "undefined") module.exports = {
   FUYO_R8, FUYO_LIMIT, round10, jidoFuyo, fuyoMaxKyuyo, fuyoGimu, fuyoGimuMax,
   KIHON_R8, kihonDaily, shitsugyoHoken, teateDaily, SHOBYO_UNDER12_R7, shobyoTeate,
   NENKIN_HOKENRYO_R8, MENJO_LEVELS, menjoPerson, nenkinMenjo,
+  KIHON_SHOKON, KOUNEN_R8, kounenreiKeizoku,
 };
