@@ -2323,9 +2323,9 @@ const SUBSIDIES = [
       ],
       "requires_employment_insurance": false
     },
-    "apply_url": "https://akita-digital-academy.jp/",
-    "apply_method": "公式サイトから受講申込を行い、希望職種・スキルレベルに応じた学習パスでeラーニング等を受講する。",
-    "source_checked_at": "2026-07-29",
+    "apply_url": "https://www.pref.akita.lg.jp/pages/archive/98633",
+    "apply_method": "秋田県の募集ページにある申込フォームから受講を申し込む。令和8年度(研修は令和8年11月〜令和9年2月)の募集は令和8年9月30日で締め切られた。次回の募集は秋田県の募集ページで確認する。",
+    "source_checked_at": "2026-10-20",
     "priority": 3,
     "related_offers": [
       {
@@ -3508,7 +3508,7 @@ const SUBSIDIES = [
       ],
       "requires_employment_insurance": false
     },
-    "apply_url": "https://www.yiso.or.jp/service/professional/",
+    "apply_url": "https://y-projinzai.com/",
     "apply_method": "プロフェッショナル人材戦略拠点や登録人材紹介事業者を通じて、副業・兼業案件の紹介・マッチングを受ける。",
     "source_checked_at": "2026-07-29",
     "priority": 5,
