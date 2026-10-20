@@ -2362,7 +2362,7 @@ const SUBSIDIES = [
     "category": "創業・開業支援",
     "organization": "秋田県産業労働部新産業創造課",
     "summary": "秋田県内で新たに起業する40歳未満の若者を対象に、起業に必要な経費の一部を補助する制度。Aターン(県外からのU・Iターン)・移住者は上限額が優遇される。",
-    "benefit_text": "補助対象経費の1/2以内、上限100万円(Aターン・移住者は上限150万円)",
+    "benefit_text": "補助対象経費の1/2以内、上限100万円(県外から転居する人・転居後36か月以内の人・県内の地域おこし協力隊経験者は上限150万円)",
     "benefit_max_yen": 1500000,
     "conditions_text": "応募日時点で40歳未満(学生含む)、秋田県内で新たに起業する者または起業後12か月以内の者で、主たる事業所を県内に置くこと。",
     "tags": {
@@ -2386,8 +2386,8 @@ const SUBSIDIES = [
       "requires_employment_insurance": false
     },
     "apply_url": "https://www.pref.akita.lg.jp/pages/archive/88411",
-    "apply_method": "最寄りの商工会または商工会議所に相談のうえ、申請書類一式を提出する。",
-    "source_checked_at": "2026-07-29",
+    "apply_method": "最寄りの商工会または商工会議所に相談のうえ、申請書類一式を提出する。令和8年度の募集(令和8年4月1日〜6月12日)は終了した。",
+    "source_checked_at": "2026-10-20",
     "priority": 3,
     "related_offers": [
       {
@@ -3316,10 +3316,10 @@ const SUBSIDIES = [
     "name": "起業チャレンジ応援事業",
     "category": "創業・開業支援",
     "organization": "公益財団法人にいがた産業創造機構(NICO)",
-    "summary": "新潟県内で新たに起業する方を対象に、創業に必要な経費の一部を助成する制度。会社員等は交付決定後2か月以内の退職が条件。",
+    "summary": "デジタル技術を活用して地域課題・社会課題の解決に取り組む、新潟県内での新たな起業を対象に、創業に必要な経費の一部を助成する制度。会社員等は交付決定後2か月以内の退職が条件。",
     "benefit_text": "補助対象経費の1/2以内、下限50万円〜上限200万円",
     "benefit_max_yen": 2000000,
-    "conditions_text": "商工会・商工会議所等の確認書を取得した上で新潟県内で新たに起業する方が対象。申請時に会社等に所属する場合は交付決定後2か月以内に退職することが必要。",
+    "conditions_text": "デジタル技術(キャッシュレス決済・Web予約・EC・SNS発信等)を活用し、新潟県内の地域課題・社会課題の解決に資する事業で新たに起業する方が対象(課題解決を主目的としない単なる飲食業・美容業等は対象外)。商工会・商工会議所等の確認書の取得が必要。申請時に会社等に所属する場合は交付決定後2か月以内に退職することが必要で、副業としての起業は対象外。",
     "tags": {
       "employment_status": [
         "employee",
@@ -3340,9 +3340,9 @@ const SUBSIDIES = [
       ],
       "requires_employment_insurance": false
     },
-    "apply_url": "https://www.nico.or.jp/sien/hojokin/81879/",
-    "apply_method": "商工会・商工会議所または金融機関に相談し確認書を取得後、申請書類一式をNICOへ郵送または持参で提出する。",
-    "source_checked_at": "2026-07-29",
+    "apply_url": "https://www.nico.or.jp/sien/hojokin/86373/",
+    "apply_method": "公式ページの申請資格チェックリストを確認してNICOに問い合わせたうえで(必須)、事前確認団体(商工会・商工会議所・金融機関・新潟県よろず支援拠点)で確認書の発行を受け、申請書類一式をNICOへ簡易書留で郵送または持参する。令和8年度の募集は一次・二次とも締め切られた(二次は令和8年9月11日まで)。",
+    "source_checked_at": "2026-10-20",
     "priority": 3,
     "related_offers": [
       {
@@ -3487,7 +3487,7 @@ const SUBSIDIES = [
     "summary": "都市部等の専門人材が副業・兼業で山梨県内中小企業の経営課題解決や新事業立ち上げに関われるよう、無料でマッチング支援を行う事業。",
     "benefit_text": "マッチング支援は無料(直接の金銭給付なし)",
     "benefit_max_yen": null,
-    "conditions_text": "副業・兼業で地方の中小企業に関わりたい専門人材が対象。県内企業とのマッチングを希望する個人が拠点や登録紹介事業者を通じて利用できる。",
+    "conditions_text": "副業・兼業(業務委託)や転職で山梨県内の中小企業に関わりたい専門人材が対象。拠点の相談窓口は県内企業向けで、個人は拠点に登録している人材紹介事業者を通じて案件の紹介を受ける。",
     "tags": {
       "employment_status": [
         "employee",
@@ -3508,9 +3508,9 @@ const SUBSIDIES = [
       ],
       "requires_employment_insurance": false
     },
-    "apply_url": "https://y-projinzai.com/",
-    "apply_method": "プロフェッショナル人材戦略拠点や登録人材紹介事業者を通じて、副業・兼業案件の紹介・マッチングを受ける。",
-    "source_checked_at": "2026-07-29",
+    "apply_url": "https://y-projinzai.com/agency/",
+    "apply_method": "拠点サイトの「登録人材紹介事業者のご案内」に載っている人材紹介事業者に登録し、山梨県内企業の副業・兼業・常勤の案件を紹介してもらう。拠点の電話相談(055-243-1870、平日8:30〜17:15)とWEB相談フォームは、人材を求める県内企業向けの窓口。",
+    "source_checked_at": "2026-10-20",
     "priority": 5,
     "related_offers": [
       {
@@ -4044,8 +4044,8 @@ const SUBSIDIES = [
       "requires_employment_insurance": false
     },
     "apply_url": "https://hiroshima-kigyoshien.com/",
-    "apply_method": "必要書類を準備しメールまたは郵送で提出、資格審査・書面審査を経て採択後に交付決定、事業完了後に実績報告して精算払いを受ける。",
-    "source_checked_at": "2026-07-29",
+    "apply_method": "必要書類を準備しメールまたは郵送で提出、資格審査・書面審査を経て採択後に交付決定、事業完了後に実績報告して精算払いを受ける。令和8年度の募集は終了した(令和9年度の実施は決まり次第、公式サイトで告知される)。",
+    "source_checked_at": "2026-10-20",
     "priority": 2,
     "related_offers": [
       {
@@ -4286,8 +4286,8 @@ const SUBSIDIES = [
       "requires_employment_insurance": false
     },
     "apply_url": "https://www.our-think.or.jp/328532/",
-    "apply_method": "事前相談を予約したうえで、交付申請書・事業計画書等を持参・郵送・メール等で提出し審査を受ける。",
-    "source_checked_at": "2026-07-29",
+    "apply_method": "事前相談を予約したうえで、交付申請書・事業計画書等を持参・郵送・メール等で提出し審査を受ける。令和8年度の募集(一次:令和8年4月6日〜5月20日、二次:7月15日〜8月20日)は終了した。",
+    "source_checked_at": "2026-10-20",
     "priority": 2,
     "related_offers": [
       {
@@ -4666,8 +4666,8 @@ const SUBSIDIES = [
       "requires_employment_insurance": false
     },
     "apply_url": "https://www.pref.kochi.lg.jp/doc/2026022400299/",
-    "apply_method": "高知県電子申請サービスから申請書をダウンロードして作成し、アップロードして提出する。",
-    "source_checked_at": "2026-07-29",
+    "apply_method": "高知県電子申請サービスから申請書をダウンロードして作成し、アップロードして提出する。令和8年度の公募は第1回〜第3回(最終は令和8年9月30日締切)すべて受付を終了した。",
+    "source_checked_at": "2026-10-20",
     "priority": 2,
     "related_offers": [
       {
@@ -5249,8 +5249,8 @@ const SUBSIDIES = [
       "requires_employment_insurance": false
     },
     "apply_url": "https://mama-no-mama.jp/matchwork/",
-    "apply_method": "Google Formsから事前予約(予約なしでも当日参加可)。",
-    "source_checked_at": "2026-07-29",
+    "apply_method": "プログラムごとに違う。就業支援セミナー・おしごと相談会・プチ交流会は完全予約制で、公式サイトのGoogleフォームから申し込む(令和8年度の締切はセミナー・相談会が11月12日、プチ交流会が12月7日)。おしごとフェスタは予約なしでも来場できるが、事前予約(会場参加は12月7日、オンライン参加は11月30日まで)で特典がある。適性診断ブースは予約不要。職場見学は公式LINE・会場の申込用紙・メール・電話で申し込む。託児の予約も各フォームから。",
+    "source_checked_at": "2026-10-20",
     "priority": 3,
     "related_offers": [
       {
