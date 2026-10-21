@@ -624,3 +624,6 @@ html, body {
 /* 広告のあるページの冒頭に出す PR 表記(A8 はファーストビューでの広告表示を求めている。birthday-fortune・houyou-calendar と同じ形) */
 .pr-note { font-size: 0.75rem; color: var(--color-text-muted); margin: -8px 0 14px; }
 .app-header + .pr-note { text-align: center; }
+
+/* 出典などの長いURLがスマホで横にはみ出さないように折り返す(class の無い文字のリンクだけ。広告ボタンには効かせない) */
+.card--article a:not([class]) { overflow-wrap: anywhere; }
