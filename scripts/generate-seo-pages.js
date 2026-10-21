@@ -237,6 +237,8 @@ function articlePageHtml(subsidy, art) {
     .map((g) => `<li><a href="${escapeHtml(g.href)}">${escapeHtml(g.label)}</a>${g.note ? ` — ${escapeHtml(g.note)}` : ""}</li>`)
     .join("\n          ");
   const offers = buildOfferLinks(subsidy, 3);
+  /* 広告(official 以外)を載せるページは見出しの下に PR 表記を出す(A8 はファーストビューでの広告表示を求めている) */
+  const hasAd = (subsidy.related_offers || []).slice(0, 3).some((o) => o.type !== "official");
   const related = buildRelatedSubsidiesSection(subsidy);
 
   return `<!DOCTYPE html>
@@ -267,7 +269,8 @@ ${ARTICLE_STYLE}
     <h1 class="app-header__title">${escapeHtml(subsidy.name)}</h1>
     <p class="app-header__lead">${escapeHtml(subsidy.summary)}</p>
   </header>
-
+${hasAd ? `  <p class="pr-note">この記事にはプロモーション(広告)が含まれます。</p>
+` : ""}
   <main class="main">
 
     <section class="article">
@@ -358,6 +361,8 @@ function thinPageHtml(subsidy) {
   const region = regionLabel(subsidy);
   const yen = yenLine(subsidy);
   const canonical = canonicalUrl(subsidy);
+  /* AdSense は載せないが、関連サービス(A8 など)のリンクはあるので PR 表記を出す */
+  const hasAd = (subsidy.related_offers || []).some((o) => o.type !== "official");
   const jsonLd = JSON.stringify({
     "@context": "https://schema.org",
     "@type": "GovernmentService",
@@ -389,7 +394,8 @@ ${GA_TAG}
     <a href="../">制度一覧</a> &raquo;
     <span aria-current="page">${escapeHtml(subsidy.name)}</span>
   </nav>
-
+${hasAd ? `  <p class="pr-note">このページにはプロモーション(広告)が含まれます。</p>
+` : ""}
   <article class="card detail-card">
     <div class="result-card__badges">
       <span class="badge">${escapeHtml(subsidy.category)}</span>

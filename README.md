@@ -162,3 +162,11 @@ console.log(r.results.map(x => x.name + ' (score=' + x.score + ')').join('\n'));
 ## デプロイ
 
 `subsidy-checker/` フォルダをそのままGitHub Pages等の静的ホスティングにpushすれば公開できる(ビルド工程不要)。
+
+## 2026-10-21 広告のあるページの冒頭の PR 表記
+
+A8 の案件ページに「広告とわかる表示をファーストビュー等にわかりやすく(無いと提携解除の可能性)」とあるので、広告(A8・アクセストレード・バリューコマース)のあるページの見出しの直下に `<p class="pr-note">…プロモーション(広告)が含まれます。</p>` を出した(CSS は css/style.css の `.pr-note`。`.app-header` の直後は中央寄せ)。各リンクの「PR」バッジとフッターの注記はそのまま。**新しく広告を入れるページにも同じ1行を入れる。**
+
+- index.html(診断結果の広告は js が出すが、ヘッダーは結果画面でも残るのでヘッダー直下に置いた)
+- seido/ の139ページ: `scripts/generate-seo-pages.js` が、related_offers に official 以外があるときだけ出す(記事ありの版は見出しの下、薄いテンプレページはパンくずの下)
+- guide/ の計算機つき6本(jido・jutaku・kogaku・kounen・sankyu・kenpo): `tools/money-articles/kit.py` の `page()` が、本文に px.a8.net があれば自動で出す
