@@ -153,6 +153,8 @@ html, body {
 
 .btn--large { width: 100%; padding: 14px 20px; font-size: 1.05rem; }
 .btn--skip { margin-left: auto; }
+/* トップの「制度一覧から自分で探す」。<a> なので下線を消し、診断ボタンとの間をあける */
+.btn--list { margin-top: 10px; text-decoration: none; }
 
 .progress {
   height: 6px;
